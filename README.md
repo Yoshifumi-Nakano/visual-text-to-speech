@@ -20,8 +20,7 @@ python train.py -p config/JSUT/preprocess.yaml -m config/JSUT/model.yaml -t conf
 ## Synthesize Japanese
 Synthesis Example
 ```
-python3 synthesize.py --text "音声合成、たのちい" --speaker_id 0 --restore_step 20000 --mode single -p config/JSUT/preprocess.yaml -m config/JSUT/model.yaml -t config/JSUT/train.y
-aml
+python3 synthesize.py --text "音声合成、たのちい" --speaker_id 0 --restore_step 20000 --mode single -p config/JSUT/preprocess.yaml -m config/JSUT/model.yaml -t config/JSUT/train.yaml
 ```
 
 # FastSpeech 2 - PyTorch Implementation
