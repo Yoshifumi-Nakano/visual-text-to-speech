@@ -18,6 +18,8 @@ class Dataset(Dataset):
         self.cleaners = preprocess_config["preprocessing"]["text"]["text_cleaners"]
         self.batch_size = train_config["optimizer"]["batch_size"]
         self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
+        self.use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
+        self.accent_to_id = {'0':0, '[':1, ']':2, '#':3}
 
         self.basename, self.speaker, self.text, self.raw_text = self.process_meta(
             filename
@@ -36,6 +38,12 @@ class Dataset(Dataset):
         speaker_id = self.speaker_map[speaker]
         raw_text = self.raw_text[idx]
         phone = np.array([self.symbol_to_id[t] for t in self.text[idx].replace("{", "").replace("}", "").split()])
+        if self.use_accent:
+            with open(os.path.join(self.preprocessed_path, "accent",basename+ '.accent')) as f:
+                accent = f.read()
+            accent = [self.accent_to_id[t] for t in accent]
+            accent = np.array(accent[:len(phone)])
+
         mel_path = os.path.join(
             self.preprocessed_path,
             "mel",
@@ -71,6 +79,8 @@ class Dataset(Dataset):
             "energy": energy,
             "duration": duration,
         }
+        if self.use_accent:
+            sample["accent"] = accent
 
         return sample
 
@@ -99,6 +109,8 @@ class Dataset(Dataset):
         pitches = [data[idx]["pitch"] for idx in idxs]
         energies = [data[idx]["energy"] for idx in idxs]
         durations = [data[idx]["duration"] for idx in idxs]
+        if self.use_accent:
+            accents = [data[idx]["accent"] for idx in idxs]
 
         text_lens = np.array([text.shape[0] for text in texts])
         mel_lens = np.array([mel.shape[0] for mel in mels])
@@ -109,21 +121,40 @@ class Dataset(Dataset):
         pitches = pad_1D(pitches)
         energies = pad_1D(energies)
         durations = pad_1D(durations)
+        
+        if self.use_accent:
+            accents = pad_1D(accents)
+            return (
+                ids,
+                raw_texts,
+                speakers,
+                texts,
+                text_lens,
+                max(text_lens),
+                mels,
+                mel_lens,
+                max(mel_lens),
+                pitches,
+                energies,
+                durations,
+                accents
+            )
+        else:
+            return (
+                ids,
+                raw_texts,
+                speakers,
+                texts,
+                text_lens,
+                max(text_lens),
+                mels,
+                mel_lens,
+                max(mel_lens),
+                pitches,
+                energies,
+                durations
+            )
 
-        return (
-            ids,
-            raw_texts,
-            speakers,
-            texts,
-            text_lens,
-            max(text_lens),
-            mels,
-            mel_lens,
-            max(mel_lens),
-            pitches,
-            energies,
-            durations,
-        )
 
     def collate_fn(self, data):
         data_size = len(data)
@@ -161,6 +192,9 @@ class TextDataset(Dataset):
         ) as f:
             self.speaker_map = json.load(f)
 
+        self.use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
+        self.accent_to_id = {'0':0, '[':1, ']':2, '#':3}
+
     def __len__(self):
         return len(self.text)
 
@@ -170,8 +204,14 @@ class TextDataset(Dataset):
         speaker_id = self.speaker_map[speaker]
         raw_text = self.raw_text[idx]
         phone = np.array(text_to_sequence(self.text[idx], self.cleaners))
+        accent = None
+        if self.use_accent:
+            with open(os.path.join(self.preprocessed_path, "accent",basename+ '.accent')) as f:
+                accent = f.read()
+            accent = [self.accent_to_id[t] for t in accent]
+            accent = np.array(accent[:len(phone)])
 
-        return (basename, speaker_id, phone, raw_text)
+        return (basename, speaker_id, phone, raw_text,accent)
 
     def process_meta(self, filename):
         with open(filename, "r", encoding="utf-8") as f:
@@ -193,10 +233,13 @@ class TextDataset(Dataset):
         texts = [d[2] for d in data]
         raw_texts = [d[3] for d in data]
         text_lens = np.array([text.shape[0] for text in texts])
+        if self.use_accent:
+            accents = [d[4] for d in data]
 
         texts = pad_1D(texts)
+        accents = pad_1D(accents)
 
-        return ids, raw_texts, speakers, texts, text_lens, max(text_lens)
+        return ids, raw_texts, speakers, texts, text_lens, max(text_lens), accents
 
 
 if __name__ == "__main__":

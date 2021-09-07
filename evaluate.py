@@ -18,6 +18,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 def evaluate(model, step, configs, logger=None, vocoder=None):
     preprocess_config, model_config, train_config = configs
 
+    # use accent info?
+    use_accent = preprocess_config['preprocessing']["accent"]["use_accent"]
     # Get dataset
     dataset = Dataset(
         "val.txt", preprocess_config, train_config, sort=False, drop_last=False
@@ -40,10 +42,15 @@ def evaluate(model, step, configs, logger=None, vocoder=None):
             batch = to_device(batch, device)
             with torch.no_grad():
                 # Forward
-                output = model(*(batch[2:]))
+                if use_accent:
+                    accents = batch[-1]
+                    batch = batch[:-1]
+                    output = model(*(batch[2:]),accents=accents)
+                else:
+                    output = model(*(batch[2:]))
+                losses = Loss(batch, output)
 
                 # Cal Loss
-                losses = Loss(batch, output)
 
                 for i in range(len(losses)):
                     loss_sums[i] += losses[i].item() * len(batch[0])
