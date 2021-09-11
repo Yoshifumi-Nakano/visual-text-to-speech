@@ -13,7 +13,7 @@ unzip hifigan/generator_universal.pth.tar.zip -d hifigan/
 mkdir -p raw_data/JSUT/JSUT
 cp path/to/JSUT/*/wav/*.wav raw_data/JSUT/JSUT
 python retrieve_transcripts.py
-python prepare_tg_accent.py jsut-lab/ preprocessed_data/JSUT/ JSUT
+python prepare_tg_accent.py jsut-lab/ preprocessed_data/JSUT/ JSUT --with_accent True
 python3 preprocess.py config/JSUT/preprocess.yaml #this may take some time
 python train.py -p config/JSUT/preprocess.yaml -m config/JSUT/model.yaml -t config/JSUT/train.yaml
 ```
