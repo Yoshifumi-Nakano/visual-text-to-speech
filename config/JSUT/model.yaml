@@ -38,3 +38,10 @@ max_seq_len: 1000
 vocoder:
   model: "HiFi-GAN" # support 'HiFi-GAN', 'MelGAN'
   speaker: "universal" # support  'LJSpeech', 'universal'
+
+image:
+  use_image: True
+  width: 20
+  height: 20
+  font_size: 10
+  stride: 20

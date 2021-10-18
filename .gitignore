@@ -117,3 +117,8 @@ output/
 TextGrid/
 hifigan/*.pth.tar
 preprocessed_data/
+output_kana/
+jsut_ver1.1.zip
+jsut_ver1.1/
+jsut-lab/
+nohub.out

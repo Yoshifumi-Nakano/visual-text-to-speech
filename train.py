@@ -24,13 +24,15 @@ def main(args, configs):
 
     preprocess_config, model_config, train_config = configs
 
-    # use accent info?
     use_accent = preprocess_config['preprocessing']["accent"]["use_accent"]
+    use_image=preprocess_config['preprocessing']["image"]["use_image"]
+    
 
     # Get dataset
     dataset = Dataset(
         "train.txt", preprocess_config, train_config, sort=True, drop_last=True
     )
+    
     batch_size = train_config["optimizer"]["batch_size"]
     group_size = 4  # Set this larger than 1 to enable sorting in Dataset
     assert batch_size * group_size < len(dataset)
@@ -85,12 +87,13 @@ def main(args, configs):
         inner_bar = tqdm(total=len(loader), desc="Epoch {}".format(epoch), position=1)
         for batchs in loader:
             for batch in batchs:
-                batch = to_device(batch, device)
+                batch = to_device(batch, device,use_image,use_accent)
 
                 # Forward
+                #ids,raw_texts,speakers,texts,src_lens,max_src_len,mels,mel_lens,max_mel_len,pitches,energies,durations,image,accents
                 if use_accent:
                     accents = batch[-1]
-                    batch = batch[:-1]
+                    #batch = batch[:-1]
                     output = model(*(batch[2:]),accents=accents)
                 else:
                     output = model(*(batch[2:]))
@@ -105,6 +108,7 @@ def main(args, configs):
                 else:
                     losses = Loss(batch, output)
                     total_loss = losses[0]
+                    
                 # Backward
                 total_loss = total_loss / grad_acc_step
                 total_loss.backward()
@@ -203,6 +207,8 @@ def main(args, configs):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--restore_step", type=int, default=0)
+
+    #正式名称と略称を付けられる(-pは--preprocess_configの略称)
     parser.add_argument(
         "-p",
         "--preprocess_config",
@@ -216,6 +222,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-t", "--train_config", type=str, required=True, help="path to train.yaml"
     )
+    #引数の解析
     args = parser.parse_args()
 
     # Read Config

@@ -1,4 +1,4 @@
-dataset: "LJSpeech"
+dataset: "JSUT"
 
 path:
   corpus_path: "/home/nakata/jsut_ver1.1_original"
@@ -25,8 +25,16 @@ preprocessing:
   pitch:
     feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
     normalization: True
+    image: True
   energy:
     feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
     normalization: True
+    image: True
   accent:
-    use_accent: True
+    use_accent: False
+  image:
+    use_image: True
+    width: 20
+    height: 20
+    font_size: 10
+    stride: 20

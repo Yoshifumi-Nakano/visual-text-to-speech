@@ -1,6 +1,6 @@
 import os
 import json
-
+import torchvision
 import torch
 import torch.nn.functional as F
 import numpy as np
@@ -15,74 +15,47 @@ matplotlib.use("Agg")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-def to_device(data, device):
-    if len(data) == 12:
-        (
-            ids,
-            raw_texts,
-            speakers,
-            texts,
-            src_lens,
-            max_src_len,
-            mels,
-            mel_lens,
-            max_mel_len,
-            pitches,
-            energies,
-            durations,
-        ) = data
 
-        speakers = torch.from_numpy(speakers).long().to(device)
-        texts = torch.from_numpy(texts).long().to(device)
-        src_lens = torch.from_numpy(src_lens).to(device)
-        mels = torch.from_numpy(mels).float().to(device)
-        mel_lens = torch.from_numpy(mel_lens).to(device)
-        pitches = torch.from_numpy(pitches).float().to(device)
-        energies = torch.from_numpy(energies).to(device)
-        durations = torch.from_numpy(durations).long().to(device)
+def to_device(data, device,use_image,use_accent):
+    (
+        ids,
+        raw_texts,
+        speakers,
+        texts,
+        src_lens,
+        max_src_len,
+        mels,
+        mel_lens,
+        max_mel_len,
+        pitches,
+        energies,
+        durations,
+        accents,
+        image,
+    ) = data
 
-        return (
-            ids,
-            raw_texts,
-            speakers,
-            texts,
-            src_lens,
-            max_src_len,
-            mels,
-            mel_lens,
-            max_mel_len,
-            pitches,
-            energies,
-            durations,
-        )
-    if len(data) == 13:
-        (
-            ids,
-            raw_texts,
-            speakers,
-            texts,
-            src_lens,
-            max_src_len,
-            mels,
-            mel_lens,
-            max_mel_len,
-            pitches,
-            energies,
-            durations,
-            accents,
-        ) = data
 
-        speakers = torch.from_numpy(speakers).long().to(device)
-        texts = torch.from_numpy(texts).long().to(device)
-        src_lens = torch.from_numpy(src_lens).to(device)
-        mels = torch.from_numpy(mels).float().to(device)
-        mel_lens = torch.from_numpy(mel_lens).to(device)
-        pitches = torch.from_numpy(pitches).float().to(device)
-        energies = torch.from_numpy(energies).to(device)
-        durations = torch.from_numpy(durations).long().to(device)
+
+    speakers = torch.from_numpy(speakers).long().to(device)
+    src_lens = torch.from_numpy(src_lens).to(device)
+    mels = torch.from_numpy(mels).float().to(device)
+    mel_lens = torch.from_numpy(mel_lens).to(device)
+    pitches = torch.from_numpy(pitches).float().to(device)
+    energies = torch.from_numpy(energies).to(device)
+    durations = torch.from_numpy(durations).long().to(device)
+
+    #画像を使う場合はimageをtensorにするがtext(ひらがなの配列)は使わない
+    if use_image:
+        image= torch.from_numpy(image).float().to(device)
+    else:
+        torch.from_numpy(texts).long().to(device)
+
+    if use_accent==True:
         accents = torch.from_numpy(accents).long().to(device)
-
-        return (
+    else:
+        accents=None
+    
+    return (
             ids,
             raw_texts,
             speakers,
@@ -95,26 +68,110 @@ def to_device(data, device):
             pitches,
             energies,
             durations,
+            image,
             accents
         )
 
-    if len(data) == 6:
-        (ids, raw_texts, speakers, texts, src_lens, max_src_len) = data
 
-        speakers = torch.from_numpy(speakers).long().to(device)
-        texts = torch.from_numpy(texts).long().to(device)
-        src_lens = torch.from_numpy(src_lens).to(device)
+    # if len(data) == 12:
+    #     (
+    #         ids,
+    #         raw_texts,
+    #         speakers,
+    #         texts,
+    #         src_lens,
+    #         max_src_len,
+    #         mels,
+    #         mel_lens,
+    #         max_mel_len,
+    #         pitches,
+    #         energies,
+    #         durations,
+    #     ) = data
 
-        return (ids, raw_texts, speakers, texts, src_lens, max_src_len)
-    if len(data) == 7:
-        (ids, raw_texts, speakers, texts, src_lens, max_src_len, accents) = data
+    #     speakers = torch.from_numpy(speakers).long().to(device)
+    #     texts = torch.from_numpy(texts).long().to(device)
+    #     src_lens = torch.from_numpy(src_lens).to(device)
+    #     mels = torch.from_numpy(mels).float().to(device)
+    #     mel_lens = torch.from_numpy(mel_lens).to(device)
+    #     pitches = torch.from_numpy(pitches).float().to(device)
+    #     energies = torch.from_numpy(energies).to(device)
+    #     durations = torch.from_numpy(durations).long().to(device)
 
-        speakers = torch.from_numpy(speakers).long().to(device)
-        texts = torch.from_numpy(texts).long().to(device)
-        src_lens = torch.from_numpy(src_lens).to(device)
-        accents = torch.from_numpy(accents).long().to(device)
+    #     return (
+    #         ids,
+    #         raw_texts,
+    #         speakers,
+    #         texts,
+    #         src_lens,
+    #         max_src_len,
+    #         mels,
+    #         mel_lens,
+    #         max_mel_len,
+    #         pitches,
+    #         energies,
+    #         durations,
+    #     )
+    # if len(data) == 13:
+        # (
+        #     ids,
+        #     raw_texts,
+        #     speakers,
+        #     texts,
+        #     src_lens,
+        #     max_src_len,
+        #     mels,
+        #     mel_lens,
+        #     max_mel_len,
+        #     pitches,
+        #     energies,
+        #     durations,
+        #     accents,
+        # ) = data
 
-        return (ids, raw_texts, speakers, texts, src_lens, max_src_len, accents)
+    #     speakers = torch.from_numpy(speakers).long().to(device)
+    #     texts = torch.from_numpy(texts).long().to(device)
+    #     src_lens = torch.from_numpy(src_lens).to(device)
+    #     mels = torch.from_numpy(mels).float().to(device)
+    #     mel_lens = torch.from_numpy(mel_lens).to(device)
+    #     pitches = torch.from_numpy(pitches).float().to(device)
+    #     energies = torch.from_numpy(energies).to(device)
+    #     durations = torch.from_numpy(durations).long().to(device)
+    #     accents = torch.from_numpy(accents).long().to(device)
+
+    #     return (
+    #         ids,
+    #         raw_texts,
+    #         speakers,
+    #         texts,
+    #         src_lens,
+    #         max_src_len,
+    #         mels,
+    #         mel_lens,
+    #         max_mel_len,
+    #         pitches,
+    #         energies,
+    #         durations,
+    #         accents
+    #     )
+
+    # if len(data) == 6:
+    #     (ids, raw_texts, speakers, texts, src_lens, max_src_len) = data
+
+    #     speakers = torch.from_numpy(speakers).long().to(device)
+    #     texts = torch.from_numpy(texts).long().to(device)
+    #     src_lens = torch.from_numpy(src_lens).to(device)
+
+    #     return (ids, raw_texts, speakers, texts, src_lens, max_src_len)
+    # if len(data) == 7:
+    #     (ids, raw_texts, speakers, texts, src_lens, max_src_len, accents) = data
+
+    #     speakers = torch.from_numpy(speakers).long().to(device)
+    #     texts = torch.from_numpy(texts).long().to(device)
+    #     src_lens = torch.from_numpy(src_lens).to(device)
+    #     accents = torch.from_numpy(accents).long().to(device)
+
+    #     return (ids, raw_texts, speakers, texts, src_lens, max_src_len, accents)
 
 
 def log(
@@ -347,6 +404,21 @@ def pad_2D(inputs, maxlen=None):
     return output
 
 
+def pad_2D_gray_image(inputs):
+    def pad(x, max_len):
+        PAD = 0
+        s = np.shape(x)[0]
+        x_padded = np.pad(
+            x, [(0,0),(0, max_len - np.shape(x)[1])], mode="constant", constant_values=PAD
+        )
+        return x_padded[:s,:]
+    
+    max_len = max(np.shape(x)[1] for x in inputs)
+    output = np.stack([pad(x, max_len) for x in inputs])
+
+    return output
+
+    
 def pad(input_ele, mel_max_length=None):
     if mel_max_length:
         max_len = mel_max_length

@@ -59,11 +59,20 @@ class FastSpeech2(nn.Module):
         p_targets=None,
         e_targets=None,
         d_targets=None,
+        images=None,
         p_control=1.0,
         e_control=1.0,
         d_control=1.0,
         accents=None,
     ):
+        #src_lens [80, 78, 77, 69, 64, 58, 57, 55, 51, 50, 48, 46, 45, 43, 39, 38]
+        #max_lens [80]
+        #images ([16, 20, 1600])
+
+        #mel_lens tensor([907, 950, 820, 791, 722, 730, 705, 577, 524, 532, 475, 467, 503, 507,
+        #max_mel_lens 950
+
+
         src_masks = get_mask_from_lengths(src_lens, max_src_len)
         mel_masks = (
             get_mask_from_lengths(mel_lens, max_mel_len)
@@ -71,7 +80,7 @@ class FastSpeech2(nn.Module):
             else None
         )
 
-        output = self.encoder(texts, src_masks,accents=accents)
+        output = self.encoder(texts, src_masks,accents=accents,images=images)
         if self.use_jdit:
             mel_jdit, gate_outputs, alignments = self.jdit(output, mels, src_lens)
 

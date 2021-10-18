@@ -19,12 +19,15 @@ class FastSpeech2Loss(nn.Module):
     def forward(self, inputs, predictions):
         (
             mel_targets,
-            _,
-            _,
+            mel_lens,
+            max_mel_len,
             pitch_targets,
             energy_targets,
             duration_targets,
+            image,
+            accents
         ) = inputs[6:]
+
         (
             mel_predictions,
             postnet_mel_predictions,

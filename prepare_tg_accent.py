@@ -75,6 +75,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     lab_files = pathlib.Path(args.lab).glob('**/*.lab')
+    print("lab_files",lab_files)
 
     # create output directory
     
@@ -87,6 +88,7 @@ if __name__ == '__main__':
 
     # iter through lab files
     for lab_file in tqdm(lab_files):
+        print("lab_file",lab_file)
         if args.with_accent:
             accent = []
             with open(lab_file) as f:
@@ -96,6 +98,7 @@ if __name__ == '__main__':
                 f.writelines([''.join(accent)])
         
         label = read_lab(str(lab_file))
+        print(label)
         textgridFilePath = tg_dir/lab_file.with_suffix('.TextGrid').name
         label.to_textgrid(textgridFilePath)
 

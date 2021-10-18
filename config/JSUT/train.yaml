@@ -1,9 +1,9 @@
 path:
-  ckpt_path: "./output/ckpt/JSUT"
-  log_path: "./output/log/JSUT"
-  result_path: "./output/result/JSUT"
+  ckpt_path: "./output_kana/ckpt/JSUT"
+  log_path: "./output_kana/log/JSUT"
+  result_path: "./output_kana/result/JSUT"
 optimizer:
-  batch_size: 16
+  batch_size: 6
   betas: [0.9, 0.98]
   eps: 0.000000001
   weight_decay: 0.0
