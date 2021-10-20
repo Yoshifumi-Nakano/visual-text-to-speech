@@ -7,13 +7,16 @@ import numpy as np
 import matplotlib
 from scipy.io import wavfile
 from matplotlib import pyplot as plt
+import torchvision.transforms as transforms
 
 
 matplotlib.use("Agg")
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+transform = transforms.Compose(
+    [transforms.ToTensor()]
+)
 
 
 def to_device(data, device,use_image,use_accent):
@@ -38,17 +41,23 @@ def to_device(data, device,use_image,use_accent):
 
     speakers = torch.from_numpy(speakers).long().to(device)
     src_lens = torch.from_numpy(src_lens).to(device)
-    mels = torch.from_numpy(mels).float().to(device)
-    mel_lens = torch.from_numpy(mel_lens).to(device)
-    pitches = torch.from_numpy(pitches).float().to(device)
-    energies = torch.from_numpy(energies).to(device)
-    durations = torch.from_numpy(durations).long().to(device)
+    if mels is not None:
+        mels = torch.from_numpy(mels).float().to(device)
+    if mel_lens is not None:
+        mel_lens = torch.from_numpy(mel_lens).to(device)
+    if pitches is not None:
+        pitches = torch.from_numpy(pitches).float().to(device)
+    if energies is not None:
+        energies = torch.from_numpy(energies).to(device)
+    if durations is not None:
+        durations = torch.from_numpy(durations).long().to(device)
 
     #画像を使う場合はimageをtensorにするがtext(ひらがなの配列)は使わない
     if use_image:
-        image= torch.from_numpy(image).float().to(device)
+        image=torch.stack([transform(im) for im in image]).to(device)
     else:
         torch.from_numpy(texts).long().to(device)
+        image= None
 
     if use_accent==True:
         accents = torch.from_numpy(accents).long().to(device)
@@ -314,7 +323,9 @@ def synth_samples(targets, predictions, vocoder, model_config, preprocess_config
     )
 
     sampling_rate = preprocess_config["preprocessing"]["audio"]["sampling_rate"]
+
     for wav, basename in zip(wav_predictions, basenames):
+        print(os.path.join(path, "{}.wav".format(basename)))
         wavfile.write(os.path.join(path, "{}.wav".format(basename)), sampling_rate, wav)
 
 

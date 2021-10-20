@@ -90,10 +90,8 @@ def main(args, configs):
                 batch = to_device(batch, device,use_image,use_accent)
 
                 # Forward
-                #ids,raw_texts,speakers,texts,src_lens,max_src_len,mels,mel_lens,max_mel_len,pitches,energies,durations,image,accents
                 if use_accent:
                     accents = batch[-1]
-                    #batch = batch[:-1]
                     output = model(*(batch[2:]),accents=accents)
                 else:
                     output = model(*(batch[2:]))

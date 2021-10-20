@@ -158,7 +158,6 @@ class Encoder(nn.Module):
     def forward(self, src_seq, mask,accents=None, return_attns=False,images=None):
         enc_slf_attn_list = []
         batch_size, max_len = src_seq.shape[0], src_seq.shape[1]
-        images=images.unsqueeze(1)
 
 
         # -- Prepare masks
@@ -166,7 +165,7 @@ class Encoder(nn.Module):
 
         # -- Forward
         if not self.training and src_seq.shape[1] > self.max_seq_len:
-
+            print("warn：よくわからないif分に入っています")
             if accents is not None:
                 enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) + get_sinusoid_encoding_table(
                 src_seq.shape[1], self.d_model
@@ -187,10 +186,12 @@ class Encoder(nn.Module):
                 ].expand(batch_size, -1, -1)
             else:
                 if images is None:
+                    print("warn：画像じゃなくてテキストが入力になっています")
                     enc_output = self.src_word_emb(src_seq) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)
                 else:
+                    print("success:画像入力")
                     enc_output = self.NLayerImgageCNN(images) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)

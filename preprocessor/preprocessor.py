@@ -177,12 +177,20 @@ class Preprocessor:
                     float(pitch_max),
                     float(pitch_mean),
                     float(pitch_std),
+                    float(pitch_kana_min),
+                    float(pitch_kana_max),
+                    float(pitch_kana_mean),
+                    float(pitch_kana_std),
                 ],
                 "energy": [
                     float(energy_min),
                     float(energy_max),
                     float(energy_mean),
                     float(energy_std),
+                    float(energy_kana_min),
+                    float(energy_kana_max),
+                    float(energy_kana_mean),
+                    float(energy_kana_std),
                 ],
             }
             f.write(json.dumps(stats))

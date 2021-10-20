@@ -11,6 +11,8 @@ from pypinyin import pinyin, Style
 
 from utils.model import get_model, get_vocoder
 from utils.tools import to_device, synth_samples
+from utils.transform import Phoneme2Kana_inference
+from utils.getimage import get_text_images
 from dataset import TextDataset
 from text import text_to_sequence, symbols
 import pyopenjtalk
@@ -90,7 +92,13 @@ def preprocess_japanese(text:str):
     fullcontext_labels = pyopenjtalk.extract_fullcontext(text)
     phonemes , accents = pp_symbols(fullcontext_labels)
     phonemes = [openjtalk2julius(p) for p in phonemes if p != '']
-    return phonemes, accents
+    
+    ###Todo 音素をimageに変換する##
+    kanas=Phoneme2Kana_inference(phonemes)
+
+    text_image=get_text_images(texts=[t for t in kanas],width=20,height=20,font_size=10)
+    
+    return phonemes, accents,text_image,kanas
 
 
 
@@ -99,13 +107,17 @@ def synthesize(model, step, configs, vocoder, batchs, control_values):
     pitch_control, energy_control, duration_control = control_values
 
     use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
+    use_image =  preprocess_config["preprocessing"]["image"]["use_image"]
+    
     for batch in batchs:
-        batch = to_device(batch, device)
+        batch = to_device(batch, device,use_image,use_accent)
         accents = None
         if use_accent:
             accents = batch[-1]
             batch = batch[:-1]
         with torch.no_grad():
+            print(batch)
+            batch = batch[:-1]
             # Forward
             output = model(
                 *(batch[2:]),
@@ -226,17 +238,22 @@ if __name__ == "__main__":
         elif preprocess_config["preprocessing"]["text"]["language"] == "zh":
             texts = np.array([preprocess_mandarin(args.text, preprocess_config)])
         elif preprocess_config["preprocessing"]["text"]["language"] == "ja":
-            phonemes, accents = preprocess_japanese(args.text)
-            print(phonemes,accents)
+            phonemes, accents,image,kanas = preprocess_japanese(args.text)
             texts = np.array([[symbol_to_id[t] for t in phonemes]])
             if preprocess_config["preprocessing"]["accent"]["use_accent"]:
                 accents = np.array([[accent_to_id[a] for a in accents]])
             else:
                 accents = None
+            if preprocess_config["preprocessing"]["image"]["use_image"]:
+                image=[image]
+                texts = np.array([kanas])
+            else:
+                image = None
 
         text_lens = np.array([len(texts[0])])
-        print(text_lens)
-        batchs = [(ids, raw_texts, speakers, texts, text_lens, max(text_lens),accents)]
+        #ids,raw_texts,speakers,texts,src_lens,max_src_len,mels,mel_lens,max_mel_len,pitches,energies,durations,image,accents
+        #Todo to_device関数
+        batchs = [(ids, raw_texts, speakers, texts, text_lens, max(text_lens),None,None,None,None,None,None,accents,image)]
 
     control_values = args.pitch_control, args.energy_control, args.duration_control
 
