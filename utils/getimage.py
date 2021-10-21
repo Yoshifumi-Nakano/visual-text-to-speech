@@ -15,6 +15,7 @@ def get_image(width=20,height=20,font_size=10,text=""):
     if len(text)==1:
         surf.blit(text_rect, [width//2-font_size//2, height//2-font_size//2])  
     else:
+        assert False
         surf.blit(text_rect, [width//2-font_size, height//2-font_size//2])  
     
     image = pygame.surfarray.pixels3d(surf)

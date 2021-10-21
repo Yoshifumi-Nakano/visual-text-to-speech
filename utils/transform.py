@@ -1,5 +1,86 @@
-oneWord=["a","i","u","e","o","q","N","sp"]
+#音素一文字で一つのひらがなのリスト
+oneWordByVowel=["a","i","u","e","o","q","N","sp"]
 
+#音素二つで二つのひらがなのリスト
+twoWordByTwoConsonant=[
+    "kya",
+    "kyi",
+    "kyu",
+    "kye",
+    "kyo",
+    "sya",
+    "syu",
+    "syo",
+    "sha",
+    "shu",
+    "she",
+    "sho",
+    "tya",
+    "tyu",
+    "tyo",
+    "cha",
+    "chu",
+    "che",
+    "cho",
+    "nya",
+    "nyi",
+    "nyu",
+    "nye",
+    "nyo",
+    "fa",
+    "fi",
+    "fe",
+    "fo",
+    "hya",
+    "hyu",
+    "hyo",
+    "mya",
+    "myi",
+    "myu",
+    "mye",
+    "myo",
+    "ye",
+    "rya",
+    "ryi",
+    "ryu",
+    "rye",
+    "ryo",
+    "wi",
+    "we",
+    "gya",
+    "gyi",
+    "gyu",
+    "gye",
+    "gyo",
+    "zya",
+    "zyu",
+    "zyo",
+    "ja",
+    "ju",
+    "je",
+    "jo",
+    "bya",
+    "byu",
+    "byo",
+    "pya",
+    "pyu",
+    "pyo",
+    "we",
+    "tsa",
+    "tsi",
+    "tse",
+    "tso",
+    "va",
+    "vi",
+    "ve",
+    "vo",
+    "dya",
+    "dyu",
+    "dye",
+    "dyo"
+    ]
+
+#音素とひらがなの対応表
 dic={
     "a":"あ",
     "i":"い",
@@ -159,13 +240,43 @@ dic={
     "dyo":"ぢょ"
 }
 
-def Phoneme2Kana(phoneme,duration):
+#きゃ、きゅ、きょなどは2文字のひらがなとして扱う
+def Phoneme2Kana_ver2(phoneme,duration):
     kana=[]
     kanaDuration=[]
     N=len(phoneme)
     i=0
     while i<N:
-        if phoneme[i] in oneWord:
+        if phoneme[i] in oneWordByVowel:
+            kana.append(dic[phoneme[i]])
+            kanaDuration.append(duration[i])
+            i+=1
+        else:
+            ph = phoneme[i]+phoneme[i+1]
+            if ph in twoWordByTwoConsonant:
+                kn = dic[ph]
+                assert len(kn)==2
+                kana+=[kn[0],kn[1]]
+                kanaDuration+=[duration[i],duration[i+1]]
+            else:
+                kn=dic[ph]
+                assert len(kn)==1
+                kana+=[kn]
+                kanaDuration+=[duration[i]+duration[i+1]]
+            i+=2
+    assert len(kana)==len(kanaDuration)
+    return kana,kanaDuration
+
+
+
+#きゃ、きゅ、きょなどを一つの平仮名として扱う
+def Phoneme2Kana_ver1(phoneme,duration):
+    kana=[]
+    kanaDuration=[]
+    N=len(phoneme)
+    i=0
+    while i<N:
+        if phoneme[i] in oneWordByVowel:
             kana.append(dic[phoneme[i]])
             kanaDuration.append(duration[i])
             i+=1
@@ -173,17 +284,17 @@ def Phoneme2Kana(phoneme,duration):
             kana.append(dic[phoneme[i]+phoneme[i+1]])
             kanaDuration.append(duration[i]+duration[i+1])
             i+=2
-    if len(kana)!=len(kanaDuration):
-        print("kana length does not match durayion length")
+    assert len(kana)==len(kanaDuration)
     return kana,kanaDuration
 
 
+#推論時に使う
 def Phoneme2Kana_inference(phoneme):
     kana=[]
     N=len(phoneme)
     i=0
     while i<N:
-        if phoneme[i] in oneWord:
+        if phoneme[i] in oneWordByVowel:
             kana.append(dic[phoneme[i]])
             i+=1
         else:
@@ -191,7 +302,7 @@ def Phoneme2Kana_inference(phoneme):
             i+=2
     return kana
 
-# phoneme=['sh', 'u', 'u', 'n', 'i', 'y', 'o', 'N', 'k', 'a', 'i', 'sp', 'f', 'u', 'r', 'a', 'N', 's', 'u', 'n', 'o', 'j', 'u', 'gy', 'o', 'o', 'g', 'a', 'a', 'r', 'i', 'm', 'a', 's', 'u'] 
-# duration=[17, 5, 3, 6, 4, 6, 7, 5, 7, 11, 5, 3, 8, 3, 5, 5, 3, 12, 3, 3, 4, 10, 2, 8, 5, 6, 6, 2, 8, 4, 4, 7, 6, 17, 2]
-# print(Phoneme2Kana(phoneme,duration))
+phoneme=['ny', 'i', 'u', 'n', 'i', 'y', 'o', 'N', 'k', 'a', 'i', 'sp', 'f', 'u', 'r', 'a', 'N', 's', 'u', 'n', 'o', 'j', 'u', 'gy', 'o', 'o', 'g', 'a', 'a', 'r', 'i', 'm', 'a', 's', 'u'] 
+duration=[17, 5, 3, 6, 4, 6, 7, 5, 7, 11, 5, 3, 8, 3, 5, 5, 3, 12, 3, 3, 4, 10, 2, 8, 5, 6, 6, 2, 8, 4, 4, 7, 6, 17, 2]
+print(Phoneme2Kana_ver2(phoneme,duration))
         
