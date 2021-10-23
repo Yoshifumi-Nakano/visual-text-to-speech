@@ -34,7 +34,9 @@ preprocessing:
     use_accent: False
   image:
     use_image: True
-    width: 20
-    height: 20
-    font_size: 10
-    stride: 20
+    width: 30
+    height: 30
+    font_size: 15
+    slice_width: 90
+    slice_height: 30
+    stride: 30

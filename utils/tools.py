@@ -246,7 +246,7 @@ def synth_one_sample(targets, predictions, vocoder, model_config, preprocess_con
         os.path.join(preprocess_config["path"]["preprocessed_path"], "stats.json")
     ) as f:
         stats = json.load(f)
-        stats = stats["pitch"] + stats["energy"][:2]
+        stats = stats["pitch"][4:8] + stats["energy"][4:6]
 
     fig = plot_mel(
         [
@@ -302,7 +302,7 @@ def synth_samples(targets, predictions, vocoder, model_config, preprocess_config
             os.path.join(preprocess_config["path"]["preprocessed_path"], "stats.json")
         ) as f:
             stats = json.load(f)
-            stats = stats["pitch"] + stats["energy"][:2]
+            stats = stats["pitch"][4:8] + stats["energy"][4:6]
 
         fig = plot_mel(
             [
@@ -415,9 +415,10 @@ def pad_2D(inputs, maxlen=None):
     return output
 
 
+#ver2以降 白色でpaddingしている
 def pad_2D_gray_image(inputs):
     def pad(x, max_len):
-        PAD = 0
+        PAD = 255
         s = np.shape(x)[0]
         x_padded = np.pad(
             x, [(0,0),(0, max_len - np.shape(x)[1])], mode="constant", constant_values=PAD
