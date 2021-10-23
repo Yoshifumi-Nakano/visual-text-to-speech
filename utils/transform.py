@@ -298,11 +298,20 @@ def Phoneme2Kana_inference(phoneme):
             kana.append(dic[phoneme[i]])
             i+=1
         else:
-            kana.append(dic[phoneme[i]+phoneme[i+1]])
+            ph = phoneme[i]+phoneme[i+1]
+            if ph in twoWordByTwoConsonant:
+                kn = dic[ph]
+                assert len(kn)==2
+                kana+=[kn[0],kn[1]]
+            else:
+                kn=dic[ph]
+                assert len(kn)==1
+                kana+=[kn]
+                kanaDuration+=[duration[i]+duration[i+1]]
             i+=2
     return kana
 
-phoneme=['ny', 'i', 'u', 'n', 'i', 'y', 'o', 'N', 'k', 'a', 'i', 'sp', 'f', 'u', 'r', 'a', 'N', 's', 'u', 'n', 'o', 'j', 'u', 'gy', 'o', 'o', 'g', 'a', 'a', 'r', 'i', 'm', 'a', 's', 'u'] 
-duration=[17, 5, 3, 6, 4, 6, 7, 5, 7, 11, 5, 3, 8, 3, 5, 5, 3, 12, 3, 3, 4, 10, 2, 8, 5, 6, 6, 2, 8, 4, 4, 7, 6, 17, 2]
-print(Phoneme2Kana_ver2(phoneme,duration))
+# phoneme=['ny', 'i', 'u', 'n', 'i', 'y', 'o', 'N', 'k', 'a', 'i', 'sp', 'f', 'u', 'r', 'a', 'N', 's', 'u', 'n', 'o', 'j', 'u', 'gy', 'o', 'o', 'g', 'a', 'a', 'r', 'i', 'm', 'a', 's', 'u'] 
+# duration=[17, 5, 3, 6, 4, 6, 7, 5, 7, 11, 5, 3, 8, 3, 5, 5, 3, 12, 3, 3, 4, 10, 2, 8, 5, 6, 6, 2, 8, 4, 4, 7, 6, 17, 2]
+# print(Phoneme2Kana_ver2(phoneme,duration))
         

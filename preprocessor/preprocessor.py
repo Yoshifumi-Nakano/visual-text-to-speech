@@ -10,7 +10,7 @@ import cv2
 from scipy.interpolate import interp1d
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
-from utils.transform import Phoneme2Kana 
+from utils.transform import Phoneme2Kana_ver2
 from utils.getimage import get_text_images
 
 
@@ -411,7 +411,7 @@ class Preprocessor:
         phones = phones[:end_idx]
         durations = durations[:end_idx]
         
-        kanas,durations_kana=Phoneme2Kana(phones,durations) 
+        kanas,durations_kana=Phoneme2Kana_ver2(phones,durations) 
 
         assert len(phones) == len(durations)
         assert len(kanas) == len(durations_kana)
