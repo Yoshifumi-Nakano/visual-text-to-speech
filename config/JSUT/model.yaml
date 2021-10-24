@@ -40,10 +40,8 @@ vocoder:
   speaker: "universal" # support  'LJSpeech', 'universal'
 
 image:
-    use_image: True
-    width: 30
-    height: 30
-    font_size: 15
-    slice_width: 90
-    slice_height: 30
-    stride: 30
+  use_image: True
+  width: 20
+  height: 20
+  font_size: 10
+  stride: 20

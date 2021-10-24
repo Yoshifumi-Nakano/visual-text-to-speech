@@ -113,11 +113,10 @@ montreal-forced-aligner/
 # data, checkpoint, and models
 raw_data/
 output/
-output*/
 *.npy
 TextGrid/
 hifigan/*.pth.tar
-#preprocessed_data/
+preprocessed_data/
 output_kana/
 output_kana_conv1_NoimageNorm/
 jsut_ver1.1.zip

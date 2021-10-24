@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 import numpy as np
 
 import transformer.Constants as Constants
@@ -13,32 +12,26 @@ class NLayerImageCNN(nn.Module):
                  slice_height,
                  embed_dim,
                  stride,
-                 width,
-                 height,
                  embed_normalize=False,
                  bridge_relu=False,
                  kernel_size=(3,3),
                  num_convolutions=1):
 
         super().__init__()
+        self.slice_width = slice_width
+        self.slice_height = slice_height
         self.embed_dim = embed_dim
         self.embed_normalize = embed_normalize
         self.bridge_relu = bridge_relu
-        self.kernel_size = kernel_size
+        self.kernel_size = (slice_height,kernel_size[1]) if kernel_size[0]==-1 else kernel_size
         self.num_convolutions = num_convolutions
-
-        #画像の情報
-        self.slice_width = slice_width
-        self.slice_height = slice_height
         self.stride=stride
-        self.width=width
-        self.height=height
 
-        # kernel sizeは奇数
+        # we require odd kernel size values:
         assert self.kernel_size[0] % 2 != 0, f"conv2d kernel height {self.kernel_size} is even. we require odd. did you use {self.slice_height}?"
         assert self.kernel_size[1] % 2 != 0, f"conv2d kernel width {self.kernel_size} is even. we require odd."
 
-        # kernelが3ならpaddingは1
+        # padding for dynamic kernel size. assumes we do not change the conv dilation or conv stride (we currently use the defaults)
         padding_h = int((kernel_size[0] - 1) / 2)
         padding_w = int((kernel_size[1] - 1) / 2)
        
@@ -63,17 +56,15 @@ class NLayerImageCNN(nn.Module):
             torch.nn.init.uniform_(param, -0.08, 0.08)
 
     def forward(self, images):
+        #imaga=[batch,channnel,height,width×maxsrc]
         batch_size, channels, height, width = images.shape
 
         #tensor画像をsliceする
         image_slice=[]
         for image in images:
             tensors = []
-            #白色でpadding
-            image = F.pad(image, ((self.slice_width-self.width)//2, (self.slice_width-self.width)//2), "constant", 1) 
-
             for i in range(0,width-1,self.stride):
-                slice_tensor = image[:,:,i:i+self.slice_width]
+                slice_tensor = image[:,:,i:i+self.stride]
                 tensors.append(slice_tensor)
             image_slice.append(torch.stack(tensors))
         image_slice=torch.stack(image_slice)
@@ -87,6 +78,7 @@ class NLayerImageCNN(nn.Module):
         embeddings = embeddings.view(batch_size * src_len, height * width)
         embeddings = self.bridge(embeddings)
         embeddings = embeddings.view(batch_size, src_len, self.embed_dim)
+
 
         return embeddings
 
@@ -133,13 +125,9 @@ class Encoder(nn.Module):
         d_inner = config["transformer"]["conv_filter_size"]
         kernel_size = config["transformer"]["conv_kernel_size"]
         dropout = config["transformer"]["encoder_dropout"]
-
-        #image config
         width=config["image"]["width"]
         height=config["image"]["height"]
         stride=config["image"]["stride"]
-        slice_height=config["image"]["slice_height"]
-        slice_width=config["image"]["slice_width"]
 
         self.max_seq_len = config["max_seq_len"]
         self.d_model = d_model
@@ -165,11 +153,7 @@ class Encoder(nn.Module):
             ]
         )
 
-        #width ひらがな一枚あたりの画像の横幅
-        #height ひらがな一枚あたりの画像の縦幅
-        #slice_width 横幅何枚ごとにsliceしていくか
-        #slice_height 縦幅何枚ごとにsliceしていくか
-        self.NLayerImgageCNN=NLayerImageCNN(slice_width=slice_width,slice_height=slice_height,embed_dim=d_model,embed_normalize=True,bridge_relu=True,kernel_size=(3,3),num_convolutions=1,stride=stride,width=width,height=height)
+        self.NLayerImgageCNN=NLayerImageCNN(slice_width=width,slice_height=height,embed_dim=d_model,embed_normalize=True,bridge_relu=True,kernel_size=(3,3),num_convolutions=1,stride=stride)
 
     def forward(self, src_seq, mask,accents=None, return_attns=False,images=None):
         enc_slf_attn_list = []
@@ -181,7 +165,7 @@ class Encoder(nn.Module):
 
         # -- Forward
         if not self.training and src_seq.shape[1] > self.max_seq_len:
-            assert False
+            print("warn：よくわからないif分に入っています")
             if accents is not None:
                 enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) + get_sinusoid_encoding_table(
                 src_seq.shape[1], self.d_model
@@ -202,11 +186,12 @@ class Encoder(nn.Module):
                 ].expand(batch_size, -1, -1)
             else:
                 if images is None:
-                    assert False
+                    print("warn：画像じゃなくてテキストが入力になっています")
                     enc_output = self.src_word_emb(src_seq) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)
                 else:
+                    print("success:画像入力")
                     enc_output = self.NLayerImgageCNN(images) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)

@@ -29,7 +29,6 @@ ipykernel = "*"
 torch-tb-profiler = "*"
 pillow = "*"
 pyopenjtalk = "*"
-opencv-python = "*"
 
 [requires]
 python_version = "3.8"

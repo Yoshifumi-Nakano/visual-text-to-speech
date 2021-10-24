@@ -79,6 +79,7 @@ class FastSpeech2(nn.Module):
             if mel_lens is not None
             else None
         )
+        print(images)
         output = self.encoder(texts, src_masks,accents=accents,images=images)
 
         if self.use_jdit:

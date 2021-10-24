@@ -28,6 +28,7 @@ class Dataset(Dataset):
         self.image_preprocess_width=preprocess_config["preprocessing"]["image"]["width"]
         self.image_preprocess_height=preprocess_config["preprocessing"]["image"]["height"]
         self.image_preprocess_fontsize=preprocess_config["preprocessing"]["image"]["font_size"]
+        self.image_preprocess_stride=preprocess_config["preprocessing"]["image"]["stride"]
 
         #filename=train.txt
         self.basename, self.speaker, self.text, self.raw_text = self.process_meta(

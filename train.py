@@ -18,7 +18,7 @@ from evaluate import evaluate
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-print(device)
+
 def main(args, configs):
     print("Prepare training ...")
 
