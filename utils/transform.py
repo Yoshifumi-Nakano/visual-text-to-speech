@@ -307,7 +307,6 @@ def Phoneme2Kana_inference(phoneme):
                 kn=dic[ph]
                 assert len(kn)==1
                 kana+=[kn]
-                kanaDuration+=[duration[i]+duration[i+1]]
             i+=2
     return kana
 

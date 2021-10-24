@@ -4,7 +4,7 @@ import pygame
 
 def get_image(width=20,height=20,font_size=10,text=""):
     pygame.init()
-    font = pygame.font.Font("/home/sarulab/yoshifumi_nakano/FastSpeech2/FastSpeech2-JSUT/utils/ipag00303/ipag.ttf", font_size)     
+    font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size)     
     surf = pygame.Surface((width, height))
     surf.fill((255,255,255))
 

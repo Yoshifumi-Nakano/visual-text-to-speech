@@ -1,512 +1,512 @@
-TRAVEL1000_0088|JSUT|{sh i k a g o k a r a b o r u ch i m o a a n o r e q sh a n o s u k e j u u r u w a sp d o n o y o o n i n a q t e i m a s u k a}|シカゴからボルチモアーの列車のスケジュールは、どのようになっていますか。
-REPEAT500_set3_058|JSUT|{s u w e e d e N i m i N n o ry o o sh i N n o m o t o n i sp m a s a ch u u s e q ts u sh u u sp k e N b u r i q j i n i t e u m a r e r u}|スウェーデン移民の両親の許に、マサチューセッツ州、ケンブリッジにて生まれる。
-BASIC5000_0934|JSUT|{m o m e N n o m i q t o o ts u k e r e b a sp a k a ch a N w a j i b u N n o k a o o h i q k a k a n a k u n a r u}|木綿のミットをつければ、赤ちゃんは自分の顔をひっかかなくなる。
-BASIC5000_3827|JSUT|{t a d a sh i sp ch i gy o n o m i d e ch i i k i z e N t a i o m a k a n a u n o w a f u k a n o o d e a r u t a m e sp ch i s a N ch i k e sh i g a m o q t o m o m u i t e i r u t o s a r e r u}|ただし、地魚のみで地域全体を賄うのは不可能であるため、地産地消がもっとも向いているとされる。
-BASIC5000_1068|JSUT|{h o N n o s u u n i N n o s e e t o d a k e g a sp s o n o m o N d a i o r i k a i sh i t a}|ほんの数人の生徒だけが、その問題を理解した。
-BASIC5000_1398|JSUT|{t a N j i k a N d e t a g a k u n o o k a n e o e r u k o t o w a sp y o o i d e w a n a k a q t a}|短時間で多額のお金を得ることは、容易ではなかった。
-UT-PARAPHRASE-sent154-phrase1|JSUT|{k u t o o s u r u ch i i m u n o s u g a t a o h o o k o k u s u r u}|苦闘するチームの姿を報告する。
-BASIC5000_4732|JSUT|{m u g i n o h o w a sp m u g i h o t o y o b a r e r u k o t o g a a r u}|麦の穂は、麦穂と呼ばれることがある。
-UT-PARAPHRASE-sent207-phrase2|JSUT|{t a i h e N j u u k o o n a o m o m i o k a N j i t a}|大変重厚な重みを感じた。
-UT-PARAPHRASE-sent297-phrase1|JSUT|{d o o sh o w a sp k a o m i sh i r i n o h a N k o o t o m i t e sp sh i r a b e t e i r u}|同署は、顔見知りの犯行とみて、調べている。
-UT-PARAPHRASE-sent026-phrase2|JSUT|{d o o sh o d e w a sp g a i b u k a r a n o sh i N ny u u n o k e e s e k i g a n a i k o t o n a d o k a r a sp n a i b u n o m o n o n i y o r u h a N z a i t o d a N t e e}|同署では、外部からの侵入の形跡がないことなどから、内部の者による犯罪と断定。
-UT-PARAPHRASE-sent288-phrase2|JSUT|{sh o o e n e n a d o m o j i q sh i}|省エネなども実施。
-BASIC5000_3416|JSUT|{s e N d a i sh i o b u t a i n i sp t o ts u j o a r a w a r e t a i k e r u sh i k a b a n e t a ch i n i y o r u ky o o i k a r a i k i n o b i y o o t o f u N t o o s u r u sp sh u j i N k o o t a ch i n o s u g a t a g a e g a k a r e r u}|仙台市を舞台に、突如現れた生ける屍たちによる脅威から生き延びようと奮闘する、主人公たちの姿が描かれる。
-BASIC5000_1178|JSUT|{y o sh i o w a w a t a sh i g a s o n o h a k o o m o ch i a g e r u n o o t e ts u d a q t e k u r e t a}|貴婦人は急いで病院へ行き、そのまま診察室へと連れて行かれた。
-PRECEDENT130_102|JSUT|{t o o j i sh a k a N n i a r a s o i g a n a i}|当事者間に争いがない。
-BASIC5000_2368|JSUT|{e r e N m o t e n i s u o s u r u n o g a s u k i d e s u}|エレンもテニスをするのが好きです。
-TRAVEL1000_0725|JSUT|{w a t o s o N h a k u b u ts u k a N d e w a sp g a i d o n o a N n a i w a a r i m a s u k a}|ワトソン博物館では、ガイドの案内はありますか。
-BASIC5000_0625|JSUT|{k i u s o o d a i n a k e e k a k u m o i i k e r e d o sp m a z u w a j i b u N n o a sh i m o t o o k a t a m e r u k o t o k a r a h a j i m e t e h o sh i i y o}|気宇壮大な計画もいいけれど、まずは自分の足元を固めることから始めてほしいよ。
-BASIC5000_1154|JSUT|{k e e r e k i n o w a k a r a n a i n i N g e N o sh i N y o o sh i t e w a i k e n a i}|経歴のわからない人間を信用してはいけない。
-ONOMATOPEE300_199|JSUT|{k o k o d e m a k e r u t o sp g o g a n a i k o t o o m i n a sh i q t e i t a n o d e sp p i r i p i r i t o sh i t a k u u k i g a a t a r i n i t a ch i k o m e m a sh i t a}|ここで負けると、後がないことを皆知っていたので、ぴりぴりとした空気が辺りに立ちこめました。
-PRECEDENT130_031|JSUT|{r o o d o o n o o ry o k u s o o sh i ts u r i ts u sp o y o b i sp r o o d o o n o o ry o k u s o o sh i ts u k i k a N w a m i t o m e r u g a sp s o n o y o w a h i n i N n a i sh i a r a s o u}|労働能力喪失率、及び、労働能力喪失期間は認めるが、その余は否認ないし争う。
-BASIC5000_2774|JSUT|{k o k u b u N p o o n o g e N z a i k a t a ch i w a sp k o r e k a r a n o k o t o o sh i m e s u y o o h o o g a o o i}|国文法の現在形は、これからのことを示す用法が多い。
-BASIC5000_4927|JSUT|{n i q p o N n o s a i k o o h o o w a sp f u j i s a N d e a r u}|日本の最高峰は、富士山である。
-REPEAT500_set5_028|JSUT|{k o n o t o k i sp p e r i m e e d e e w a sp a m u p i k u t o ry u o o N n i d o o k o o sh i t e sp t e e b a i n i k i t e i t a sp r i ky u m u n i o s u n i sp ts u m a t o sh i t e a t a e r a r e t a}|このとき、ペリメーデーは、アムピクトリュオーンに同行して、テーバイに来ていた、リキュムニオスに、妻としてあたえられた。
-BASIC5000_2920|JSUT|{a n o o t o k o o t o k i f u s e y o o t o s u r u n o w a sp o o k a m i n i d o o r i o t o i t e sp k i k a s e r u y o o n a m o n o d a}|あの男を説き伏せようとするのは、オオカミに道理を説いて、聞かせるようなものだ。
-UT-PARAPHRASE-sent020-phrase2|JSUT|{n a g a r e o k a e t a n o w a sp m a i d o n o k o t o n a g a r a sp y a t o o n o sh i q p a i t o b u N r e ts u d e a r u}|流れを変えたのは、毎度のことながら、野党の失敗と分裂である。
-BASIC5000_2103|JSUT|{k a N b u N n o sh i k e N d e m a N t e N o t o r u s e e t o w a sp h o t o N d o i m a s e N}|漢文の試験で満点を取る生徒は、ほとんどいません。
-TRAVEL1000_0929|JSUT|{y u ny u u m o n o n o b i i r u g a a r i m a s u k a}|輸入もののビールがありますか。
-BASIC5000_2155|JSUT|{by o o k i n o t a m e sp j e e N w a sp g a q k o o n i i k e m a s e N d e sh i t a}|病気のため、ジェーンは、学校に行けませんでした。
-BASIC5000_4374|JSUT|{h a h a o y a w a t a n o h o ny u u r u i n o y o o n a ch i k u b i o m o t a z u sp k o w a h a h a o y a n o ny u u s e N k a r a sh i m i d a sh i t a ch i ch i o n a m e t e i r u}|母親は他の哺乳類のような乳首をもたず、子は母親の乳腺から染み出した乳をなめている。
-VOICEACTRESS100_005|JSUT|{sh i r u b a a s a a f a a sh u u g e k i j i k e N m a d e n i sp r i ch a a z u w a sp ch i i m u m e e t o t o m o n i sp k o k u s a i t e k i n i s u u p a a h i i r o o sp o y o b i sp y u u m e e j i N t o sh i t e sp n i N ch i s a r e t e i r u}|シルバーサーファー襲撃事件までに、リチャーズは、チーム名と共に、国際的にスーパーヒーロー、および、有名人として、認知されている。
-REPEAT500_set2_080|JSUT|{k a s u k a n i k i k o e t e k u r u s e N ky u u hy a k u s a N j u u i ch i n e N b a N n o s a N m i k a g a sp sh i d a i n i o o k i k u n a q t e i k u}|かすかに聞こえてくる1931年版の讃美歌が、次第に大きくなっていく。
-BASIC5000_3385|JSUT|{i n u n e k o sh i N g a k u j u k u o k e e e e sh i t e d a i s e e k o o o o s a m e sp sh i s a N k a t o sh i t e m a ch i n o m e e sh i n o z a n i o s a m a r u}|犬猫進学塾を経営して大成功を収め、資産家として街の名士の座に収まる。
-BASIC5000_4193|JSUT|{k o N py u u t a a o m o ch i i t e m u sh i k u i s a N o t o k u b a a i sp k e t a s u u w a k e e s a N j i k a N n i e e ky o o s u r u}|コンピューターを用いて虫食い算を解く場合、桁数は計算時間に影響する。
-BASIC5000_0988|JSUT|{d o k u sh o g a k i r a i t o i u w a k e d e w a n a k u sp j i k a N g a n a i n o d a}|読書が嫌いというわけではなく、時間が無いのだ。
-BASIC5000_1089|JSUT|{r i s u t o n o d e e t a w a sp j i d o o sh u u k e e k i n o o o ts u k a q t e sp k a N t a N n i sh u u k e e s u r u k o t o g a d e k i m a s u}|リストのデータは、自動集計機能を使って、簡単に集計することができます。
-BASIC5000_1436|JSUT|{ch i ch i t o w a t a sh i w a sp n i ch i y o o b i n i w a sp i ts u m o t e n i s u o sh i t e i t a}|父と私は、日曜日には、いつもテニスをしていた。
-BASIC5000_3871|JSUT|{s a a k u r u n o k a ts u d o o n a i y o o sp k a ts u d o o j a N r u sp m a t a w a h a N p u b u ts u o g e N t e e sh i t a m o n o}|サークルの活動内容、活動ジャンル、または頒布物を限定したもの。
-VOICEACTRESS100_057|JSUT|{k o n o j e sh i i y a k u d e s u t e i m o s u w a sp e m i i sh o o n i n o m i n e e t o s a r e t a k o t o m o a r u}|このジェシー役でステイモスは、エミー賞にノミネートされたこともある。
-BASIC5000_2944|JSUT|{i q t o o n o k a i b u ts u g a sp y a m a n o ch o o j o o n o ch i k a k u n o i w a n i sp y o k o n i n a q t e i t a}|１頭の怪物が、山の頂上の近くの岩に、横になっていた。
-BASIC5000_3432|JSUT|{f u ch a k u sh i t a a b u r a g a t e k i k a s u r u n o o f u s e g u t a m e sp k a b u n i a b u r a u k e z a r a o s o o b i sh i t a m o n o g a o o i}|付着した油が滴下するのを防ぐため、下部に油受け皿を装備したものが多い。
-TRAVEL1000_0131|JSUT|{k o N b a N n o s e N t o r u i s u i k i n o b a s u n o k i q p u o o n e g a i sh i m a s u}|今晩のセントルイス行きのバスの切符をお願いします。
-REPEAT500_set4_054|JSUT|{y u u f u k u n a ny u u y o o k a a t a ch i w a sp g u r e e v u s e N d o sp k e e b a j o o y a sp sh i i p u sh e q d o b e i sp k e e b a j o o n a d o n i ts u d o i sp u m i z o i n o k o o ky u u r e s u t o r a N y a sp h o t e r u o r i y o o sh i t a}|裕福なニューヨーカー達は、グレーヴセンド、競馬場や、シープシェッドベイ、競馬場などに集い、海沿いの高級レストランや、ホテルを利用した。
-UT-PARAPHRASE-sent267-phrase2|JSUT|{d o ch i r a m o sp b o o z u t o ch o k u s e ts u sp k a N s e ts u d e sp n a N r a k a n o y u k a r i g a a r u}|どちらも、坊主と直接、間接で、何らかのゆかりがある。
-COUNTERSUFFIX26_20|JSUT|{i q k u sp n i k u sp s a N k u sp y o N k u sp g o k u sp r o q k u sp n a n a k u sp h a q k u sp ky u u k u sp j u q k u sp n a N k u}|一句，二句，三句，四句，五句，六句，七句，八句，九句，十句，何句。
-BASIC5000_2984|JSUT|{u g o k e r u y o o n i n a r u t o sp k e N k o o n o a r i g a t a s a o j i q k a N sh i m a s u y o n e}|動けるようになると、健康の有難さを実感しますよね。
-BASIC5000_0462|JSUT|{h o N w a sp i k u r a y o N d e m o y o m i s u g i r u k o t o w a n a i}|本は、いくら読んでも読みすぎる事はない。
-BASIC5000_2868|JSUT|{z o o w a h o k a n o d o N n a d o o b u ts u y o r i m o o o k i i}|象はほかのどんな動物よりも大きい。
-TRAVEL1000_0949|JSUT|{k o i m o n o g a t a r i sp g a j o o e e s a r e t e i m a s u}|「恋物語」が上映されています。
-BASIC5000_0557|JSUT|{w a t a sh i j i sh i N w a sp y u u f o o o i ch i d o m o m i t a k o t o g a n a i}|私自身は、ユーフォーを一度も見たことがない。
-BASIC5000_1910|JSUT|{y o t e e y o r i s u k o sh i o k u r e t e sp n a r i t a n i t o o ch a k u sh i t a}|予定より少し遅れて、成田に到着した。
-BASIC5000_3055|JSUT|{m a z u sh u u sh i N m a e sp j i b u N n o n e r u t o k i n o h o o k o o t o sp f u t o N n o h o o k o o o a w a s e t e sh i k u}|まず就寝前、自分の寝るときの方向と、布団の方向を合わせて敷く。
-BASIC5000_2146|JSUT|{r u n e q s a N s u j i d a i sp b e n i s u n o g e e j u ts u w a sp z e N s e e k i o m u k a e t e i m a sh i t a}|ルネッサンス時代、ベニスの芸術は、全盛期を迎えていました。
-BASIC5000_4729|JSUT|{d o k u sh i N j u ts u n i t a i s u r u s e k e N n o m e g a k i b i sh i k u n a q t a n o w a sp k o n o j i k e N i g o d e a r u}|読唇術に対する世間の目が厳しくなったのは、この事件以後である。
-REPEAT500_set2_002|JSUT|{ny u u i N g u r a N d o f u u w a sp gy u u ny u u o b e e s u t o sh i t a sp sh i r o i k u r i i m u s u u p u d e a r i sp b o s u t o N k u r a m u ch a u d a a t o m o y o b a r e r u}|ニューイングランド風は、牛乳をベースとした、白いクリームスープであり、ボストンクラムチャウダーとも呼ばれる。
-PRECEDENT130_105|JSUT|{m a ts u b i n i sh o o k o n o sp g a n a i j i j i ts u w a sp t o o j i sh a k a N n i a r a s o i g a n a i}|末尾に証拠の掲記がない事実は、当事者間に争いがない。
-TRAVEL1000_0297|JSUT|{d e z a a t o n o o b o N o m o q t e k i t e i t a d a k e m a s u k a}|デザートのお盆を持ってきていただけますか。
-BASIC5000_1124|JSUT|{s e N h a q py a k u g o j u u s a N n e N sp p e r i i w a sp n i q p o N n i a m e r i k a e n o m o N k o o h i r a k u y o o n i y o o ky u u sh i t a}|１８５３年、ペリーは、日本にアメリカへの門戸を開くように要求した。
-TRAVEL1000_0074|JSUT|{o n a j i s u t a i r u d e sp m i j i k a m e n i o n e g a i sh i m a s u}|同じスタイルで、短めにお願いします。
-BASIC5000_3280|JSUT|{i e d e w a sp h i r u a N d o N j o o t a i t o n a q t e i r u}|家では、昼行灯状態となっている。
-BASIC5000_4155|JSUT|{g i j o w a sp m i u k e s a r e t a r i sp n e N k i g a o w a r i sp h i t o n i t o ts u g u m o n o m o i t a g a sp k a t e e n i n a j i m e z u gy a k u m o d o r i s u r u k o t o m o a q t a}|妓女は、身請けされたり、年季が終わり、人に嫁ぐ者もいたが、家庭になじめず逆戻りすることもあった。
-BASIC5000_0533|JSUT|{sh i m i o k o s u r i o t o s u k o t o g a d e k i n a k a q t a}|しみをこすり落とすことができなかった。
-BASIC5000_0917|JSUT|{k o z u k a i o sp a m a r i m u d a z u k a i sh i n a i y o o n i}|こづかいを、あまり無駄づかいしないように。
-REPEAT500_set5_078|JSUT|{hy o o g e N gy o o r e ts u n o sh i hy o o hy o o o sp b u N sh i n o t a i sh o o s e e o a r a w a s u sp t e N g u N n o sh i hy o o hy o o o m o ch i i t e sp s u N d e y a k u hy o o g e N e b u N k a i s u r u}|表現行列の指標表を、分子の対称性を表す、点群の指標表を用いて、既約表現へ分解する。
-BASIC5000_0229|JSUT|{k o k u n a i sh i j o o n o ky o o s o o w a sp s u s a m a j i i m o n o d e s u}|国内市場の競争は、すさまじいものです。
-BASIC5000_3405|JSUT|{s o o n o k o o k o o j i d a i n o o N sh i d e a r i sp k e g a o sh i t a s o o n i k o o ch i n i n a r u k o t o o s u s u m e t a}|荘の高校時代の恩師であり、怪我をした荘にコーチになることを進めた。
-ONOMATOPEE300_039|JSUT|{a k a ch a N n o h o q p e w a p u q k u r i sh i t e t o t e m o y a w a r a k a i}|赤ちゃんのほっぺはぷっくりしてとても柔らかい
-UT-PARAPHRASE-sent221-phrase1|JSUT|{m o ch i r o N sp k o t o r i w a y a g a t e s u d a ts u}|もちろん、小鳥はやがて巣立つ。
-PRECEDENT130_015|JSUT|{k o r e n i h a N s u r u h i k o k u r a n o sh u ch o o w a sp i z u r e m o s a i y o o d e k i n a i}|これに反する被告らの主張は、いずれも採用できない。
-LOANWORD128_039|JSUT|{y o n a k a n i o n a k a g a s u k u t o ts u i b i n i r u k o t o n i n a q t e sh i m a u}|夜中にお腹が空くとついビニることになってしまう。
-BASIC5000_3367|JSUT|{b a i d o k u k e q s e e h a N n o o d a k e d e w a sp n i s e y o o s e e n o m o N d a i g a a r u t a m e sp b a i d o k u t o r e p o n e e m a n o k o o g e N o m o ch i i t e sp by o o g e N t a i n i t a i s u r u k o o t a i o s o k u t e e s u r u}|梅毒血清反応だけでは、偽陽性の問題があるため、梅毒トレポネーマの抗原を用いて、病原体に対する抗体を測定する。
+TRAVEL1000_0620|JSUT|{k o n o d e N w a o sp o k a r i sh i t e m o y o i d e sh o o k a}|この電話を、お借りしてもよいでしょうか。
+BASIC5000_2872|JSUT|{s a i y o o t o k e q t e e sh i t a r a sp g o ts u u ch i i t a sh i m a s u}|採用と決定したら、ご通知いたします。
+BASIC5000_4641|JSUT|{i n u o n a ts u k e r u}|犬を懐ける。
+TRAVEL1000_0274|JSUT|{t o o z a y o k i N n o k o o z a o h i r a k i t a i n o d e s u g a}|当座預金の口座を開きたいのですが。
+BASIC5000_0530|JSUT|{u w a g i t o b o o sh i o sp m u k o o n o r a q k u n i k a k e n a s a i}|上着と帽子を、向こうのラックにかけなさい。
+BASIC5000_0455|JSUT|{t o o m o r o k o sh i w a sp g a q sh u u k o k u n o j u u y o o n a n o o s a k u m o ts u d a}|トウモロコシは、合衆国の重要な農作物だ。
+VOICEACTRESS100_080|JSUT|{k a s u k a n i k i k o e t e k u r u s e N ky u u hy a k u s a N j u u i ch i n e N b a N n o s a N m i k a g a sp sh i d a i n i o o k i k u n a q t e i k u}|かすかに聞こえてくる1931年版の讃美歌が、次第に大きくなっていく。
+BASIC5000_2803|JSUT|{m i n a sp r u s u d a t o i u n o n i sp f u sh i g i n a k o t o n i sp i e j u u n o d e N t o o g a ts u i t e i t a}|皆、留守だというのに、不思議なことに、家中の電灯がついていた。
+BASIC5000_0314|JSUT|{w a g a k u n i w a sp e n e r u g i i sh i g e N g a f u s o k u sh i t e k i t a}|わが国は、エネルギー資源が不足してきた。
+BASIC5000_2549|JSUT|{s a k u n e N w a sp a r i a m a r u h o d o n o b e e g a sp s e e s a N s a r e t a}|昨年は、有り余る程の米が、生産された。
+BASIC5000_3005|JSUT|{o o s a k a j o o d e w a t o k o y o n o m u sh i o t a o s u t a m e n o sh u d a N y a s o n o s e e ry o k u sp n a i j o o o s a g u q t e i r u}|大阪城では常世の蟲を倒すための手段やその勢力、内情を探っている。
+BASIC5000_3326|JSUT|{k a N g e k i s e e n o t a n e m o sh i r a r e t e o r i sp k o N g o m o o o k u g a ts u i k a s a r e r u k a n o o s e e g a a r u}|間隙性の種も知られており、今後も多くが追加される可能性がある。
+VOICEACTRESS100_012|JSUT|{k o o z o o w a sp h a g a n e s e e n o t a N i ts u a a ch i d e sp ky o o ky a k u w a sp i sh i ts u m i d e a r u}|構造は、鋼製の単一アーチで、橋脚は、石積みである。
+BASIC5000_0394|JSUT|{p a sh i f i q k u d o o r i n i i k u n i w a sp k o n o b a s u d e i i N d e sh o o k a}|パシフィック通りに行くには、このバスでいいんでしょうか。
+TRAVEL1000_0352|JSUT|{h a i sp b o i N t o N h o t e r u e i k i m a s u}|はい、ボイントンホテルへ行きます。
+BASIC5000_3393|JSUT|{n i sh o o d e w a h o t a r u b i n o s a b u w e p o N t o sh i t e t o o j o o}|弐章では蛍火のサブウェポンとして登場。
+TRAVEL1000_0666|JSUT|{k o k u r i ts u h a k u b u ts u k a N e w a sp k o o ky o o n o k o o ts u u k i k a N d e k a N t a N n i i k e m a s u k a}|国立博物館へは、公共の交通機関で簡単に行けますか。
+REPEAT500_set1_091|JSUT|{d o o b o a n e n i sp s u w e e d e N o o h i sp j o z e f i i n u g a i r u}|同母姉に、スウェーデン王妃、ジョゼフィーヌがいる。
+BASIC5000_0986|JSUT|{s o r e n o i d o e n o t o ts u ny u u d e N ry u u d e sp n o i z u g a h a q s e e sh i m a s u}|ソレノイドへの突入電流で、ノイズが発生します。
+PRECEDENT130_099|JSUT|{h o N k e N k i N s e N j u j u n i ts u k i h e N k a N n o y a k u s o k u g a a q t a k a}|本件金銭授受につき返還の約束があったか。
 BASIC5000_2010|JSUT|{k i ts u n e w a sp a n a g a a i t a k i n o n a k a e k a k u r e t a}|キツネは、穴があいた木の中へ隠れた。
-TRAVEL1000_0770|JSUT|{t e r e b i n o b o ry u u m u o sp s a g e t e k u d a s a i m a s e N k a}|テレビのボリュームを、下げてくださいませんか。
-BASIC5000_1166|JSUT|{w a t a sh i k o j i N n o i k e N t o sh i t e w a sp s o n o k e e k a k u n i h a N t a i d a}|私個人の意見としては、その計画に反対だ。
-BASIC5000_1807|JSUT|{ch o o s e ts u r e b a a o u e n i a g e r u t o sp z a m e N n o t a k a s a o ch o o s e ts u d e k i m a s u}|調節レバーを上に上げると、座面の高さを調節できます。
-BASIC5000_2508|JSUT|{g e N j u u m i N w a sp t o ch i o sp sh i N ry a k u sh a k a r a m a m o r a n e b a n a r a n a i}|原住民は、土地を、侵略者から守らねばならない。
-BASIC5000_3076|JSUT|{h i r o k u sh i r a r e t e i r u j o o h o o y a ch i sh i k i sp w i k i p e d i a n i o k e r u h o o sh i N y a k a N sh u u sp j o o sh i k i t e k i n a k a N k a k u n i s o m u k u h e N sh u u g a a r e b a sp i r o N n a h i t o g a sp s o n o h e N sh u u o sh u u s e e sh i t a r i sp h i t e e sh i t a r i sh i m a s u}|広く知られている情報や知識、ウィキペディアにおける方針や慣習、常識的な感覚に背く編集があれば、いろんな人が、その編集を修正したり、否定したりします。
-BASIC5000_0278|JSUT|{k i m u r a h a k a s e k a r a sp a n a t a g a k o n o b u N y a n o d a i i ch i n i N sh a d a t o u k a g a i m a sh i t a}|木村博士から、あなたがこの分野の第一人者だと伺いました。
-TRAVEL1000_0421|JSUT|{a n o s a i N d o o r i n i i q t e k u d a s a i}|あのサイン通りに行ってください。
-BASIC5000_1787|JSUT|{a k u y u u t o ts u k i a w a n a i y o o n i sh i n a s a i}|悪友とつき合わないようにしなさい。
-BASIC5000_2417|JSUT|{k e e k a i ch u u n o k e e k a N g a sp t o o k u n o b o N y a r i t o sh i t a k a g e n i k i z u i t a}|警戒中の警官が、遠くのぼんやりとした影に気づいた。
-BASIC5000_2381|JSUT|{t o N d a r i sp s u o ts u k u q t a r i s u r u n o w a sp t o r i n o h o N sh o o d e s u}|飛んだり、巣を造ったりするのは、鳥の本性です。
-BASIC5000_4199|JSUT|{m a t a sp a k u s e s a o ts u k a u m o q t o m o j u u y o o n a r i y u u t o sh i t e sp t a t a i s e e n o o N k e e o u k e r a r e r u t o i u t e N g a a r u}|また、アクセサを使う最も重要な理由として、多態性の恩恵を受けられるという点がある。
-TRAVEL1000_0993|JSUT|{h a i sp g o k a i n i sh i N g u r u g a a r i m a s u}|はい、5階にシングルがあります。
-BASIC5000_0077|JSUT|{a N y a n i t e q p o o j a a r u m a i sh i sp s o N n a b a a t a r i t e k i n a y a r i k a t a d e sp u m a k u i k u t o w a o m o e n a i y o}|闇夜に鉄砲じゃあるまいし、そんな場当たり的なやり方で、うまくいくとは思えないよ。
-BASIC5000_2652|JSUT|{a sh i k u b i n o n e N z a d e sp k a r e w a i q k a g e ts u a r u k e n a k a q t a}|足首のねんざで、彼は一ヶ月歩けなかった。
-BASIC5000_0383|JSUT|{b e ts u n o d a N r a k u d e sp k a r e w a k o N m a o h i t o ts u i r e t a}|別の段落で、彼はコンマを１つ入れた。
-TRAVEL1000_0782|JSUT|{t o o sh a n o s e e h i N n o k a t a r o g u o sp j i s a N s a s e t e i t a d a k i m a sh i t a}|当社の製品のカタログを、持参させていただきました。
-BASIC5000_1185|JSUT|{k a N z e N n a sh u u ky o o n o j i y u u g a sp m a N n i N n i h o sh o o s a r e t e i r u}|完全な宗教の自由が、万人に保証されている。
-BASIC5000_4066|JSUT|{m a j i m e n i j u N j o t a t e t e s e ts u m e e o s u r e b a w a k a q t e i t a d a k e r u sp j i b u N n o m a ch i g a i m o r i k a i d e k i r e b a t e e s e e d e k i r u h o o d e s u}|真面目に順序立てて説明をすればわかっていただける、自分の間違いも理解できれば訂正できる方です。
-BASIC5000_4019|JSUT|{h i t o r i d e h o N o y o N d e i r u k o t o n a d o g a o o k u sp h o r i r a n o g u r u u p u t o k a k a w a r u m a d e w a sp k o o y u u k a N k e e m o s u k u n a k a q t a}|一人で本を読んでいることなどが多く、堀らのグループと関わるまでは、交友関係も少なかった。
-BASIC5000_3665|JSUT|{r i y u u w a f u m e e d a g a sp j i N m o N k a N w a k o n o k a t a n i k a k a w a q t a b i r a b a t o sp s o r e o t o o sh u u s u r u k e i n a N o sp o r o k a t o n o n o sh i q t e i r u}|理由は不明だが、尋問官はこの型に拘ったビラバと、それを踏襲するケイナンを、愚かと罵っている。
-ONOMATOPEE300_073|JSUT|{a m a r i n i m o f u t o r i s u g i t e i t e sp s o n o h i t o n o o n a k a w a b o q k o r i t o sh i t e i r u n o d e sp m i N n a n i s a w a r a r e t e i t a}|あまりにも太り過ぎていて、その人のお腹はぼっこりとしているので、みんなに触られていた。
-REPEAT500_set5_038|JSUT|{d o o j i n i sp f u k u i m i r a k u r u e r e f a N ts u n i sp k o o ch i k e N n i N d e sp ny u u d a N s u r u k o t o g a h a q py o o s a r e t a}|同時に、福井ミラクルエレファンツに、コーチ兼任で、入団することが発表された。
-BASIC5000_3708|JSUT|{b a k u m a ts u n o t a t e b a y a sh i h a N n o j i N b u ts u n o k a t e g o r i}|幕末の館林藩の人物のカテゴリ。
-BASIC5000_0315|JSUT|{w a a w a a n a k i n a g a r a sp ch i i s a n a o N n a n o k o w a sp t o g u ch i e h a sh i q t e i q t a}|わあわあ泣きながら、小さな女の子は、戸口へ走って行った。
-BASIC5000_2883|JSUT|{y a d o n o sh u j i N w a sp m e sh i ts u k a i t a ch i n i g a n a r i t a t e t a}|宿の主人は、召使い達にがなりたてた。
-BASIC5000_4295|JSUT|{m o t o m o t o ky u u k a d e m u ch i n a n i N gy o o n o y o o n i s o d a t e r a r e t a g a sp n i N n i y o q t e s o n o ky o o g u u k a r a k a i h o o s a r e t a a t o sp i r o i r o t o y o k e e n a k o t o o o b o e t e g e N z a i n o s e e k a k u g a d e k i a g a q t a}|もともと旧家で無知な人形のように育てられたが、忍によってその境遇から解放された後、いろいろと余計なことを覚えて現在の性格ができあがった。
-BASIC5000_3348|JSUT|{sh u j i N k o o w a m a i n i ch i o i k i r u n o n i s e e i q p a i d e a r i sp i w a k a N w a ts u n o r u m o n o n o sp n a z o o ts u i ky u u sh i y o o t o w a sh i n a k a q t a}|主人公は毎日を生きるのに精一杯であり、違和感は募るものの、謎を追求しようとはしなかった。
-BASIC5000_4761|JSUT|{o b a a s a N n o n u k a d o k o w a sp y o k u ts u k a r u t o hy o o b a N d a}|おばあさんのぬか床は、よく漬かると評判だ。
-BASIC5000_3325|JSUT|{sh o o t e N o f u k u s u u n o i ch i n i a w a s e t e s a ts u e e sh i t a g a z o o o n a r a b e t e hy o o j i s u r e b a z e N t a i n o y o o s u o h a a k u d e k i r u g a sp k o r e w a t e m a g a k a k a r i sp h i k a k u m o m e N d o o d e a r u}|焦点を複数の位置に合わせて撮影した画像を並べて表示すれば全体の様子を把握できるが、これは手間がかかり、比較も面倒である。
-TRAVEL1000_0201|JSUT|{k o k o d e sp sh i b a r a k u o m a ch i k u d a s a i}|ここで、しばらくお待ちください。
-BASIC5000_1468|JSUT|{s e N t a k u o s u r u t o i u k o t o w a sp ts u n e n i g i s e e o sp ts u m a r i sp a r u m o n o o a k i r a m e t e sp b e ts u n o m o n o o t o r u k o t o o i m i s u r u}|選択をするということは、常に犠牲を、つまり、ある物をあきらめて、別のものを取ることを意味する。
-BASIC5000_4626|JSUT|{k a r e w a sp t a ch i s u g a t a g a s a k a e r u}|彼は、立ち姿が栄える。
-BASIC5000_4080|JSUT|{g o o m a N n a s e e k a k u d e sp p u r o n i n a r e r u j i ts u ry o k u g a a r u t o j i f u sh i t e i r u}|傲慢な性格で、プロになれる実力があると自負している。
-BASIC5000_4900|JSUT|{k a n o j o w a sp h a j i r a i n o i r o o k a k u s u t a m e n i sp k a o o s o m u k e t a}|彼女は、恥じらいの色を隠すために、顔をそむけた。
-UT-PARAPHRASE-sent054-phrase2|JSUT|{h a j i m e t e n o m e e r u d e m o sp h a i k e e sp k e e g u y a k i s e ts u n o a i s a ts u w a n u k i}|初めてのメールでも、拝啓・敬具や季節のあいさつは抜き。
-REPEAT500_set2_024|JSUT|{k o n o t a m e sp p u r a z u m a ch u u n o i o N y a sp d e N sh i n o m o ts u sp h e e k i N u N d o o e n e r u g i i o sp o N d o d e hy o o g e N s u r u k o t o g a a r u}|このため、プラズマ中のイオンや、電子の持つ、平均運動エネルギーを、温度で表現することがある。
-ONOMATOPEE300_109|JSUT|{ch i k a k u n i y u u m e e n a h a i ky o g a a q t a k a r a h a j i m e t e i q t e m i r u k o t o n i sh i t a sp h a i q t a h a r u k a n i k a r a d a g a n a N d a k a z o k u z o k u sh i t a w a}|近くに有名な廃墟があったから初めて行ってみることにした。入った春歌にカラダがなんだかゾクゾクしたわ。
-BASIC5000_2626|JSUT|{d e m o n o s a i ch u u sp h i m i ts u k e e s a ts u g a h i t o g o m i n o n a k a o u g o k i m a w a q t a}|デモの最中、秘密警察が人込みの中を動きまわった。
-UT-PARAPHRASE-sent277-phrase1|JSUT|{sh i k a sh i sp k u i r u k o t o g a f u t a ts u a r u}|しかし、悔いることがふたつある。
-BASIC5000_3553|JSUT|{ny u u sh o k u h a k u j i N t a ch i w a sp d o k u i r i n o n i k u y a sp t e N n e N t o o n i k a N s e N sh i t a i N d i a N n o m o o f u o o o k a m i n i a t a e t a}|入植白人たちは、毒入りの肉や、天然痘に感染したインディアンの毛布を狼に与えた。
-BASIC5000_4892|JSUT|{f u m i o w a sh o o j i k i d a k a r a sp m i n a sp k a r e g a s u k i d a}|文夫は正直だから、皆、彼が好きだ。
-TRAVEL1000_0448|JSUT|{o ky a k u s a m a n o h e y a w a sp hy a k u n a n a g o o sh i ts u d e s u}|お客様の部屋は、107号室です。
-BASIC5000_1862|JSUT|{o o m u g i t o k o m u g i o sp i ch i m o k u m i t e m i w a k e r a r e m a s u k a}|大麦と小麦を、一目見て見分けられますか。
-REPEAT500_set1_028|JSUT|{k o n o t o k i sp p e r i m e e d e e w a sp a m u p i k u t o ry u o o N n i d o o k o o sh i t e sp t e e b a i n i k i t e i t a sp r i ky u m u n i o s u n i sp ts u m a t o sh i t e a t a e r a r e t a}|このとき、ペリメーデーは、アムピクトリュオーンに同行して、テーバイに来ていた、リキュムニオスに、妻としてあたえられた。
-BASIC5000_2450|JSUT|{m u sh i b a g a d e k i ch a q t e sp ts u m e t a i m o n o o t a b e r u t o sh i m i r u N d a}|虫歯ができちゃって、冷たい物を食べるとしみるんだ。
-BASIC5000_4049|JSUT|{t e k u n i q k u d e s e m e r u t o i u s u t a i r u d e w a n a k u sp p a N ch i o h i t a s u r a b u N b u N f u r i m a w a s u f a i t o s u t a i r u o m o ts u}|テクニックで攻めるというスタイルではなく、パンチをひたすらブンブン振り回すファイトスタイルを持つ。
-BASIC5000_4023|JSUT|{g o o N t o k a N o N sp n i q sh o o n a d o sp j i o N n i k a N s u r u k i h o N t e k i n a t a N g o o k a i s e ts u s u r u}|呉音と漢音、入声など、字音に関する基本的な単語を解説する。
-BASIC5000_1822|JSUT|{g a k u d a N w a a t a r a sh i i sh i k i sh a n o sh i k i d e sp s u b a r a sh i i e N s o o o sh i t a}|楽団は新しい指揮者の指揮で、すばらしい演奏をした。
-BASIC5000_3314|JSUT|{t o k u i n a k e e t a i o m o ts u k o t o k a r a sp m o q p a r a sp g o g e N n i k a N s u r u k e N ky u u b a k a r i d e a r u}|特異な形態を持つ事から、専ら、語源に関する研究ばかりである。
-BASIC5000_2768|JSUT|{w a t a sh i w a s e g a h i k u i n o d e sp t a n a n o u e m a d e m i r a r e n a i n o d e sp h o b o sp t e s a g u r i d e f u k u w a k e d e s u}|ワタシは背が低いので、棚の上まで見られないので、ほぼ、手探りで拭くわけです。
-BASIC5000_0324|JSUT|{s e e k e e o t a t e r u t a m e n i sp sh i q k a r i h a t a r a k i n a s a i}|生計を立てるために、しっかり働きなさい。
-BASIC5000_2792|JSUT|{s a i z e N o ts u k u s u k o t o w a sp y o i k o t o d e a r u}|最善をつくすことは、よいことである。
-TRAVEL1000_0777|JSUT|{a n a t a n o g o k o o i n i sp k a N sh a sh i t e i m a s u}|あなたのご好意に、感謝しています。
-TRAVEL1000_0235|JSUT|{ky a n a r u d o o r i n o sh i d e N sp w a i k a d e s u k a}|「キャナル通りの市電」は如何ですか。
-BASIC5000_4981|JSUT|{k o n o h o N w a sp ky o o m i sh i N sh i N t a r u m o n o g a a q t e a k i n a i}|この本は、興味津々たるものがあって飽きない。
-PRECEDENT130_067|JSUT|{g e N k o k u n o j o o k i k o o i n i ts u i t e w a f u h o o k o o i g a s e e r i ts u s u r u}|原告の上記行為については不法行為が成立する。
-BASIC5000_3473|JSUT|{m i d a sh i n a m i n i m u t o N ch a k u d e f u k e ts u sp ch i k a y o r e b a k a n a r i n i o u}|身だしなみに無頓着で不潔、近寄ればかなり臭う。
-TRAVEL1000_0415|JSUT|{d a N s e e w a j o s e e t o a k u sh u sh i n a i s o o d e s u n e}|男性は女性と握手しないそうですね。
-BASIC5000_4477|JSUT|{t o k u ch o o t o sh i t e sp k a s a w a e N s u i j o o sp m a t a w a e N s u i k a n e j o o sp f u ch i w a sp h a j o o n i n a q t e i r u}|特徴として、カサは円錐状、または円錐鐘状、フチは、波状になっている。
-BASIC5000_1482|JSUT|{i d e N sh i k u m i k a e sh o k u h i N o t a b e r u n o w a sp k i k e N d a t o o m o i m a s u k a}|遺伝子組み換え食品を食べるのは、危険だと思いますか。
-UT-PARAPHRASE-sent045-phrase2|JSUT|{k a n o j o o d o k u s e N n i sh i t a k a q t a}|彼女を独占にしたかった。
-BASIC5000_3842|JSUT|{a n i m e b a N d e w a sp b u k a w a s a w a N n i b i i m u j u u o s o o b i sh i t e i r u}|アニメ版では、部下は左腕にビーム銃を装備している。
-BASIC5000_2405|JSUT|{k a n e m o o k e o s u r u k o t o g a j i N s e e n o m o k u t e k i d e n a i}|金儲けをすることが人生の目的でない。
-BASIC5000_3487|JSUT|{t o k u ch o o t e k i n a sh i m a m o y o o w a sp a m a m o n o sh i g e m i n i m a g i r e r u h o g o sh o k u t o n a r u}|特徴的なしま模様は、アマモの茂みに紛れる保護色となる。
-BASIC5000_0370|JSUT|{k o o h a i n o a t o o m i r u t o sp s e N s o o n o i m i g a sp k a r e n i w a sh i m i j i m i t o k a N j i r a r e t a}|荒廃のあとを見ると、戦争の意味が、彼にはしみじみと感じられた。
-BASIC5000_1186|JSUT|{k o o s o k u n a n o d e sp s e e t o t a ch i w a g a k u s e e f u k u o k i n a k u t e w a n a r a n a i}|校則なので、生徒たちは学生服を着なくてはならない。
-REPEAT500_set3_056|JSUT|{t o k o r o g a sp e ry u sh i k u t o o N w a sp ny u m u p e e n o s e e sh i m o k i k a z u n i sp d e e m e e t e e r u n o k a sh i o sp k i r i t a o sh i t a}|ところが、エリュシクトーンは、ニュムペーの制止も聞かずに、デーメーテールの樫を、切り倒した。
-REPEAT500_set3_084|JSUT|{sh o o n e N j i d a i w a sp r o sh i a t e e k o k u sp ch e r u n i i h i u k e N sp p u r u i r u u k u i g u N sp t o r o s u ch a n u i i ts u y a m u r a d e s u g o sh i t a}|少年時代は、ロシア帝国、チェルニーヒウ県、プルィルークィ郡、トロスチャヌィーツャ村で過ごした。
-REPEAT500_set4_036|JSUT|{b a N g u m i b o o t o o o sp t o o ky o o m u u b i i s e e s a k u n o a n i m e e sh o N d e sp hy o o g e N s u r u t e N m o sp ky o o ts u u sh i t e i t a}|番組冒頭を、東京ムービー製作のアニメーションで、表現する点も、共通していた。
-BASIC5000_1635|JSUT|{s a ts u j i N h a N w a sp m o o s u g u j i b u N n o ts u m i o h a k u j o o s u r u d a r o o}|殺人犯は、もうすぐ自分の罪を白状するだろう。
-BASIC5000_1208|JSUT|{g o ch i k a k u n i o i d e n o f u sh i w a sp z e h i o t a ch i y o r i k u d a s a i}|御近くにおいでの節は、ぜひ御立ち寄りください。
-BASIC5000_4839|JSUT|{y o k u s a m a sh i t e k a r a o m e sh i a g a r i k u d a s a i}|よく冷ましてからお召し上がりください。
-REPEAT500_set3_053|JSUT|{t o o j i sp a y a sh i i w a a r u d o n i j o o ch u u sh i t e i t a g i k o n e k o g a sp k u u h a k u n i t e h a q py o o}|当時、あやしいワールドに常駐していた擬古猫が、空白にて発表。
-TRAVEL1000_0259|JSUT|{s u t e e k i d i n a a o o n e g a i sh i m a s u}|ステーキディナーをお願いします。
-BASIC5000_3284|JSUT|{ch i h o o n i f u n i N s u r u k a N ry o o y o r i sp j i ts u m u w a k a N r i g a n i g i q t e i r u k o t o m o o o k a q t a}|地方に赴任する官僚より、実務は胥吏が握っていることも多かった。
-BASIC5000_2066|JSUT|{u N sp w a t a sh i w a t a d a sp n o N b i r i s u g o s u ts u m o r i y o}|うん、私はただ、のんびり過ごすつもりよ。
-BASIC5000_1694|JSUT|{b o k u d a q t a r a n a r i y u k i o m i m a m o r u d a r o o k e d o}|僕だったら成り行きを見守るだろうけど。
-BASIC5000_2350|JSUT|{ch u u r i ts u n o k u n i g a sp s o n o r o N s o o n o k a i k e ts u n i k o o k e N s u r u k o t o g a m o t o m e r a r e t e i t a}|中立の国が、その論争の解決に貢献する事が求められていた。
-BASIC5000_3353|JSUT|{m a y a k u o y o b i k o o s e e sh i N y a k u n o f u s e e t o r i h i k i n o b o o sh i n i k a N s u r u k o k u s a i r e N g o o j o o y a k u sp i w a y u r u m a y a k u sh i N j o o y a k u n o t e e k e ts u n i t o m o n a u sp n i q p o N k o k u n a i n o h o o r i ts u n o s e e b i t o sh i t e r i q p o o s a r e t a}|麻薬及び向精神薬の不正取引の防止に関する国際連合条約、いわゆる麻薬新条約の締結に伴う、日本国内の法律の整備として立法された。
-BASIC5000_2365|JSUT|{d o o gy o o t a sh a n i k u r a b e t e sp gy o o s e k i g a z u q t o y o k a q t a}|同業他社に比べて、業績がずっと良かった。
-BASIC5000_1238|JSUT|{t e k i s a s u sh u u w a sp m e k i sh i k o t o s e q sh i t e i r u}|テキサス州は、メキシコと接している。
-BASIC5000_1184|JSUT|{n a g a i m e d e m i r e b a sp ch i g a q t e k u r u t o o m o i m a s u}|長い目で見れば、違ってくると思います。
-ONOMATOPEE300_220|JSUT|{sh u q ch o o k a r a m o d o r i sp j i b u N o d e m u k a e t e k u r e r u n o w a sp ts u m a d e m o k a n o j o d e m o n a k u sp h e y a n i k o m o r u sp m o w a q t o sh i t a k u u k i d a q t a}|出張から戻り、自分を出迎えてくれるのは、妻でも彼女でもなく、部屋にこもる、もわっとした空気だった。
-BASIC5000_2928|JSUT|{sh a o k u y a j u u gy o o i N n i h i g a i w a n a k u sp h e e j o o d o o r i e e gy o o sh i t e i r u}|社屋や従業員に被害はなく、平常通り営業している。
-BASIC5000_4175|JSUT|{n a o sp t e N n o o w a j o o i g o n i sp n a N ch o o z e e n o ky o o ry o k u o m o t o m e t e sp k a k u ch i o s e N k o o sh i t a t o i u d e N s e ts u g a a r i sp z e N k o k u n i sp g o ry o o d e N s e ts u ch i g a t e N z a i s u r u}|なお、天皇は譲位後に、南朝勢の協力を求めて、各地を潜幸したという伝説があり、全国に、御陵伝説地が点在する。
-BASIC5000_2496|JSUT|{r e m o N y a r a i m u w a s u q p a i k u d a m o n o d e a r u}|レモンやライムはすっぱい果物である。
-BASIC5000_0566|JSUT|{n a N s a ts u k a n o sh i N k a N sh o o sp a m e r i k a n i ch u u m o N sh i t a}|何冊かの新刊書を、アメリカに注文した。
-BASIC5000_3209|JSUT|{i r u u v a t a a r u n o t e n i y o q t e s o o z o o s a r e t a s a N sh u z o k u sp a i n u a sp e r u f u sp n i N g e N n o n a k a n i w a sp sh u z o k u n o k a k i n e o k o e t e m u s u b a r e r u m o n o g a i t a}|イルーヴァタールの手によって創造された三種族、アイヌア、エルフ、人間の中には、種族の垣根を越えて結ばれるものがいた。
-BASIC5000_3189|JSUT|{o k o m a n o h a h a w a sp g e j o n o o k i k u o ky o o n i sh i t e y a k u sh o n i i k i sp o k i k u n i o k o m a e n o s a sh i i r e o m o t a s e t e h a i r a s e sp m i z u k a r a w a m o N z e N d e m a q t e i t a}|お駒の母は、下女のお菊を供にして役所に行き、お菊にお駒への差し入れを持たせて入らせ、自らは門前で待っていた。
-BASIC5000_1790|JSUT|{r a N k o o p a a t i i n o n a k a d e sp m e g u m i h a s u q p a d a k a d e sh i b a f u o h a sh i r i m a w a q t a}|乱交パーティーの中で、めぐみはすっぱだかで芝生を走り回った。
-ONOMATOPEE300_010|JSUT|{n a n i g a t a n o sh i i n o k a sp o i q k o g a sp g o m i b a k o n o f u t a o k a p a k a p a a k e sh i m e sh i t e a s o N d e i r u}|何が楽しいのか、甥っ子が、ゴミ箱の蓋をカパカパ開け閉めして遊んでいる。
-BASIC5000_2121|JSUT|{sh i sh o o sh a w a sp g o o k e e sp i ch i sp m e e t o n a q t a t o i u k o t o d a}|死傷者は、合計、１、０００名となったということだ。
-UT-PARAPHRASE-sent243-phrase1|JSUT|{m a e t o ch i g a q t a k a N k e e sp ch i k a sh i i k a N k e e o m u s u b a n a k e r e b a n a r a n a i}|前と違った関係、近しい関係を結ばなければならない。
-BASIC5000_0305|JSUT|{sh u u d a N s e e k a ts u o i t o n a m u d o o b u ts u w a s u b e t e sp j o o h o o o k o o k a N sh i t a r i sp ch i ts u j o a r u sh u u d a N o i j i s u r u t a m e sp n a N r a k a n o d e N t a ts u h o o h o o o m o q t e i r u}|集団生活を営む動物は全て、情報を交換したり、秩序ある集団を維持するため、何らかの伝達方法を持っている。
-TRAVEL1000_0616|JSUT|{s o r e o sp sh i N g u r u n o ry o o k i N d e t e e ky o o sh i m a sh o o}|それを、シングルの料金で提供しましょう。
-TRAVEL1000_0700|JSUT|{w a s u r e r u t o sp k o m a r u k o t o y a sh i ts u r e e n i n a r u k o t o g a o k o r i e m a s u}|忘れると、困ることや失礼になることが起こり得ます。
-LOANWORD128_095|JSUT|{ny e N r o N w a ch i b e q t o j i ch i k u n i a r u k e N}|ニェンロンはチベット自治区にある県。
-REPEAT500_set1_020|JSUT|{z e N b e e p a b u r i q sh a a z u ky o o k a i n o sp b e s u t o s u t o r a t e j i i g e e m u o b u z a i y a a o sp n i q p o N j i N t o sh i t e j u sh o o}|全米パブリッシャーズ協会の、ベストストラテジーゲームオブザイヤーを、日本人として受賞。
-BASIC5000_4165|JSUT|{k u k i w a s e k i k a q sh o k u d e sp y a k a N y a a m e n o h i n i w a h a n a y a h a w a ch i j i m a r u}|茎は赤褐色で、夜間や雨の日には花や葉は縮まる。
-BASIC5000_2268|JSUT|{t a n i sh i w a sp g a k u sh a t o i u y o r i w a sp m u sh i r o j a a n a r i s u t o d a}|谷氏は、学者というよりは、むしろジャーナリストだ。
-BASIC5000_3133|JSUT|{ts u u j o o sp h a d a j i b a N t o sp n a g a j i b a N o ch a k u y o o s u r u g a sp n a g a j i b a N n o e r i n i n a q t e i r u h a N j i b a N i ch i m a i o d a i y o o t o sh i t e sp s u s o y o k e sp m a t a w a s u t e t e k o t o t o m o n i ch a k u y o o s u r u}|通常、肌襦袢と、長襦袢を着用するが、長襦袢の衿になっている半襦袢一枚を代用として、裾除け、またはステテコと共に着用する。
-BASIC5000_1075|JSUT|{g o ch i s o o g a d e r u k a r a sp o n a k a o s u k a s e t e o k i n a s a i}|ご馳走が出るから、おなかをすかせておきなさい。
-BASIC5000_1923|JSUT|{o ch i k a z u k i n i n a r e t e sp t a i h e N u r e sh i k u z o N j i m a s u}|お近づきになれて、大変うれしく存じます。
-BASIC5000_3471|JSUT|{ch i N o m o u n i sp j i N sh i N s u s u m u n i h e N sh i t e sp d o k i k a i s o k u n a r u o k i s o u}|朕おもうに、人心進むに偏して、時会速なるを競う。
-BASIC5000_2739|JSUT|{b e e k a w a sp s e e f u n i y o q t e t o o s e e s a r e t e i r u}|米価は、政府によって統制されている。
-BASIC5000_3517|JSUT|{m i z u k a r a n i t a i sh i t e m o o k u sh i n a i k u r e m e N t a i N n o sh o o r a i s e e o k a q t e i r u}|自らに対しても臆しないクレメンタインの将来性を買っている。
-UT-PARAPHRASE-sent189-phrase2|JSUT|{ch u u g o k u w a sp b e e k o k u n o a ts u ry o k u n i m a k e r u k a t a ch i n o k i r i a g e w a s a k e t a i t o k o r o d e a r u g a sp s a r i t o t e t a i k e ts u s u r u k o t o m o d e k i m a i}|中国は、米国の圧力に負ける形の切り上げは避けたいところであるが、さりとて対決することもできまい。
-BASIC5000_2161|JSUT|{sh i k a k u s o n o m o n o m o s e N t a k u t e k i n i n a r i sp j i q s a i n i sp s o N z a i s u r u m o n o n o i ch i b u o m u sh i s u r u k o t o g a a r u sh i sp n o o m o m a t a sp j i q s a i n i w a sp m a q t a k u s o N z a i sh i n a i m o n o o m i t a t o sp h a N d a N s u r u b a a i g a a r u n o d e a r u}|視覚そのものも選択的になり、実際に、存在するものの一部を無視することがあるし、脳もまた、実際には、まったく存在しないものを見たと、判断する場合があるのである。
-ONOMATOPEE300_257|JSUT|{n e N z a sh i t e h a r e t a a sh i g a j i N j i N t o n e ts u o m o q t e i t a i}|捻挫して腫れた足がジンジンと熱を持って痛い。
-UT-PARAPHRASE-sent192-phrase1|JSUT|{h a N z a i n i m i g a m a e r u o o sh u u n o g e N j o o o o q t a}|犯罪に身構える欧州の現状を追った。
-BASIC5000_0822|JSUT|{d o r u p e q g u n o i m i w a sp ts u y o i k u n i n i ts u k e t o i u k o t o d e s u}|ドルペッグの意味は、強い国につけということです。
-BASIC5000_4359|JSUT|{k o n o k o r o k a r a k u u r u n a s e e k a k u d e sh i N y u u n o a y a n i k i o ts u k a u n a d o sp s a r i g e n a i y a s a sh i s a m o k a w a r a n a i g a sp s o r e y u e n i a r u ts u m i o o k a sh i t e sh i m a u}|この頃からクールな性格で親友の綾に気を遣うなど、さり気無い優しさも変わらないが、それ故にある罪を犯してしまう。
-BASIC5000_0091|JSUT|{g a r a s u n o h a ch i w a sp k o n a g o n a n i n a q t e sh i m a q t a}|ガラスの鉢は、粉々になってしまった。
-TRAVEL1000_0970|JSUT|{w a t a sh i w a sp k o n o y o o n a d o r e s u g a h o sh i i n o d e s u g a}|私は、このようなドレスが欲しいのですが。
-TRAVEL1000_0584|JSUT|{k o r e o h i f u n i ts u k e n a i y o o n i ch u u i sh i t e k u d a s a i}|これを皮膚につけないように注意してください。
-VOICEACTRESS100_068|JSUT|{sh a N sh a N u m a w a sp u d o j i N g u u e s a N p a i s u r u sp sh i N k o N f u u f u g a n o q t e i t a u m a n o k o t o}|シャンシャン馬は、鵜戸神宮へ参拝する、新婚夫婦が乗っていた馬のこと。
-REPEAT500_set4_029|JSUT|{g e N z a i n o k a q s o o o m o k u t e k i t o sh i t a sp s u k i i b u u ts u w a sp k a t a i p u r a s u ch i q k u sh e r u t o sp y a w a r a k a i i N n a a b u u ts u k a r a n a r u}|現在の滑走を目的とした、スキーブーツは、硬いプラスチックシェルと、柔らかいインナーブーツからなる。
-REPEAT500_set4_037|JSUT|{k o my u u N w a sp s e e n u g a w a t o sp e s o N n u g a w a n o sp g o o ry u u ch i t e N t o n a q t e i r u}|コミューンは、セーヌ川と、エソンヌ川の、合流地点となっている。
-BASIC5000_3485|JSUT|{s o n o s a i sp k a s u p a a j i sh i N w a sp k a N k a k u n o k a b i N s a y u e sp k e e k e N sh i t a k o t o n o n a i h i k a r i t o s o o o N n i y o q t e i t a m i o u k e k u r u sh i N d a t o i u}|その際、カスパー自身は、感覚の過敏さゆえ、経験したことのない光と騒音によって痛みを受け苦しんだという。
-BASIC5000_1562|JSUT|{k o ky o o n o o i t a ry o o sh i N n o k o t o o k a N g a e t e m i r u b e k i d a}|故郷の老いた両親のことを考えて見るべきだ。
-BASIC5000_3597|JSUT|{d e N w a n a d o n o ts u u sh i N w a sp d o o r o k o o ts u u n i t a t o e r u k o t o g a d e k i r u}|電話などの通信は、道路交通に例える事ができる。
-TRAVEL1000_0875|JSUT|{k o n o m a ch i d e w a n a n i o m i r u b e k i d e sh o o k a}|この町では何を見るべきでしょうか。
-TRAVEL1000_0592|JSUT|{a m e r i k a N e k i s u p u r e s u d e sh i h a r a i m a s u}|アメリカンエキスプレスで支払います。
-BASIC5000_2957|JSUT|{sh o k u z e N n i w a sp t e o k i r e e n i a r a w a n a k e r e b a n a r a n a i}|食前には、手を綺麗に洗わなければならない。
-BASIC5000_1203|JSUT|{z e e j a k u d e ch i k a r a n o n a i sp t a d a n o n i N g e N n a N d a}|脆弱で力の無い、ただの人間なんだ。
-BASIC5000_2411|JSUT|{k e r e d o m o sp p o o r a sp g u r e i s o N n o y o o n a k a N r i sh o k u n o h i t o b i t o w a sp n a N t o k a s o n o sh u u k a N o k a e t e m o r a o o t o sp s e q t o k u n i ts u t o m e t e i m a s u}|けれども、ポーラ・グレイソンのような管理職の人々は、なんとかその習慣を変えてもらおうと、説得に努めています。
-BASIC5000_1914|JSUT|{hy o o k o o g a sp g u N t o t a k a k u n a r u t o sp k o ky u u k o N n a N o k a N j i r u}|標高が、ぐんと高くなると、呼吸困難を感じる。
-UT-PARAPHRASE-sent186-phrase1|JSUT|{t o o m o r o k o sh i m o s o o j i t e y a s u i}|トウモロコシも総じて安い。
-REPEAT500_set4_098|JSUT|{i n u i d o q k u n i ny u u ky o sh i t e sp o o b a a h o o r u s u b e k i k a d o o k a sp p a f o o m a N s u g a ch e q k u s a r e t a}|乾ドックに入渠して、オーバーホールすべきかどうか、パフォーマンスがチェックされた。
-BASIC5000_3901|JSUT|{d o o h a sh i n o k a k e k a e n i y o r i sp a m a g a s a k i sh i n a i n o k a d o o ky o o w a sp h i g a sh i t a k a s u ky o o n o m i t o n a q t a}|同橋の架け替えにより、尼崎市内の可動橋は、東高洲橋のみとなった。
-BASIC5000_2243|JSUT|{k a k u r o b o q t o n i w a sp ts u u w a k i g a t o r i ts u k e r a r e t e i m a s u}|各ロボットには、通話機が取り付けられています。
-BASIC5000_2534|JSUT|{m o k u hy o o o m o q t e i r u t o i u t e N d e sp k a n o j o w a t a n o h i t o t o w a ch i g a u}|目標を持っているという点で、彼女は他の人とは違う。
-BASIC5000_2208|JSUT|{a i g a h i t o o t a ch i n a o r a s e r u k o t o m o a r u k e r e d o}|愛が人を立ち直らせることもあるけれど。
-VOICEACTRESS100_011|JSUT|{k e e my o o sh a d a ts u n a n a r e e sh o N k a r a sp j o o ch o k a N a f u r e r u k a t a r i m a d e sp h a b a h i r o i hy o o g e N ry o k u o m o ts u}|軽妙洒脱なナレーションから、情緒感溢れる語りまで、幅広い表現力を持つ。
-ONOMATOPEE300_161|JSUT|{o sh o k u g i w a k u o m o t a r e t a d a i j i N w a sp y a t o o g i i N k a r a n o sh i ts u y o o n a ts u i ky u u o n o r a r i k u r a r i t o k a w a sh i t e t o o b e N sh i t a}|汚職疑惑を持たれた大臣は、野党議員からの執拗な追求をのらりくらりとかわして答弁した
-TRAVEL1000_0805|JSUT|{m o o s u k o sh i k o o h i i o i t a d a k e m a s u k a}|もう少しコーヒーをいただけますか。
-BASIC5000_2840|JSUT|{w e i t o r e s u w a sp ky a k u t a ch i n i ky u u j i s u r u n o n i sp s e w a sh i k u u g o k i m a w a q t a}|ウェイトレスは、客たちに給仕するのに、せわしく動き回った。
-PRECEDENT130_060|JSUT|{h o N k e N n o s o o t e N w a sp g e N k o k u r a n o sp k o o i sh o o g a i n o u m u t o sp s o N g a i g a k u d e a r u}|本件の争点は、原告らの、後遺障害の有無と、損害額である。
-BASIC5000_0363|JSUT|{b u r a b u r a a b u r a o u q t e i n a i d e sp t o q t o t o sh i g o t o n i m o d o q t a r a d o o n a n o s a}|ぶらぶら油を売っていないで、とっとと仕事にもどったらどうなのさ。
-UT-PARAPHRASE-sent169-phrase2|JSUT|{s u N d a m i z u n o n a g a r e t o sp m a b u sh i i b a k a r i n o sh i N ry o k u g a sp m e n i u k a b u}|澄んだ水の流れと、まぶしいばかりの新緑が、目に浮かぶ。
-UT-PARAPHRASE-sent215-phrase1|JSUT|{m a y a k u d e w a h a N b a i n o h o o g a sh o j i y o r i m o j u u z a i d a g a sp j u u w a gy a k u}|麻薬では販売の方が所持よりも重罪だが、銃は逆。
-PRECEDENT130_071|JSUT|{sh o o k o t o o o k a k a g e t e i n a i j i j i ts u w a sp t o o j i sh a k a N n i a r a s o i g a n a i}|証拠等を掲げていない事実は、当事者間に争いがない。
-BASIC5000_4697|JSUT|{k o d o m o o sh i k a r u n o w a sp o y a n o sh i g o t o d e a r u}|子供を叱るのは、親の仕事である。
-BASIC5000_3102|JSUT|{g a k u s e e ry o o n i ny u u ry o o sh i n a i k a g i r i sp n i h o N g o g a q k a t o n o s e q sh o k u w a n a i n i h i t o sh i i}|学生寮に入寮しない限り、日本語学科との接触は無いに等しい。
-BASIC5000_4314|JSUT|{j u N i ch i r o o w a t a k a m e o h o o j u u sh i sp n i s a k a z u k i k o o m a d e n o s e t e sh i m a u t o i u f u k a k u o t o q t e o r i sp ry o o sh a n o r i k i ry o o n o s a g a sp ny o j i ts u n i a r a w a r e t a ky o k u m e N n i n a q t e i t a}|ジュンイチローは高めを放銃し、二盃口まで乗せてしまうという不覚をとっており、両者の力量の差が、如実に表れた局面になっていた。
-BASIC5000_3609|JSUT|{j i u n o j o g e N o u k e sp j i n i w a m i u ch i n o a k u j i o a b a k u k o t o n i n a r i k a n e n a i t o sh i r i n a g a r a m o sp s u b e t e o b a k u r o sh i y o o t o k i m e r u}|ジウの助言を受け、ジニは身内の悪事を暴くことになりかねないと知りながらも、全てを暴露しようと決める。
-TRAVEL1000_0677|JSUT|{hy u u z u h a k a s e n i o a i n i n a q t a k o t o w a g o z a i m a s u k a}|ヒューズ博士にお会いになったことはございますか。
-BASIC5000_2369|JSUT|{e r u m o a sp j e e m u z u n o k o p i i j a n a i z e}|エルモア・ジェイムズのコピーじゃないぜ。
-BASIC5000_4858|JSUT|{sh o o i ch i w a sp m a q s a o n i n a q t a}|ショウイチは、真っ青になった。
-TRAVEL1000_0507|JSUT|{s e N t a k u n o s a a b i s u g a a r i m a s u k a}|洗濯のサービスがありますか。
-REPEAT500_set5_084|JSUT|{sh o o n e N j i d a i w a sp r o sh i a t e e k o k u sp ch e r u n i i h i u k e N sp p u r u i r u u k u i g u N sp t o r o s u ch a n u i i ts u y a m u r a d e s u g o sh i t a}|少年時代は、ロシア帝国、チェルニーヒウ県、プルィルークィ郡、トロスチャヌィーツャ村で過ごした。
-TRAVEL1000_0016|JSUT|{k o r e r a n o s u u j i o d a i a r u sh i m a s u}|これらの数字をダイアルします。
-BASIC5000_4311|JSUT|{s o o sh i n a i t o sp sh i N py o o s e e sp a i m a i s a g a s a r a n i j o ch o o s a r e t e sh i m a u y o o n i k a N j i m a s u}|そうしないと、信憑性、曖昧さがさらに助長されてしまう様に感じます。
-UT-PARAPHRASE-sent097-phrase2|JSUT|{sh i k a sh i sp n a k u s u w a k e n i w a i k a n a i}|しかし、なくすわけにはいかない。
-BASIC5000_1053|JSUT|{j a m a o sh i t e s u m a n a i sp ch o q t o h a n a sh i g a a r u n o d a}|邪魔をして済まない、ちょっと話があるのだ。
-BASIC5000_2321|JSUT|{g o o u n o t a m e n i sp y a s a i n o n e d a N g a ky u u g e k i n i a g a q t a}|豪雨のために、野菜の値段が急激に上がった。
-BASIC5000_2252|JSUT|{g e N s o k u t o sh i t e sp ky a k u sh a n i ch u u sh a j o o g a n a k u t e w a n a r a n a i g a sp j i q s a i n i w a a r i e n a i}|原則として、客車に駐車場がなくてはならないが、実際にはあり得ない。
-BASIC5000_3460|JSUT|{m e e sh u s e N sp n o j o o z o o m o t o t o sh i t e sp sh a ch o o sh o k u n i a q t a}|銘酒仙醸の醸造元として、社長職にあった。
-BASIC5000_2683|JSUT|{s o o h o o n o i i b u N o k i k a n a i t o sp sh i N s o o w a w a k a r a n a i}|双方の言い分を聞かないと、真相は分からない。
-BASIC5000_3585|JSUT|{m a N g a b a N d e w a s o n o s e e sh i ts u n o sh o o s a i g a a k a s a r e sp f u u i N s u r u a i t e n i o o j i t e j u ts u sh i n i m o s o o o o n o t a i ry o k u g a m o t o m e r a r e r u t o s a r e sp a m a r i n i m o j i ts u ry o k u n i s a g a a r u b a a i w a f u u i N d e k i n a i}|漫画版ではその性質の詳細が明かされ、封印する相手に応じて術師にも相応の体力が求められるとされ、あまりにも実力に差がある場合は封印できない。
-BASIC5000_0065|JSUT|{hy o o t a N k a r a k o m a q t e i u n o k a n a sp ch i j i N n o sh o o k a i d e sp sh u u sh o k u k i m a q ch a q t a N d a y o}|瓢箪から駒って言うのかな、知人の紹介で、就職決まっちゃったんだよ。
-TRAVEL1000_0482|JSUT|{a n a t a n o y u u b i N b u ts u w a sp r o o k a n o m u k o o g a w a n o sp m e i r u b o q k u s u n i h a i t a ts u s a r e m a s u}|あなたの郵便物は、廊下の向こう側の、メイルボックスに配達されます。
-BASIC5000_0449|JSUT|{r e q sh a w a t o t e m o k o N d e i t a n o d e sp u e n o m a d e t a ch i t o o sh i t a}|列車はとても込んでいたので、上野まで立ちとおした。
-UT-PARAPHRASE-sent189-phrase1|JSUT|{ch u u g o k u w a sp b e e k o k u n o a ts u ry o k u n i k u q s u r u k a t a ch i n o k i r i a g e w a s a k e t a i t o k o r o d e a r u g a sp s a r i t o t e t a i k e ts u s u r u k o t o m o d e k i m a i}|中国は、米国の圧力に屈する形の切り上げは避けたいところであるが、さりとて対決することもできまい。
-BASIC5000_1668|JSUT|{t o m o d a ch i o m i r u k o t o n i y o q t e sp d o N n a j i N k a w a k a r u}|友達を見ることによって、どんな人かわかる。
-TRAVEL1000_0962|JSUT|{a n a t a k a t a n o s a gy o o k o o t e e o m i t e sp m u ry o o n o m i ts u m o r i o s a s e t e i t a d a k i m a s u}|あなた方の作業行程を見て、無料の見積をさせていただきます。
-TRAVEL1000_0079|JSUT|{h a i sp k o k o n i s o n o p a N f u r e q t o g a a r i m a s u}|はい、ここにそのパンフレットがあります。
-REPEAT500_set2_042|JSUT|{s a i j i N w a sp v i sh u n u h a n o s e e j i N sp s u w a a m i i n a a r a a y a N}|祭神は、ヴィシュヌ派の聖人、スワーミーナーラーヤン。
-BASIC5000_2093|JSUT|{k a u N t a a d e w a sp t e n i s u sh u u z u o h a N b a i sh i t e i r u}|カウンターでは、テニスシューズを販売している。
-BASIC5000_1815|JSUT|{k u r u m a y a h i k o o k i d e w a sp i ts u m o a N z e N b e r u t o o sh i m e r u k o t o g a sp h o o r i ts u d e k i m e r a r e t e i m a s u}|車や飛行機では、いつも安全ベルトを締めることが、法律で決められています。
-REPEAT500_set5_067|JSUT|{d e q d o k i i w a sp t a i p u r a i t a a y a sp k o N py u u t a n o k i i b o o d o n i o k e r u sp t o k u sh u n a sh u u sh o k u k i i d e a r u}|デッドキーは、タイプライターや、コンピュータのキーボードにおける、特殊な修飾キーである。
-BASIC5000_4323|JSUT|{d a i hy o o t e k i n a ts u u p u r a t o N k o o g e k i o b a q s u i sh i t e k i s a i s u r u}|代表的なツープラトン攻撃を抜粋して記載する。
-BASIC5000_4974|JSUT|{s o r e g a i ts u d a q t a k a sp h i o k u q t e t a sh i k a m e t a}|それがいつだったか、日を繰って確かめた。
-BASIC5000_3395|JSUT|{y o k u b o o n i t o r a w a r e t a f u r i N n o d a N j o n i y o r u h o k e N k i N m o k u t e k i n o k a N z e N h a N z a i t o s o n o h a t a N}|欲望に囚われた不倫の男女による保険金目的の完全犯罪とその破綻。
-BASIC5000_0800|JSUT|{n a k a n i n a n i g a h a i q t e i r u n o k a sp w a t a sh i n i w a k a r u y o o n i b a q g u o a k e t e k u d a s a i}|中に何が入っているのか、私に分かるようにバッグを開けてください。
-BASIC5000_4262|JSUT|{ch i s o o o k o o s e e s u r u ry u u sh i k a N n o k a N g e k i n o d a i sh o o d e k i t e e s a r e r u}|地層を構成する粒子間の間隙の大小で規定される。
-BASIC5000_0719|JSUT|{ts u m i n o i sh i k i g a sp k a r e n o k a o n i w a h a q k i r i a r a w a r e t e i r u}|罪の意識が、彼の顔にはっきり現れている。
-BASIC5000_1897|JSUT|{j i j i ts u n o k a g a k u sh a n i t a i s u r u k a N k e e w a sp k o t o b a n o sh i j i N n i t a i s u r u k a N k e e t o h i t o sh i i}|事実の科学者に対する関係は、言葉の詩人に対する関係と等しい。
-BASIC5000_0016|JSUT|{sh u q sh o o r i ts u t o sh i b o o r i ts u w a sp h o b o h i t o sh i k a q t a}|出生率と死亡率は、ほぼ等しかった。
-ONOMATOPEE300_148|JSUT|{m e n i e e r u by o o n o s e i k a sp a t a m a g a g u r u N g u r u N m a w a q t e i r u y o o d e k i m o ch i w a r u i}|メニエール病のせいか、頭がぐるんぐるん回っているようで気持ち悪い。
-BASIC5000_3288|JSUT|{sh u ry u u n o y u u s e N s e ts u b i t o k o t o n a r i sp ch o k u s e ts u d e N k i t e k i n i s e ts u z o k u s u r u h i ts u y o o g a n a i t a m e sp k a N d e N n o k a n o o s e e o s a k e r u t a m e sp s e ts u b i o sh a h e e s u r u h i ts u y o o n o a r u b a a i m o a r u}|主流の有線設備と異なり、直接電気的に接続する必要が無いため、感電の可能性を避けるため、設備を遮蔽する必要のある場合もある。
-BASIC5000_1389|JSUT|{sh i ts u m e e s u r u k o t o i j o o n i sp o o k i n a f u k o o g a a r u d a r o o k a}|失明すること以上に、大きな不幸があるだろうか。
-TRAVEL1000_0571|JSUT|{k o k u s a i s e N d e w a sp a r u k o o r u i N ry o o m o sp m u ry o o s a a b i s u n o b a a i g a o o i d e s u}|国際線では、アルコール飲料も、無料サービスの場合が多いです。
-BASIC5000_4507|JSUT|{t o o ky o o t o o n a g a r e r u a s a sh i o u N g a n i k a k a r u h a sh i n o k a t e g o r i}|東京都を流れる朝潮運河に架かる橋のカテゴリ。
-BASIC5000_4466|JSUT|{z e N s a k u t o w a ch i g a i sp a k u sh o N o o s o w a r u n i w a sp i q t e e n o o N p u g a h i ts u y o o d e a r u}|前作とは違い、アクションを教わるには、一定のオンプが必要である。
-LOANWORD128_076|JSUT|{r a z u y a a sh i ch i i t o w a n a N d a r o o}|ラズャーシチイとはなんだろう。
-BASIC5000_3640|JSUT|{gy a k u n i sp y a w a r a k a i sh o k u b u ts u t a i o ts u k u r i t a i t o k i w a sp ch i q s o o t a y o o s u r u t o y o i}|逆に、軟らかい植物体を作りたいときは、窒素を多用するとよい。
-BASIC5000_2876|JSUT|{k u r i s u m a s u n i o a i d e k i r u n o o t a n o sh i m i n i sh i t e i m a s u}|クリスマスにお会い出来るのを楽しみにしています。
-BASIC5000_1035|JSUT|{h e e s e e o t a m o t e n a i t o sp k i m i w a ch i i o u sh i n a u k o t o n i n a r u y o}|平静を保てないと、君は地位を失うことになるよ。
-BASIC5000_4131|JSUT|{d o n o gy o r u i m o sp k o o g e k i o a t e t e t a o s u t o n i g e t e sh i m a u g a sp y o w a r u t o k a r a d a o k a t a m u k e n a g a r a o y o g u y o o n i n a r u}|どの魚類も、攻撃を当てて倒すと逃げてしまうが、弱ると体を傾けながら泳ぐようになる。
-BASIC5000_3463|JSUT|{a t o n i a t o t o r i n o o o j i o u m u g a sp o q t o o u sh i n a q t a sh i N r o o d e k u ch i o t o z a s u}|後に跡取りの皇子を生むが、夫を失った心労で口を閉ざす。
-UT-PARAPHRASE-sent143-phrase1|JSUT|{k o N sh u N s u d a ts u s o ts u gy o o s e e n i w a sp s o n o g e N d o o ry o k u n i n a q t e h o sh i i t o i u}|今春巣立つ卒業生には、その原動力になってほしいという。
-BASIC5000_2974|JSUT|{y a m a i w a k i k a r a sp t o w a sp u m a k u i q t a m o n o d e s u n e}|病は気から、とは、うまく言ったものですね。
-BASIC5000_2212|JSUT|{k o j i N o k i n e N s u r u k i n e N h i o k e N s e ts u s u r u t a m e n i sp k i k i N o k a i sh i sh i t a}|故人を記念する記念碑を建設するために、基金を開始した。
-BASIC5000_3923|JSUT|{i r a i j i N n o t e g a m i n o n a i y o o g a t a N t e k i n i m a t o m e r a r e sp b a N g u m i n o d a i n i s o k u sh i t a y o o sh i g a sp a n a u N s a a n i y o q t e t a N t a N t o sp y o k u y o o n a k u y o m i a g e r a r e t a}|依頼人の手紙の内容が端的にまとめられ、番組の題に即した要旨が、アナウンサーによって淡々と、抑揚なく読み上げられた。
-BASIC5000_1420|JSUT|{sh i b a k a r i k i g a sp k a N s o n a ts u k u r i n o n i g u r u m a n i ts u N d e a r u}|芝刈り機が、簡素な作りの荷車に積んである。
-BASIC5000_4438|JSUT|{a k a m a N b o o m e n o k i N e N gy o r u i n o y o o n i sp hy o o s o o b u b u N o t o o b u o u e n i sh i t e t a d a y o q t e i r u g a sp s o r e i g a i n i w a h o t o N d o s e e t a i g a k a i m e e s a r e t e i n a i}|アカマンボウ目の近縁魚類のように、表層部分を頭部を上にして漂っているが、それ以外には殆ど生態が解明されていない。
-BASIC5000_3816|JSUT|{d a ts u sp n i y o r u ch i q s o j o ky o w a sp i k a t a i sh a n i y o r u m o n o d a g a sp d o o k a t a i sh a n i y o r i s e e t a i e sh i k a s a s e t e sp ch i q s o j o ky o o o k o n a o o t o s u r u h o o h o o m o a r u}|脱窒菌による窒素除去は、異化代謝によるものだが、同化代謝により生体へ資化させて、窒素除去を行おうとする方法もある。
-REPEAT500_set3_020|JSUT|{z e N b e e p a b u r i q sh a a z u ky o o k a i n o sp b e s u t o s u t o r a t e j i i g e e m u o b u z a i y a a o sp n i q p o N j i N t o sh i t e j u sh o o}|全米パブリッシャーズ協会の、ベストストラテジーゲームオブザイヤーを、日本人として受賞。
-BASIC5000_2438|JSUT|{j i N k e N y o o g o d a N t a i w a d o k u s a i t e k i n a s e e f u n i a ts u ry o k u o k a k e t e i m a s u}|人権擁護団体は独裁的な政府に圧力をかけています。
-BASIC5000_2034|JSUT|{sh i q p a i sh i t e sp a r e h o d o k a n a sh i s o o n a k a o o s u r u y a ts u g a sp i r u k a n a}|失敗して、あれほど悲しそうな顔をする奴が、いるかな。
-BASIC5000_3578|JSUT|{k o n o t o k u ch o o t e k i n a s o t o s e e k i n o y o o s u k a r a sp k a g a k u t e k i k e N ky u u g a s u s u m u m a e n i w a sp sh i y u u d o o t a i n o k a t o o n a s e e b u ts u t o k a N g a e r a r e t e i t a j i k i m o a q t a y o o d e a r u}|この特徴的な外性器の様子から、科学的研究が進む前には、雌雄同体の下等な生物と考えられていた時期もあったようである。
-BASIC5000_2036|JSUT|{h a n a sp u s o n a k i w a t a m a a n i y a r u k a r a sp k o o k a a r u N d a z o}|花乃、嘘泣きはたまーにやるから、効果あるんだぞ。
-BASIC5000_1367|JSUT|{k a g o sh i m a n i w a i ch i d o m o i q t a k o t o g a a r i m a s e N g a sp k o t o sh i n o n a ts u sp i k u ts u m o r i d e s u}|鹿児島には一度も行ったことがありませんが、今年の夏、行くつもりです。
-BASIC5000_3336|JSUT|{d a N s o o n a i n o d a N y a k u m o m u s e e g e N n i n a r u t a m e sp r i r o o d o s u r u k o t o n a sh i n i t a m a o u ch i ts u z u k e r u k o t o g a d e k i r u}|弾倉内の弾薬も無制限になるため、リロードすること無しに弾を撃ち続けることができる。
-BASIC5000_4412|JSUT|{ky u u k e ts u k i n i t o q t e sh i N s e e n a t e N t a i d e a r u ts u k i n o m a ry o k u o k a N p e k i n i a y a ts u r i u m i d a s a r e r u sp ts u k i t a k u m i n o m a h o o z a i k u w a sp a r a y u r u k e q t o o n o b i j u ts u t e k i s u u h a i n o t a i sh o o t o n a q t e i r u}|吸血鬼にとって神聖な天体である月の魔力を完璧に操り生み出される、月匠の魔法細工は、あらゆる血統の美術的崇拝の対象となっている。
-BASIC5000_4156|JSUT|{e k i m a e w a sp e k i o ch u u sh i N n i h o o sh a j o o n i d o o r o g a n o b i sp e k i m a e n i k i q s a t e N n a d o n o i N sh o k u t e N g a s u u k e N a r u}|駅前は、駅を中心に放射状に道路が延び、駅前に喫茶店などの飲食店が数軒ある。
-TRAVEL1000_0640|JSUT|{k i q p u w a sp o o b a a r a N d o k o o k u u n o k a u N t a a d e u k e t o r e m a s u}|切符は、オーバーランド航空のカウンターで受け取れます。
-BASIC5000_0581|JSUT|{i ch i m o k u d e sp k e s a w a k a r e g a sp s a i k o o n o o sh a r e o sh i t e i r u k o t o n i k i g a ts u i t a}|一目で、今朝は彼が、最高のおしゃれをしていることに気がついた。
-BASIC5000_4730|JSUT|{h a N n i N w a f u r u u k o e d e sp j i ky o o o h a j i m e t a}|犯人は震う声で、自供を始めた。
-BASIC5000_4157|JSUT|{s o n o b u ry o k u w a n u k i N d e t a m o n o g a a r i sp m i z u k a r a u r a n a i b o k u sh i t e w a sp j i b u N w a i z u r e f u u k i n i n a r u m i d a sp t o g o o g o sh i t e i t a}|その武力は抜きん出たものがあり、自ら占卜しては、自分はいずれ富貴になる身だ、と豪語していた。
-BASIC5000_0256|JSUT|{h a sh i d e s o n o sh i m a e w a t a r e r u y o o n i n a q t e i r u}|橋でその島へ渡れるようになっている。
-TRAVEL1000_0883|JSUT|{ch i k a i u ch i n i sp m a t a g o i q sh o d e k i r e b a y o i n o d e s u g a}|近いうちに、またご一緒できればよいのですが。
-BASIC5000_1437|JSUT|{r a t e N g o o y o m e r u g a k u s e e w a sp h o t o N d o i n a i}|ラテン語を読める学生は、ほとんどいない。
-BASIC5000_0157|JSUT|{s a N b a N m e n i k o o ry o s u b e k i j i k o o w a sp k a a p e q t o n o j i d a i s e e d e a r u}|３番目に考慮すべき事柄は、カーペットの時代性である。
-BASIC5000_0692|JSUT|{t o k o r o m o a r o o n i sp m o N g o r u d e g u u z e N sp k a n o j o n i d e a q t a}|所もあろうに、モンゴルで偶然、彼女に出会った。
-BASIC5000_4240|JSUT|{m a t a sp m o n o n o j u my o o o ky o k u ry o k u n o b a s u k o t o y a sp s e e h i N z e N b u d e w a n a k u b u b u N t e k i n i k o o k a N s u r u d a k e d e k e e z o k u sh i y o o d e k i r u y o o n i ts u k u r u k o t o m o sp r i dy u u s u n o h i t o ts u d e a r u t o s u r u k o t o g a d e k i r u}|また、物の寿命を極力延ばすことや、製品全部ではなく部分的に交換するだけで継続使用できるように作ることも、リデュースの一つであるとすることができる。
-UT-PARAPHRASE-sent032-phrase1|JSUT|{k i t a n o k u n i k a r a k a i s a N b u ts u sp n o o s a N b u ts u sp m e e k a n a d o g a t o y o h a sh i e}|北の国から海産物、農産物、銘菓などが豊橋へ。
-BASIC5000_3068|JSUT|{i e g a r a sp y o o sh i n i m e g u m a r e t a s a i e N d e a r u g a sp ry o o r i w a n i g a t e d e sp h i t o n a m i i k a t o i e r u}|家柄、容姿に恵まれた才媛であるが、料理は苦手で、人並み以下と言える。
-BASIC5000_2486|JSUT|{b a k a g a u ts u r u m a e n i s o n o y o o n a sh u u ky o o n i k a k a w a r a N h o o g a i i}|馬鹿が移るまえにそのような宗教に関わらんほうがいい。
-ONOMATOPEE300_048|JSUT|{h a j i m e t e r o o k a r u s e N n i n o q t e m i t a r a sp g o q t o N g o q t o N t o k o k o ch i y o i sh i N d o o g a a r i sp o m o w a z u n e t e sh i m a q t a}|初めてローカル線に乗ってみたら、ごっとんごっとんと心地よい振動があり、思わず寝てしまった。
-BASIC5000_0513|JSUT|{sh i k i n o n a k a d e w a t a sh i g a i ch i b a N s u k i n a n o w a sp a k i d a}|四季の中で私が一番好きなのは、秋だ。
-BASIC5000_0222|JSUT|{k u g a ts u n i f u k u g a k u s u r u k o t o o sp k a r e w a s e ts u b o o sh i t a}|９月に復学することを、彼は切望した。
-BASIC5000_0642|JSUT|{s u N b a r a sh i i ts u m a d a sh i sp s u N b a r a sh i i h a h a o y a d a}|すんばらしい妻だし、すんばらしい母親だ。
-BASIC5000_2342|JSUT|{k a y o i ts u m a t o w a n a m a e n o t o o r i sp ts u m a g a o q t o n o m o t o n i k a y o u sp k e q k o N k e e t a i n o k o t o d e a r u}|通い妻とは名前の通り、妻が夫の元に通う、結婚形態の事である。
-UT-PARAPHRASE-sent151-phrase2|JSUT|{m a j i m e n a k a o d e ts u b u y a k u n o o sp k i i t a y u u j i N m o i r u}|真面目な顔でつぶやくのを、聞いた友人もいる。
-LOANWORD128_102|JSUT|{f o o my u r a w a N w a sp m o o t a a s u p o o ts u n o k a t e g o r i n o h i t o ts u d e a r u}|フォーミュラワンは、モータースポーツのカテゴリの1つである。
-BASIC5000_2176|JSUT|{b a k u y a k u s e e z o o h a N w a sp sh i b a sh i b a s e k e N n o ch u u m o k u o a ts u m e t a i t o i u d o o k i o m o q t e i r u}|爆薬製造犯は、しばしば世間の注目を集めたいという動機を持っている。
-REPEAT500_set4_072|JSUT|{b u r a q g u w a sp by u u e r u g u N y o r i m o sp r e q s e e d a q t a t a m e n i sp k o n o k i k a i o i k a s u k o t o o ch u u ch o sh i t a}|ブラッグは、ビューエル軍よりも、劣勢だったために、この機会を生かすことを躊躇した。
-PRECEDENT130_092|JSUT|{g e N k o k u r a g a h o N k e N ky o sh i ts u n o g e N k a N d o a o k e q t a j i j i ts u w a n a i}|原告らが本件居室の玄関ドアを蹴った事実はない。
-BASIC5000_3657|JSUT|{n a N b u n o k a i h i N b u w a sp g e N d a i n i o k e r u u m e t a t e z o o s e e ch i d e sp k o o gy o o ch i t a i t o n a q t e i r u}|南部の海浜部は、現代における埋立造成地で、工業地帯となっている。
-BASIC5000_4465|JSUT|{y a k i d a m a e N j i N w a sp k o N g o o k i g a y a k i d a m a d a m a k a r a n o u ch i hy o o m e N n o n e ts u m e N ch a q k a n i y o r i sp n e N sh o o g a h a j i m a r u}|焼玉エンジンは、混合気が焼玉球殻の内表面の熱面着火により、燃焼が始まる。
-BASIC5000_0337|JSUT|{s u u j i o t a sh i t a r i h i i t a r i t o i u m e N d o o k u s a i sh i g o t o m o sp i q t a N h a j i m e t e sh i m a e b a sp s o r e w a s o r e d e sp o m o sh i r o s a g a a r u m o n o d a y o}|数字を足したり引いたりという面倒臭い仕事も、一旦始めてしまえば、それはそれで、面白さがあるものだよ。
-BASIC5000_3300|JSUT|{s o r e g a t a t o e ts u t a n a i k a N p e k i d e n a i hy o o g e N d e m o h o o r i ts u i h a N n i w a n a q t e i n a i n o d e sp k o n o t e N w a sp z u ts u u s a N n i g o r i k a i n e g a i t a i t o o m o i m a s u}|それがたとえ拙い完璧でない表現でも法律違反にはなっていないので、この点は、頭痛さんにご理解願いたいと思います。
-BASIC5000_2215|JSUT|{a i sh i t a h i t o n o sh i o sp a m a r i n a g a i k o t o k a n a sh i N d e i t e w a i k e n a i}|愛した人の死を、あまり長いこと悲しんでいてはいけない。
-BASIC5000_4413|JSUT|{k a i g a i d e n o u m a b a N g o o w a sp f u t a N j u u ry o o n o o m o i j u N n i n a r a b e r a r e sp o n a j i f u t a N k i N ry o o n o u m a w a sp g e N ch i hy o o k i n o a r u f a b e q t o j u N n i n a r a b e r a r e r u}|海外での馬番号は、負担重量の重い順に並べられ、同じ負担斤量の馬は、現地表記のアルファベット順に並べられる。
-BASIC5000_4263|JSUT|{sh o o h i N n o b a a i w a sp k a N y o o m e e n o h o k a n i sp t o o r o k u sh o o hy o o g a ts u k e r a r e r u k o t o g a a r i sp k a N y o o m e e t o m a g i r a w a sh i i}|商品の場合は、慣用名の他に、登録商標がつけられることがあり、慣用名と紛らわしい。
-BASIC5000_1400|JSUT|{t e k i o m o q t a k o t o n o n a i m o n o n i w a sp t o m o w a d e k i n a i}|敵を持ったことのないものには、友はできない。
-BASIC5000_3006|JSUT|{sh u u g i i N g i i N j i d a i w a n i q k a N g i i N r e N m e e sp n i q k a N k a i t e e t o N n e r u s u i sh i N g i i N r e N m e e sp sh i N t o o s e e j i r e N m e e k o q k a i g i i N k o N d a N k a i n i sh o z o k u sh i t e i t a}|衆議院議員時代は日韓議員連盟、日韓海底トンネル推進議員連盟、神道政治連盟国会議員懇談会に所属していた。
-TRAVEL1000_0518|JSUT|{ch o q t o m i s e t e i t a d a i t e i r u d a k e d e s u}|ちょっと見せていただいているだけです。
-REPEAT500_set3_024|JSUT|{k o n o t a m e sp p u r a z u m a ch u u n o i o N y a sp d e N sh i n o m o ts u sp h e e k i N u N d o o e n e r u g i i o sp o N d o d e hy o o g e N s u r u k o t o g a a r u}|このため、プラズマ中のイオンや、電子の持つ、平均運動エネルギーを、温度で表現することがある。
-BASIC5000_2936|JSUT|{a a sp u sh i n o ch i ch i w a s o N n a f u u n i sh i b o r u n o d e s u k a}|ああ、牛の乳はそんなふうに搾るのですか。
-BASIC5000_3704|JSUT|{d o o ch i k u n i w a k a r a t o sh o o t e N g a i g a a r u g a sp k i N n e N h e e t e N s u r u m i s e g a f u e sp s a i k a i h a ts u n i y o q t e s e e ky o o s a o t o r i m o d o sh i t a k a i ky o o z o i t o w a t a i sh o o n i sp y a y a s a b i r e t a k a N j i g a t a d a y o u}|同地区には唐戸商店街があるが、近年閉店する店が増え、再開発によって盛況さを取り戻した海峡沿いとは対照的に、やや寂れた感じが漂う。
-BASIC5000_1344|JSUT|{k i k e b a k i k u h o d o sp m a s u m a s u o m o sh i r o k u n a r u}|聞けば聞くほど、ますます面白くなる。
-BASIC5000_0847|JSUT|{t a t o e b a sp a n a t a n o y o o n a w a k a i h i t o t a ch i g a sp k o n o sh i g o t o n i w a h i ts u y o o d a}|例えば、あなたのような若い人たちが、この仕事には必要だ。
-ONOMATOPEE300_251|JSUT|{k i N j o d e k a j i g a o k o q t a r a sh i k u sp m e r a m e r a t o a k a i h o n o o g a a g a q t e i t e sp k e m u r i g a s o r a t a k a k u a g a q t e i r u}|近所で火事が起こったらしく、めらめらと赤い炎が上がっていて、煙が空高く上がっている
-BASIC5000_4682|JSUT|{s a ts u o k o e t e k o o g e k i sh i t e k u r u}|冊を超えて攻撃してくる。
-BASIC5000_3682|JSUT|{m a r u d e m a f i a k a N k e e sh a n o y o o n a g a i k e N d a g a sp k a N k a k u o t o g i s u m a s u t a m e n i sp h e e j i w a t o z a s a r e t e i r u s o n o m e w a k o d o m o n o y o o n i s u N d e i r u}|まるでマフィア関係者のような外見だが、感覚を研ぎ澄ますために、平時は閉ざされているその眼は子供のように澄んでいる。
-ONOMATOPEE300_173|JSUT|{y o i g a m a w a r u n o g a h a y a i n o d e sp o s a k e o ch i b i ch i b i n o m u}|酔いが回るのが早いので、お酒をチビチビ飲む。
-BASIC5000_2433|JSUT|{m i ch i n a r i n i s u s u N d e sp m i q ts u m e n o k o o s a t e N o h i d a r i n i m a g a q t e k u d a s a i}|道なりに進んで、三つ目の交差点を左に曲がって下さい。
-LOANWORD128_029|JSUT|{k o k o d e sp k i sh i k a i s e e n o h o o m u r a N o u q t a r a sp m a ch i g a i n a k u k a r e w a d o y a r u d e sh o o}|ここで、起死回生のホームランを打ったら、間違いなく彼はドヤるでしょう。
-BASIC5000_3012|JSUT|{t a d a sp r o k e q t o y a m i s a i r u n i w a sp h e e k i t o sh i t e n o s o k u m e N g a a r u t a m e sp r a N ch a a n o n a k a n i w a sp h e e k i n o h a N ch u u d e a ts u k a w a r e r u m o n o m o s u k u n a k u n a i}|ただ、ロケットやミサイルには、兵器としての側面があるため、ランチャーの中には、兵器の範疇で扱われるものも少なくない。
-BASIC5000_1773|JSUT|{y o sh i a sh i w a b e ts u t o sh i t e sp t o n i k a k u y a q t e m i y o o}|よしあしは別として、とにかくやってみよう。
-TRAVEL1000_0905|JSUT|{i ts u m e e r u r u u m u w a h i r a i t e i m a s u k a}|いつメールルームは開いていますか。
-TRAVEL1000_0732|JSUT|{d o n o y o o n i sp g u a i g a w a r u i n o d e s u k a}|どのように、具合いが悪いのですか。
-BASIC5000_4197|JSUT|{b a d o w a sp g a i u s u t o i n o ch i t o k o o k a N n i sp n a g a m u sh i o sh i r i z o k e r u k e e y a k u o k a w a s u}|バドは、ガイウスと命と交換に、長虫を退ける契約をかわす。
-BASIC5000_1968|JSUT|{d o o r i d e k a r e r a g a sp k a n o j o n o m o o sh i d e o k o t o w a q t a w a k e d a}|道理で彼らが、彼女の申し出を断ったわけだ。
-BASIC5000_1960|JSUT|{m a m a m o p a p a m o sp h i d o k u i r a d a q t e i r u n o}|ママもパパも、ひどくいらだっているの。
-BASIC5000_2423|JSUT|{k a sh u t o sh i t e k a n o j o w a s o n o k u n i d e i ch i ry u u d e s u}|歌手として彼女はその国で一流です。
-BASIC5000_0259|JSUT|{sh o o j o w a n i N gy o o o sp i t o sh i g e n i d a k i sh i m e t a}|少女は人形を、いとしげに抱き締めた。
-BASIC5000_0320|JSUT|{k o o r i n o y o o n i ts u m e t a i m i z u n o n a k a d e o y o g o o t o s u r u n a N t e sp k a r e m o m u ch a n a k o t o o sh i t a m o n o d a}|氷のように冷たい水の中で泳ごうとするなんて、彼も無茶なことをした物だ。
-BASIC5000_1138|JSUT|{m i n a k u ch a i k e n a i d o o b u ts u g a sp t a k u s a N i r u y o}|見なくちゃ行けない動物が、たくさんいるよ。
-TRAVEL1000_0605|JSUT|{o sh i e t e i t a d a i t a h i t o n i sp o r e e o n o b e r u n o m o w a s u r e n a i y o o n i sh i t e k u d a s a i}|教えていただいた人に、お礼を述べるのも忘れないようにしてください。
-BASIC5000_1408|JSUT|{f u y o o i n a k o t o b a w a sp o o k i n a w a z a w a i n o m o t o n i n a r u d e a r o o}|不用意な言葉は、大きな災いのもとになるであろう。
-BASIC5000_2196|JSUT|{k a N b o j i a d e n o g a q p e e j i gy o o w a sp sh i q p a i sh i t e sh i m a q t a}|カンボジアでの合併事業は、失敗してしまった。
-UT-PARAPHRASE-sent246-phrase2|JSUT|{ch o q p i r i sp k u sh o o o sh i t a m o n o d a q t a}|ちょっぴり、苦笑をしたものだった。
-BASIC5000_1919|JSUT|{h o o s o o s a r e r u e e g o n o b a N g u m i o k i k u k o t o g a a r i m a s u k a}|放送される英語の番組を聞くことがありますか。
-REPEAT500_set4_034|JSUT|{ch o o b o i N o sh o o ry a k u sh i t e sp e ry u sh i o N t o m o hy o o k i s a r e r u}|長母音を省略して、エリュシオンとも表記される。
-BASIC5000_2640|JSUT|{h o r a a e e g a o m i r u k o t o n i sp t a n o sh i m i o m i i d a s u h i t o m o i r u}|ホラー映画を見ることに、楽しみを見いだす人もいる。
-BASIC5000_3061|JSUT|{k i N s e e n i w a sp e d o b a k u f u n o i n o ch i n i y o r i sp s e e j o o k o o t e r a o s o o h o N z a N t o s u r u sp t o k i m u n e n o k a N k a ts u k a n i o k a r e t a}|近世には、江戸幕府の命により、清浄光寺を総本山とする、時宗の管轄下におかれた。
-BASIC5000_1359|JSUT|{o t o k o d e m o o N n a d e m o sp n a n i k a h i t o ts u n o g i j u ts u o m i n i ts u k e r u k o t o g a n o z o m a sh i i}|男でも女でも、何か一つの技術を身につけることが望ましい。
-BASIC5000_3538|JSUT|{t o k u n i a b a r e r u k o t o n a k u sp i n i sh a r a i z u s a r e r u}|特に暴れることなく、イニシャライズされる。
-BASIC5000_4447|JSUT|{s u d e n i sh a k a n o b u q p o o o ch o o m o N sh i t e j i h i sh i N n i m i ch i t a sp b i N b i s a a r a g a sp h i n o k o n o t a i d o n i k o k o r o o i t a m e sp i q k e e o a N j i t e sp b u ts u z e N n i ts u r e d a sh i t a}|既に釈迦の仏法を聴聞して慈悲心に満ちた、ビンビサーラが、妃のこの態度に心を痛め、一計を案じて、仏前に連れ出した。
-TRAVEL1000_0632|JSUT|{k o r e g u r a i n o o o k i s a d e sp i r o w a ch a i r o d e s u}|これぐらいの大きさで、色は茶色です。
-BASIC5000_1340|JSUT|{h i q k o sh i t e k i t a b a k a r i d a k a r a sp m a d a h e y a g a s a q p u u k e e n a N d a y o}|引っ越してきたばかりだから、まだ部屋が殺風景なんだよ。
-BASIC5000_0166|JSUT|{w a r u k a q t a k e r e d o m o sp a n o t e e d o n a r a m a d a m a sh i d a q t a}|悪かったけれども、あの程度ならまだましだった。
-UT-PARAPHRASE-sent031-phrase1|JSUT|{e e gy o o w a sp s o t o m a w a r i t o j i m u o k e N m u s u r u sh i g o t o}|営業は、外回りと事務を兼務する仕事。
-BASIC5000_2199|JSUT|{d a ch o o w a sp k a N g a r u u t o d o o y o o s o r a o t o b e n a i}|ダチョウは、カンガルーと同様空を飛べない。
-BASIC5000_1347|JSUT|{k i k o e r u s e N r i ts u w a u ts u k u sh i i g a sp k i k o e n a i s e N r i ts u w a s a r a n i u ts u k u sh i i}|聞える旋律は美しいが、聞こえない旋律はさらに美しい。
-BASIC5000_2671|JSUT|{sh u n o o k a i d a N n o k o t o w a sp s e k a i j u u d e h o o e e s a r e r u y o t e e d a}|首脳会談のことは、世界中で放映される予定だ。
-REPEAT500_set3_017|JSUT|{t a d a sh i sp gy a N b u r u i z o N sh o o n o ny u u i N ch i ry o o o i q t e i r u by o o i N w a sp w a z u k a d e a r u}|ただし、ギャンブル依存症の入院治療を行っている病院は、わずかである。
-BASIC5000_0574|JSUT|{b a q sh i sh i n a i d e s u m a s u h o o h o o w a a r i m a s u k a}|抜歯しないで済ます方法はありますか。
-BASIC5000_2237|JSUT|{g o m e N sp k i m i n o i q t a k o t o sp y o k u k i k o e n a k a q t a}|ごめん、君の言ったこと、よく聞こえなかった。
-BASIC5000_2580|JSUT|{r o sh i a w a sp t a i h e N n a z a i s e e k o N n a N n i ch o k u m e N sh i t e i r u}|ロシアは、大変な財政困難に直面している。
-BASIC5000_0535|JSUT|{y u u k i o u sh i n a w a n a i d e sp d o N d o N k a k i ts u z u k e n a s a i}|勇気を失わないで、どんどん書きつづけなさい。
-BASIC5000_4238|JSUT|{s a b i sh i s a o m a g i r a w a s u t a m e sp a d e r u w a b a a e d e k a k e sp a N t o w a a n u t o h a g e sh i k u k a N n o o t e k i n i o d o r i sp i g o sh i N m i ts u n a k a N k e e n i n a r u}|寂しさを紛らわすため、アデルはバーへ出かけ、アントワーヌと激しく官能的に踊り、以後親密な関係になる。
-BASIC5000_2643|JSUT|{k i N o n a k u sh i t a t a m e n i sp k a r e w a g a i k o k u n i i k e n a k u n a q t a}|金をなくしたために、彼は外国に行けなくなった。
-BASIC5000_2907|JSUT|{j o N g a sp b u r a u N s a N n i h a n a sh i k a k e t e i r u n o g a k i k o e m a sh i t a}|ジョンが、ブラウンさんに話し掛けているのが聞こえました。
-BASIC5000_0664|JSUT|{t e N n e N sh i g e N w a sp m u g e N n i s o N z a i s u r u w a k e d e w a n a i}|天然資源は、無限に存在するわけではない。
-TRAVEL1000_0554|JSUT|{k o n o y a s a i ry o o r i n o ch o o r i h o o h o o o i t a d a k e m a s u k a}|この野菜料理の調理方法をいただけますか。
-BASIC5000_4159|JSUT|{d e N t o o t e k i n a y o o s a N w a sp s e e ry o o s o d a t o y o b a r e r u sh i z e N n o o N d o d e sp k a i k o o sh i i k u s u r u}|伝統的な養蚕は、清涼育とよばれる自然の温度で、蚕を飼育する。
-BASIC5000_3999|JSUT|{k a ts u t e w a sp sh i N y u u b a r i t a N k o o n a d o n o t a N k o o j u u t a k u g a i d e a q t a g a sp g e N z a i w a sp sh i e e j u u t a k u g a t a ts u}|かつては、新夕張炭鉱などの炭鉱住宅街であったが、現在は、市営住宅が建つ。
-PRECEDENT130_077|JSUT|{g e N k o k u g a sp j o o k i m i h a r a i ch i N ry o o t o o o h o o k i sh i t a k o t o w a h i n i N s u r u}|原告が、上記未払賃料等を放棄したことは否認する。
-BASIC5000_4135|JSUT|{d a i y o N k a N w a sp h o N b u N n o k o o k a N n i a t e t e i r u}|第四巻は、本文の校勘に当てている。
-BASIC5000_2567|JSUT|{y a m e r o t o i q t a n i m o k a k a w a r a z u sp k a r e w a g a o t o o sh i t a}|やめろといったにもかかわらず、彼は我を通した。
-BASIC5000_1246|JSUT|{k a w a n o m i z u o s e k i t o m e r u t a m e n i sp t e e b o o g a k e N s e ts u s a r e t a}|川の水をせき止めるために、堤防が建設された。
-ONOMATOPEE300_292|JSUT|{j u u n e N b u r i n i a q t a y u u j i N w a sp h o q s o r i t o sh i t e i t e sp s e e k i g a n u k e t e sh i m a q t a y o o n i o m o e t e sh i k a t a g a n a k a q t a}|10年ぶりにあった友人は、ほっそりとしていて、生気が抜けてしまったように思えて仕方がなかった
-BASIC5000_0426|JSUT|{k u u y u n o o k a g e d e sp t a b e m o n o n i k i s e ts u k a N o k a N j i n a k u n a q t a sp t o i u o h a n a sh i d e s u}|空輸のおかげで、食べ物に季節感を感じなくなった、というお話です。
-BASIC5000_2079|JSUT|{m o q t e i t a o k a n e w a s u k u n a i g a sp z e N b u k a r e n i a g e t a}|持っていたお金は少ないが、全部彼にあげた。
-BASIC5000_2292|JSUT|{h o sh o o w a sp m i N n a n i a i k o t o b a o i w a s e t a}|歩哨は、みんなに合い言葉を言わせた。
-ONOMATOPEE300_112|JSUT|{a ts u k u t e sp j i w a a q t o a s e o k a i t e sp k e a g a t a i h e N d e sh i t a}|暑くて、ジワーッと汗をかいて、ケアが大変でした。
-BASIC5000_4062|JSUT|{ch i n a m i n i s o o z o o ry o k u n o y u t a k a n a a k u m a w a sp y u n i i k u n a s e k a i o ts u k u r u k o t o m o a r u g a sp t a i t e e n o a k u m a w a n i N g e N k a i n o sh i N w a o m o t o n i sh i t a s e k a i o ts u k u r u}|ちなみに想像力の豊かな悪魔は、ユニークな世界を創ることもあるが、大抵の悪魔は人間界の神話をもとにした世界を創る。
-BASIC5000_1456|JSUT|{h i j i k a k e i s u n i k o sh i k a k e t e sp sh i b a r a k u o ch i ts u i t e k u d a s a i}|肘掛けいすに腰掛けて、しばらく落ち着いてください。
-TRAVEL1000_0221|JSUT|{b a r u k o n i i n i sp y o N s e k i r e N z o k u d e a r i m a s u}|バルコニーに、4席連続であります。
-BASIC5000_0541|JSUT|{sh i g e m i ch a N o h o i k u e N n i m u k a e n i i q t e m o r a e r u}|しげみちゃんを保育園に迎えに行ってもらえる。
-VOICEACTRESS100_085|JSUT|{n o k o h a i n o h o t o N d o w a sp s u w e e d e N n i sh i k a i g a N n o sp b u u hy u u s u r e e N ch i h o o n o k o j i m a n i a r u gy o s o N sp f u y a r u b a q k a sh u u h e N n o u m i n i sp s a N k o ts u s a r e t a}|遺灰のほとんどは、スウェーデン西海岸の、ブーヒュースレーン地方の小島にある漁村、フヤルバッカ周辺の海に、散骨された。
-BASIC5000_3515|JSUT|{a t o n i d a N t a i r a o m i i d a sh i sp n a N d o g a o t o sh i k a k e t e i t a g e N k o o n i m i k i r i o ts u k e sp ky o o s e e t e k i n i o t o s u k a t a ch i d e k a r e o d e by u u s a s e sp s a r a n i w a sp ch o o n i N k i m a N g a k a e t o s o d a t e r u}|後に団平を見出し、納戸が落としかけていた原稿に見切りをつけ、強制的に落とす形で彼をデビューさせ、さらには、超人気漫画家へと育てる。
-BASIC5000_1541|JSUT|{s e N k u sh a t a ch i w a sp i ch i r e N n o sh o o g a i o k o k u f u k u sh i t e k i t a}|先駆者たちは、一連の障害を克服してきた。
-BASIC5000_2566|JSUT|{y a m u d o k o r o k a sp a r a sh i w a i q s o o h a g e sh i k u n a q t a}|やむどころか、嵐はいっそう激しくなった。
-BASIC5000_3832|JSUT|{f u sh i n o m a ts u b i w a sp s o p u r a n o t o t e n o o r u g a s o r o q t e sp s a N r e N f u n o m e r i s u m a o k a r a m e r u}|節の末尾は、ソプラノとテノールがそろって、三連符のメリスマを絡める。
-TRAVEL1000_0244|JSUT|{e e g o sp hy a k u i ch i g a k a i t e a r i m a s u g a sp a n a t a w a k o n o g a q k i n i r i sh u u d e k i m a s e N}|英語、101が書いてありますが、あなたはこの学期に履修できません。
-LOANWORD128_032|JSUT|{k a r e n o w a r u i k u s e w a sp f u r i n a j o o ky o o n i n a r u t o s u g u n i n e g u r u k o t o d a}|彼の悪い癖は、不利な状況になるとすぐにネグることだ。
-REPEAT500_set1_001|JSUT|{m a t a sp t o o j i n o y o o n i sp g o d a i my o o o o t o y o b a r e r u sp sh u y o o n a my o o o o n o ch u u o o n i h a i s a r e r u k o t o m o o o i}|また、東寺のように、五大明王と呼ばれる、主要な明王の中央に配されることも多い。
-BASIC5000_3606|JSUT|{sh i t a g a q t e sp k o n o t a i k u ts u t o i u k u u ky o k a r a m e o s o m u k e r u k o t o n a k u sp k u u ky o o m i t a s u b e k i n a n o d e a r u}|したがって、この退屈という空虚から目を背けることなく、空虚を満たすべきなのである。
-BASIC5000_1979|JSUT|{m a m e ch a N g a k o o h i i m a m e o h i k u t a m e n i sp k o o h i i m i r u o ts u k a i m a s u}|マメちゃんがコーヒー豆を挽く為に、コーヒーミルを使います。
-BASIC5000_1401|JSUT|{s e N sh i N k o k u w a sp h a q t e N t o j o o k o k u o m o q t o e N j o s u b e k i d a}|先進国は、発展途上国をもっと援助すべきだ。
-BASIC5000_0190|JSUT|{m e m o n i w a sp m i z u n i u k a b u r e N sh u u o s a s e r u y o o n i sp t o sp n a g u r i g a k i s a r e t e i t a}|メモには、水に浮かぶ練習をさせるように、と、殴り書きされていた。
-TRAVEL1000_0743|JSUT|{h a m u s a N d o i q ch i t o sp k o o r a o o n e g a i sh i m a s u}|ハムサンドイッチと、コーラをお願いします。
-BASIC5000_4672|JSUT|{y o z o r a n i ts u k i g a k a k a r u}|夜空に月が懸かる。
-BASIC5000_4689|JSUT|{sh i i t e k i n a m i k a t a o s a k e r u b e k i d a}|恣意的な見方を避けるべきだ。
-BASIC5000_3942|JSUT|{j u u j i g u N u N d o o n i s a N k a sh i t a h i t o b i t o w a sp y u d a y a j i N t o i s u r a m u ky o o t o w a sp m i n a k i r i s u t o n o t e k i d e a r u t o i i sp t e k i w a k i r i s u t o ky o o n i k a i sh u u s a s e r u k a sp k e N o t o q t e t a t a k a u k a sh i n a k e r e b a n a r a n a i t o u q t a e t a}|十字軍運動に参加した人々は、ユダヤ人とイスラム教徒は、みなキリストの敵であるといい、敵はキリスト教に改宗させるか、剣を取って戦うかしなければならないと訴えた。
-BASIC5000_3436|JSUT|{k a N k i m a h o o d e w a sp o t o o t o g a k a q t e i r u t o i w a r e t e i r u g a sp ky o o d a i n a k a w a ry o o k o o}|喚起魔法では、弟の幹比古が勝っているといわれているが、兄弟仲は良好。
-TRAVEL1000_0966|JSUT|{t a k u sh i i n i a i n o r i sh i m a sh o o k a}|タクシーに相乗りしましょうか。
-UT-PARAPHRASE-sent235-phrase1|JSUT|{h i f u d e w a a ts u s a o k a N j i n a i g a sp k a r a d a n o sh i N b u k a r a a t a t a m e r u}|皮膚では熱さを感じないが、体の深部から温める。
-BASIC5000_4806|JSUT|{m a ch i n o h i t o n i m a g i r e r u k o t o d e sp k a r e n o t o o s o o w a k a N t a N n i n a q t a}|町の人に紛れることで、彼の逃走は簡単になった。
-UT-PARAPHRASE-sent137-phrase1|JSUT|{h o N t o o n i t o m a m a r u k a d o o k a sp o s o r u o s o r u ts u k a q t e m i t a g a sp j i q s a i n i p i t a r i t o t e e sh i sh i t a}|本当に停まるかどうか、恐る恐る使ってみたが、実際にピタリと停止した。
-REPEAT500_set3_040|JSUT|{g i r e s u p i i w a sp m a q g i i o ts u u j i t e sp i n e s u t o sh i r i a q t a}|ギレスピーは、マッギーを通じて、イネスと知り合った。
-BASIC5000_3412|JSUT|{n a m e r a k a d e k i r e i n a s e N o h i k e r u g a k i a j i g a t o k u ch o o}|滑らかでキレイな線を引ける書き味が特長。
-BASIC5000_0129|JSUT|{s a i sh i w a sp h i t o b i t o o d o o t o k u t e k i n i t a k a m e y o o t o sh i t a}|祭司は、人々を道徳的に高めようとした。
-UT-PARAPHRASE-sent162-phrase1|JSUT|{u w a n e o o u n i w a sp gy o o s e k i n a d o d e m e a t a r a sh i i z a i ry o o g a h i ts u y o o t o i e s o o d a}|上値を追うには、業績などで目新しい材料が必要といえそうだ。
-BASIC5000_1235|JSUT|{k e N g a w a t a sh i n i a i n i k i t a n o w a sp ch o o d o n i sh u u k a N m a e d a q t a}|ケンが私に会いに来たのは、ちょうど２週間前だった。
-UT-PARAPHRASE-sent188-phrase2|JSUT|{k a i i N n i w a r o N k a k u m o o o k u sp n o b i n o b i t o u N ch i k u o k a t a m u k e t a r i sp k a q p a ts u n a g i r o N n i h a q t e N s u r u b a m e N m o sh i b a sh i b a a r u}|会員には論客も多く、延々とうんちくを傾けたり、活発な議論に発展する場面もしばしばある。
-BASIC5000_3335|JSUT|{t a d a sh i sp hy o o g e N z o o s a k u g i j u ts u g a ch i s e ts u sp a r u i w a m i h a q t a ts u d e a r u g a y u e n i b a r a N s u g a g e N j i ts u t e k i d e w a n a k u n a q t e sh i m a q t a m o n o n a d o w a sp d e f o r u m e t o w a i w a n a i}|ただし、表現造作技術が稚拙、あるいは未発達であるがゆえにバランスが現実的ではなくなってしまったものなどは、デフォルメとはいわない。
-ONOMATOPEE300_136|JSUT|{m o o sh i N y a n a n o d e sp d o N d o N t o o t o o t a t e t e a r u k u n o w a k i N j o m e e w a k u n i n a r i m a s u n o d e sp y a m e t a h o o g a y o s a s o o d e s u n e}|もう深夜なので、どんどんと音を立てて歩くのは近所迷惑になりますので、やめたほうが良さそうですね。
-TRAVEL1000_0607|JSUT|{sh o r u d a a b a q g u w a m o q t e k a e r i m a s u}|ショルダーバッグは持って帰ります。
-VOICEACTRESS100_039|JSUT|{o q t o d e a r u k o m u r o g a sp ky u u ky u u sh a o y o b i sp t o n a i by o o i N n i sp k i N ky u u h a N s o o s a r e r u}|夫である小室が、救急車を呼び、都内病院に、緊急搬送される。
-BASIC5000_4075|JSUT|{h i m e g u m o n o b a a i n i w a sp s u t o sh i t e ts u k a w a r e r u k a r e h a n a d o n o n a k a n i k u m o w a h i s o m u g a sp r a N s o o m o s o n o n a k a n i ts u k e r u}|ヒメグモの場合には、巣として使われる枯れ葉などの中にクモは潜むが、卵巣もその中につける。
-BASIC5000_3983|JSUT|{ry o o t e n i k a g i ts u m e o s o o b i sh i t e o r i sp s o n o ts u m e d e t e k i o k i r i s a k u k o t o o k a i k a N t o sh i t e i r u sp k a i r a k u s a ts u j i N o n i}|両手に鉤爪を装備しており、その爪で敵を切り裂くことを快感としている、快楽殺人鬼。
-BASIC5000_0884|JSUT|{k o o g a k u h i N n o n e s a g e n a d o t o k i r e i g o t o o i q t e m o sp k e q ky o k u n o t o k o r o sp sh i N sh o o h i z e e e n o k a z e a t a r i o y a w a r a g e r u k o o j i ts u n i s u g i n a i}|高額品の値下げなどときれいごとをいっても、結局のところ、新消費税への風当たりを和らげる口実にすぎない。
-BASIC5000_3445|JSUT|{i q p o o d e sp b u k u N o sh o o s a N sh i sp o o k o o k i z o k u n o g o o s e e n a s e e k a ts u y a e e y o sp sh i y a o N g a k u y a ch o o k o k u n a d o n o g e e j u ts u n o t a k a m i n i sp m e g u m a r e t a h i t o w a t a ch i e r u}|一方で、武勲を称賛し、王侯貴族の豪勢な生活や栄誉、詩や音楽や彫刻などの芸術の高みに、恵まれた人は立ち得る。
-BASIC5000_2966|JSUT|{n a N k a s o r e sp b u y o b u y o sh i t e i t e k i m o ch i w a r u i n e}|なんかそれ、ブヨブヨしていて気持ち悪いね。
-TRAVEL1000_0959|JSUT|{m e i r u b o q k u s u n o b a N g o o w a sp hy a k u j u u r o k u d e s u}|メイルボックスの番号は、116です。
-BASIC5000_0654|JSUT|{a N k o k u n o o o j i t o w a sp a k u m a n o k o t o d e a r u}|暗黒のおうじとは、悪魔のことである。
-BASIC5000_3654|JSUT|{n a o sp k i N n e N n o b u N r u i t a i k e e n o h e N k o o n i y o r i sp s o n o z o k u n o ky o o k a i m o h e N s e N o t a d o q t e o r i sp k a t o r e y a n o n a o k a N s u r u sh o k u b u ts u n o h a b a m o h i r o k u n a q t a m e N g a a r u}|なお、近年の分類体系の変更により、その属の境界も変遷をたどっており、カトレヤの名を冠する植物の幅も広くなった面がある。
-REPEAT500_set4_056|JSUT|{t o k o r o g a sp e ry u sh i k u t o o N w a sp ny u m u p e e n o s e e sh i m o k i k a z u n i sp d e e m e e t e e r u n o k a sh i o sp k i r i t a o sh i t a}|ところが、エリュシクトーンは、ニュムペーの制止も聞かずに、デーメーテールの樫を、切り倒した。
-TRAVEL1000_0715|JSUT|{ch u u o o e k i m a d e w a sp d o r e k u r a i j i k a N g a k a k a r i m a s u k a}|中央駅までは、どれくらい時間がかかりますか。
-BASIC5000_2833|JSUT|{m a ch i n i s u m u n o t o sp i n a k a n i s u m u n o t o w a sp d a i ch i g a i}|街に住むのと、田舎に住むのとは、大違い。
-ONOMATOPEE300_228|JSUT|{k o k u h a k u o sh i q p a i sh i t a y u u j i N g a sp i j i i j i sh i t e i r u n o d e sp k i b a r a sh i n i a s o b i n i s a s o q t a}|告白を失敗した友人が、イジイジしているので、気晴らしに遊びに誘った。
-BASIC5000_3847|JSUT|{k o n o k o t o w a sp g e N s e e r i e k i t e k i n a sh i N k o o k e e t a i d e a q t a k o t o o m o n o g a t a q t e i r u}|このことは、現世利益的な信仰形態であったことを物語っている。
-REPEAT500_set3_003|JSUT|{k o N py u u t a g e e m u n o m e e k a a y a sp gy o o k a i d a N t a i n a d o n i k a N r e N s u r u j i N b u ts u n o k a t e g o r i}|コンピュータゲームのメーカーや、業界団体などに関連する人物のカテゴリ。
-BASIC5000_0418|JSUT|{k a e q t e k u r u m a d e sp k o k o d e m a q t e i t e k u d a s a i}|帰って来るまで、ここで待っていてください。
-BASIC5000_1880|JSUT|{g o o k a k u sh a n o k a h a N s u u w a sp d a i g a k u sh u q sh i N sh a d e a q t a}|合格者の過半数は、大学出身者であった。
-TRAVEL1000_0093|JSUT|{k o n o b a s u w a sp o h a i o d o o r i n i i k i m a s u k a}|このバスは、オハイオ通りに行きますか。
-TRAVEL1000_0758|JSUT|{ch u u o o e k i n i w a sp b a s u d e i k e m a s u k a}|中央駅には、バスで行けますか。
-UT-PARAPHRASE-sent283-phrase2|JSUT|{g a i k a N w a sp k a n a r i ch i g a u}|外観は、かなり違う。
-BASIC5000_4287|JSUT|{g u N n o h i g a sh i n i w a y a m a y a m a g a s a N my a k u o ts u k u q t e o r i sp ch o o j o o g a t a k u s a N a r u k o t o n i y u r a i s u r u t o i w a r e r u}|郡の東には山々が山脈を作っており、頂上がたくさんあることに由来するといわれる。
-BASIC5000_3955|JSUT|{h o N sh o o g i d e w a sp ky o o sh a n i o k e r u k a k u g e N n i sp ts u g i n o y o o n a m o n o g a a r u}|本将棋では、香車における格言に、次のようなものがある。
-UT-PARAPHRASE-sent157-phrase1|JSUT|{u r a w a g a o k o sh i t a f u u a ts u n i k u q s u r u k a n o y o o n i sp n i i g a t a w a f u t a ts u n o o o N g o o r u o k i r o k u sh i t a}|浦和が起こした風圧に屈するかのように、新潟は２つのオウンゴールを記録した。
-REPEAT500_set3_082|JSUT|{k a a m i r a b o sh i t o y o b a r e t e i r u w a k u s e e k a r a sp u ch u u s e N n i n o q t e sp ch i ky u u n i sh i N ny u u sh i t a u ch u u j i N}|カーミラ星と呼ばれている惑星から、宇宙船に乗って、地球に侵入した宇宙人。
-BASIC5000_1085|JSUT|{h o N n i N w a y u i g a d o k u s o N o k i m e k o N d e i r u y o o d a k e d o m o sp m a w a r i k a r a m i r e b a sp t a N n a r u w a g a m a m a d a y o n e}|本人は唯我独尊を決め込んでいるようだけども、周りから見れば、単なるわがままだよね。
-BASIC5000_3051|JSUT|{s o n o s e e k a w a f u m e e d a g a sp h a r a g a t a ts u k o t o g a a q t a s a i n i w a sp b u k i m i n a h o d o n o e g a o o f u r i m a i t e s e q s u r u n o d e sp k a sh i N k a r a w a o s o r e r a r e t e i r u}|その所為かは不明だが、腹が立つことがあった際には、不気味なほどの笑顔を振りまいて接するので、家臣からは怖れられている。
-BASIC5000_1201|JSUT|{m e N t o m u k a q t e h o m e r u h i t o w a sp y o o j i N sh i n a s a i}|面と向かって誉める人は、用心しなさい。
-BASIC5000_1777|JSUT|{y o k a r e a sh i k a r e sp k o n o m o N d a i w a k a r e n i m a k a s e r u h o k a w a n a i}|よかれあしかれ、この問題は彼に委せるほかはない。
-BASIC5000_2169|JSUT|{p u r o y a ky u u n i h a i q t e m o sp b o k u n a N k a m e g a d e n a i N j a n a i k a n a}|プロ野球に入っても、僕なんか芽が出ないんじゃないかな。
-BASIC5000_3814|JSUT|{s o n o t a m e k o o n a i d e m o h i t o r i d e s u g o s u k o t o g a o o k a q t a g a sp m i s a k i i ch i t o d e a q t e k a r a w a sp g a q k o o gy o o j i n a d o d e sh i d a i n i k u r a s u n i t o k e k o m u y o o n i n a q t e i k u}|そのため校内でも一人で過ごすことが多かったが、岬一と出会ってからは、学校行事などで次第にクラスに溶け込むようになっていく。
-BASIC5000_2259|JSUT|{u d e n o i i k o o g e e sh i w a sp j i b u N n o s a k u h i N n i h o k o r i o m o q t e i r u}|腕のいい工芸師は、自分の作品に誇りを持っている。
-BASIC5000_0120|JSUT|{k o o ch o o w a sp s o ts u gy o o s e e h i t o r i h i t o r i t o a k u sh u o sh i t a}|校長は、卒業生一人一人と握手をした。
-ONOMATOPEE300_074|JSUT|{ry o k a N n i h a i r u t o sp h o d o n a k u sh i t e o k a m i g a sp sh i z u sh i z u t o s u g a t a o a r a w a sh i t a}|旅館に入ると、ほどなくして女将が、しずしずと姿を現した。
-BASIC5000_0767|JSUT|{o r i n o n a k a d e k a w a r e r u t o sp k o d o m o o u m a n a i d o o b u ts u m o i r u}|檻の中で飼われると、子どもを産まない動物もいる。
-BASIC5000_2434|JSUT|{m i ch i w a h a sh i n o t o k o r o d e ky u u n i m a g a q t e i m a s u}|道は橋のところで急に曲がっています。
-BASIC5000_1886|JSUT|{u m a g a h o ny u u d o o b u ts u d e a r u t o d o o y o o sp k u j i r a m o sp h o ny u u d o o b u ts u d e a r u}|馬が哺乳動物であると同様、鯨も、哺乳動物である。
-BASIC5000_3727|JSUT|{k o r o n i s u z o k u n o n a k a d e m o q t o m o o o k i i sh o o w a k u s e e d e a r i sp k o r o n i s u z o k u n o h o k a n o sh o o w a k u s e e w a sp k a ts u t e k o n o sh o o w a k u s e e n i sh o o t o ts u g a o k o q t e k u d a k e t a t o k i n o h a h e N d a r o o t o k a N g a e r a r e t e i r u}|コロニス族の中で最も大きい小惑星であり、コロニス族の他の小惑星は、かつてこの小惑星に衝突が起こって砕けた時の破片だろうと考えられている。
-BASIC5000_0548|JSUT|{g a q k a r i sh i t a k o t o n i w a sp k a r e w a s u d e n i sh u q p a ts u sh i t e sh i m a q t e i t a}|がっかりしたことには、彼はすでに出発してしまっていた。
-BASIC5000_3874|JSUT|{k i d o o s e e w a h i k u i g a sp j u u s o o k o o t o h a i p a w a a d e sp t e k i o k u ch i k u s u r u}|機動性は低いが、重装甲とハイパワーで、敵を駆逐する。
-UT-PARAPHRASE-sent136-phrase1|JSUT|{o n a j i a r u i t a r i sp b i i r u o n o m u N d e m o sp o N n a r a sh i k u sh i t o y a k a n i f u r u m a u y o o n i n a r u d e sh o}|同じ歩いたり、ビールを飲むんでも、女らしくしとやかに振る舞うようになるでしょ。
-BASIC5000_4654|JSUT|{i n u g a n e k o t o z a r e r u y o o s u o h o h o e m i n a g a r a m i t e i t a}|犬が猫と戯れる様子を微笑みながら見ていた。
-BASIC5000_2961|JSUT|{b a i sh u N y a d o k a r a d e t e k i t a t o k o r o o sp y u u j i N n i m i r a r e t e sp b a ts u g a w a r u k a q t a}|売春宿から出てきたところを、友人に見られて、ばつが悪かった。
-TRAVEL1000_0092|JSUT|{k o n o ch i i s a i k o z u ts u m i o sp k o o k u u b i N d e o k u r i t a i n o d e s u g a}|この小さい小包を、航空便で送りたいのですが。
-BASIC5000_2543|JSUT|{y a ts u n o t a k u m i n a h a n a sh i n i sp b o k u w a k a N t a N n i d a m a s a r e t e sh i m a q t a}|奴の巧みな話に、僕は簡単に騙されてしまった。
-ONOMATOPEE300_080|JSUT|{k i n i i r a n a i k o t o g a a q t a n o k a sp b u ts u b u ts u t o m o N k u o i q t e i t a k a r e o w a r e w a r e w a m u sh i sh i t e s a k i o i s o g i m a sh i t a}|気に入らないことがあったのか、ぶつぶつと文句を言っていた彼を我々は無視して先を急ぎました。
-BASIC5000_0799|JSUT|{k o o s a N s u r u k u r a i n a r a sp sh i N d a h o o g a m a sh i d a}|降参するくらいなら、死んだ方がましだ。
-BASIC5000_2611|JSUT|{d e p a a t o n o sh i sh o k u k o o n a a e i k u t o sp i r o i r o n a m o n o g a t a d a d e t a b e r a r e r u y o}|デパートの試食コーナーへ行くと、いろいろな物がただで食べられるよ。
-BASIC5000_3680|JSUT|{d a N j o N n o t a N s a k u ch u u n i w a sp y a s e e n o m o N s u t a a t o b a t o r u sh i t a r i sp t a k a r a b a k o k a r a sp a i t e m u o ny u u sh u d e k i t a r i s u r u}|ダンジョンの探索中には、野生のモンスターとバトルしたり、宝箱から、アイテムを入手できたりする。
-BASIC5000_2582|JSUT|{k a N z e e o k o k u g o t o d e w a n a k u sp b u r o q k u d e k o N t o r o o r u s u r u h o o g a sp k o o ts u g o o d e a r u k o t o o ky o o ch o o sh i t a i}|関税を国ごとではなく、ブロックでコントロールする方が、好都合であることを強調したい。
-BASIC5000_1485|JSUT|{h o q k a i d o o n i i q t a r a sp y a q p a r i sp u m i n o k o o o t a b e n a i t o sp i q t a i m i g a n a i d e sh o o}|北海道に行ったら、やっぱり、海の幸を食べないと、行った意味がないでしょう。
-BASIC5000_1904|JSUT|{j o g e N o k i k u t a m e n i sp s e N m o N k a g a m a n e k a r e t a}|助言を聞くために、専門家が招かれた。
-REPEAT500_set4_041|JSUT|{f o N t e e n u b u r o o y o o sh i k i d e w a sp g u u i t e k i n a e g a sp sh i q k u i n o m o o r u d o n i ts u k a w a r e t e i r u}|フォンテーヌブロー様式では、寓意的な絵が、漆喰のモールドに使われている。
-BASIC5000_1517|JSUT|{g a N j i ts u n i sp j i N j a e s a N p a i s u r u n i q p o N j i N w a o o i}|元日に、神社へ参拝する日本人は多い。
-BASIC5000_2879|JSUT|{m i q k a r e N z o k u d e t e ts u y a sh i t e r u k a r a sp m o o a q p u a q p u d a y o}|３日連続で徹夜してるから、もうアップアップだよ。
-BASIC5000_1421|JSUT|{s a k a o o r i r u t o k i n i sp k a n o j o n o o N b o r o j i t e N sh a w a sp k i i k i i o t o o t a t e t a}|坂を下りるときに、彼女のおんぼろ自転車は、キーキー音を立てた。
-TRAVEL1000_0865|JSUT|{k o k o n i k o o t o o i r e t e m o i i d e s u k a}|ここにコートを入れてもいいですか。
-TRAVEL1000_0799|JSUT|{d o o s u r e b a g a i s e N e ts u n a g a r i m a s u k a}|どうすれば外線へつながりますか。
-BASIC5000_1523|JSUT|{k o N z a ts u sh i t a d e N sh a n o n a k a d e w a sp s u r i n i g o y o o j i N k u d a s a i}|混雑した電車の中では、スリにご用心ください。
-BASIC5000_1308|JSUT|{g e N ch i n o h i t o t a ch i w a sp s o n o ch i k u n i t a ch i i r u k o t o o y u r u s a r e n a k a q t a}|現地の人達は、その地区に立ち入ることを許されなかった。
-BASIC5000_2782|JSUT|{m u k a sh i sp k o n o m u r a n i h i t o r i n o i t a z u r a n a sh o o n e N g a s u N d e i t a}|昔、この村に１人のいたずらな少年が住んでいた。
-BASIC5000_2418|JSUT|{sh o k u y o k u g a ky u u n i g e N t a i s u r u n o w a by o o k i n o ch o o k o o d e a r u k o t o g a a r u}|食欲が急に減退するのは病気の兆候である事がある。
-BASIC5000_4670|JSUT|{sh i n i g i w a n i sp r a i s e d e m o a o o t o ch i g i q t a}|死に際に、来世でも会おうと契った。
-TRAVEL1000_0598|JSUT|{k o o sh u u d e N w a w a h i k a k u t e k i t a k a k u sp h o t e r u n o h e y a k a r a n o ts u u w a w a sp h i j o o n i t a k a i n o d e s u}|公衆電話は比較的高く、ホテルの部屋からの通話は、非常に高いのです。
-BASIC5000_1913|JSUT|{f u q t e m o h a r e t e m o sp a sh i t a w a sh u q p a ts u sh i m a s u}|降っても晴れても、明日は出発します。
-BASIC5000_3611|JSUT|{sh u m i w a ts u r i d e sp s u i m e N o h a s a N d a m i e n a i t e k i t o n o b a t o r u o t a n o sh i N d e s a k e n o s a k a n a n i s u r u}|趣味は釣りで、水面を挟んだ見えない敵とのバトルを楽しんで酒の肴にする。
-TRAVEL1000_0193|JSUT|{n o r u m a e n i sp k i q p u o k a w a n a k e r e b a n a r i m a s e N}|乗る前に、切符を買わなければなりません。
-TRAVEL1000_0687|JSUT|{f a a s u t o k u r a s u n o h e y a g a a r i m a s u}|ファーストクラスの部屋があります。
-TRAVEL1000_0680|JSUT|{m o o s u k o sh i ch o o s a o sh i t e k a r a sp r e N r a k u sh i m a s u}|もう少し調査をしてから、連絡します。
-BASIC5000_2681|JSUT|{ch e q k u a u t o sh i t a i n o d e sp k a i k e e o o n e g a i sh i m a s u}|チェックアウトしたいので、会計をおねがいします。
-BASIC5000_1324|JSUT|{j i k e N o sh i N g i sh i t a n o w a sp d o n o s a i b a N k a N d e s u k a}|事件を審議したのは、どの裁判官ですか。
-TRAVEL1000_0319|JSUT|{i ch i b a N ch i k a i ch i k a t e ts u n o e k i w a d o k o d e sh o o k a}|いちばん近い地下鉄の駅はどこでしょうか。
-REPEAT500_set2_066|JSUT|{k a N z o o e n o s a N s o ky o o ky u u w a sp k a N d o o my a k u t o sp t e e a ts u k e e n o m o N my a k u o k a i sh i t e sp o k o n a w a r e t e i r u}|肝臓への酸素供給は、肝動脈と、低圧系の門脈を介して、行われている。
-BASIC5000_2134|JSUT|{hy o o b a N d e s a q s u r u t o sp k a n o j o w a s o n o sh i g o t o n i f u s a w a sh i i y o o d a}|評判で察すると、彼女はその仕事にふさわしいようだ。
-TRAVEL1000_0871|JSUT|{e k i e w a d o n o y o o n i i k e b a y o i d e sh o o k a}|駅へはどのように行けばよいでしょうか。
-PRECEDENT130_111|JSUT|{s a i b a N k a N s a s a k i k o o w a t e N p o n o t a m e sp sh o m e e o o i N d e k i n a i}|裁判官佐々木公は転補のため、署名押印できない。
-VOICEACTRESS100_031|JSUT|{k o o sh a n o d a i hy o o g a sp w e q j i u q d o n o sp j a s u p a a w e a d e a r u}|後者の代表が、ウェッジウッドの、ジャスパーウェアである。
-REPEAT500_set5_017|JSUT|{t a d a sh i sp gy a N b u r u i z o N sh o o n o ny u u i N ch i ry o o o i q t e i r u by o o i N w a sp w a z u k a d e a r u}|ただし、ギャンブル依存症の入院治療を行っている病院は、わずかである。
-BASIC5000_0863|JSUT|{ch u u k e N h a ch i k o o n o z o o w a sp sh i b u y a e k i m a e n i t a q t e i r u}|忠犬ハチ公の像は、渋谷駅前に立っている。
-BASIC5000_0505|JSUT|{a r i s u w a sp n a n i k a k o k o r o n o sh i k o r i g a t o k e r u n o o k a N j i t a}|アリスは、何か心のしこりが溶けるのを感じた。
-BASIC5000_0739|JSUT|{s e N sh o o k o k u w a sp h a i s e N k o k u n i k o o w a j o o k e N o sh i r e e sh i t a}|戦勝国は、敗戦国に講和条件を指令した。
-BASIC5000_0388|JSUT|{ch i h e e s e N n o k a n a t a n i sp h i g a sh i z u m i k a k e t e i r u}|地平線の彼方に、日が沈みかけている。
-TRAVEL1000_0084|JSUT|{h a i sp k a N z e e n o sh i N k o k u sh o n a d o m o a r i m a s u}|はい、関税の申告書などもあります。
-BASIC5000_4153|JSUT|{s a N n o r e e t o sh i t e w a sp e N s a N sp ry u u s a N sp sh o o s a N sp s a k u s a N n a d o g a a g e r a r e sp e N k i n o r e e t o sh i t e w a sp s a N k a n a t o r i u m u sp s u i s a N k a k a r i u m u sp a N m o n i a n a d o g a a g e r a r e r u}|酸の例としては、塩酸、硫酸、硝酸、酢酸などが挙げられ、塩基の例としては、酸化ナトリウム、水酸化カリウム、アンモニアなどが挙げられる。
-BASIC5000_3199|JSUT|{g a k a n o j i N b u ts u z o o k a r a sp k a N sh o o sh a n o sh i s e N w a sp f u t a t a b i e n o n a k a e t o n a n a m e n i h i k i ts u k e r a r e r u}|画家の人物像から、鑑賞者の視線は、再び絵の中へと斜めに惹きつけられる。
-BASIC5000_3378|JSUT|{h i r u m a w a sp sh u u i d e sh u q k a n o h i o r i y o o sh i t a sp y a k i i m o y a t a m a g o g a u r a r e t e i r u}|昼間は、周囲で出火の火を利用した、焼き芋や玉子が売られている。
-BASIC5000_0676|JSUT|{s o o z o o ry o k u w a sp s u b e t e n o b u N m e e n o k o N p o N d e a r u}|想像力は、すべての文明の根本である。
-BASIC5000_4143|JSUT|{sh o o j o o w a m o q t o m o g e k i r e ts u d e sp t e k i s e ts u n a ch i ry o o g a s u m i y a k a n i y o o ky u u s a r e r u}|症状は最も激烈で、適切な治療が速やかに要求される。
-UT-PARAPHRASE-sent290-phrase1|JSUT|{k o n o h i n i sh i t e m o sp o m o o m o sh i i r i z u m u n i n o q t e e N e N t o r a q p u o k u r i d a s u a m u r o o m i t e sp b o o z e N t o t a ch i ts u k u sh i t e i r u w a k a m o n o n o s u g a t a g a m e n i ts u i t a}|この日にしても、重々しいリズムに乗って延々とラップを繰り出すアムロを見て、ぼう然と立ち尽くしている若者の姿が目についた。
-UT-PARAPHRASE-sent295-phrase2|JSUT|{s a k u sh a k a r a m o sp n i h o N g o y a k u g a d e t e t o t e m o k o o f u N sh i t e i r u sp t o t e g a m i g a k u r u}|作者からも、日本語訳が出てとても興奮している、と手紙が来る。
-BASIC5000_4472|JSUT|{t i i n o m i ch i b i k i n i sh i t a g a i s u u p a a a r e s u t a o k a r u sh u j i N k o o w a sp i q t a i d o n o y o o n a s e N k a n i s o o g u u s u r u n o d e a r o o k a}|ティーの導きに沿いスーパーアレスタを駆る主人公は、一体どのような戦火に遭遇するのであろうか。
-REPEAT500_set1_080|JSUT|{k a s u k a n i k i k o e t e k u r u s e N ky u u hy a k u s a N j u u i ch i n e N b a N n o s a N m i k a g a sp sh i d a i n i o o k i k u n a q t e i k u}|かすかに聞こえてくる1931年版の讃美歌が、次第に大きくなっていく。
-TRAVEL1000_0416|JSUT|{g e N k i N d e w a sp t e e b u r u n o u e n i g e N k i N o o k i m a s u}|現金では、テーブルの上に現金を置きます。
-BASIC5000_0875|JSUT|{e d a w a sh i n a q t a k e d o sp o r e w a sh i n a k a q t a}|枝はしなったけど、折れはしなかった。
-LOANWORD128_022|JSUT|{b e N ky o o sh i t e n a k a q t a k a r a sp t e s u t o z e N z e N t o k e n a k u t e t a h i q t a}|勉強してなかったから、テスト全然解けなくてタヒった。
+BASIC5000_4980|JSUT|{s o n o b o o t o w a sp h a t o b a n i ts u n a g a r e t e i t a}|そのボートは、波止場につながれていた。
+BASIC5000_1060|JSUT|{t o k u b e ts u n o r e e n i ts u i t e k e N ky u u o sh i t e m i y o o}|特別の例について研究をしてみよう。
+BASIC5000_0064|JSUT|{k u s a b a n a n i ts u i t e sp m o q t o sh i r i t a i t o o m o i m a sh i t a}|草花について、もっと知りたいと思いました。
+REPEAT500_set1_042|JSUT|{s a i j i N w a sp v i sh u n u h a n o s e e j i N sp s u w a a m i i n a a r a a y a N}|祭神は、ヴィシュヌ派の聖人、スワーミーナーラーヤン。
+REPEAT500_set5_089|JSUT|{g e N z a i w a sp b a q h a o m o ch i i f u t o sh i t a sp h a a p u sh i k o o d o n o s a q ky o k u k a t o sh i t e sp k i o k u s a r e t e i r u}|現在は、バッハをモチーフとした、ハープシコードの作曲家として、記憶されている。
+BASIC5000_3202|JSUT|{g o N g u j o o d o t o ts u i k u d e ts u k a w a r e r u k o t o g a o o i}|欣求浄土と対句で使われることが多い。
+TRAVEL1000_0813|JSUT|{d a i s a N n o h o k e N w a j i N sh i N j i k o d e sp a n a t a t o d o o j o o sh a n o ch i ry o o h i o sp k a b a a sh i m a s u}|第3の保険は人身事故で、あなたと同乗者の治療費を、カバーします。
+BASIC5000_0431|JSUT|{m a d a o o t o b a i o u N t e N sh i t a k o t o g a n a i n a r a sp z e h i i ch i d o sp t a m e sh i t e m i r u t o i i}|まだオートバイを運転したことがないなら、ぜひ一度、試してみるといい。
+LOANWORD128_075|JSUT|{s u y a N g a w a w a sp p o o r a N d o o n a g a r e r u k a s e N d e a r u}|スャン川は、ポーランドを流れる河川である。
+BASIC5000_1008|JSUT|{hy o o j o o k a r a h a N d a N s u r u t o sp k a r e w a k i g e N g a w a r u i}|表情から判断すると、彼は機嫌が悪い。
+TRAVEL1000_0292|JSUT|{t o r a b e r a a z u ch e q k u d e o sh i h a r a i d e k i m a s u k a}|トラベラーズチェックでお支払いできますか。
+BASIC5000_4138|JSUT|{sh i k i N k a s e g i n o t a m e n i sp k e N ky u u n i ts u i sh o o sh i t e i r u}|資金稼ぎのために、研究に追従している。
+BASIC5000_0536|JSUT|{o o a m e n o t a m e n i sp s u b e t e d e N sh a g a t o m a q t e sp t a k u sh i i n i n o r a n e b a n a r i m a s e N d e sh i t a}|大雨のために、すべて電車が止まって、タクシーに乗らねばなりませんでした。
+BASIC5000_2749|JSUT|{t a N s e e o k o m e t e ts u k u q t a sp k o n o u ts u k u sh i i o r i m o n o o g o r a N k u d a s a i}|丹精をこめてつくった、この美しい織物をごらんください。
+BASIC5000_2162|JSUT|{k e q k o N sh i t e i r u h i t o w a sp t o k i d o k i sp d o k u sh i N d e a r e b a y o i n o n i t o o m o u}|結婚している人は、時どき、独身であれば良いのにと思う。
+TRAVEL1000_0727|JSUT|{e e g o n o k o my u n i k e e sh o N w a sp m u z u k a sh i i m o n o d e s u}|英語のコミュニケーションは、難しいものです。
+BASIC5000_1202|JSUT|{w a sh i n o h a n e w a h i r o g e r u t o sp i ch i m e e t a a n i m o n a r u}|鷲の羽は広げると、１メーターにもなる。
+BASIC5000_3746|JSUT|{t o k u n i k o o t o o n a r e N k i N j u ts u sh i w a sp r e e k o N n o r e N k i N j u ts u o o k o n a i sh i N t o i q t a i k a s u r u t o k a N g a e r a r e t a n o d e sp sh u u ky o o y a sh i N p i sh i s o o n o o m o m u k i g a ts u y o k u n a q t a}|特に高等な錬金術師は、霊魂の錬金術を行い神と一体化すると考えられたので、宗教や神秘思想の趣きが強くなった。
+BASIC5000_4709|JSUT|{n a k a s u w a sp h a k a t a n o ch u u sh i N ch i d e a r u}|中洲は、博多の中心地である。
+BASIC5000_3934|JSUT|{s o n o t o k i sp b a i y o N j i i N n o k a g a y a k u a o z o r a n i s e q sh i t a i t a d a k i k a r a sp j i b u N o y o b u w a k a w a k a sh i i k o e o m i m i n i sh i t a}|そのとき、バイヨン寺院のかがやく青空に接した頂きから、自分を呼ぶ若々しい声を耳にした。
+BASIC5000_1227|JSUT|{e d a g a n o b i sp m i g a n a r u k o t o o s o o t e e sh i t e sp ts u g u b a sh o o e r a b i m a sh o o}|枝が伸び、実が成ることを想定して、接ぐ場所を選びましょう。
+REPEAT500_set3_002|JSUT|{ny u u i N g u r a N d o f u u w a sp gy u u ny u u o b e e s u t o sh i t a sp sh i r o i k u r i i m u s u u p u d e a r i sp b o s u t o N k u r a m u ch a u d a a t o m o y o b a r e r u}|ニューイングランド風は、牛乳をベースとした、白いクリームスープであり、ボストンクラムチャウダーとも呼ばれる。
+BASIC5000_4551|JSUT|{ky o o w a h i s a sh i b u r i n o h a t a b i d e sp g a q k o o y a k a i sh a w a sp d o k o m o y a s u m i d a}|今日は久しぶりの旗日で、学校や会社は、どこも休みだ。
+TRAVEL1000_0775|JSUT|{t o o r o k u n o sh o r u i o m o q t e i m a s u k a}|登録の書類を持っていますか。
+BASIC5000_3966|JSUT|{k o k o w a s a u r o N n o o o k o k u n o sh i N z o o b u t o i u b e k i m o n o d e a r i sp k a r e n o s e k i j i ts u n o ch i k a r a n o m i n a m o t o d e m o a r u}|ここはサウロンの王国の心臓部と言うべきものであり、彼の昔日の力の源でもある。
+BASIC5000_4202|JSUT|{s o sh i t e sp t a q t a h i t o ts u o k e s e b a sp s e k a i w a h o r o b i o m a n u k a r e r u t o i u k o t o m o}|そして、たったひとつを消せば、世界は滅びを免れるということも。
+BASIC5000_1054|JSUT|{o t o n a n o sh i h a i n i t a i sh i sp k a r e r a w a k o n o y o o n a sh o o ky o k u t e k i n a h a N k o o n o sh i k a t a o s u r u n o d e a r u}|大人の支配に対し、彼らはこのような消極的な反抗の仕方をするのである。
+BASIC5000_2061|JSUT|{h a g e t a k a g a ts u q ts u k u sh i N d a sh i k a t o k a sp t a n o d o o b u ts u n o t a b e n o k o sh i t o k a sp s o o y u u k u s a q t a n i k u o sh i n i k u t o k a k i m a sh i t a}|ハゲタカが突っつく死んだ鹿とか、他の動物の食べ残しとか、そういう腐った肉を死肉と書きました。
+BASIC5000_4473|JSUT|{y o k o d a k e n i s e e z e ts u g a i t e N j u u g o sp z e N j i w a m u k a e r a r e t e sp s o o f u k u n i ny u u i N d a i s a N s e e t o n a r u}|横岳二世絶崖転住後、禅師は迎えられて、崇福に入院第三世となる。
+UT-PARAPHRASE-sent064-phrase2|JSUT|{u n e r u y o o n a y u t a k a n a k i N p a ts u n i sp b u r a sh i o k a k e t e i r u j o s e e n o s u g a t a w a sp i N sh o o h a n o g a k a g a sp y o k u e g a i t e i r u}|うねるような豊かな金髪に、ブラシをかけている女性の姿は、印象派の画家が、よく描いている。
+BASIC5000_4333|JSUT|{h i r u m i z u u m i w a m i g i t e n i ch i n o k e N sp h i d a r i t e n i ch i n o t a t e o m a t o i sp m i z u k a g a m i t o t a t a k a q t a}|蛭湖は右手に血の剣、左手に血の盾を纏い、水鏡と戦った。
+BASIC5000_2108|JSUT|{k o b u s a N g a i n a i a i d a sp a n a t a n o ts u u sh i N j i m u n o sh i g o t o o sh i t e k u r e r u k o t o n i n a r i m a s u}|コブさんがいない間、あなたの通信事務の仕事をしてくれることになります。
+ONOMATOPEE300_209|JSUT|{k a n o j o n i f u r i m a w a s a r e t e sp m o o b o k u w a t a j i t a j i d a}|彼女に振り回されて、もう僕はたじたじだ。
+BASIC5000_1163|JSUT|{sh i u N t e N d e w a sp sh a ry o o w a m i N n a u m a k u u g o i t a}|試運転では、車両はみんなうまく動いた。
+BASIC5000_4665|JSUT|{k i N sh i ch o o n o b i r u n i sp a t a r a sh i k u y o s e g a d e k i t a}|錦糸町のビルに、新しく寄席ができた。
+BASIC5000_3679|JSUT|{f u ts u u sp j i t o i u t o k i w a h o N j i n o m i o s a s u g a sp k o o g i n i w a j i y a b e ts u j i o f u k u m u}|普通、字というときは本字のみを指すが、広義には小字や別字を含む。
+ONOMATOPEE300_182|JSUT|{s a r a q t o sh i t a k a n o j o n o k a m i g a sp k i r e e d e h o r e t e sh i m a q t a}|サラっとした彼女の髪が、綺麗で惚れてしまった
+BASIC5000_4097|JSUT|{m a t a sp t e k i n o ry o o ch i n i t o m a q t a t o k i n i w a sh o o k a N s u r u k o t o d e s e N t o o o s a s e r u k o t o m o d e k i r u}|また、敵の領地に止まった時には召喚することで戦闘をさせることも出来る。
+LOANWORD128_116|JSUT|{b u i d o g o sh u ch u w a sp p o o r a N d o n o t o sh i d e a r u}|ブィドゴシュチュは、ポーランドの都市である。
 BASIC5000_0308|JSUT|{g o k a i e w a sp e r e b e e t a a d e i k i n a s a i}|五階へは、エレベーターで行きなさい。
+BASIC5000_4192|JSUT|{i q p o o sp ts u u j o o n o b u N ts u u d e w a h i q s u d e n a k u sp s o o t e e s a r e r u sh i y o o r e e m o s u k u n a i t a m e sp k i q t e t o k u r a b e t e h i k u i ch i m e e d o n i t o m a r u}|一方、通常の文通では必須でなく、想定される使用例も少ないため、切手と比べて低い知名度に留まる。
+BASIC5000_1605|JSUT|{n i N n i k u w a sp t a b e m o n o n o a j i o y o k u s u r u n o n i ts u k a w a r e r u}|ニンニクは、食べ物の味を良くするのに使われる。
+BASIC5000_3053|JSUT|{ch i ch i w a k a sh i N n i ts u k a e t e i t a g a sp sh u ts u j i n o i y a sh i i k a sh i N k a r a n o e N g u m i m o o sh i i r e o ky o z e ts u sh i t a t a m e sp m e N sh o k u n i s a r e sp m a m o n a k u by o o b o ts u sh i t a}|父は何進に仕えていたが、出自の卑しい何進からの縁組申し入れを拒絶したため、免職にされ、まもなく病没した。
+BASIC5000_4317|JSUT|{s a i k u r i N g u r o o d o n o s e q ch i b a sh o w a k a s e N sh i k i g a h o t o N d o d e sp k o n o h o k a n i k o sh o o n o e N g a N sp k a i g a N sp t e ts u d o o h a i s e N a t o g a a g e r a r e r u}|サイクリングロードの設置場所は河川敷がほとんどで、このほかに湖沼の沿岸、海岸、鉄道廃線跡が挙げられる。
+BASIC5000_2205|JSUT|{s u n a k a r a k i N o sp b u N r i s a i sh u u s u r u h o o h o o o sp a n a t a n i o m i s e sh i m a sh o o}|砂から金を、分離採集する方法を、あなたにお見せしましょう。
+BASIC5000_2401|JSUT|{n i w a sh i w a n i w a n o m a N n a k a n i b a r a n o k i o u e t a}|庭師は庭の真ん中にバラの木を植えた。
+BASIC5000_4479|JSUT|{t a d a sh i g o o r e m u w a s u s a m a j i i n o o ry o k u o m o ts u g a sp k a d o o s u u g a s u k u n a k u sp h a N y o o s e e n i m o k a k e t a t a m e sp s e N ky o k u o k u ts u g a e s u n i w a i t a r a n a k a q t a}|ただしゴーレムは凄まじい能力を持つが、稼動数が少なく、汎用性にも欠けたため、戦局を覆すには至らなかった。
+BASIC5000_2694|JSUT|{i k i g a k u r u sh i k u t e sp m a N z o k u n i s o n o k o t o b a o i e n a k a q t a}|息が苦しくて、満足にその言葉を言えなかった。
+BASIC5000_0125|JSUT|{y o s a N w a f u s e e k a k u d e sp sh i k a m o sp h i sp g e N j i ts u t e k i n i o m o e r u}|予算は不正確で、しかも、非、現実的に思える。
+REPEAT500_set2_042|JSUT|{s a i j i N w a sp v i sh u n u h a n o s e e j i N sp s u w a a m i i n a a r a a y a N}|祭神は、ヴィシュヌ派の聖人、スワーミーナーラーヤン。
+BASIC5000_2511|JSUT|{sh o o s e ts u k a t o i u m o n o w a sp n i N g e N n i ky o o m i o m o q t e i r u}|小説家というものは、人間に興味を持っている。
+BASIC5000_0957|JSUT|{ts u r i s e N n o i r a n a i y o o n i sp o n e g a i sh i m a s u}|つり銭のいらないように、お願いします。
+BASIC5000_4992|JSUT|{k o m u s o o g a t a k u h a ts u sh i t e i r u y o o s u o n a g a m e r u}|虚無僧が托鉢している様子を眺める。
+BASIC5000_3689|JSUT|{t a t a k a i n o n a k a d e k i N n i k u m a N w a sp k u r o g o k e k u m o n o n o r o i o k a i j o s u r u g a sp k i N n i k u m a N w a sp m a s a y o sh i ch o o j i N n o i m e e j i o k u ts u g a e s u y u b i o r i sp m a s u k u h a g i n a d o u r a w a z a o r a N p a ts u}|戦いの中でキン肉マンは、黒後家蜘蛛の呪いを解除するが、キン肉マンは、正義超人のイメージを覆す指折り、マスク剥ぎなど裏技を乱発。
+BASIC5000_2224|JSUT|{s e N ch o o w a sp m u s e N ts u u sh i N sh i n i sp s o o n a N sh i N g o o o u ts u y o o n i m e e r e e sh i t a}|船長は、無線通信士に、遭難信号を打つように命令した。
+BASIC5000_4080|JSUT|{g o o m a N n a s e e k a k u d e sp p u r o n i n a r e r u j i ts u ry o k u g a a r u t o j i f u sh i t e i r u}|傲慢な性格で、プロになれる実力があると自負している。
+BASIC5000_4211|JSUT|{k a i g a N d e w a k e N s o o o y o s o n i sp t a n o s e e j i h a N n o k a n a d e r u g i t a a n i a w a s e sp m a g o m u s u k o g a d a N s u o o d o r u}|海岸では喧騒を余所に、他の政治犯の奏でるギターに合わせ、孫息子がダンスを踊る。
+UT-PARAPHRASE-sent137-phrase1|JSUT|{h o N t o o n i t o m a m a r u k a d o o k a sp o s o r u o s o r u ts u k a q t e m i t a g a sp j i q s a i n i p i t a r i t o t e e sh i sh i t a}|本当に停まるかどうか、恐る恐る使ってみたが、実際にピタリと停止した。
+TRAVEL1000_0212|JSUT|{s a i sh u u n o sh a t o r u b a s u w a sp n a N j i d e s u k a}|最終のシャトルバスは、何時ですか。
+BASIC5000_0285|JSUT|{t o r i d e a q t a r a sp a n a t a n o m o t o e t o N d e i q t a d a r o o n i}|鳥であったら、あなたのもとへ飛んでいっただろうに。
+UT-PARAPHRASE-sent197-phrase1|JSUT|{s u d e n i h o o y a k u n o a r u sp k u r o i t o k e e n o t a b i sp n a d o n i s a k i g a k e t e sp sh i n o sh u h o o g a s a i sh o n i k a i k a sh i t a s a k u h i N d a t o i u}|すでに邦訳のある『黒い時計の旅』などに先駆けて、氏の手法が最初に開花した作品だという。
+BASIC5000_2169|JSUT|{p u r o y a ky u u n i h a i q t e m o sp b o k u n a N k a m e g a d e n a i N j a n a i k a n a}|プロ野球に入っても、僕なんか芽が出ないんじゃないかな。
+TRAVEL1000_0590|JSUT|{g e N k i N d e o sh i h a r a i n i n a q t e sp h o k e N g a i sh a k a r a sp o k a n e o u k e t o q t e k u d a s a i}|現金でお支払いになって、保険会社から、お金を受け取ってください。
+REPEAT500_set5_005|JSUT|{sh i r u b a a s a a f a a sh u u g e k i j i k e N m a d e n i sp r i ch a a z u w a sp ch i i m u m e e t o t o m o n i sp k o k u s a i t e k i n i s u u p a a h i i r o o sp o y o b i sp y u u m e e j i N t o sh i t e sp n i N ch i s a r e t e i r u}|シルバーサーファー襲撃事件までに、リチャーズは、チーム名と共に、国際的にスーパーヒーロー、および、有名人として、認知されている。
+BASIC5000_0212|JSUT|{k o k a g e n i sp o b a a s a N g a i r u n o g a m i e r u}|木陰に、おばあさんがいるのが見える。
+BASIC5000_2552|JSUT|{b a q s e r a r e r u t o i u k o t o g a sp k a r e r a n i w a o m o i u k a b a n a k a q t a n o k a}|罰せられると言うことが、彼らには思い浮かばなかったのか。
+PRECEDENT130_056|JSUT|{h o N k e N ky o z e ts u n i s e e t o o n a r i y u u g a m i t o m e r a r e r u k a}|本件拒絶に正当な理由が認められるか。
+UT-PARAPHRASE-sent124-phrase1|JSUT|{ch o q t o sh i t a i k i n u k i n o b a sh o n i ts u k a q t e m o r a e r e b a t o sp t e N n a i n i w a ch i i s a i t e e b u r u o o i t a}|ちょっとした息抜きの場所に使ってもらえればと、店内には小さいテーブルを置いた。
+BASIC5000_4888|JSUT|{m a y a k u ch u u d o k u d e sp o o k u n o h i t o g a d a r a k u sh i t a}|麻薬中毒で、多くの人が堕落した。
+BASIC5000_1823|JSUT|{ts u k u e d e s u r u sh i g o t o w a sp d o o m o s e e n i a w a n a i}|机でする仕事は、どうも性に合わない。
+BASIC5000_0118|JSUT|{ky o o sh i w a sp s e e t o g a sh i k e N d e k a N n i N g u o sh i t e i r u n o o m i ts u k e t a}|教師は、生徒が試験でカンニングをしているのを見つけた。
+BASIC5000_3654|JSUT|{n a o sp k i N n e N n o b u N r u i t a i k e e n o h e N k o o n i y o r i sp s o n o z o k u n o ky o o k a i m o h e N s e N o t a d o q t e o r i sp k a t o r e y a n o n a o k a N s u r u sh o k u b u ts u n o h a b a m o h i r o k u n a q t a m e N g a a r u}|なお、近年の分類体系の変更により、その属の境界も変遷をたどっており、カトレヤの名を冠する植物の幅も広くなった面がある。
+BASIC5000_1180|JSUT|{k o g a sp a N t a n o h a N s e e d e sp i q t a i n a n i g a a q t a n o}|古賀、あんたの半生で、一体何があったの。
+UT-PARAPHRASE-sent157-phrase1|JSUT|{u r a w a g a o k o sh i t a f u u a ts u n i k u q s u r u k a n o y o o n i sp n i i g a t a w a f u t a ts u n o o o N g o o r u o k i r o k u sh i t a}|浦和が起こした風圧に屈するかのように、新潟は２つのオウンゴールを記録した。
+LOANWORD128_016|JSUT|{k o d o m o n o k e N k a d e k a N k e e n a i n o n i o y a g a sh a sh a q t e k u r u}|子供のけんかで関係ないのに親がシャシャってくる。
+TRAVEL1000_0263|JSUT|{s o n o a t a r i d e sp d a r e k a n i k i i t e k u d a s a i}|その辺で、誰かに聞いてください。
+BASIC5000_2362|JSUT|{o N n a j i m u i N g a g i N k o o k a r a n o k i t o sp j u u m a N e N h a i q t a f u u t o o o u b a w a r e t a}|女事務員が銀行からの帰途、１０万円入った封筒を奪われた。
+UT-PARAPHRASE-sent032-phrase2|JSUT|{k i t a n o k u n i k a r a gy o k a i r u i sp n o o s a N b u ts u sp m e e k a n a d o g a t o y o h a sh i e}|北の国から魚介類、農産物、銘菓などが豊橋へ。
+BASIC5000_3428|JSUT|{s e e sh i gy o o g a s a k a N d e sp gy o k o o n o a q t a k a N k e e d e sp s u i s a N n e r i s e e h i N s e e z o o gy o o m o a q t a}|製紙業が盛んで、漁港のあった関係で、水産練製品製造業もあった。
+ONOMATOPEE300_102|JSUT|{t a q ch i p a n e r u n o m a e d e m a g o m a g o sh i t e i t a o b a a ch a N g a sp u sh i r o n o w a k a m o n o k a r a h a y a k u sh i r o t o d o n a r a r e t a}|タッチパネルの前でまごまごしていたおばあちゃんが、後ろの若者から早くしろと怒鳴られた。
+BASIC5000_2025|JSUT|{ts u i t a t o o m o q t a t o t a N n i sp r u u sh i i g a sp i e e k a e r i t a i t o n a k i d a sh i t a}|着いたと思ったとたんに、ルーシーが、家へ帰りたいと泣き出した。
+BASIC5000_2251|JSUT|{m a d o g a r a s u g a w a r e t e i t a n o d e sp s o n o h e y a o sp a t a t a k a k u sh i t e o k e n a k a q t a}|窓ガラスが割れていたので、その部屋を、暖かくしておけなかった。
+BASIC5000_0963|JSUT|{n a m a k e m o n o n o s o n o o t o k o w a sp sh i b a sh i b a sh o k u m u o o k o t a r u}|怠け者のその男は、しばしば職務を怠る。
+BASIC5000_4470|JSUT|{n i j u u h a q sh u k u w a k o o d o o n o ry o o i k i o sh i m e sp s e e y o o n i o k e r u sp k o o d o o j u u n i s e e z a n i s o o t o o s u r u m o n o t o k a N g a e r a r e r u}|二十八宿は黄道の領域を占め、西洋における、黄道十二星座に相当するものと考えられる。
+UT-PARAPHRASE-sent119-phrase2|JSUT|{t o m o n i m a j i m e n a k a o d e a r u}|ともに真面目な顔である。
+BASIC5000_1790|JSUT|{r a N k o o p a a t i i n o n a k a d e sp m e g u m i h a s u q p a d a k a d e sh i b a f u o h a sh i r i m a w a q t a}|乱交パーティーの中で、めぐみはすっぱだかで芝生を走り回った。
+TRAVEL1000_0113|JSUT|{sh a t o r u b a s u w a sp s o k o n i t o m a r i m a s u k a}|シャトルバスは、そこに止まりますか。
+BASIC5000_3075|JSUT|{f e m i r i N s u o n i k u N d e i t e sp m a ts u e e n o sp e k u r i a o u ts u k o t o n i sh u u ch a k u sh i t e i r u}|フェミリンスを憎んでいて、末裔の、エクリアを討つ事に執着している。
+BASIC5000_1909|JSUT|{t o d o k e d e n a sh i n i r o j o o n i sh u q t e N sh i t e w a n a r a n a i}|届け出なしに路上に出店してはならない。
+BASIC5000_0618|JSUT|{m e e g e N w a sh i n a k a q t a g a sp k a r e w a sp w a t a sh i g a u s o o ts u i t e i r u t o sp a N n i h o n o m e k a sh i t a}|明言はしなかったが、彼は、私が嘘をついていると、暗にほのめかした。
+TRAVEL1000_0065|JSUT|{k u r e j i q t o k a a d o m o m o N d a i n a k u sh i y o o d e k i m a s u}|クレジットカードも問題なく使用できます。
+TRAVEL1000_0120|JSUT|{k o n o t e g a m i n o o m o s a o sp h a k a q t e i t a d a k e m a s u k a}|この手紙の重さを、計っていただけますか。
+BASIC5000_3374|JSUT|{d a i b u j i k a N g a t a q t e o r i m a s u n o d e sh o o s a i w a o m o i d a s e m a s e N g a sp k a i w a p e e j i o k a k u n i N sh i t a k a g i r i d e w a sp w a t a sh i g a t e e n e e n i r i r e k i o m i t e i r e b a sp s a k e r a r e t a g o k a i d a q t a k a m o sh i r e n a i t o o m o i m a sh i t a}|だいぶ時間がたっておりますので詳細は思い出せませんが、会話ページを確認した限りでは、私が丁寧に履歴をみていれば、避けられた誤解だったかもしれないと思いました。
+BASIC5000_4233|JSUT|{r a N s u n i k o k u o o t o sh i t e n o j i k a k u o m e b a e s a s e r u b e k u sp i q k e e o t a b a k a r u n a d o s a k u sh i t e k i n a m e N m o a w a s e m o ts u}|ランスに国主としての自覚を芽生えさせるべく、一計を謀るなど策士的な面も併せ持つ。
+TRAVEL1000_0721|JSUT|{s e N t a k u m o n o w a sp s e N t a k u m o n o n o f u k u r o n i i r e t e sp k o ch i r a m a d e sp m o q t e k i t e k u d a s a i}|洗濯物は、洗濯物の袋に入れて、こちらまで、持って来てください。
+REPEAT500_set1_004|JSUT|{s a a b i s u m a n e e j a a d o o ny u u e k i n o t a m e sp o o i m a ch i e k i k a r a sp e N k a k u k a N sh i sh i t e i r u}|サービスマネージャー導入駅のため、大井町駅から、遠隔監視している。
+TRAVEL1000_0788|JSUT|{m a s u t a a k a a d o d e sh i h a r a e m a s u k a}|マスターカードで支払えますか。
+BASIC5000_2016|JSUT|{s e q ky o k u t e k i n a sh i s e e g a a r e b a sp k a i k e ts u d e k i r u m o N d a i w a s o n o y a r i k a t a o m o t o m e sp sh o o a k u d e k i n a i k o t o g a r a k a r a w a sp t e o h i k u k o t o n i n a r u}|積極的な姿勢があれば、解決できる問題はそのやり方を求め、掌握できない事柄からは、手を引くことになる。
+TRAVEL1000_0169|JSUT|{n i q p o N e n o o m i y a g e o s a g a sh i t e i r u n o d e s u g a}|日本へのおみやげを探しているのですが。
+REPEAT500_set4_017|JSUT|{t a d a sh i sp gy a N b u r u i z o N sh o o n o ny u u i N ch i ry o o o i q t e i r u by o o i N w a sp w a z u k a d e a r u}|ただし、ギャンブル依存症の入院治療を行っている病院は、わずかである。
+BASIC5000_0918|JSUT|{k o ts u k o ts u y a r e b a sp j u k e N n i u k a r u d a r o o}|こつこつやれば、受験に受かるだろう。
+BASIC5000_4708|JSUT|{y a m a t o w a sh i h a N y o r i sp o o g i o s a z u k e r a r e t a}|大和は師範より、奥義を授けられた。
+BASIC5000_0579|JSUT|{k o o e N e i k u y o r i m o sp m u sh i r o d o o b u ts u e N n i i k i t a i}|公園へ行くよりも、むしろ動物園に行きたい。
+BASIC5000_0610|JSUT|{sh i q k e n o o o i k i k o o w a sp s o n o h a N t o o n o t o k u sh o k u d e s u}|湿気の多い気候は、その半島の特色です。
+BASIC5000_4382|JSUT|{s e e g i k a N a f u r e r u s e e k a k u k o sp t o o sh o sp a i e f u y a s e g a m i o u z u m e k a r a n o sh i k a k u t o k a N ch i g a i sh i t e sh i m a u}|正義感溢れる性格故、当初、アイエフやセガミをうずめからの刺客と勘違いしてしまう。
+PRECEDENT130_053|JSUT|{h o N k e N u q t a e n i w a sp k a k u n i N n o r i e k i g a m i t o m e r a r e r u k a}|本件訴えには、確認の利益が認められるか。
+BASIC5000_0181|JSUT|{d a i g i m i N sh u s e e w a sp h i t o ts u n o s e e j i k e e t a i d e a r u}|代議民主制は、１つの政治形態である。
+BASIC5000_1136|JSUT|{m i n i k u i a h i r u n o k o w a sp y u u g a n a h a k u ch o o t o n a q t a}|醜いアヒルの子は、優雅な白鳥となった。
+BASIC5000_0833|JSUT|{u ch u u h i k o o sh i t a ch i g a sp b u j i n i m o d o q t a n o d e h i t o b i t o w a y o r o k o N d a}|宇宙飛行士たちが、無事に戻ったので人々は喜んだ。
+REPEAT500_set4_088|JSUT|{s o k o n i w a sp hy a k u d o r u s a ts u t o sp a m e r i k a n i k o i t o i u sp m i j i k a i m e q s e e j i d a k e d a q t a}|そこには、百ドル札と、アメリカに来いという、短いメッセージだけだった。
+TRAVEL1000_0334|JSUT|{k a q t a t o k i n i w a sp k i g a ts u k i m a s e N d e sh i t a}|買った時には、気が付きませんでした。
+BASIC5000_1637|JSUT|{t o k i d o k i sp k a n o j o w a f u ch u u i n i m o sp m i ch i n i m a y o i m a sh i t a}|時々、彼女は不注意にも、道に迷いました。
+BASIC5000_1901|JSUT|{g i z e N t o w a sp a k u t o k u g a sp t o k u n i t a i sh i t e h a r a u sp t a d a m a s a n o ch i k a i d e a r u}|偽善とは、悪徳が、徳に対して払う、忠順の誓いである。
+BASIC5000_2080|JSUT|{m o ch i a w a s e g a t a r i n a k e r e b a sp k o k o w a w a t a sh i g a h a r a i m a s u y o}|持ち合わせが足りなければ、ここは私が払いますよ。
+UT-PARAPHRASE-sent079-phrase1|JSUT|{d a k a r a sp k u j i r a n o k e N ky u u o t a y a s u w a k e n i w a i k a n a i}|だから、鯨の研究を絶やすわけにはいかない。
+REPEAT500_set2_039|JSUT|{o q t o d e a r u k o m u r o g a sp ky u u ky u u sh a o y o b i sp t o n a i by o o i N n i sp k i N ky u u h a N s o o s a r e r u}|夫である小室が、救急車を呼び、都内病院に、緊急搬送される。
+BASIC5000_0280|JSUT|{z a N k i N w a sp r o k u g a ts u s a N j u u n i ch i m a d e n i g o sh i h a r a i sh i m a s u}|残金は、６月３０日までに御支払いします。
+ONOMATOPEE300_234|JSUT|{w a t a sh i n o t e e a N o k e ch o N k e ch o N n i i w a r e t e sh i m a q t a}|私の提案をけちょんけちょんに言われてしまった。
+BASIC5000_3045|JSUT|{g i r e N t a ch i g a o r o ch i o n o n o sh i r u k o t o b a o h a k u t o sp s o r a g a k u m o q t e r a i m e e g a t o d o r o k i sp o o ny u u d o o g a a r a w a r e t a}|義連たちが大蛇を罵る言葉を吐くと、空が曇って雷鳴が轟き、大入道が現れた。
+BASIC5000_2346|JSUT|{s a N by a k u r o k u j u u g o o sh i ts u n o a i k a g i o sp k a sh i t e i t a d a k i m a s e N k a}|３６０号室の合い鍵を、貸していただきませんか。
+BASIC5000_0620|JSUT|{s e N d a i e i q t e sp t o N b o g a e r i d e k a e q t e k i m a sh i t a}|仙台へ行って、とんぼ返りで戻ってきました。
+BASIC5000_4257|JSUT|{m o n o g a t a r i j o o w a o m o n i t e e s a ts u y a m i h a r i sp d e N r e e n a d o n o y a k u w a r i o n i n a u}|物語上は主に偵察や見張り、伝令などの役割を担う。
+TRAVEL1000_0827|JSUT|{w a t a sh i n o s e k i w a sp a n o f u j i N n o y o k o d e s u k a}|私の席は、あの婦人の横ですか。
+TRAVEL1000_0413|JSUT|{d o n o y o o n a p a i g a g o z a i m a s u k a}|どのようなパイがございますか。
+BASIC5000_4754|JSUT|{m a d a sh u u g o o b a sh o n i t o o ch a k u sh i t e n a i h i t o g a o o k u i r u n o d e sp sh u q p a ts u o o k u r a s e r u k o t o n i sh i t a}|まだ集合場所に到着してない人が多くいるので、出発を遅らせることにした。
 BASIC5000_3349|JSUT|{h a r u w a a t a t a k a k u n a r u n o g a h a y a k u sp n a ts u w a k i o N g a t a k a k u sp a k i w a a m e g a o o k u sp f u y u w a sh i m o g a s u k u n a i}|春は暖かくなるのが早く、夏は気温が高く、秋は雨が多く、冬は霜が少ない。
-BASIC5000_0680|JSUT|{o k a a s a N w a sp m u i sh i k i n i i s u o ts u k a N d a}|お母さんは、無意識に椅子をつかんだ。
-ONOMATOPEE300_197|JSUT|{a s a n o t e N k i y o h o o d e w a h a r e d a q t a h a z u d a g a sp y u u g a t a k a r a f u r i d a sh i t a a m e w a y o r u n i w a z a N z a N b u r i n i n a q t e i t a}|朝の天気予報では晴れだったはずだが、夕方から降り出した雨は夜にはざんざん降りになっていた。
-BASIC5000_0590|JSUT|{k i t a n a sh i s a e sh i n a k e r e b a sp h o N o i e n i m o q t e k a e q t e i i}|汚しさえしなければ、本を家に持ってかえっていい。
-BASIC5000_0447|JSUT|{y o s o o s a r e t a t o o r i sp k a r e r a w a a m a y a k a s a r e t a}|予想されたとおり、彼らは甘やかされた。
+REPEAT500_set1_011|JSUT|{k e e my o o sh a d a ts u n a n a r e e sh o N k a r a sp j o o ch o k a N a f u r e r u k a t a r i m a d e sp h a b a h i r o i hy o o g e N ry o k u o m o ts u}|軽妙洒脱なナレーションから、情緒感溢れる語りまで、幅広い表現力を持つ。
+BASIC5000_4393|JSUT|{k a m o sh i d a s u f u N i k i w a ts u n e n i k i q s u o i f u s a s e r u}|かもし出す雰囲気は常にキッスを畏怖させる。
+BASIC5000_0581|JSUT|{i ch i m o k u d e sp k e s a w a k a r e g a sp s a i k o o n o o sh a r e o sh i t e i r u k o t o n i k i g a ts u i t a}|一目で、今朝は彼が、最高のおしゃれをしていることに気がついた。
+BASIC5000_0747|JSUT|{s a z a e w a j i b u N n o d e N w a b a N g o o o w a s u r e t e b a k a r i i r u N d a k a r a}|サザエは自分の電話番号を忘れてばかりいるんだから。
+TRAVEL1000_0960|JSUT|{m o sh i n a n i k a o y o m i n i n a r u n o d e sh i t a r a sp z a q sh i g a a r i m a s u}|もし何かお読みになるのでしたら、雑誌があります。
+BASIC5000_3963|JSUT|{k i N z o k u b a N n i sp k a j o o n i sh o o j i r u m o n o o sp u z u d e N ry u u t o i u}|金属板に、渦状に生じるものを、渦電流という。
+BASIC5000_2067|JSUT|{y u m e n i k a k e t e i r u o m o n a k o t o w a sp sh u b i i q k a N s e e d e a r u}|夢に欠けている主な事は、首尾一貫性である。
+REPEAT500_set5_077|JSUT|{o o n i sh i y o o j o o n o sp j u N k o o k o o d o k a r a sp d o o ry o k u n a sh i d e sp ch i j o o e k a q k u u h i k o o sh i sp k i N ky u u ch a k u r i k u n i s e e k o o sh i t a}|大西洋上の、巡航高度から、動力なしで、地上へ滑空飛行し、緊急着陸に成功した。
+BASIC5000_2935|JSUT|{a a sp k o n o y o o sh i n i k a k i k o m u d a k e d e s u}|あぁ、この用紙に書き込むだけです。
+ONOMATOPEE300_131|JSUT|{k o d o m o g a m a i k a i w a r u s a o s u r u n o d e sp k o ch i N t o k a r u k u a t a m a o t a t a i t e sp sh i ts u k e o sh i t e a g e n a i t o i k e n a i}|子どもが毎回悪さをするので、こちんと軽く頭を叩いて、しつけをしてあげないといけない。
+TRAVEL1000_0289|JSUT|{sh o o t e N o a w a s e r u h i ts u y o o g a a r i m a s u k a}|焦点を合わせる必要がありますか。
+REPEAT500_set2_089|JSUT|{g e N z a i w a sp b a q h a o m o ch i i f u t o sh i t a sp h a a p u sh i k o o d o n o s a q ky o k u k a t o sh i t e sp k i o k u s a r e t e i r u}|現在は、バッハをモチーフとした、ハープシコードの作曲家として、記憶されている。
+TRAVEL1000_0049|JSUT|{t o r i n i k o r a r e r u t o k i n i o m o ch i k u d a s a i}|取りに来られるときにお持ちください。
+BASIC5000_2255|JSUT|{n i hy a k u n i j u u r o k u b i N w a sp j u u j i s a N j u q p u N n i r i r i k u sh i m a s u}|２２６便は、１０時３０分に離陸します。
+BASIC5000_0903|JSUT|{o u w a s a w a k a n e g a n e sp t a i s o o u k e t a m a w a q t e i m a s u}|お噂はかねがね、たいそう承っています。
+BASIC5000_1436|JSUT|{ch i ch i t o w a t a sh i w a sp n i ch i y o o b i n i w a sp i ts u m o t e n i s u o sh i t e i t a}|父と私は、日曜日には、いつもテニスをしていた。
+BASIC5000_1200|JSUT|{t o N b i n i sp a b u r a a g e o s a r a w a r e t a y o o n a m o n o d a}|鳶に、油揚げをさらわれたようなものだ。
+BASIC5000_0082|JSUT|{a t a t a k a i n o m i m o n o o g o y o o i sh i m a sh o o k a}|温かい飲み物をご用意しましょうか。
+BASIC5000_0616|JSUT|{y o k u n e N sp d a i i ch i j i s e k a i t a i s e N g a h a j i m a r i m a sh i t a}|翌年、第一次世界大戦が始まりました。
+BASIC5000_0255|JSUT|{o N n a n o k o w a sp i i f u k u o m i s e b i r a k a s u n o g a s u k i d a}|女の子は、いい服を見せびらかすのが好きだ。
+TRAVEL1000_0855|JSUT|{k o r e w a w a t a sh i n o s e k i t o o m o u n o d e s u g a sp t o o j o o k e N o m i s e t e i t a d a k e m a s u k a}|これは私の席と思うのですが、搭乗券を見せて頂けますか。
+BASIC5000_0714|JSUT|{u r u w a sh i n o t o m o y o sp w a t a sh i n i t o q t e sp a n a t a w a e e e N n i w a k a i n o d a}|麗しの友よ、私にとって、あなたは永遠に若いのだ。
+BASIC5000_3399|JSUT|{m a t a sp i k i s a r e t a z a i g a i sh i s a N w a sp ch u u k a N b a i sh o o t o y o b a r e r u b a i sh o o n o i ch i b u t o i u k e e t a i o t o r u k o t o m o a r u}|また、遺棄された在外資産は、中間賠償と呼ばれる賠償の一部という形態をとることもある。
+BASIC5000_0926|JSUT|{m i w a t a s u k a g i r i sp m i d o r i n o n o h a r a g a h i r o g a q t e i t a}|見渡す限り、緑の野原が広がっていた。
+BASIC5000_0799|JSUT|{k o o s a N s u r u k u r a i n a r a sp sh i N d a h o o g a m a sh i d a}|降参するくらいなら、死んだ方がましだ。
+BASIC5000_0253|JSUT|{o N n a t o i u m o n o w a sp n a n i d e m o o k a n e n i k a N s a N sh i t e k a N g a e r u}|女というものは、何でもお金に換算して考える。
+UT-PARAPHRASE-sent279-phrase2|JSUT|{n i q p o N t o n o ch i g a i w a o o k i i}|日本との違いは大きい。
+BASIC5000_3481|JSUT|{t o k u ch o o t o sh i t e sp a k u m a d e r e k i sh i n o k i r o k u n i j u u t e N g a o o i n o d e sp sh i k i n i k u r a b e t e m o n o g a t a r i n o k i j u ts u t o sh i t e w a o m o sh i r o m i n i k a k e r u g a sp m i k o t o n o r i y a j o o s o o b u N o s o n o m a m a i N y o o sh i t e i r u t a m e sp s e e k a k u s a d e w a sh i k i n i m a s a r u}|特徴として、あくまで歴史の記録に重点が多いので、史記に比べて物語の記述としては面白みに欠けるが、詔や上奏文をそのまま引用しているため、正確さでは史記に勝る。
+LOANWORD128_078|JSUT|{h o N my o o o z u e z u e t o i u}|本名をズェ・ズェという。
+BASIC5000_1596|JSUT|{ch o o t a i k o k u g a h a g e sh i i k o q ky o o f u N s o o o k a i k e ts u s u r u t a m e n i sp h o N k a k u t e k i n i k o o sh o o sh i t a}|超大国が激しい国境紛争を解決するために、本格的に交渉した。
+BASIC5000_0718|JSUT|{y o o w a sp k a n o j o g a h i t o r i d e sh u k u d a i o sh i y o o t o sh i n a i k o t o d e a r u}|要は、彼女が一人で宿題をしようとしないことである。
+TRAVEL1000_0734|JSUT|{s e ts u z o k u b i N n i n o r i o k u r e t a n o d e s u g a sp d o o s u r e b a y o i d e sh o o k a}|接続便に乗り遅れたのですが、どうすればよいでしょうか。
+BASIC5000_2898|JSUT|{k i sh a w a sp s o n o j o o h o o g e N o a k a s u k o t o o k o b a N d a}|記者は、その情報源を明かすことを拒んだ。
+BASIC5000_1097|JSUT|{sh o o k o w a w a r e w a r e n i sp k a r e n o m u j i ts u o n a q t o k u s a s e t a}|証拠はわれわれに、彼の無実を納得させた。
+TRAVEL1000_0133|JSUT|{sh i n a i n o b a a i w a sp d o o s u r e b a y o i n o d e sh o o k a}|市内の場合は、どうすればよいのでしょうか。
+BASIC5000_4056|JSUT|{b o o j a k u b u j i N s a d e w a sp r o o d o m a s u t a a n o u e o i k u}|傍若無人さでは、ロードマスターの上を行く。
+BASIC5000_4310|JSUT|{m a t a sp r i y o o sh a g a sh i r o n o sh a sh i N o t o o k o o sh i t a r i sp j i q s a i n i sh i r o n i o t o z u r e r u s a i n i y a k u d a ts u k u ch i k o m i j o o h o o o t o o k o o d e k i r u n a d o sp j o o k a k u s u k i e m u k e t a k o my u n i t i k i n o o m o y o o i s a r e t e i r u}|また、利用者が城の写真を投稿したり、実際に城に訪れる際に役立つ口コミ情報を投稿できるなど、城郭好きへ向けたコミュニティ機能も用意されている。
+BASIC5000_3626|JSUT|{j u N k a N k i n a i k a t o sp sh i N z o o k e q k a N g e k a s o o h o o n i t e a ts u k a w a r e r u ry o o i k i d e sp sh i N z o o i sh o k u t o o n i ts u i t e sp o k o n a w a r e r u ry o o i k i}|循環器内科と、心臓血管外科双方にて扱われる領域で、心臓移植等について、行われる領域。
+REPEAT500_set1_061|JSUT|{p o i N t o g a a d o k a r a sp s u m o o r u f o w a a d o m a d e k o n a s e r u sp s o o g o o ry o k u g a t a k a i y u u t i r i t i i p u r e e y a a d e a r u}|ポイントガードから、スモールフォワードまでこなせる、総合力が高いユーティリティープレーヤーである。
+TRAVEL1000_0183|JSUT|{e a k o N g a k o sh o o sh i t e i r u n o d e w a a r i m a s e N k a}|エアコンが故障しているのではありませんか。
+BASIC5000_1833|JSUT|{ny u u g a k u sh i k e N n i o ch i n a i y o o n i sp k a n o j o w a sp i q sh o k e N m e e n i b e N ky o o sh i t a}|入学試験に落ちないように、彼女は、一生懸命に勉強した。
+TRAVEL1000_0820|JSUT|{t a k u sh i i sp i g a i d e k a i m o n o n i i k u h o o h o o w a a r i m a s u k a}|タクシー、以外で買物に行く方法はありますか。
+REPEAT500_set1_022|JSUT|{k o n o t o k i n i sp f u y u u t a i r i k u p u r u v a m a n i a r u sp ch u u r i ts u k o k u sp by u e r u b a g a sp a r u j o o h o o s u j i k a r a sp b a q sh u sh o o g u N n o sh o k e e t o sp z e N o o j o sp a a sh e n o j i g a i o h a q py o o}|このときに、浮遊大陸プルヴァマにある、中立国、ビュエルバが、ある情報筋から、バッシュ将軍の処刑と、前王女、アーシェの自害を発表。
+REPEAT500_set2_058|JSUT|{s u w e e d e N i m i N n o ry o o sh i N n o m o t o n i sp m a s a ch u u s e q ts u sh u u sp k e N b u r i q j i n i t e u m a r e r u}|スウェーデン移民の両親の許に、マサチューセッツ州、ケンブリッジにて生まれる。
+BASIC5000_4614|JSUT|{k a r e w a k i n o o sp s a i sh i N m o d e r u n o u d e d o k e e o k o o ny u u sh i t a}|彼は昨日、最新モデルの腕時計を購入した。
+REPEAT500_set1_051|JSUT|{d e by u u g o n o s u u n e N k a N w a sp b e b i i f e i s u t o sh i t e sp h o N my o o d e k a ts u d o o}|デビュー後の数年間は、ベビーフェイスとして、本名で活動。
+BASIC5000_1819|JSUT|{s o f u w a sp y o k u sh i N b u N o y o m i n a g a r a sp k o q k u r i k o q k u r i s u r u}|祖父は、よく新聞を読みながら、こっくりこっくりする。
+BASIC5000_1254|JSUT|{n i k u t a i t o s e e sh i N t o w a s o o s e e j i d e a r i sp k a m i n o m i g a d o ch i r a g a d o ch i r a n a n o k a o sh i q t e i r u}|肉体と精神とは双生児であり、神のみがどちらがどちらなのかを知っている。
+UT-PARAPHRASE-sent255-phrase2|JSUT|{t o k u n i sp k a k i d a sh i n o k i s e ts u n o a i s a ts u g a n a N b u ts u d a}|特に、書き出しの季節のあいさつが難物だ。
+BASIC5000_2491|JSUT|{h o o sh u u w a y o k a q t a sp s o sh i t e s o n o k o t o g a k a r e r a g a s o n o k e N ky u u n i s a N k a sh i t a y u i i ts u n o d o o k i d a q t a}|報酬はよかった、そしてそのことが彼らがその研究に参加した唯一の動機だった。
+PRECEDENT130_011|JSUT|{h a N s o g e N k o k u w a sp h o N k e N j i k o g o n i i ry o o k i k a N o j u sh i N sh i t a g a sp s o n o k e e k a w a sp ts u g i n o t o o r i d e a r u}|反訴原告は、本件事故後に医療機関を受診したが、その経過は、次のとおりである。
+TRAVEL1000_0618|JSUT|{j u u i ch i j i s a N j u q p u N n i sp k u r u m a d e m u k a e n i i k i m a s u}|11時30分に、車で迎えに行きます。
+TRAVEL1000_0538|JSUT|{g a k u s e e n o ky o o j u sh a w a sp i N t a by u u sh i k e N m o j u k e N sh i n a k e r e b a n a r i m a s e N}|学生の教授者は、インタビュー試験も受験しなければなりません。
+BASIC5000_0744|JSUT|{s a N g a ts u n o o w a r i n i sp w a t a sh i t a ch i w a k e q k o N s u r u ts u m o r i d e s u}|３月の終わりに、私たちは結婚するつもりです。
+TRAVEL1000_0509|JSUT|{b i d e o k a m e r a w a sp k o k o n i a z u k e t e k u d a s a i}|ビデオカメラは、ここに預けてください。
+BASIC5000_0604|JSUT|{d a N s e e g a sp ts u m a n i i r o i r o n a k o t o o k a k u s u n o w a m a ch i g a q t e i r u}|男性が、妻にいろいろな事を隠すのは間違っている。
 BASIC5000_2992|JSUT|{r o N j i r u m a d e m o n a k u sp k i h o N t e k i j i N k e N w a s o N ch o o s a r e n a k e r e b a n a r a n a i}|論じるまでもなく、基本的人権は尊重されなければならない。
-REPEAT500_set5_066|JSUT|{k a N z o o e n o s a N s o ky o o ky u u w a sp k a N d o o my a k u t o sp t e e a ts u k e e n o m o N my a k u o k a i sh i t e sp o k o n a w a r e t e i r u}|肝臓への酸素供給は、肝動脈と、低圧系の門脈を介して、行われている。
-UT-PARAPHRASE-sent296-phrase1|JSUT|{sh i k a sh i sp g e N j o o d e w a s o n o h o t o N d o s u b e t e g a sp t o o ky o o y a o o s a k a sp n a g o y a n o sh i j o o n i d e r u t a m e sp j i k a n i j i m o t o n i d e m a w a r u k o t o g a n a i}|しかし、現状ではそのほとんどすべてが、東京や大阪、名古屋の市場に出るため、じかに地元に出回ることがない。
-TRAVEL1000_0303|JSUT|{e e sp i ch i j i n i y o y a k u o t o q t e i r u n o d e s u g a}|ええ、1時に予約を取っているのですが。
-TRAVEL1000_0054|JSUT|{o o k e s u t o r a n i sp s a N s e k i r e N z o k u d e a r i m a s u}|オーケストラに、3席連続であります。
+BASIC5000_2373|JSUT|{k a r i n i k a i g a i e i k u t o sh i t a r a sp f u r a N s u e i k u d a r o o}|仮に海外へ行くとしたら、フランスへ行くだろう。
+ONOMATOPEE300_125|JSUT|{sh o k u a r a i k i n o n a k a d e o s a r a d o o sh i g a b u ts u k a r i sp g a ch a N t o o t o g a sh i t e i r u}|食洗機の中でお皿同士がぶつかり、ガチャンと音がしている。
+BASIC5000_1442|JSUT|{r a N d a a g a h i ts u y o o n a sh u u s e e o h o d o k o sh i t a k o t o w a sp ch u u i s u r u k a ch i g a a r u}|ランダーが必要な修正を施したことは、注意する価値がある。
+BASIC5000_4543|JSUT|{k o t o sh i w a m a n a ts u b i g a s u k u n a k u t e sp s a b i sh i i n a ts u y a s u m i d e sh i t a}|今年は真夏日が少なくて、寂しい夏休みでした。
+UT-PARAPHRASE-sent234-phrase1|JSUT|{n i q p o N n o s e e ky o k u n o d o o k o o o h a j i m e sp s e k a i n o j u u y o o n a d e k i g o t o n i ts u i t e w a sp k a n a r a z u r o N py o o y a b u N s e k i o h a q py o o sh i t e o r i sp k i w a m e t e t o k u i n a k a t a ch i d a}|日本の政局の動向をはじめ、世界の重要な出来事については、必ず論評や分析を発表しており、極めて特異な形だ。
+BASIC5000_1757|JSUT|{k i k a i o sh i d o o s u r u n i w a sp k o n o b o t a N o o sh i n a s a i}|機械を始動するには、このボタンを押しなさい。
+BASIC5000_1875|JSUT|{h o N y a d e e e g o k a N k e e n o h o N o m i ts u k e r u t o sp ts u g i ts u g i n i k a q t e sh i m a q t e sp y o m a z u n i i r u n o d e sp t a m a r u i q p o o d e s u}|本屋で英語関係の本を見つけると、次々に買ってしまって、読まずにいるので、たまる一方です。
+REPEAT500_set5_088|JSUT|{s o k o n i w a sp hy a k u d o r u s a ts u t o sp a m e r i k a n i k o i t o i u sp m i j i k a i m e q s e e j i d a k e d a q t a}|そこには、百ドル札と、アメリカに来いという、短いメッセージだけだった。
+BASIC5000_0452|JSUT|{k i N k a w a o m o q t a y o r i sp h a r u k a n i k a ch i g a a q t a}|金貨は思ったより、はるかに価値があった。
+BASIC5000_2453|JSUT|{h a t o sh o k u b u ts u t o n o k a N k e e w a sp h a i t o d o o b u ts u t o n o k a N k e e n i h i t o sh i i}|葉と植物との関係は、肺と動物との関係に等しい。
+BASIC5000_2746|JSUT|{a s a g a a k e r u t o sp k a r e r a w a k a N p a N n i d e t e i t a}|朝が明けると、彼らは甲板に出ていた。
+BASIC5000_4090|JSUT|{p u r e i a d e s u w a o m o n i f u y u n o h o sh i d e a r i sp k o d a i n o n o o gy o o r e k i n i o i t e sp h i j o o n i o o k i n a y a k u w a r i o h a t a s u}|プレイアデスは主に冬の星であり、古代の農業暦において、非常に大きな役割を果たす。
+BASIC5000_4899|JSUT|{k a n o j o w a sp o q t o n o t o o ch a k u o m a ch i k o g a r e t e i m a s u}|彼女は、夫の到着を待ち焦がれています。
+BASIC5000_4172|JSUT|{n a q k u r u n o h a k o w a r e o i k a s u t a m e n i sp ch i m e e sh o o m o o s o r e z u s e m e ts u z u k e r u s o n o s u s a m a j i i k i h a k u w a sp y u p i i n i i q sh u N b o o gy o o i sh i k i s a s e r u h o d o}|ナックルのハコワレを生かすために、致命傷も恐れず攻め続けるその凄まじい気迫は、ユピーに一瞬防御を意識させるほど。
+BASIC5000_3212|JSUT|{j u gy o o n o j i k a N w a r i w a sp j o o k e N o m i t a s u n a k a d e sp s e e t o o n o o n o g a sp j i y u u n i k a m o k u o s e N t a k u s u r u}|授業の時間割は、条件を満たす中で、生徒各々が、自由に科目を選択する。
+PRECEDENT130_107|JSUT|{g e N k o k u sh a w a t e e sh a sh i t e o r i sp g e N k o k u g a w a n i k a sh i ts u w a n a i}|原告車は停車しており、原告側に過失はない。
+BASIC5000_3529|JSUT|{y a ts u g a t a k e d e y u u k i y a s a i n o s a i b a i sp h a i t a ts u n o j i gy o o o sh i t e i r u}|八ヶ岳で有機野菜の栽培、配達の事業をしている。
+BASIC5000_4863|JSUT|{k o o m a ts u z u k a k o f u N w a sp n a r a k e N a s u k a m u r a n i s o N z a i s u r u k o f u N}|高松塚古墳は、奈良県明日香村に存在する古墳。
+TRAVEL1000_0570|JSUT|{d o n o y o o n a ts u a a g a a r i m a s u k a}|どのようなツアーがありますか。
+BASIC5000_1980|JSUT|{m a y a b u N m e e w a sp d o n o k u r a i n o a i d a n i h a N e e sh i t a n o d a r o o k a}|マヤ文明は、どのくらいの間に繁栄したのだろうか。
+BASIC5000_3387|JSUT|{m o t o m o t o w a n i h o N g a m i o y u u t o k i n o d o o g u n o h i t o ts u d e sp k a ts u t e w a j o s e e d o o y o o n i sp d a N s e e m o k a m i o m a t o m e r u t a m e n i k o r e o m o ch i i t a}|もともとは日本髪を結う時の道具の一つで、かつては女性同様に、男性も髪を纏めるためにこれを用いた。
+TRAVEL1000_0576|JSUT|{a n o b i r u n o y o k o n i sp ch i k a t e ts u n o i r i g u ch i g a a r i m a s u}|あのビルの横に、地下鉄の入口があります。
+BASIC5000_0422|JSUT|{t e z u k a o s a m u n o h o N o sp i q sh u u k a N k u r a i k a sh i t e k u r e m a s u k a}|手塚治虫の本を、１週間くらい貸してくれますか。
+BASIC5000_0883|JSUT|{k i sh a w a o m o q t e i t a h o d o k o N d e i n a k a q t a}|汽車は思っていたほど混んでいなかった。
+TRAVEL1000_0957|JSUT|{k a a t o w a k o k o m a d e sh i k a sh i y o o d e k i m a s e N}|カートはここまでしか使用できません。
+BASIC5000_1969|JSUT|{t o o b o o h a N n i N o ts u k a m a e y o o t o sp y u d a N n a k u m i h a q t a}|逃亡犯人を捕まえようと、油断なく見張った。
+BASIC5000_1050|JSUT|{d a i j i n a n o w a sp ts u k a e r u j i k a N o sp i k a n i y u u k o o n i ts u k a u k a d e a r u}|大事なのは、使える時間を、いかに有効に使うかである。
+BASIC5000_0109|JSUT|{f u k u r o w a sp t o u m o r o k o sh i d e h a ch i k i r e s o o d a q t a}|袋は、とうもろこしではちきれそうだった。
+BASIC5000_2627|JSUT|{i w a n o u e d e k a m i o t o k a sh i n a g a r a sp k a n o j o w a k o k o r o y o i u t a o u t a q t a}|岩の上で髪をとかしながら、彼女は快い歌を歌った。
+BASIC5000_3638|JSUT|{sh i r o i s o q k u s u n i sh u u ch a k u s u r u s e e h e k i o m o ch i sp ky a k u t o sh i t e n o s e t a j o s e e n i sp s o q k u s u o h a k a s e t e s a ts u g a i s u r u r e N z o k u s a ts u j i N h a N}|白いソックスに執着する性癖を持ち、客として乗せた女性に、ソックスを履かせて殺害する連続殺人犯。
+TRAVEL1000_0299|JSUT|{y u u s o o n i sh i y o o d e k i r u sp ch i i s a i h a k o w a a r i m a s u k a}|郵送に使用できる、小さい箱はありますか。
+BASIC5000_2089|JSUT|{e N s u i g a t a n o t e e g i o o sh i e t e k u r e m a s e N k a}|円錐形の定義を教えてくれませんか。
+BASIC5000_3493|JSUT|{h a N t a a z u n o j o o h o o m o u q t e i r u t o sp f u o N t o o n a u w a s a g a a r u}|ハンターズの情報も売っていると、不穏当な噂がある。
+BASIC5000_4515|JSUT|{t a n i N n i h a n a g e g a d e t e i m a s u y o sp t o w a n a k a n a k a i e n a i m o n o d e s u n e}|他人に鼻毛が出ていますよ、とはなかなか言えないものですね。
+BASIC5000_3562|JSUT|{ry o o n i y o q t e n a i y o o w a k o t o n a r u g a sp k o r e n i j i ch i k a i y a k u i N y a s e N ky o k i t e e n a d o g a m e e k i s a r e t e a r u k o t o g a o o i}|寮によって内容は異なるが、これに自治会役員や選挙規定などが明記されてある事が多い。
+BASIC5000_2714|JSUT|{t a t e ts u y o sh i w a sp p o k e q t o n i t e o i r e t e sp k e N o s a g a sh i t a}|建雄は、ポケットに手を入れて、券を探した。
+ONOMATOPEE300_060|JSUT|{a s a n i n a q t e t o n a r i n o i e n o n i w a t o r i g a k o k e k o q k o o t o n a i t a n o d e m e g a s a m e t e sh i m a q t a}|朝になって隣の家の鶏がコケコッコーと鳴いたので目が覚めてしまった。
+REPEAT500_set1_010|JSUT|{s u m a a t o f o N k a r a sp f i i ch a a f o N m a d e sp m a r u ch i d e b a i s u n i t a i o o}|スマートフォンから、フィーチャーフォンまで、マルチデバイスに対応。
+BASIC5000_2629|JSUT|{b o k u r a n o ch u u g o k u ry o k o o g a t a n o sh i i m o n o n i n a r u t o i i n a}|僕等の中国旅行が楽しいものになるといいな。
+REPEAT500_set3_052|JSUT|{g a q k o o y a by o o i N n a d o n o sp ky u u sh o k u gy o o m u d e sp e e y o o s o o k e e s a N s u r u j o o d e sp j u u y o o n a sh i ry o o n o h i t o ts u d e a r u}|学校や病院などの、給食業務で、栄養素を計算する上で、重要な資料のひとつである。
+BASIC5000_2760|JSUT|{m i z u u m i n o u e n i sp i k u s o o k a n o b o o t o g a a q t a}|湖の上に、幾艘のボートがあった。
+BASIC5000_1610|JSUT|{p i a n o w a t a k a i d e s u g a sp j i d o o sh a w a m o q t o t a k a i d e s u}|ピアノは高いですが、自動車はもっと高いです。
+BASIC5000_3904|JSUT|{s a i k e N j o o t o n i o k e r u sp i g i n a k i sh o o d a k u n a d o}|債権譲渡における、異議なき承諾など。
+LOANWORD128_049|JSUT|{m u i k o r a a i u w a sp u k u r a i n a n o t o sh i sp m u i k o r a a i u sh u u n o sh u u ch o o sh o z a i ch i d e a r u}|ムィコラーイウは、ウクライナの都市、ムィコラーイウ州の州庁所在地である。
+BASIC5000_0483|JSUT|{a b u r a h a m u sp r i N k a a N n o ch i ch i n o sh o k u gy o o w a sp d a i k u d a q t a}|アブラハム・リンカーンの父の職業は、大工だった。
+BASIC5000_2853|JSUT|{k a n e k o w a sp a t a r a sh i i sh i g o t o d e h i j o o n i k i N ch o o sh i t e sp sh i N k e e s u i j a k u n i k a k a q t e sh i m a q t a}|兼子は、新しい仕事で非常に緊張して、神経衰弱にかかってしまった。
+VOICEACTRESS100_052|JSUT|{g a q k o o y a by o o i N n a d o n o sp ky u u sh o k u gy o o m u d e sp e e y o o s o o k e e s a N s u r u j o o d e sp j u u y o o n a sh i ry o o n o h i t o ts u d e a r u}|学校や病院などの、給食業務で、栄養素を計算する上で、重要な資料のひとつである。
+BASIC5000_3497|JSUT|{i q p a N n i k e q sh o o t o i u m o n o w a sp k e q sh o o m e N n o k e q k a N b u b u N n i y u u s e N sh i t e g e N sh i o t o r i k o m i y a s u i n o d e sp y u q k u r i t o s e e ch o o sh i t a b a a i n i w a sp k e q sh o o m e N n i o o t o ts u g a n a i t a N j u N n a k o o z o o t o n a r u}|一般に結晶というものは、結晶面の欠陥部分に優先して原子を取り込みやすいので、ゆっくりと成長した場合には、結晶面に凹凸が無い単純な構造となる。
+BASIC5000_0641|JSUT|{s u r u t o s a r u w a sp ch i i s a n a b u r i k i n o k o q p u o m o q t e sp a r u k i m a w a r i m a sh i t a}|するとサルは、小さなブリキのコップを持って、歩き回りました。
+BASIC5000_4411|JSUT|{k a r e n o ry o o r i w a g u r a N b a n i a n o ry o o r i d e sh i t a g a k o e t e i r u d e a r o o t e N t a ch i n o sh i t a o u n a r a s e r u h o d o n o o i sh i s a}|彼の料理はグランバニアの料理で舌が肥えているであろうテン達の舌を唸らせるほどの美味しさ。
+BASIC5000_2034|JSUT|{sh i q p a i sh i t e sp a r e h o d o k a n a sh i s o o n a k a o o s u r u y a ts u g a sp i r u k a n a}|失敗して、あれほど悲しそうな顔をする奴が、いるかな。
+TRAVEL1000_0116|JSUT|{a k a w a i N o sp g u r a s u d e f u t a r i b u N o n e g a i sh i m a s u}|赤ワインを、グラスで2人分お願いします。
+UT-PARAPHRASE-sent161-phrase2|JSUT|{o y a o m o i d e sp s a r a n i h i r o i sh i y a o m o q t e h o sh i i t o i u n o w a sp m u r i n a ch u u m o N n a n o d a r o o k a}|親思いで、さらに広い視野を持ってほしいというのは、無理な注文なのだろうか。
+TRAVEL1000_0084|JSUT|{h a i sp k a N z e e n o sh i N k o k u sh o n a d o m o a r i m a s u}|はい、関税の申告書などもあります。
+BASIC5000_1759|JSUT|{k a r e k i q t o sp s o n o k u w a d a t e n i s e e k o o s u r u d a r o o}|彼きっと、その企てに成功するだろう。
+REPEAT500_set5_048|JSUT|{s o sh i t e sp i N d e p e N d e N t o sh i n o sp d o k u sh a t o o hy o o d e e r a b u sp p u r e m i a r i i g u s a i y u u sh u u g o o r u k i i p a a n i e r a b a r e t a}|そして、インデペンデント紙の、読者投票で選ぶ、プレミアリーグ最優秀ゴールキーパーに選ばれた。
+ONOMATOPEE300_160|JSUT|{k a i sh a n o o ky o k u w a sp w a k a i j o s e e sh a i N n i s a s a i n a k o t o d e g a m i g a m i sh i k a r u n o d e sp m i N n a k a r a k i r a w a r e r u}|会社のお局は、若い女性社員に些細なことでガミガミ叱るので、みんなから嫌われる。
+BASIC5000_0928|JSUT|{k o o y u u sh u r u i n o j i k e N w a sp g e N sh o o sh i ts u ts u a r u}|こういう種類の事件は、減少しつつある。
+BASIC5000_2094|JSUT|{h e N k u ts u n a y a ts u t o sp m a t o m o n i h a n a sh i a q t e m o m u d a d a}|偏屈な奴と、まともに話し合っても無駄だ。
+BASIC5000_0565|JSUT|{f u n e d e ry o k o o s u r u n o w a sp k u r u m a d e ry o k o o s u r u y o r i m o j i k a N g a k a k a r u}|船で旅行するのは、車で旅行するよりも時間がかかる。
+TRAVEL1000_0220|JSUT|{r o o r i i w a sp s u g u j u N b i g a d e k i m a s u}|ローリーは、すぐ準備ができます。
+REPEAT500_set4_003|JSUT|{k o N py u u t a g e e m u n o m e e k a a y a sp gy o o k a i d a N t a i n a d o n i k a N r e N s u r u j i N b u ts u n o k a t e g o r i}|コンピュータゲームのメーカーや、業界団体などに関連する人物のカテゴリ。
+BASIC5000_1803|JSUT|{i ch i h e e h o o m e e t o r u n o t a i y o o k o o h a ts u d e N p a n e r u n o sh u ts u ry o k u w a sp y a k u i ch i w a q t o d e a r i sp i m a n o t o k o r o sp d a i k i b o n i t a i y o o d e N ry o k u o r i y o o s u r u n o w a k o N n a N d e a r u}|１平方メートルの太陽光発電パネルの出力は、約１ワットであり、今のところ、大規模に太陽電力を利用するのは困難である。
+BASIC5000_0112|JSUT|{n i w a t o r i g a sp t a b e m o n o o s a g a sh i t e i m a sh i t a}|にわとりが、食べ物をさがしていました。
+BASIC5000_3926|JSUT|{a t o n i sp a n i k i t o b u q k a g a sp i d o o d e k i r u h a N i o h i r o m e r u}|後に、アニキとブッカが、移動できる範囲を広める。
+TRAVEL1000_0557|JSUT|{k o N ch i n e N t a r u b u r e q k u f a a s u t o o o n e g a i sh i m a s u}|コンチネンタルブレックファーストをお願いします。
+BASIC5000_3408|JSUT|{a r u sh o o k a n i sp t o m o n i s a k e s u k i n a d a i d a N n a t o w a k a d a N n a n o o y a k o g a i t a}|ある商家に、共に酒好きな大旦那と若旦那の親子がいた。
+BASIC5000_1358|JSUT|{ch u u s e e n o i N g u r a N d o d e w a sp m a ch i t o i u m a ch i n o s u b e t e g a sp t o k i n i w a sp i ch i d o n i g o hy a k u n i N m o n o s e N sh u g a sp t o k u t e e n o ky u u j i ts u n i f u q t o b o o r u o sh i t e i t a n o d e s u}|中世のイングランドでは、町という町のすべてが、ときには、一度に５００人もの選手が、特定の休日にフットボールをしていたのです。
+UT-PARAPHRASE-sent207-phrase2|JSUT|{t a i h e N j u u k o o n a o m o m i o k a N j i t a}|大変重厚な重みを感じた。
+BASIC5000_0032|JSUT|{h a r i g a n e w a sp d e N k i o ts u t a e r u n o n i m o ch i i r a r e r u}|針金は、電気を伝えるのにもちいられる。
+BASIC5000_4880|JSUT|{i o o w a sp a o i h o n o o o a g e t e m o e r u}|硫黄は、青い炎を上げて燃える。
+REPEAT500_set5_035|JSUT|{m o r i n a g a n o o i sh i i gy u u ny u u w a sp k o i a o i r o n i sp gy u u ny u u b i N o a sh i r a q t a d e z a i N n o sp p a q k u gy u u ny u u d e a r u}|森永のおいしい牛乳は、濃い青色に、牛乳瓶をあしらったデザインの、パック牛乳である。
+BASIC5000_0665|JSUT|{f u k u sh a ch o o n i y o r u t o sp k a i sh a w a sp i m a d a n i g a i k o k u n o k a i sh a k a r a sp k e e y a k u o m o r a q t e i n a i}|副社長によると、会社は、いまだに外国の会社から、契約をもらっていない。
+BASIC5000_3062|JSUT|{r i m e N w a sp a w a i d a i d a i o o sh o k u sp a r u i w a y o g o r e t a h a i k i k a q sh o k u o t e e s u r u b a a i g a o o k u sp f u t o k u m i j i k a i n e j o o n o k i N sh i t a b a o sp k a r i n e j o o n i n o b a s u}|裏面は、淡い橙黄色、あるいは汚れた灰黄褐色を呈する場合が多く、太く短い根状の菌糸束を、仮根状に伸ばす。
+BASIC5000_2739|JSUT|{b e e k a w a sp s e e f u n i y o q t e t o o s e e s a r e t e i r u}|米価は、政府によって統制されている。
+BASIC5000_3569|JSUT|{a g o r a w a ch u u o o sh u u k e N s e e d o n i k a w a q t e sh o k u ry o o n o s a i h a i b u N o o k o n a u t a m e n o s e e d o t o n a r i sp m i N sh u u n i sh o k u m o ts u o ky o o ky u u sh i sp sh i N s e N n a sh o k u z a i y a sp ch o o r i z u m i n o sh o k u h i N g a u r a r e t a}|アゴラは中央集権制度にかわって食料の再配分を行なうための制度となり、民衆に食物を供給し、新鮮な食材や、調理ずみの食品が売られた。
+BASIC5000_3548|JSUT|{a t o ch i sh i k i g a n a i h i t o n i w a k a r i y a s u k u k a i s e ts u s u r u n o g a sp hy a q k a j i t e N n o k o k o r o z a sh i d a t o k a N g a e t e i m a s u}|あと知識がない人にわかりやすく解説するのが、百科事典の志だと考えてます。
+BASIC5000_0514|JSUT|{o z o N s o o n o h a k a i w a sp k a N ky o o n i e e ky o o o o y o b o s u}|オゾン層の破壊は、環境に影響を及ぼす。
+BASIC5000_4284|JSUT|{y u u ts u b a s a j i N d e N sh o o n o k e N ky u u n i sp y o s e e o s a s a g e t e i r u}|有翼人伝承の研究に、余生を捧げている。
+BASIC5000_0214|JSUT|{j u u k i m e e k a a w a sp sh o o k a k i n i y o r u sp b o o ry o k u j i k e N n i t a i s u r u s e k i n i N o sp n o g a r e t e k i t a}|銃器メーカーは、小火器による、暴力事件に対する責任を、逃れてきた。
+BASIC5000_2515|JSUT|{t e e a N s a r e t a k o o d o o n i t a i s u r u sp o k i m a r i n o sp j i k i sh o o s o o r o N}|提案された行動に対する、おきまりの、時期尚早論。
+BASIC5000_3043|JSUT|{k u d a r i s e N k a r a sp h o N s a a b i s u e r i a n i h a i r u s a i n i w a sp t o s a k a sh a s e N o r i y o o s u r u h i ts u y o o g a a r u}|下り線から、本サービスエリアに入る際には、登坂車線を利用する必要がある。
+REPEAT500_set4_080|JSUT|{k a s u k a n i k i k o e t e k u r u s e N ky u u hy a k u s a N j u u i ch i n e N b a N n o s a N m i k a g a sp sh i d a i n i o o k i k u n a q t e i k u}|かすかに聞こえてくる1931年版の讃美歌が、次第に大きくなっていく。
+BASIC5000_4243|JSUT|{r o N r i t e k i d e ch i t e k i n a b i j i N d a g a sp k e N ky u u i g a i n o k o t o n i w a u t o k u sp d o N k a N d e sp j i b u N n i o m o i o y o s e t e i r u d a N s e e g a i r u k o t o n i m o m a q t a k u k i g a ts u i t e i n a i}|論理的で知的な美人だが、研究以外のことには疎く、鈍感で、自分に想いを寄せている男性がいることにも全く気が付いていない。
+ONOMATOPEE300_268|JSUT|{a m a r i n o d e k i g o t o n i sp k a r e w a k u ch i o a N g u r i a k e t e o d o r o i t e i r u}|あまりの出来事に、彼は口をあんぐり開けて驚いている。
+BASIC5000_4148|JSUT|{k o n o k e N n o h a w a sp t e k i g a ch i k a z u k e b a y a m i n i k a g a y a k i sp s o n o t a m e sp d o w a a f u n o t o r i d e w a sp t e k i n o f u i u ch i n i o b i y a k a s a r e r u k o t o g a n a k a q t a t o i u}|この剣の刃は、敵が近づけば闇にかがやき、そのため、ドワーフの砦は、敵の不意打ちに脅かされることがなかったという。
+UT-PARAPHRASE-sent094-phrase2|JSUT|{m a s a k a t o o m o u h e N k a g a sp i t o m o k a N t a N n i o k o r u m o n o d e a r u}|まさかと思う変化が、いとも簡単に起こるものである。
+REPEAT500_set5_079|JSUT|{t a i y o o gy o gy o o o o n a a n o sp n a k a b e k e N k i ch i n o i n o ch i o u k e t e sp p u r o y a ky u u ky u u d a N n o sp t a i y o o h o e e r u z u n i k a k a w a r u}|大洋漁業オーナーの、中部謙吉の命を受けて、プロ野球球団の、大洋ホエールズに関わる。
+BASIC5000_4949|JSUT|{h a r u n i n a r e b a sp h a n a g a a m a k u s a k i n i o u}|春になれば、花が甘く咲き匂う。
+BASIC5000_2338|JSUT|{sh i r e ts u n o ky o o s e e o sp o n e g a i sh i t a i n o d e s u g a}|歯列の矯正を、お願いしたいのですが。
+BASIC5000_2109|JSUT|{k o p i i sh i n o s e ts u y a k u u N d o o g a sp z e N sh a t e k i n i t e N k a i s a r e t e i r u}|コピー紙の節約運動が、全社的に展開されている。
+PRECEDENT130_072|JSUT|{h o N k e N s e e b i j i gy o o n o n a i y o o w a sp i k a n o t o o r i d e a r u}|本件整備事業の内容は、以下のとおりである。
+BASIC5000_3196|JSUT|{o o s e n i s u k o sh i n i t a k a o d a ch i d e sp k a r e j i sh i N m o o o s e o sh i N r a i sh i t e i r u}|仰に少し似た顔立ちで、彼自身も仰を信頼している。
+BASIC5000_2828|JSUT|{k a i h i g a n e a g e s a r e r u t o sp t a s u u n o k a i i N g a y a m e t e i q t a}|会費が値上げされると、多数の会員がやめていった。
+BASIC5000_1103|JSUT|{ch i r i o k e N ky u u s u r u n i w a sp ch i z u o sp i ts u m o r i y o o sh i n a k e r e b a n a r a n a i}|地理を研究するには、地図を、いつも利用しなければならない。
+BASIC5000_2468|JSUT|{n e ts u g a a r u s e i d e sp n a N k a a t a m a g a b o o q t o sh i t e i r u}|熱があるせいで、なんか頭がぼーっとしている。
+BASIC5000_3115|JSUT|{b u r a N sh e k a r a u k e t o q t a ch o k o o t a b e sp k u r a s u m e i t o t a ch i n i b a ts u o a t a e t e ky o o f u sh i h a i sh i t e i t a}|ブランシェから受け取ったチョコを食べ、クラスメイト達に罰を与えて恐怖支配していた。
+UT-PARAPHRASE-sent077-phrase1|JSUT|{t a k a sh i m a y a n o sh i e N n i y o r i sh i n a z o r o e o ky o o k a sh i sp s a i k e N n o s u p i i d o o h a y a m e r u}|高島屋の支援により品ぞろえを強化し、再建のスピードを速める。
+REPEAT500_set5_058|JSUT|{s u w e e d e N i m i N n o ry o o sh i N n o m o t o n i sp m a s a ch u u s e q ts u sh u u sp k e N b u r i q j i n i t e u m a r e r u}|スウェーデン移民の両親の許に、マサチューセッツ州、ケンブリッジにて生まれる。
+BASIC5000_2343|JSUT|{sh o o m e e w a sp ts u m a m i h i t o ts u d e h i k a r i ry o o o k a e r a r e r u y o o n i n a q t e i t e sp s u k i n a a k a r u s a o sp e N sh u ts u d e k i r u y o o n i n a q t e i r u}|照明は、ツマミ一つで光量を変えられるようになっていて、好きな明るさを、演出出来るようになっている。
+REPEAT500_set3_084|JSUT|{sh o o n e N j i d a i w a sp r o sh i a t e e k o k u sp ch e r u n i i h i u k e N sp p u r u i r u u k u i g u N sp t o r o s u ch a n u i i ts u y a m u r a d e s u g o sh i t a}|少年時代は、ロシア帝国、チェルニーヒウ県、プルィルークィ郡、トロスチャヌィーツャ村で過ごした。
+UT-PARAPHRASE-sent218-phrase1|JSUT|{t a b i n o a sh i n o ts u k a r e o i y a s u t a m e n i m o t e b a n a s e n a i n o d e a r u}|旅の足の疲れを癒すためにも手放せないのである。
+TRAVEL1000_0101|JSUT|{d o o m o a r i g a t o o g o z a i m a sh i t a}|どうもありがとうございました。
+UT-PARAPHRASE-sent232-phrase2|JSUT|{sh a ch o o w a sp t o o e e n o s a t o o sh a ch o o g a k e N n i N s u r u y o t e e}|社長は、東映の佐藤社長が兼任する予定。
+BASIC5000_2465|JSUT|{ky u u y u u g a k a i g a i k i k o k u sh i t a k o t o o sh i r a s e r u t e g a m i o y o k o sh i t a}|旧友が海外帰国したことを知らせる手紙をよこした。
+BASIC5000_0239|JSUT|{n u k a r u N d a m i ch i d e a sh i o t o r a r e t e sp k o r o b i s o o n i n a q t a}|ぬかるんだ道で足を取られて、転びそうになった。
+BASIC5000_1982|JSUT|{w a k a r a n a i k o t o g a a q t a r a sp i ts u d e m o w a t a sh i n i k i k i n a s a i}|分からないことがあったら、いつでも私に聞きなさい。
+BASIC5000_3267|JSUT|{k a i t o o s u r u n a i y o o n i k i h o N t e k i n i s e e g e N w a n a i n o d e sp t o k i n i sp o o g i r i n o y o o n a k o t a e d e k a i j o o g a w a k u k o t o m o a r e b a sp ky o k u t a N n a k a i t o o n i y o q t e sp k a i j o o g a s o o z e N t o s u r u k o t o m o a r u}|解答する内容に基本的に制限はないので、時に、大喜利のような答えで会場が沸くこともあれば、極端な解答によって、会場が騒然とすることもある。
+BASIC5000_1925|JSUT|{b e s u w a sp k a r e t o sh i r i a i n i n a r u k o t o o k i t a i sh i t a g a sp k a r e w a a r a w a r e n a k a q t a}|べスは、彼と知り合いになることを期待したが、彼は現れなかった。
+BASIC5000_3705|JSUT|{s e k e N d e s a w a g a r e t e i r u k a N ky o o h a k a i y a k o o g a i sp h a N z a i n a d o n i w a sp h i t o i ch i b a i i k i d o o r u ts u y o i s e e g i k a N o m o ts u o t o k o d a g a sp h i q k o m i j i a N d e a r u t a m e sp f u d a N w a m e d a t a n a i s o N z a i}|世間で騒がれている環境破壊や公害、犯罪などには、人一倍憤る強い正義感を持つ男だが、引っ込み思案であるため、普段は目立たない存在。
+BASIC5000_3745|JSUT|{k o o sh o o n o t a m e n i m a r u g o sh i n i n a q t e b o o d a N ch o q k i s u r a m i n i ts u k e t e i n a i j o o t a i d e ch i k a y o q t e k i t a k e e k a N n i m u k a q t e n a N d o m o j u u o r a N sh a sh i t a r i sp k o t o a r u g o t o n i j u u o f u r i m a w a s u a b u n a i o t o k o}|交渉のために丸腰になって防弾チョッキすら身に着けていない状態で近寄ってきた警官に向かって何度も銃を乱射したり、事あるごとに銃を振り回す危ない男。
+BASIC5000_0587|JSUT|{h a ch i d o r i w a sp ch o o t o o n a j i g u r a i ch i i s a i t o r i d e s u}|ハチドリは、チョウと同じくらい小さい鳥です。
+UT-PARAPHRASE-sent289-phrase2|JSUT|{k u w a sh i k u k a i s e k i s u r e b a sp h i k o o j o o y a h a t a k e sp j i N k a n a d o o k a k u j i ts u n i h a N b e ts u d e k i r u t o i u}|詳しく解析すれば、飛行場や畑、人家などを確実に判別できるという。
+BASIC5000_3552|JSUT|{n i N gy o o sh u u r a k u n i s u N d e i t a k o r o w a sp k o o z a N g i sh i o sh i t e i t a g a j i k o d e k a t a a sh i o u sh i n a i sp a t o w a sp t o o k i n a d o d e b a k u ch i t e k i n i s e e k e e o t a t e t e i t a}|人形集落に住んでいた頃は、鉱山技師をしていたが事故で片足を失い、後は、投機などで博打的に生計を立てていた。
+BASIC5000_0835|JSUT|{f u a N n a t o k i m o k a n a r i a q t a g a sp k e q ky o k u w a s u b e t e g a u m a k u i q t a}|不安な時もかなりあったが、結局は全てがうまくいった。
+BASIC5000_2919|JSUT|{a q s a r i k o t o w a r a r e r u t o o m o i k i y a sp k a n o j o w a sh o o d a k u sh i t e k u r e m a sh i t a}|あっさり断られると思いきや、彼女は承諾してくれました。
+BASIC5000_4895|JSUT|{h i q sh a w a s o o sh i t a f u u ch o o o k o n o m a n a i}|筆者はそうした風潮を好まない。
+PRECEDENT130_013|JSUT|{g o o k a k u sh o b u N n o g i m u z u k e n o u q t a e g a y u r u s a r e r u k a}|合格処分の義務付けの訴えが許されるか。
+BASIC5000_1444|JSUT|{a k a j i w a n a n i t o k a u m e a w a s e n a k e r e b a n a r a n a i}|赤字は何とか埋め合わせなければならない。
+BASIC5000_4166|JSUT|{m a t a sp b o sh i N s e N s o o d e w a t a g a i n i o o u e ts u r e q p a N d o o m e e n i k a m e e sh i t e i t a g a sp h i r o s a k i h a N g a s a k i n i sh i N s e e f u g u N n i ky o o j u N s u r u}|また、戊辰戦争では互いに奥羽越列藩同盟に加盟していたが、弘前藩が先に新政府軍に恭順する。
+BASIC5000_1511|JSUT|{ry o o h o o n o t e N b o o n i w a sp a r u ky o o ts u u n o t e e m a g a a r u}|両方の展望には、ある共通のテーマがある。
+BASIC5000_3715|JSUT|{sh i o sp i j o o n i sh o k u z a i n i a j i g a sh i m i r u n o o b o o g a i s u r u t a m e sp sh i o y o r i a t o n i i r e r u}|塩、以上に食材に味が染みるのを妨害するため、塩より後に入れる。
+TRAVEL1000_0451|JSUT|{sh i k a sh i sp p a t i i t o j i i N g a s u i s e N s a r e t e k i m a sh i t a}|しかし、パティーとジーンが推薦されてきました。
+BASIC5000_4556|JSUT|{t e m a r i n o y o o n i m a r u i k a t a ch i n i n i g i q t a s u sh i o sp t e m a r i z u sh i t o y o b u}|手毬のように丸い形に握った寿司を、てまり寿司と呼ぶ。
+TRAVEL1000_0483|JSUT|{a sh i t a n o ch o o sh o k u o sp ch u u m o N sh i t a i n o d e s u g a}|明日の朝食を、注文したいのですが。
+BASIC5000_2682|JSUT|{ch i a r i i d a a n o s e N b a ts u t e s u t o o u k e t a i n o d e s u}|チアリーダーの選抜テストを受けたいのです。
+BASIC5000_3987|JSUT|{a t o sp sh i t a n o h o o n i a r u g u r a i d a a w a sp m i g i n o sh a t o r u g a ts u k u q t a g a sp i m a d a h i d a r i n o sh a t o r u g a k a N s e e sh i t e i n a i t a m e n i k a N sh o o sh i n a i sp h a ch i n o s u o h a k a i s u r u t a m e n i a r u}|あと、下のほうにあるグライダーは、右のシャトルがつくったが、未だ左のシャトルが完成していないために干渉しない、蜂の巣を破壊するためにある。
+UT-PARAPHRASE-sent228-phrase2|JSUT|{d o ch i r a g a k a k e t e m o s e e k o o w a m u z u k a sh i i}|どちらが欠けても成功は難しい。
+UT-PARAPHRASE-sent064-phrase1|JSUT|{n a m i u ts u y o o n a y u t a k a n a k i N p a ts u n i sp b u r a sh i o k a k e t e i r u j o s e e n o s u g a t a w a sp i N sh o o h a n o g a k a g a sp y o k u e g a i t e i r u}|波打つような豊かな金髪に、ブラシをかけている女性の姿は、印象派の画家が、よく描いている。
+BASIC5000_0789|JSUT|{g a i m a i w a b o s o b o s o sh i t e i t e sp n i q p o N j i N n o k u ch i n i w a a w a n a i}|外米はぼそぼそしていて、日本人の口には合わない。
+BASIC5000_0025|JSUT|{t e n i s u n i m o a r u k e d o sp y o N d a i t a i k a i q t e n a n i}|テニスにもあるけど、４大大会って何。
+BASIC5000_4904|JSUT|{k a n o j o n o o b a w a sp i ch i n i ch i j u u sp k a r e n o i n u n o s e w a o s u r u}|彼女の伯母は、一日中、彼の犬の世話をする。
+REPEAT500_set1_078|JSUT|{hy o o g e N gy o o r e ts u n o sh i hy o o hy o o o sp b u N sh i n o t a i sh o o s e e o a r a w a s u sp t e N g u N n o sh i hy o o hy o o o m o ch i i t e sp s u N d e y a k u hy o o g e N e b u N k a i s u r u}|表現行列の指標表を、分子の対称性を表す、点群の指標表を用いて、既約表現へ分解する。
+BASIC5000_2561|JSUT|{e e gy o o j i k a N w a sp n a N j i k a r a n a N j i m a d e d e s u k a}|営業時間は、何時から何時までですか。
+BASIC5000_2317|JSUT|{h a k o b a r e t a h i t o t a ch i n o n a k a n i sp k a r e w a h a i q t e i t a}|運ばれた人たちの中に、彼は入っていた。
+BASIC5000_1366|JSUT|{t a i ch o o w a b u k a n i sp t a d a ch i n i sh u u g o o s u r u y o o n i m e e r e e sh i t a}|隊長は部下に、直ちに集合するように命令した。
+BASIC5000_0219|JSUT|{n a N sh u u k a N m o y o i t e N k i d a q t a a t o d e sp a m e g a f u q t a}|何週間もよい天気だったあとで、雨がふった。
+TRAVEL1000_0434|JSUT|{s a t o o t o k u r i i m u w a i k a d e s u k a}|砂糖とクリームは如何ですか。
+TRAVEL1000_0250|JSUT|{o s u w a r i n i n a q t e i t a d a k e m a s u k a}|お座りになっていただけますか。
+REPEAT500_set2_100|JSUT|{a a r i i w a sp k o o u n o n a k a o sp m i n a m i n o b a a j i n i a sh u u sp w i N ch e s u t a a ch i k a k u n o sp f i q sh a a z u h i r u m a d e sp g u N o sh i r i z o i t a}|アーリーは、降雨の中を、南のバージニア州、ウィンチェスター近くの、フィッシャーズヒルまで、軍を退いた。
+BASIC5000_0237|JSUT|{o t a y o r i sp t a n o sh i m i n i o m a ch i sh i t e o r i m a s u}|お便り、楽しみにお待ちしております。
+BASIC5000_4183|JSUT|{t o o r a u d o n e s u ky o k u s e N g a sh i m e sh i t e i r u g a g o t o k u sp h i t o n o ch o o k a k u w a sp t e e o N i k i n o k a N d o g a n i b u i}|等ラウドネス曲線が示しているがごとく、ヒトの聴覚は、低音域の感度が鈍い。
+UT-PARAPHRASE-sent212-phrase2|JSUT|{p u r e q sh a a m o g a m a N d e k i n a i h o d o k i ts u i t o i u}|プレッシャーも我慢できないほどきついと言う。
+BASIC5000_4035|JSUT|{r e e z e e g a k a t a y o r u t o sp ts u n e n i y u u g a t a y a y o r u n i n a q t a r i sp s a N g a k u ch i t a i y a k a N s o o ch i t a i t o i q t a sh i z e N g a h e N k a o t o g e r u}|霊勢が偏ると、常に夕方や夜になったり、山岳地帯や乾燥地帯といった自然が変化を遂げる。
+ONOMATOPEE300_166|JSUT|{o m o i t o d o m a q t a n o k a sp m e m o o t o q t e i t a k a m i o k u sh a q t o m a r u m e t e sh i m a q t a}|思いとどまったのか、メモを取っていた紙をクシャッと丸めてしまった。
+BASIC5000_2741|JSUT|{b i w a z e N n i m a s a r u sp t o i u h i t o g a i m a s u}|美は善にまさる、と言う人がいます。
+BASIC5000_4474|JSUT|{sh i N ny o k u N j u u t o w a sp sh u j o o g a sh i N ny o n o h o o g u o s o n a e sh i t e i r u n o d e sp m u my o o n i m e e sp s u r u k o t o g a d e k i r u}|真如薫習とは、衆生が真如の法具を備しているので、無明に冥熏することができる。
+BASIC5000_3162|JSUT|{a sh i k a r a j e q t o f u N sh a o d a sh i t e sp s o r a o t o b i sp h o o m u r a N ky u u n o d a ky u u o t o r u k o t o g a d e k i r u}|足からジェット噴射を出して、空を飛び、ホームラン級の打球を取ることができる。
+BASIC5000_3672|JSUT|{k u ch i m o t o o t e ts u s e e n o k u ch i k a s e d e o o w a r e t e o r i sp i ch i sh o o k a N g o t o n i i ch i sh o o s e ts u d a k e sh i o u t a u k o t o o y u r u s a r e t e i r u}|口元を鉄製の口枷で覆われており、一召喚ごとに一小節だけ詩を謡うことを許されている。
+UT-PARAPHRASE-sent310-phrase1|JSUT|{k o k o d e n i o i n o sh i k i b e ts u y a sp y o i n i o i sp f u k a i n a n i o i n a d o n o h a N d a N o s u r u}|ここでにおいの識別や、良いにおい、不快なにおいなどの判断をする。
+BASIC5000_2230|JSUT|{k u n i k u n o s a k u d e k i k a k u sh i t a N d e s u g a sp s o n o h o N w a y o k u u r e m a sh i t a}|苦肉の策で企画したんですが、その本はよく売れました。
+BASIC5000_4840|JSUT|{s a m i d a r e y a sp s e m i sh i g u r e sp k o o y o o t o i q t a k o t o b a w a sp k i g o d a}|五月雨や、蝉時雨、紅葉といった言葉は、季語だ。
+BASIC5000_1493|JSUT|{j i g a z o o o e g a k u t o k i sp d a r e d e m o s u w a q t e sp j i q t o j i b u N o m i ts u m e m a s u}|自画像を描くとき、誰でも座って、じっと自分を見つめます。
+PRECEDENT130_103|JSUT|{ts u g i n o k o o t e e k a r a n a r u sp h i k a r i k o o k a g a t a j u sh i o m o ch i i t a ts u k e ts u m e n o s e e z o o h o o h o o}|次の工程からなる、光硬化型樹脂を用いた付け爪の製造方法。
+BASIC5000_1780|JSUT|{ch i n o o n o t a k a i h i t o d e sp i N sh u sh i t a a t o d e sp u N t e N s u r u y o o n a h i t o w a i n a i}|知能の高い人で、飲酒した後で、運転するような人はいない。
+BASIC5000_1367|JSUT|{k a g o sh i m a n i w a i ch i d o m o i q t a k o t o g a a r i m a s e N g a sp k o t o sh i n o n a ts u sp i k u ts u m o r i d e s u}|鹿児島には一度も行ったことがありませんが、今年の夏、行くつもりです。
+BASIC5000_4340|JSUT|{s o o m e e k a ts u r e e s e e ch i N ch a k u d a g a sp j i k e N k a i k e ts u n o t a m e n i w a t a N sh i N k i k e N n i t o b i k o m u y o o n a m u ch a m o s u r u}|聡明且つ冷静沈着だが、事件解決の為には単身危険に飛び込むような無茶もする。
+BASIC5000_2409|JSUT|{k e N k a o s u r u n i w a f u t a r i n o n i N g e N g a h i ts u y o o d a}|けんかをするには二人の人間が必要だ。
+ONOMATOPEE300_120|JSUT|{h o N w a r i y u g e g a t a ts u k u r a i g a ch o o d o i i t o sp y u u j i N w a i q t e i t a g a sp b o k u w a ts u m e t a i h o o g a s u k i d e a r u}|ほんわり湯気が経つくらいがちょうどいいと、友人は言っていたが、僕は冷たいほうが好きである。
+BASIC5000_4844|JSUT|{m a n e g a k o n o e o e g a k u m a d e sp j o s e e n o r a z o o w a m e g a m i n i k a g i r a r e t e i m a sh i t a}|マネがこの絵を描くまで、女性の裸像は女神に限られていました。
+BASIC5000_4697|JSUT|{k o d o m o o sh i k a r u n o w a sp o y a n o sh i g o t o d e a r u}|子供を叱るのは、親の仕事である。
+BASIC5000_0353|JSUT|{ch i ky u u j o o n o b a N b u ts u w a sp g e N sh i k a r a n a q t e i r u}|地球上の万物は、原子からなっている。
+BASIC5000_4538|JSUT|{m a d a d e N w a y a i N t a a n e q t o g a h a q t a ts u sh i t e i n a k a q t a j i d a i sp d e N sh o b a t o w a j u u y o o n a ts u u sh i N sh u d a N n o h i t o ts u d a q t a}|まだ電話やインターネットが発達していなかった時代、伝書鳩は重要な通信手段のひとつだった。
+BASIC5000_3644|JSUT|{n i h o N g o m o t a N n o o d e r u q k u s u m o y o k u sp j o s e e ky o o y u n i w a h i j o o n i u k e g a y o k a q t a}|日本語も堪能でルックスもよく、女性教諭には非常にウケが良かった。
+ONOMATOPEE300_002|JSUT|{w a t a sh i n o t e s u t o n o s e e s e k i n o w a r u s a n i sp h a h a g a k a N k a N n i o k o q t e i m a s u}|私のテストの成績の悪さに、母がカンカンに怒っています
+BASIC5000_2396|JSUT|{d o o m i t e m o k a r e r a n o k o o d o o w a m i o m u s u N d e i n a i}|どう見ても彼らの行動は実を結んでいない。
+UT-PARAPHRASE-sent223-phrase2|JSUT|{i m a m a d e k i z u i t e k i t a j i N my a k u o sp n a k u s u w a k e n i w a i k a n a i}|今まで築いてきた人脈を、なくすわけにはいかない。
+BASIC5000_1588|JSUT|{e N k i N h o o g a t o r a r e t e n a i n o d e sp s o n o e w a h e N n i m i e r u}|遠近法がとられてないので、その絵は変にみえる。
+BASIC5000_4914|JSUT|{k a r e w a sp k e q k o N n i t a i sh i t e n i e k i r a n a i t a i d o o t o r u n o}|彼は、結婚に対して煮えきらない態度を取るの。
+BASIC5000_3365|JSUT|{i N t o o k a r a sh u k i k a N sh i m a d e n o f u t o i k i k a N g a h a s a m a r u k o t o d e sp k i ry u u g a m i d a r e t e sh o o j i r u}|咽頭から主気管支までの太い気管が狭まることで、気流が乱れて生じる。
+LOANWORD128_104|JSUT|{r a v i a N r o o z u w a sp e d i q t o p i a f u n o d a i hy o o ky o k u}|ラヴィアンローズは、エディット・ピアフの代表曲。
+REPEAT500_set3_079|JSUT|{t a i y o o gy o gy o o o o n a a n o sp n a k a b e k e N k i ch i n o i n o ch i o u k e t e sp p u r o y a ky u u ky u u d a N n o sp t a i y o o h o e e r u z u n i k a k a w a r u}|大洋漁業オーナーの、中部謙吉の命を受けて、プロ野球球団の、大洋ホエールズに関わる。
+BASIC5000_1711|JSUT|{b o N y a r i u N t e N sh i t e i t a r a sp h a i q t e i k u m i ch i o m i n o g a s u y o}|ぼんやり運転していたら、入っていく道を見逃すよ。
+REPEAT500_set1_019|JSUT|{b e r u g a a t o o a m a e n o sp v e d i g e N u u f a a p a a k u n i w a sp s e N s o o t o d a N a ts u n o g i s e e sh a n o t a m e n o k i n e N h i g a t a q t e i r u}|ベルガートーア前の、ヴェディゲンウーファーパークには、戦争と弾圧の犠牲者のための記念碑が建っている。
+REPEAT500_set3_005|JSUT|{sh i r u b a a s a a f a a sh u u g e k i j i k e N m a d e n i sp r i ch a a z u w a sp ch i i m u m e e t o t o m o n i sp k o k u s a i t e k i n i s u u p a a h i i r o o sp o y o b i sp y u u m e e j i N t o sh i t e sp n i N ch i s a r e t e i r u}|シルバーサーファー襲撃事件までに、リチャーズは、チーム名と共に、国際的にスーパーヒーロー、および、有名人として、認知されている。
+BASIC5000_1985|JSUT|{j i m u k i g a sp sh o r u i o sp ts u g i ts u g i t o p u r i N t o a u t o sh i t e i r u}|事務機が、書類を、次々とプリントアウトしている。
+TRAVEL1000_0907|JSUT|{ts u g i n o k u u k o o b a s u w a sp i ts u sh u q p a ts u sh i m a s u k a}|次の空港バスは、いつ出発しますか。
+TRAVEL1000_0042|JSUT|{k u r u m a o d a u N t a u N d e k a e s e b a sp ts u i k a ry o o k i N o sh i h a r a w a n a k e r e b a n a r i m a s e N k a}|車をダウンタウンで返せば、追加料金を支払わなければなりませんか。
+ONOMATOPEE300_262|JSUT|{k a r a d a g a y a s e t e sp i z e N w a i t e i t a z u b o N g a s u r u s u r u o ch i t e sh i m a u}|体が痩せて、以前はいていたズボンがスルスル落ちてしまう。
+UT-PARAPHRASE-sent174-phrase1|JSUT|{s o sh i t e i ts u sh i k a sp g a o o s a e t e m e d a t a n a i y o o n i f u r u m a u k o t o g a sp i k i r u ch i e n i n a q t e sh i m a u}|そしていつしか、我を抑えて目立たないように振る舞うことが、生きる知恵になってしまう。
+BASIC5000_2359|JSUT|{y u t a k a n a k u n i w a sp m a z u sh i i k u n i n o k o t o o sp a m a r i k a N g a e t e i n a i}|豊かな国は、貧しい国のことを、あまり考えていない。
+BASIC5000_1703|JSUT|{z u sp i ch i ch u u n o g u r a f u w a sp k a k u g a k u n e N n o h a k u j i N t o k o k u j i N n o s o o k e e t e N n o sp h e e k i N ch i n o s o o i o sh i m e sh i t e i r u}|図、１中のグラフは、各学年の白人と黒人の総計点の、平均値の相違を示している。
+TRAVEL1000_0526|JSUT|{ny u u y o o k u d e k a r i t a k u r u m a o k a e sh i t a i n o d e s u g a}|ニューヨークで借りた車を返したいのですが。
+TRAVEL1000_0706|JSUT|{s o n o y o o n a sh o o j o o w a sp d o r e k u r a i ts u z u i t e i m a s u k a}|そのような症状は、どれくらい続いていますか。
+BASIC5000_4045|JSUT|{n o o gy o o d e w a sp i n e sp m a m e r u i sp i m o r u i o o o k u s a N s u r u}|農業では、稲、豆類、薯類を多く産する。
+BASIC5000_3078|JSUT|{d a m u t e e t a i ch u u o o b u n i sp k o o z u i sp o s e q ch i sh i sp t e N h a sh i y o r i sp k o s u i n o h o o ry u u o o k o n a u m o n o d e a r u}|ダム堤体中央部に、洪水吐を設置し、天端より、湖水の放流を行うものである。
+BASIC5000_0844|JSUT|{y o n o n a k a n i n a q t o k u d e k i r u m o n o n a N t e n a i y o}|世の中に納得できるものなんてないよ。
+BASIC5000_2395|JSUT|{d o i ts u m o k o i ts u m o f u h e e b a k a r i i i y a g a q t e}|どいつもこいつも不平ばかり言いやがって。
+TRAVEL1000_0584|JSUT|{k o r e o h i f u n i ts u k e n a i y o o n i ch u u i sh i t e k u d a s a i}|これを皮膚につけないように注意してください。
+BASIC5000_4034|JSUT|{w i N d a m i a ky o o g a f u j i N t a ch i n o k a k u r e t e i r u b a sh o o h a q k e N sh i y o o t o sh i t e i t a s o n o sh u N k a N sp a a r i N f u j i N g a w i N d a m i a ky o o f u j i N n o m i g a w a r i t o n a q t e s u g a t a o a r a w a s u}|ウィンダミア卿が夫人たちの隠れている場所を発見しようとしていたその瞬間、アーリン夫人がウィンダミア卿夫人の身代わりとなって姿を現す。
+BASIC5000_3665|JSUT|{r i y u u w a f u m e e d a g a sp j i N m o N k a N w a k o n o k a t a n i k a k a w a q t a b i r a b a t o sp s o r e o t o o sh u u s u r u k e i n a N o sp o r o k a t o n o n o sh i q t e i r u}|理由は不明だが、尋問官はこの型に拘ったビラバと、それを踏襲するケイナンを、愚かと罵っている。
+BASIC5000_1448|JSUT|{r i k o o n a h i t o m o i r e b a sp s o o d e n a i h i t o m o i r u}|利口な人もいれば、そうでない人もいる。
+BASIC5000_2602|JSUT|{sh i ch o o n o k a z o k u w a sp i ch i n i ch i j u u ky o o h a k u d e N w a n i n a y a m a s a r e t a}|市長の家族は、一日中脅迫電話に悩まされた。
+BASIC5000_1670|JSUT|{o k i w a s u r e t a t o k i n o t a m e n i sp n o o t o n o n a m a e o k a i t e o k i n a s a i}|置き忘れたときのために、ノートの名前を書いておきなさい。
+LOANWORD128_127|JSUT|{h a a r u i ch i k o o k o k u w a sp ry u u r i k u a s a n o k o o k o k u d e a r u}|ハールィチ公国は、リューリク朝の公国である。
+BASIC5000_3049|JSUT|{n a r i k i N sh u q sh i N d e k a n a r i n o o j o o s a m a d a g a sp h a o k u i sh i b a q t e g a N b a r u d o k o N j o o t a i p u}|成金出身でかなりのお嬢様だが、歯を食いしばって頑張るど根性タイプ。
+BASIC5000_0069|JSUT|{m i N w a sp s a k u y a sp t o m o d a ch i n i d e N w a o k a k e m a sh i t a}|ミンは、昨夜、友達に電話をかけました。
+BASIC5000_0662|JSUT|{m e w a sp t e o m i k i w a m e e r u g a sp k o k o r o m a d e w a m i k i w a m e e n a i}|眼は、手を見極め得るが、心までは見極め得ない。
+TRAVEL1000_0009|JSUT|{k i N y o o b i n o y o r u sh i ch i j i n i sp t e n i s u k o o t o o y o y a k u d e k i m a s u k a}|金曜日の夜7時に、テニスコートを予約できますか。
+BASIC5000_4493|JSUT|{sh i k e e h a N k e ts u g a k a k u t e e s u r u t o sp h a N k e ts u t o o h o N t o sp k o o h a N k i r o k u g a sp t o o g a i sh i k e e o ky u u k e e sh i t a k e N s a ts u ch o o n i o k u r a r e r u}|死刑判決が確定すると、判決謄本と、公判記録が、当該死刑を求刑した検察庁に送られる。
+BASIC5000_0033|JSUT|{r a i g e ts u n o k a b u k i z a n o d a sh i m o n o w a n a N d e s u k a}|来月の歌舞伎座の出し物はなんですか。
+TRAVEL1000_0573|JSUT|{t e g a m i o d e k i r u d a k e h a y a k u o k u r i t a i n o d e s u g a sp d o o s u r e b a i i d e sh o o k a}|手紙をできるだけ速く送りたいのですが、どうすればいいでしょうか。
+BASIC5000_4842|JSUT|{n e e s a N sp ch o q t o s o o d a N n i n o q t e k u r e n a i k a}|姉さん、ちょっと相談に乗ってくれないか？
+TRAVEL1000_0018|JSUT|{t o r a b e r a a z u ch e q k u o g e N k i N n i sh i t a i n o d e s u g a}|トラベラーズチェックを現金にしたいのですが。
+BASIC5000_2834|JSUT|{m a ch i d e o h i r u o t a b e t e sp e e g a d e m o m i y o o}|街でお昼を食べて、映画でも見よう。
+BASIC5000_4680|JSUT|{k o N g o n o k o t o o k a N g a e t e sp n e N g o r o n i ts u k i a u}|今後のことを考えて、懇ろに付き合う。
+BASIC5000_1903|JSUT|{t o o d a i g a k u d e w a sp g a i k o k u j i N ry u u g a k u s e e n o u k e i r e sh i s e ts u g a sp j u u b u N d e n a i}|当大学では、外国人留学生の受け入れ施設が、十分でない。
+TRAVEL1000_0200|JSUT|{i ts u k a n i sp o o s u ch i N s a N n i a u o y a k u s o k u o d e k i m a s u k a}|5日に、オースチンさんに会うお約束をできますか。
+BASIC5000_4755|JSUT|{f u sh o k u o f u s e g u t a m e sp ch i q s o g a f u u ny u u s a r e t e i r u}|腐食を防ぐため、窒素が封入されている。
+BASIC5000_1962|JSUT|{m a d o N n a n o k o N s a a t o w a sp s u g o i k a z u n o ky a k u o a ts u m e t a}|マドンナのコンサートは、すごい数の客を集めた。
+TRAVEL1000_0888|JSUT|{m o o sp d o r e k u r a i n o k i k a N sp j o o e N sh i t e i m a s u k a}|もう、どれくらいの期間、上演していますか。
+UT-PARAPHRASE-sent307-phrase2|JSUT|{k i r a b i y a k a n a b a g u d a q d o n o m a ch i n i t o o k a s a r e r u sp b a k u d a N n o i m e e j i g a w a k a n a k a q t a}|きらびやかなバグダッドの街に投下される、爆弾のイメージがわかなかった。
+REPEAT500_set5_083|JSUT|{d o q g a a b a N k u w a sp t a r a y a n i sh i N n o gy o k a k u ry o u g a o o i sp j u u y o o n a sp gy o j o o d e a r u}|ドッガーバンクは、タラやニシンの漁獲量が多い、重要な、漁場である。
+BASIC5000_2035|JSUT|{k i m i m o sp a n o e e g a o m i r e b a y o k a q t a n o n i}|君も、あの映画を見ればよかったのに。
+VOICEACTRESS100_037|JSUT|{k o my u u N w a sp s e e n u g a w a t o sp e s o N n u g a w a n o sp g o o ry u u ch i t e N t o n a q t e i r u}|コミューンは、セーヌ川と、エソンヌ川の、合流地点となっている。
+TRAVEL1000_0745|JSUT|{s u k o sh i k a N g a e n a k e r e b a n a r i m a s e N}|少し考えなければなりません。
+BASIC5000_1839|JSUT|{s a ts u e e t a i w a sp m a z u r o k e ch i o m o t o m e t e sp s o n o k u n i ch u u o t a b i sh i t a}|撮影隊は、まずロケ地を求めて、その国中を旅した。
+BASIC5000_2293|JSUT|{g o o m o N n i k a k e r a r e t e sp k a r e w a o k a sh i t e n a i ts u m i o m i t o m e t a}|拷問にかけられて、彼は犯していない罪を認めた。
+LOANWORD128_008|JSUT|{ch u u m o N sh i t a o b o e n o n a i t a k u h a i b i N g a t o d o i t a n o d e sp u k e t o r i o ky o h i q t a}|注文した覚えのない宅配便が届いたので、受取をキョヒった。
+BASIC5000_1882|JSUT|{g e N k a k u n a ch i ch i o y a w a sp t e q t e e sh i t a sh i ts u k e n i y o q t e sp k o d o m o t a ch i n i k i m a r i g o t o o m a m o r a s e r u}|厳格な父親は、徹底したしつけによって、子供たちに決まりごとを守らせる。
+UT-PARAPHRASE-sent018-phrase1|JSUT|{s o r e g a d o k o k a y u u m o r a s u n a hy o o j o o o o b i t e i r u n o w a sp m e n i n a j i N d a m e e g a n o e e z o o t o n o r a k u s a n o s e i d a r o o k a}|それがどこかユーモラスな表情を帯びているのは、目になじんだ名画の映像との落差のせいだろうか。
+TRAVEL1000_0282|JSUT|{k o n o b i N m o f u k u m e t e sp h a ch i j u u h a ch i d o r u sp g o j u q s e N t o d e s u}|このビンも含めて、88ドル、50セントです。
+BASIC5000_2252|JSUT|{g e N s o k u t o sh i t e sp ky a k u sh a n i ch u u sh a j o o g a n a k u t e w a n a r a n a i g a sp j i q s a i n i w a a r i e n a i}|原則として、客車に駐車場がなくてはならないが、実際にはあり得ない。
+BASIC5000_4316|JSUT|{o m o n a sh i N g a k u s a k i w a sp g a q k u n a i n o n a k a d o m a r i ch o o r i ts u n a k a s a t o ch u u g a q k o o d e a r u}|主な進学先は、学区内の中泊町立中里中学校である。
+BASIC5000_3575|JSUT|{ch u u sh o o t e k i b e k u t o r u k u u k a N n o r i r o N n i o i t e sp k i t e e h e N k a N n o g a i n e N w a e e ky o o n o s u k u n a i m o n o d e sp w a z u k a n a sh i z e N k a g a k u n o h o o s o k u o a t a e r u m o n o n i s u g i n a i y o o n i o m o w a r e r u}|抽象的ベクトル空間の理論において、基底変換の概念は影響の少ないもので、わずかな自然科学の法則を与えるものに過ぎないように思われる。
+UT-PARAPHRASE-sent151-phrase2|JSUT|{m a j i m e n a k a o d e ts u b u y a k u n o o sp k i i t a y u u j i N m o i r u}|真面目な顔でつぶやくのを、聞いた友人もいる。
+BASIC5000_2566|JSUT|{y a m u d o k o r o k a sp a r a sh i w a i q s o o h a g e sh i k u n a q t a}|やむどころか、嵐はいっそう激しくなった。
+TRAVEL1000_0801|JSUT|{n o r i k a e n o h i k o o k i n o g e e t o o sp k a k a r i i N k a m o n i t a a d e y o k u t a sh i k a m e t e k a r a i d o o sh i m a sh o o}|乗り換えの飛行機のゲートを、係員かモニターでよく確かめてから移動しましょう。
+BASIC5000_4960|JSUT|{s a i sh i t a by o o sp k a j i N h a k u m e e}|才子多病、佳人薄命。
+ONOMATOPEE300_296|JSUT|{j u gy o o d e w a s e N s e e n o h a n a sh i o k i k i n a g a r a sp s e e t o t a ch i w a sp sh i N k e N n a hy o o j o o d e n o o t o o t o q t a r i sp k u b i o k o k u k o k u t o k a t a m u k e t e i t a}|授業では先生の話を聞きながら、生徒たちは、真剣な表情でノートをとったり、首をこくこくと傾けていた。
+BASIC5000_3193|JSUT|{a r a s o u n a k a d e j i N g i g a k i e u s e sp ch i my a k u n o s e e gy o g a m i d a r e t e j u u s o o s e k a i w a h o o k a i sh i t a}|争う中で神器が紛失、地脈の制御が乱れて重奏世界は崩壊した。
+REPEAT500_set2_022|JSUT|{k o n o t o k i n i sp f u y u u t a i r i k u p u r u v a m a n i a r u sp ch u u r i ts u k o k u sp by u e r u b a g a sp a r u j o o h o o s u j i k a r a sp b a q sh u sh o o g u N n o sh o k e e t o sp z e N o o j o sp a a sh e n o j i g a i o h a q py o o}|このときに、浮遊大陸プルヴァマにある、中立国、ビュエルバが、ある情報筋から、バッシュ将軍の処刑と、前王女、アーシェの自害を発表。
+BASIC5000_1623|JSUT|{sh i N r i N k a s a i n o b o o sh i w a sp s u b e t e n o h i t o g a o u g i m u d e s u}|森林火災の防止は、すべての人が負う義務です。
+BASIC5000_3314|JSUT|{t o k u i n a k e e t a i o m o ts u k o t o k a r a sp m o q p a r a sp g o g e N n i k a N s u r u k e N ky u u b a k a r i d e a r u}|特異な形態を持つ事から、専ら、語源に関する研究ばかりである。
+BASIC5000_0908|JSUT|{a n a o t a k u s a N m o q t e i t e sp sh i k a m o sp e k i t a i o t a m o ts u n o n i t e k i sh i t e i r u n o w a n a N d a}|穴をたくさん持っていて、しかも、液体を保つのに適しているのはなんだ。
+BASIC5000_1434|JSUT|{ch i ch i w a y o r o k o N d e i r u d o k o r o k a sp t o t e m o o k o q t e i r u}|父は喜んでいるどころか、とても怒っている。
+BASIC5000_4480|JSUT|{s o n o s e N s o o m o t a e z u o k o n a w a r e t e i t a g a j i q s a i w a sp d a i e N sh u u t e e d o n o m o n o d e sp m a z u s e e m e e o n o b e t e sp j i k o n o y u u i o n o b e t e sp a i t e n o h i o n a r a sh i i k a k u s u r u}|その戦争も絶えず行われていたが実際は、大演習程度のもので、まず声明を述べて、自己の優位を述べて、相手の非を鳴らし威嚇する。
+REPEAT500_set1_016|JSUT|{k o n o sp ny u u s a u s u w e e r u z u d a i hy o o ch i i m u g a sp w a r a b i i z u n o ch u u k a k u t o n a q t e i k u}|この、ニューサウスウェールズ代表チームが、ワラビーズの中核となって行く。
+TRAVEL1000_0793|JSUT|{k o n o k a u N t a a n i o i t a n o d e s u g a}|このカウンターに置いたのですが。
+BASIC5000_0755|JSUT|{k u w a sh i k u s e ts u m e e sh i t e i r u j i k a N g a a r i m a s e N}|詳しく説明している時間がありません。
+BASIC5000_1182|JSUT|{ch o k i N b a k o n i w a sp o k a n e w a m a q t a k u n o k o q t e i n a k a q t a}|貯金箱には、お金は全く残っていなかった。
+BASIC5000_2954|JSUT|{n e g i o b e r a N d a n i o k i q p a n a sh i n i sh i t e i t a r a sp k a s u k a s u n i n a q t a}|ネギをベランダに起きっぱなしにしていたら、カスカスになった。
+LOANWORD128_014|JSUT|{y o y a k u sh i t e i t a h e y a g a i m e e j i t o ch i g a q t e i t e sp m a N m a t o s a g i r a r e t a}|予約していた部屋がイメージと違っていて、まんまとサギられた。
+BASIC5000_4915|JSUT|{k a r e w a sp ky o o s o o a i t e o o t o sh i i r e y o o t o sp k o sh i t a N t a N t o sh i t e i r u}|彼は、競争相手を落とし入れようと、虎視眈々としている。
+BASIC5000_4163|JSUT|{o k u g a k i n o u ts u sh i t o sp k o h i ts u k a N t e e n o ky o k u s a ts u w a sp h o N sh a h o N n i ts u i t e n o m o n o d e a r u t o m i t o m e r a r e r u}|奥書の写しと、古筆鑑定の極札は、本写本についてのものであると認められる。
+BASIC5000_2598|JSUT|{k a r u i k a z e o h i i t e i t a n o d e sp k a z o k u t o i b u s u k i e i k u k o t o w a d e k i n a k a q t a}|軽い風邪をひいていたので、家族と指宿へ行くことはできなかった。
+TRAVEL1000_0371|JSUT|{k a m i o k a q t e i t a d a k i t a i n o d e s u g a}|髪を刈っていただきたいのですが。
+TRAVEL1000_0254|JSUT|{k o r e n i ts u i t e m o q t o h a y a k u h a n a s a n a k a q t a k o t o o sp k o k o r o y o r i a y a m a r a n a k e r e b a n a r i m a s e N}|これについてもっと早く話さなかったことを、心より謝らなければなりません。
+BASIC5000_0396|JSUT|{p a u e r u b e e k o k u k o k u m u ch o o k a N n o r a i n i ch i ch u u sp j i k e N w a o k o q t a}|パウエル米国国務長官の来日中、事件は起こった。
+BASIC5000_3069|JSUT|{n i N g e N d e i u k e e s a ts u n o y o o n a s o N z a i d e sp o k i t e o y a b u q t a r i sp sh o o k i o u sh i n a u n a d o sh i t a b a N p a i a o s a b a k u k e N g e N o m o ts u}|人間で言う警察のような存在で、掟を破ったり、正気を失うなどしたバンパイアを裁く権限を持つ。
+BASIC5000_4392|JSUT|{d i i z e r u e N j i N n o y o o s e k i a t a r i n o t e e sh u ts u ry o k u o k a ky u u sp t a a b o ch a a j a a sp t a a b o k o N p a u N d o n a d o d e o g i n a u t o sp t e N k a s o o ch i n o t a N j u N s a g a s o o s a i s a r e sp k o o k o s u t o n i n a r u}|ディーゼルエンジンの容積あたりの低出力を過給、ターボチャージャー、ターボコンパウンドなどで補うと、点火装置の単純さが相殺され、高コストになる。
+UT-PARAPHRASE-sent301-phrase1|JSUT|{n a r u h o d o sp e g a j i k o o n o a i s a ts u n i n a r u}|なるほど、絵が時候のあいさつになる。
+REPEAT500_set4_018|JSUT|{t a n o m e j a a n a d i s u t o r i by u u sh o N n i k u r a b e sp s e ky u r i t i i j o o n o m o N d a i n o sh u u s e e g a sp o s o i b a a i m o a r u}|他のメジャーなディストリビューションに比べ、セキュリティー上の問題の修正が、遅い場合もある。
+BASIC5000_0691|JSUT|{u N t e N s u r u t o k i w a sp i k u r a ch u u i sh i t e m o sh i s u g i r u k o t o w a a r i m a s e N}|運転するときは、いくら注意してもしすぎることはありません。
+BASIC5000_2724|JSUT|{k a j i ts u g a n a r u j u m o k u w a sp s e e ch o o s u r u t a m e n o k u u k a N g a sp k a n a r i h i ts u y o o d a}|果実がなる樹木は、成長するための空間が、かなり必要だ。
+BASIC5000_2222|JSUT|{f u t a ts u b u n o n a m i d a g a sp k a n o j o n o h o o o n a g a r e o ch i t a}|２粒の涙が、彼女のほおを流れ落ちた。
+REPEAT500_set5_019|JSUT|{b e r u g a a t o o a m a e n o sp v e d i g e N u u f a a p a a k u n i w a sp s e N s o o t o d a N a ts u n o g i s e e sh a n o t a m e n o k i n e N h i g a t a q t e i r u}|ベルガートーア前の、ヴェディゲンウーファーパークには、戦争と弾圧の犠牲者のための記念碑が建っている。
+BASIC5000_2276|JSUT|{n i sh i k i a y a n a s u k i g i d e sp y a m a g a s o m a q t e i t a}|錦あやなす木々で、山が染まっていた。
+BASIC5000_0667|JSUT|{n a m i n o o t o n o h o k a w a sp n a n i h i t o ts u k i k o e n a k a q t a}|波の音の他は、何一つ聞こえなかった。
+BASIC5000_1840|JSUT|{g a k e q p u ch i n i s o q t e sp s e m a i m i ch i g a k a y o q t e i r u}|崖っぷちに沿って、狭い道が通っている。
+BASIC5000_1786|JSUT|{k a k u k o k u m i N n i w a sp s o r e z o r e sp d o k u t o k u n o s e e k a k u g a a r u}|各国民には、それぞれ、独特の性格がある。
+BASIC5000_2856|JSUT|{k a sh a g a d a q s e N sh i t a t a m e sp ch u u o o s e N w a f u ts u u n i n a q t a}|貨車が脱線したため、中央線は不通になった。
+UT-PARAPHRASE-sent044-phrase2|JSUT|{k i gy o o t o ch o k u s e ts u s e q s u r u k o t o d e sp d e e t a k a r a d e w a w a k a r a n a i k i gy o o n o s u g a t a o j i q k a N s u r u k o t o g a d e k i r u k a r a d e s u}|企業と直接接することで、データからではわからない企業の姿を実感することができるからです。
+TRAVEL1000_0717|JSUT|{ny u u y o o k u n o sp o r i i N z u g a i sh a d e h a t a r a i t e i m a s u}|ニューヨークの、オリーンズ会社で働いています。
+BASIC5000_4613|JSUT|{o s o o sh i k i n i i k u t o k i w a sp k o o d e N o w a s u r e z u n i m o q t e i k o o}|お葬式に行く時は、香典を忘れずに持っていこう。
+BASIC5000_3518|JSUT|{a N k o k u k a i m o N s u t a a n o i q t a i d e sp s o r e r a o o s a m e r u o o}|暗黒界モンスターの一体で、それらを治める王。
+BASIC5000_0270|JSUT|{h a N z a ts u n a t e ts u z u k i o s u m a s e sp f u n e g a t e e j i n i sh u q k o o d e k i r u t a m e n i w a sp t o k u b e ts u n o u e n i m o t o k u b e ts u n a w a k a r a i g a sp d o o sh i t e m o h i ts u y o o d e a r u}|繁雑な手続きをすませ、船が定時に出港できるためには、特別の上にも特別なはからいが、どうしても必要である。
+REPEAT500_set1_087|JSUT|{f u k u o k a d a i e e h o o k u s u d e w a n a k u sp ch o o ky o r i h o o n o h o ky o o o m e z a sh i t e i t a sp o o s a k a k i N t e ts u b a f a r o o z u k a r a sp o f a a o u k e t e ny u u d a N}|福岡ダイエーホークスではなく、長距離砲の補強を目指していた、大阪近鉄バファローズから、オファーを受けて入団。
+BASIC5000_2052|JSUT|{a n i t o k u r a b e t e sp k a r e w a s o N n a n i s e g a t a k a k u n a i}|兄と比べて、彼はそんなに背が高くない。
+ONOMATOPEE300_207|JSUT|{t o ts u z e N a r a w a r e t a d o o b u ts u o m i t e sp m a w a r i n o h i t o g a gy a a gy a a s a w a i d a}|突然現れた動物を見て、周りの人がギャーギャー騒いだ。
+BASIC5000_2995|JSUT|{o o j i g a k u ch i o k i k e r u k u r a i n i s e e ch o o s u r u t o sp ry o o r i b a N w a sp o o j i n i r i q p a n a g o t e N o n e g a w a s e t a}|王子が口を利けるくらいに成長すると、料理番は、王子に立派な御殿を願わせた。
+REPEAT500_set2_010|JSUT|{s u m a a t o f o N k a r a sp f i i ch a a f o N m a d e sp m a r u ch i d e b a i s u n i t a i o o}|スマートフォンから、フィーチャーフォンまで、マルチデバイスに対応。
+UT-PARAPHRASE-sent257-phrase1|JSUT|{i q p o o sp j u u m i N n i j i k a n i s e q s u r u sh i ch o o s o N w a k e N g e N g a ch i i s a k u sp s o sh i k i m o t e u s u d a}|一方、住民にじかに接する市町村は権限が小さく、組織も手薄だ。
+BASIC5000_2753|JSUT|{s o k u t e e n i w a sp s u N b u N n o k u r u i m o n a i s e e d o g a y o o ky u u s a r e r u}|測定には、寸分の狂いもない精度が要求される。
+BASIC5000_3618|JSUT|{t o o sh o w a t a i ry o k u k o s o g a s u b e t e d e sp j a k u sh a w a h i ts u y o o n a i t o i u h i r e ts u n a k a N g a e o m o q t e i t a}|当初は体力こそが全てで、弱者は必要ないという卑劣な考えを持っていた。
+TRAVEL1000_0385|JSUT|{sh o k u j i o m o ch i k a e r u y o o n i n a q t e i r u b a a i m o o o i d e s u}|食事を持ち帰るようになっている場合も多いです。
+BASIC5000_0761|JSUT|{k e e k i g a s u g u n i k a i f u k u s u r u t o i i n o d e s u g a}|景気がすぐに回復するといいのですが。
+BASIC5000_0925|JSUT|{n o g u ch i h i d e y o h a k a s e w a sp s e N ky u u hy a k u n i j u u h a ch i n e N n i sp a f u r i k a d e n a k u n a q t a}|野口英世博士は、１９２８年に、アフリカで亡くなった。
+BASIC5000_2994|JSUT|{i q p a N t e k i n i w a sp t a k e n o h i k u i m o n o g a s a s a t a k e n o ry a k u t o s a r e r u}|一般的には、丈の低いものが笹竹の略とされる。
+BASIC5000_0301|JSUT|{g o sh u j i N n o k e N k o o sh i N d a N o sp t e q t e e t e k i n i o k o n a u k o t o o s u s u m e m a s u}|ご主人の健康診断を、徹底的に行うことを勧めます。
+PRECEDENT130_005|JSUT|{ry a k u sh o o w a sp h a r a h a N k e ts u n o s o r e n i sh i t a g a u}|略称は、原判決のそれに従う。
+LOANWORD128_125|JSUT|{ry e i d a d a i g a k u w a s u p e i N n o ry e i d a n i a r u s o o g o o d a i g a k u d e a r u}|リェイダ大学はスペインのリェイダにある総合大学である。
+ONOMATOPEE300_294|JSUT|{m o q t e i t a m a g u k a q p u g a t e k a r a s u b e r i o ch i t e sp g o t o r i t o n i b u i o t o o t a t e t e sp y u k a n o u e n i o ch i t e i q t a}|持っていたマグカップが手から滑り落ちて、ごとりと鈍い音を立てて、床の上に落ちていった。
+BASIC5000_3204|JSUT|{k o n o t a m e sp t e e p u n o s o N z a i j i t a i o a y a sh i m u sh u ch o o m o a r u}|このため、テープの存在自体を怪しむ主張もある。
+BASIC5000_2514|JSUT|{g e N s a k u w a sp g a q k o o n o ky o o k a sh o t o sh i t e k a k a r e t a}|原作は、学校の教科書として書かれた。
+ONOMATOPEE300_282|JSUT|{m o o o w a q t a k o t o n i sp i ts u m a d e m o g o ch a g o ch a t o u r u s a i}|もう終わった事に、いつまでもゴチャゴチャとうるさい。
+BASIC5000_1003|JSUT|{m o e r u g o m i t o m o e n a i g o m i n o k u b e ts u m o sp y o k u w a k a r a n a i y o n e}|燃えるゴミと燃えないゴミの区別も、よく分からないよね。
+BASIC5000_0496|JSUT|{a N g a p i a n o o h i i t e i r u h a z u g a n a i}|アンがピアノをひいているはずがない。
+UT-PARAPHRASE-sent010-phrase1|JSUT|{k o r e m a d e n o sh i r a b e n i y o r u t o sp o t o k o w a h a N k o o o sh o o s a i n i s e ts u m e e}|これまでの調べによると、男は犯行を詳細に説明。
+BASIC5000_0274|JSUT|{i q p a ts u d e m e e ch u u sh i n a k u t a q t e sp n i N sh i N s u r u m a d e h a m e ts u z u k e r e b a i i d a k e d a sh i}|一発で命中しなくたって、妊娠するまでハメ続ければいいだけだし。
+BASIC5000_4425|JSUT|{g a i k e N w a o s a n a i sh o o j o d e sp n i N g e N n i n a r u t a m e n i h i ts u y o o n a m a ry o k u o m u n e n i d a i t a h o o sh u n i t a k u w a e t e i r u}|外見は幼い少女で、人間になるために必要な魔力を胸に抱いた宝珠に蓄えている。
+REPEAT500_set2_061|JSUT|{p o i N t o g a a d o k a r a sp s u m o o r u f o w a a d o m a d e k o n a s e r u sp s o o g o o ry o k u g a t a k a i y u u t i r i t i i p u r e e y a a d e a r u}|ポイントガードから、スモールフォワードまでこなせる、総合力が高いユーティリティープレーヤーである。
+BASIC5000_2610|JSUT|{d e b i i n i a i s a ts u sh i t a g a sp k a n o j o w a k a N z e N n i w a t a sh i n o k o t o o m u sh i sh i t a}|デビーに挨拶したが、彼女は完全に私の事を無視した。
+BASIC5000_4906|JSUT|{k a n o j o g a k o r e h o d o j i b u N k a q t e n a n o w a n a g e k a w a sh i i}|彼女がこれほど自分勝手なのは嘆かわしい。
+TRAVEL1000_0668|JSUT|{d o k o d e sh i b a i n o j o o h o o g a ny u u sh u d e k i m a s u k a}|どこで芝居の情報が入手できますか。
+BASIC5000_0708|JSUT|{n i k e N n o sh i r o i i e g a sp m i ch i o h a s a N d e m u k i a q t e t a q t e i r u}|二軒の白い家が、道をはさんで向き合って立っている。
+BASIC5000_4743|JSUT|{s o z e e n i k a N s u r u sh i ts u m o N o s u r u t a m e sp z e e r i sh i o t a z u n e t a}|租税に関する質問をするため、税理士を訪ねた。
+PRECEDENT130_032|JSUT|{g e N k o k u n o sh u ch o o w a h i n i N s u r u sp n a i s o o k o o j i h i n i ts u i t e h i k o k u n o r i t o k u w a n a i}|原告の主張は否認する、内装工事費について被告の利得はない。
+ONOMATOPEE300_251|JSUT|{k i N j o d e k a j i g a o k o q t a r a sh i k u sp m e r a m e r a t o a k a i h o n o o g a a g a q t e i t e sp k e m u r i g a s o r a t a k a k u a g a q t e i r u}|近所で火事が起こったらしく、めらめらと赤い炎が上がっていて、煙が空高く上がっている
+UT-PARAPHRASE-sent154-phrase2|JSUT|{k u s e N s u r u ch i i m u n o s u g a t a o h o o k o k u s u r u}|苦戦するチームの姿を報告する。
+BASIC5000_0937|JSUT|{hy o o m e N n i a r a w a r e t e i r u n o w a sp hy o o z a N n o s e N t a N n i s u g i n a i}|表面に現れているのは、氷山の先端に過ぎない。
+REPEAT500_set3_037|JSUT|{k o my u u N w a sp s e e n u g a w a t o sp e s o N n u g a w a n o sp g o o ry u u ch i t e N t o n a q t e i r u}|コミューンは、セーヌ川と、エソンヌ川の、合流地点となっている。
+BASIC5000_0998|JSUT|{ch i ry o o g a o w a r u m a d e n i sp s o o g a k u sp d o n o k u r a i k a k a r i m a s u k a}|治療が終わるまでに、総額、どのくらいかかりますか。
+BASIC5000_3255|JSUT|{s o n o s u j o o w a sh i r e n a i g a sp k o t o b a z u k a i y a u ts u k u sh i i k o w a i r o w a sp j o s e e t e k i n a m o n o d e a r u}|その素性は知れないが、言葉遣いや美しい声色は、女性的なものである。
+BASIC5000_1271|JSUT|{m o h a y a s e k a i t a i s e N w a n a i m o n o t o k a k u sh i N s u r u}|もはや世界大戦はないものと確信する。
+BASIC5000_4706|JSUT|{m a i b a N m e o h a r a sh i t e n a i t e i t a}|毎晩目を腫らして泣いていた。
+BASIC5000_1927|JSUT|{o o sh u u ky o o d o o t a i n o j u u n i k a k o k u w a sp n o o s a N b u ts u k a k a k u n i ts u i t e n o d a ky o o a N o s a k u s e e sh i t e i m a s u}|欧州共同体の１２ヶ国は、農産物価格についての妥協案を作成しています。
+REPEAT500_set4_011|JSUT|{k e e my o o sh a d a ts u n a n a r e e sh o N k a r a sp j o o ch o k a N a f u r e r u k a t a r i m a d e sp h a b a h i r o i hy o o g e N ry o k u o m o ts u}|軽妙洒脱なナレーションから、情緒感溢れる語りまで、幅広い表現力を持つ。

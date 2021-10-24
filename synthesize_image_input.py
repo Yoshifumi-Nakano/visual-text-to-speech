@@ -24,7 +24,7 @@ from convert_label import openjtalk2julius
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-def get_image(width=20,height=20,font_size=10,text=""):
+def get_image(width=30,height=30,font_size=15,text=""):
     pygame.init()
     font = pygame.font.Font("utils/ipag00303/ipag.ttf", font_size)     
     surf = pygame.Surface((width, height))
@@ -179,11 +179,12 @@ if __name__ == "__main__":
     accent_to_id = {'0':0, '[':1, ']':2, '#':3}
 
     # create batch list
-    ids = raw_texts = ["あ゜"]
+    ids = raw_texts = ["ぎゃあ゜あ゜あ゜あ゜"]
     speakers = np.array([args.speaker_id])
     accents = None
-    image=[get_text_images(["あ゜"])]
-    texts = np.array([["あ"]])
+    #image=[get_text_images(["あ゜","い゜","う゜","え゜","お゜"])]
+    image=[get_text_images(["ぎゃ","あ゜","あ゜","あ゜"])]
+    texts = np.array([["ぎゃ","あ゜","あ゜","あ゜"]])
     text_lens = np.array([len(texts[0])])
     batchs = [(ids, raw_texts, speakers, texts, text_lens, max(text_lens),None,None,None,None,None,None,accents,image)]
     

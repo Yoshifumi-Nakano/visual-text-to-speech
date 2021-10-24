@@ -92,11 +92,9 @@ def preprocess_japanese(text:str):
     fullcontext_labels = pyopenjtalk.extract_fullcontext(text)
     phonemes , accents = pp_symbols(fullcontext_labels)
     phonemes = [openjtalk2julius(p) for p in phonemes if p != '']
-    
-    ###Todo 音素をimageに変換する##
-    kanas=Phoneme2Kana_inference(phonemes)
 
-    text_image=get_text_images(texts=[t for t in kanas],width=20,height=20,font_size=10)
+    kanas=Phoneme2Kana_inference(phonemes)
+    text_image=get_text_images(texts=[t for t in kanas],width=30,height=30,font_size=15)
     
     return phonemes, accents,text_image,kanas
 
