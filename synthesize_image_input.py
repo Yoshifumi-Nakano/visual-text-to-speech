@@ -99,7 +99,6 @@ def synthesize(model, step, configs, vocoder, batchs, control_values):
 
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser()
     parser.add_argument("--restore_step", type=int, required=True)
     parser.add_argument(
@@ -179,12 +178,12 @@ if __name__ == "__main__":
     accent_to_id = {'0':0, '[':1, ']':2, '#':3}
 
     # create batch list
-    ids = raw_texts = ["ぎゃあ゜あ゜あ゜あ゜"]
+    
+    ids = raw_texts = ["きやべつおみそでたべた"]
     speakers = np.array([args.speaker_id])
     accents = None
-    #image=[get_text_images(["あ゜","い゜","う゜","え゜","お゜"])]
-    image=[get_text_images(["ぎゃ","あ゜","あ゜","あ゜"])]
-    texts = np.array([["ぎゃ","あ゜","あ゜","あ゜"]])
+    image=[get_text_images(["き","や","べ","つ","お","み","そ","で","た","べ","た"])]
+    texts = np.array([["き","や","べ","つ","お","み","そ","で","た","べ","た"]])
     text_lens = np.array([len(texts[0])])
     batchs = [(ids, raw_texts, speakers, texts, text_lens, max(text_lens),None,None,None,None,None,None,accents,image)]
     

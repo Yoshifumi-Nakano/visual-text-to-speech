@@ -198,19 +198,16 @@ class Encoder(nn.Module):
 
         else:
             if accents is not None:
-                print("accent あり")
                 enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) +self.position_enc[
                     :, :max_len, :
                 ].expand(batch_size, -1, -1)
             else:
-                print("accent　なし")
                 if images is None:
                     assert False
                     enc_output = self.src_word_emb(src_seq) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)
                 else:
-                    print("画像入力に成功")
                     enc_output = self.NLayerImgageCNN(images) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)
