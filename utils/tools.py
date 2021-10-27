@@ -81,6 +81,7 @@ def to_device(data, device,use_image,use_accent):
         )
 
 
+
 def log(
     logger, step=None, losses=None, fig=None, audio=None, sampling_rate=22050, tag=""
 ):

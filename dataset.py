@@ -303,6 +303,93 @@ class TextDataset(Dataset):
         return ids, raw_texts, speakers, texts, text_lens, max(text_lens), accents
 
 
+
+
+class TestDataset(Dataset):
+    def __init__(self, filepath, preprocess_config):
+        #path
+        self.preprocessed_path = preprocess_config["path"]["preprocessed_path"]
+
+        #get basic info of test data
+        self.basename, self.speaker, self.text, self.raw_text = self.process_meta(
+            filepath
+        )
+
+        #image info
+        self.image_preprocess_width=preprocess_config["preprocessing"]["image"]["width"]
+        self.image_preprocess_height=preprocess_config["preprocessing"]["image"]["height"]
+        self.image_preprocess_fontsize=preprocess_config["preprocessing"]["image"]["font_size"]
+
+        #speakers info
+        with open(
+            os.path.join(
+                preprocess_config["path"]["preprocessed_path"], "speakers.json"
+            )
+        ) as f:
+            self.speaker_map = json.load(f)
+
+        #image
+        self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
+
+        #test batch
+        self.data_num=len(self.basename)
+        self.batchs=self.get_batch()
+
+        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
+
+
+    def get_batch(self):
+        batchs=[]
+        for idx in range(self.data_num):
+            #id
+            ids = [self.basename[idx]]
+
+            #speaker
+            speaker = self.speaker[idx]
+            speaker_id = np.array([self.speaker_map[speaker]])
+            
+            #raw_text
+            raw_texts = [self.raw_text[idx]]
+            
+            #texts
+            text_kana_filename="{}_{}.lab".format(speaker, self.basename[idx])
+            with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
+                f=f.read()
+                text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
+            texts = np.array([text_kana])
+
+
+            #text lens
+            text_lens = np.array([len(texts[0])])
+
+            #image
+            image_path= os.path.join(
+                self.preprocessed_path,
+                "image_kana",
+                "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
+            )
+            image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]
+
+            batchs.append((ids, raw_texts, speaker_id, texts, text_lens, max(text_lens),None,None,None,None,None,None,None,image))
+
+        return batchs
+
+    def process_meta(self, filename):
+        with open(filename, "r", encoding="utf-8") as f:
+            name = []
+            speaker = []
+            text = []
+            raw_text = []
+            for line in f.readlines():
+                n, s, t, r = line.strip("\n").split("|")
+                name.append(n)
+                speaker.append(s)
+                text.append(t)
+                raw_text.append(r)
+            return name, speaker, text, raw_text
+
+
+
 if __name__ == "__main__":
     # Test
     import torch
