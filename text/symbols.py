@@ -28,3 +28,4 @@ symbols = (
     + _silences
     + _japanese
 )
+

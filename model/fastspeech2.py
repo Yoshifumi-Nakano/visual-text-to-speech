@@ -71,8 +71,6 @@ class FastSpeech2(nn.Module):
         #mel_lens tensor([907, 950, 820, 791, 722, 730, 705, 577, 524, 532, 475, 467, 503, 507,
         #max_mel_lens 950
         
-        if images is None:
-            print("画像がnullになっています")
 
         src_masks = get_mask_from_lengths(src_lens, max_src_len)
         mel_masks = (

@@ -179,11 +179,12 @@ if __name__ == "__main__":
 
     # create batch list
     
-    ids = raw_texts = ["きやべつおみそでたべた"]
+    ids = raw_texts = ["あ"]
+
     speakers = np.array([args.speaker_id])
     accents = None
-    image=[get_text_images(["き","や","べ","つ","お","み","そ","で","た","べ","た"])]
-    texts = np.array([["き","や","べ","つ","お","み","そ","で","た","べ","た"]])
+    image=[get_text_images(["あ"])]
+    texts = np.array([["あ"]])
     text_lens = np.array([len(texts[0])])
     batchs = [(ids, raw_texts, speakers, texts, text_lens, max(text_lens),None,None,None,None,None,None,accents,image)]
     
