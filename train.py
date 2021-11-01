@@ -87,14 +87,13 @@ def main(args, configs):
         for batchs in loader:
             for batch in batchs:
                 batch = to_device(batch, device,use_image,use_accent)
-
+                
                 # Forward
                 if use_accent:
                     accents = batch[-1]
                     output = model(*(batch[2:]),accents=accents)
                 else:
                     output = model(*(batch[2:]))
-
 
                 # Cal Losson
                 if use_jdit:

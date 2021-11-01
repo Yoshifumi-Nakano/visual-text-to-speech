@@ -119,7 +119,7 @@ if __name__ == "__main__":
     train_config = yaml.load(open(args.train_config, "r"), Loader=yaml.FullLoader)
     configs = (preprocess_config, model_config, train_config)
 
-    #output d
+    #output 
     os.makedirs(train_config["path"]["result_path"],exist_ok=True)
 
     # Get model
@@ -131,8 +131,6 @@ if __name__ == "__main__":
     # Get dataset
     dataset = TestDataset(args.source, preprocess_config)
     batchs=dataset.batchs
-    print(len(batchs))
-    print(batchs[0])
 
     control_values = args.pitch_control, args.energy_control, args.duration_control
 

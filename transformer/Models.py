@@ -5,7 +5,19 @@ import numpy as np
 
 import transformer.Constants as Constants
 from .Layers import FFTBlock
-from text.symbols import symbols
+#from text.symbols import symbols
+
+_kana=["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の","は","ひ","ふ","へ","ほ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん"]
+_Dullness=["が","ぎ","ぐ","げ","ご","ざ","じ","ず","ぜ","ぞ","だ","ぢ","づ","で","ど","ば","び","ぶ","べ","ぼ","ゔ","ぱ","ぴ","ぷ","ぺ","ぽ",]
+_small=["っ","ゃ","ぃ","ゅ","ぇ","ょ","ぁ","ぉ"]
+_sp=["、"]
+
+symbols_kana=(
+    _kana
+    +_Dullness
+    +_small
+    +_sp
+)
 
 class NLayerImageCNN(nn.Module):
     def __init__(self,
@@ -121,7 +133,11 @@ class Encoder(nn.Module):
         super(Encoder, self).__init__()
 
         n_position = config["max_seq_len"] + 1
-        n_src_vocab = len(symbols) + 1
+
+        ##probability that generates bug  
+        n_src_vocab = len(symbols_kana) + 1
+
+
         d_word_vec = config["transformer"]["encoder_hidden"]
         n_layers = config["transformer"]["encoder_layer"]
         n_head = config["transformer"]["encoder_head"]
@@ -202,11 +218,11 @@ class Encoder(nn.Module):
                 ].expand(batch_size, -1, -1)
             else:
                 if images is None:
-                    assert False
                     enc_output = self.src_word_emb(src_seq) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)
                 else:
+                    assert False
                     enc_output = self.NLayerImgageCNN(images) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)

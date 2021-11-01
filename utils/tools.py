@@ -55,7 +55,7 @@ def to_device(data, device,use_image,use_accent):
     if use_image:
         image=torch.stack([transform(im) for im in image]).to(device)
     else:
-        torch.from_numpy(texts).long().to(device)
+        texts=torch.from_numpy(texts).long().to(device)
         image= None
 
     if use_accent==True:

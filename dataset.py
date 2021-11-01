@@ -10,6 +10,18 @@ from text import symbols, text_to_sequence
 from utils.tools import pad_1D, pad_2D,pad_2D_gray_image
 from utils.preimage import pre_seq
 
+_kana=["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の","は","ひ","ふ","へ","ほ","ま","み","む","め","も","や","ゆ","よ","ら","り","る","れ","ろ","わ","を","ん"]
+_Dullness=["が","ぎ","ぐ","げ","ご","ざ","じ","ず","ぜ","ぞ","だ","ぢ","づ","で","ど","ば","び","ぶ","べ","ぼ","ゔ","ぱ","ぴ","ぷ","ぺ","ぽ",]
+_small=["っ","ゃ","ぃ","ゅ","ぇ","ょ","ぁ","ぉ"]
+_sp=["、"]
+
+symbols_kana=(
+    _kana
+    +_Dullness
+    +_small
+    +_sp
+)
+
 class Dataset(Dataset):
     def __init__(
         self, filename, preprocess_config, train_config, sort=False, drop_last=False
@@ -21,10 +33,12 @@ class Dataset(Dataset):
         self.batch_size = train_config["optimizer"]["batch_size"]
         self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
         self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
+        self.symbol_kana_to_id = {s: i for i, s in enumerate(symbols_kana)}
         self.use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
         self.accent_to_id = {'0':0, '[':1, ']':2, '#':3}
         self.sort = sort
         self.drop_last = drop_last
+        self.use_kana = preprocess_config["preprocessing"]["input"]["kana"]
 
         #image information
         self.image_preprocess_width=preprocess_config["preprocessing"]["image"]["width"]
@@ -91,13 +105,14 @@ class Dataset(Dataset):
         duration = np.load(duration_path)
 
         #load image info
-        if self.use_image:
+        if self.use_kana:
             #load kana transcript
             text_kana_filename="{}_{}.lab".format(speaker, basename)
             with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
                 f=f.read()
                 text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
-            
+                text_kana=np.array([self.symbol_kana_to_id[t] for t in text_kana])
+
             #load pitch kana
             pitch_path = os.path.join(
                 self.preprocessed_path,
@@ -121,7 +136,8 @@ class Dataset(Dataset):
                 "{}-duration-kana-{}.npy".format(speaker, basename),
             )
             duration = np.load(duration_path)
-
+        
+        if self.use_image:
             #load image
             image_path= os.path.join(
                 self.preprocessed_path,
@@ -145,9 +161,9 @@ class Dataset(Dataset):
         }
         if self.use_accent:
             sample["accent"] = accent
-
-        if self.use_image:
+        if self.use_kana:
             sample["text"]=text_kana
+        if self.use_image:
             sample["image"]=image
 
 
@@ -332,11 +348,9 @@ class TestDataset(Dataset):
         self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
 
         #test batch
+        self.symbol_kana_to_id = {s: i for i, s in enumerate(symbols_kana)}
         self.data_num=len(self.basename)
         self.batchs=self.get_batch()
-
-        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
-
 
     def get_batch(self):
         batchs=[]
@@ -356,6 +370,7 @@ class TestDataset(Dataset):
             with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
                 f=f.read()
                 text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
+                text_kana=np.array([self.symbol_kana_to_id[t] for t in text_kana])
             texts = np.array([text_kana])
 
 
@@ -370,7 +385,7 @@ class TestDataset(Dataset):
             )
             image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]
 
-            batchs.append((ids, raw_texts, speaker_id, texts, text_lens, max(text_lens),None,None,None,None,None,None,None,image))
+            batchs.append((ids, raw_texts, speaker_id, texts, text_lens, max(text_lens),None,None,None,None,None,None,None,None))
 
         return batchs
 
