@@ -112,6 +112,7 @@ montreal-forced-aligner/
 
 # data, checkpoint, and models
 raw_data/
+JECS/
 output/
 output*/
 *.npy
@@ -127,3 +128,7 @@ nohub.out
 experience/
 utils/ipag00303/
 nohup.out
+phoneme/
+voced_test/
+submit/
+

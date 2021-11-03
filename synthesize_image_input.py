@@ -13,8 +13,8 @@ from pypinyin import pinyin, Style
 
 from utils.model import get_model, get_vocoder
 from utils.tools import to_device, synth_samples
-from utils.transform import Phoneme2Kana_inference
 from utils.getimage import get_text_images
+from utils.transform import Phoneme2Kana_inference
 from dataset import TextDataset
 from text import text_to_sequence, symbols
 import pyopenjtalk
@@ -41,28 +41,47 @@ def get_image(width=30,height=30,font_size=15,text=""):
     
     return image
 
-def get_text_images(texts):
+
+def get_VoicedImage(text=""):
+    pygame.init()
+    font = pygame.font.Font("utils/ipag00303/ipag.ttf", 15)     
+    surf = pygame.Surface((30, 30))
+    surf.fill((255,255,255))
+    text_rect = font.render(
+        text, True, (0,0,0))
+    
+    text_rect2 = font.render(
+        "゛",True,(0,0,0)
+    )
+    
+    surf.blit(text_rect, [8, 8]) 
+    
+    if text in ["あ","い","え","も","わ","を","ん","ら","る","れ","ろ"]:
+        surf.blit(text_rect2, [18,8])
+    
+    if text in ["お","な","ぬ","ね","の","ま","み","む","め","や","ゆ","よ"]:
+        surf.blit(text_rect2, [20,8])
+    
+    if text in ["に"]:
+        surf.blit(text_rect2, [21,8])
+        
+    if text in ["り"]:
+        surf.blit(text_rect2, [19,6])
+    
+    image = pygame.surfarray.pixels3d(surf)
+    image = image.swapaxes(0, 1)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    
+    return image
+
+def get_text_VocedImage(texts):
     sequence=[]
     for text in texts:
-        image=get_image(text=text)
+        image=get_VoicedImage(text=text)
         sequence.append(image)
     #横に画像をconcatしている
     concated_image=cv2.hconcat(sequence)
     return concated_image
-
-
-def preprocess_japanese(text:str):
-    fullcontext_labels = pyopenjtalk.extract_fullcontext(text)
-    phonemes , accents = pp_symbols(fullcontext_labels)
-    phonemes = [openjtalk2julius(p) for p in phonemes if p != '']
-
-    kanas=Phoneme2Kana_inference(phonemes)
-
-    text_image=get_text_images(texts=[t for t in kanas],width=20,height=20,font_size=10)
-    
-    return phonemes, accents,text_image,kanas
-
-
 
 def synthesize(model, step, configs, vocoder, batchs, control_values):
     preprocess_config, model_config, train_config = configs
@@ -78,7 +97,6 @@ def synthesize(model, step, configs, vocoder, batchs, control_values):
             accents = batch[-1]
             batch = batch[:-1]
         with torch.no_grad():
-            print(batch)
             batch = batch[:-1]
             # Forward
             output = model(
@@ -101,19 +119,6 @@ def synthesize(model, step, configs, vocoder, batchs, control_values):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--restore_step", type=int, required=True)
-    parser.add_argument(
-        "--mode",
-        type=str,
-        choices=["batch", "single"],
-        required=True,
-        help="Synthesize a whole dataset or a single sentence",
-    )
-    parser.add_argument(
-        "--source",
-        type=str,
-        default=None,
-        help="path to a source file with format like train.txt and val.txt, for batch mode only",
-    )
     parser.add_argument(
         "--text",
         type=str,
@@ -157,6 +162,11 @@ if __name__ == "__main__":
         default=1.0,
         help="control the speed of the whole utterance, larger value for slower speaking rate",
     )
+    parser.add_argument(
+        "--isVoced",
+        type=bool,
+        default=True,
+    )
     args = parser.parse_args()
 
     # Read Config
@@ -178,15 +188,20 @@ if __name__ == "__main__":
     accent_to_id = {'0':0, '[':1, ']':2, '#':3}
 
     # create batch list
-    
-    ids = raw_texts = ["あ"]
+    input_kanas=["あ","い","え","お","な","に","ぬ","ね","の","ま","み","む","め","も","わ","を","ん","ら","り","る","れ","ろ","や","ゆ","よ"]
+    batchs=[]
+    N= 5
 
-    speakers = np.array([args.speaker_id])
-    accents = None
-    image=[get_text_images(["あ"])]
-    texts = np.array([["あ"]])
-    text_lens = np.array([len(texts[0])])
-    batchs = [(ids, raw_texts, speakers, texts, text_lens, max(text_lens),None,None,None,None,None,None,accents,image)]
+    for input_kana in input_kanas:
+        ids = raw_texts = [input_kana]
+        speakers = np.array([args.speaker_id])
+        image=[get_text_VocedImage([input_kana]*N)]
+        # cv2.imwrite("output_ver6/result/test2.jpg",image[0])
+        #image=[get_text_images([input_kana]*N,width=30,height=30,font_size=15)]
+        texts = np.array([[input_kana]*N])
+        text_lens = np.array([len(texts[0])])
+        accents = None
+        batchs.append((ids, raw_texts, speakers, texts, text_lens, max(text_lens),None,None,None,None,None,None,accents,image))
     
     control_values = args.pitch_control, args.energy_control, args.duration_control
 

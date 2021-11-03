@@ -2,9 +2,11 @@ import json
 import math
 import os
 import cv2
+import random
 
 import numpy as np
 from torch.utils.data import Dataset
+from utils.getimage import get_voced_images
 
 from text import symbols, text_to_sequence
 from utils.tools import pad_1D, pad_2D,pad_2D_gray_image
@@ -387,6 +389,118 @@ class TestDataset(Dataset):
                 text.append(t)
                 raw_text.append(r)
             return name, speaker, text, raw_text
+
+class TestVocedDataset(Dataset):
+    def __init__(self, filepath, preprocess_config):
+        #path
+        self.preprocessed_path = preprocess_config["path"]["preprocessed_path"]
+
+        #get basic info of test data
+        self.basename, self.speaker, self.text, self.raw_text = self.process_meta(
+            filepath
+        )
+
+        #image info
+        self.image_preprocess_width=preprocess_config["preprocessing"]["image"]["width"]
+        self.image_preprocess_height=preprocess_config["preprocessing"]["image"]["height"]
+        self.image_preprocess_fontsize=preprocess_config["preprocessing"]["image"]["font_size"]
+
+        #speakers info
+        with open(
+            os.path.join(
+                preprocess_config["path"]["preprocessed_path"], "speakers.json"
+            )
+        ) as f:
+            self.speaker_map = json.load(f)
+
+        #image
+        self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
+
+        #test batch
+        self.data_num=len(self.basename)
+        self.batchs=self.get_batch()
+
+        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
+
+
+    def get_batch(self):
+        batchs=[]
+        for idx in range(self.data_num):
+
+            #speaker
+            speaker = self.speaker[idx]
+            speaker_id = np.array([self.speaker_map[speaker]])
+            
+            #raw_text
+            raw_texts = [self.raw_text[idx]]
+            
+            #texts
+            text_kana_filename="{}_{}.lab".format(speaker, self.basename[idx])
+            with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
+                f=f.read()
+                text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
+                text_kana,images=self.process_text_kana(text_kana)
+                images=[images]
+
+            texts = np.array([text_kana])
+
+            #text lens
+            text_lens = np.array([len(texts[0])])
+
+
+            #id
+            ids = [self.basename[idx]]
+
+            #保存
+            with open("./output_ver6/result/vocedTest/"+self.basename[idx]+".lab",mode='w') as f:
+                f.write("".join(text_kana).strip('\n'))
+
+            batchs.append((ids, raw_texts, speaker_id, texts, text_lens, max(text_lens),None,None,None,None,None,None,None,images))
+
+        return batchs
+
+    def process_meta(self, filename):
+        with open(filename, "r", encoding="utf-8") as f:
+            name = []
+            speaker = []
+            text = []
+            raw_text = []
+            for line in f.readlines():
+                n, s, t, r = line.strip("\n").split("|")
+                name.append(n)
+                speaker.append(s)
+                text.append(t)
+                raw_text.append(r)
+            return name, speaker, text, raw_text
+    
+    def process_text_kana(self,text_kana):
+        select=["あ","い","え","も","わ","を","ん","ら","る","れ","ろ","お","な","ぬ","ね","の","ま","み","む","め","や","ゆ","よ","に","り"]
+        text_kana=text_kana.tolist()
+
+        choice=[]
+        for i in range(len(text_kana)):
+            if text_kana[i] in select:
+                choice.append(i)
+        
+        if len(choice)==0:
+            print(text_kana)
+
+        choice=random.choice(choice)
+        images=get_voced_images(text_kana,choice)
+        text_kana[choice]=text_kana[choice]+"゛"
+        cv2.imwrite("voced_test/"+"".join(text_kana)+".jpg",images)
+        return text_kana,images
+
+        
+
+
+
+
+
+        
+
+
+
 
 
 
