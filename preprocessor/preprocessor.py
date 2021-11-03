@@ -11,7 +11,7 @@ from scipy.interpolate import interp1d
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 from utils.transform import Phoneme2Kana_ver2
-from utils.getimage import get_text_images
+from utils.getimage import get_text_images,get_flg,get_bold_text_images
 
 
 import audio as Audio
@@ -88,7 +88,7 @@ class Preprocessor:
 
         # Compute pitch, energy, duration, and mel-spectrogram
         speakers = {}
-        out={"BASIC5000":[],"other":[]}
+        out=[]
         n_frames = 0
         for i, speaker in enumerate(tqdm(os.listdir(self.in_dir))):            #in_dir : ./raw_data/JSUT
             speakers[speaker] = i
@@ -108,11 +108,7 @@ class Preprocessor:
                     else:
                         info, pitch, energy, n,pitch_kana,energy_kana = ret
 
-                    #for test dataset
-                    if basename[:9]=="BASIC5000":
-                        out["BASIC5000"].append(info)
-                    else:
-                        out["other"].append(info)
+                    out.append(info)
 
                 else:
                     raise ValueError(tg_path)
@@ -203,26 +199,21 @@ class Preprocessor:
         )
 
         #shufflr test data and other data
-        random.shuffle(out["BASIC5000"])
-        out_test=out["BASIC5000"][:self.test_size]
-        out=out["BASIC5000"][self.test_size:]+out["other"]
         random.shuffle(out)
-
         out = [r for r in out if r is not None]
-        out_test = [r for r in out_test if r is not None]
 
         # write metadata
-        with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
-            for m in out[self.val_size :]:
-                f.write(m + "\n")
         with open(os.path.join(self.out_dir, "val.txt"), "w", encoding="utf-8") as f:
             for m in out[: self.val_size]:
                 f.write(m + "\n")
+
         with open(os.path.join(self.out_dir, "test.txt"), "w", encoding="utf-8") as f:
-            for m in out_test:
+            for m in out[self.val_size:self.val_size+self.test_size]:
                 f.write(m + "\n")
 
-        out=out_test+out
+        with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
+            for m in out[self.val_size+self.test_size]:
+                f.write(m + "\n")
 
         return out
 
@@ -247,7 +238,7 @@ class Preprocessor:
             return None
 
         # Read and trim wav files
-        wav, _ = librosa.load(wav_path,sr=22050)
+        wav, _ = librosa.load(wav_path,sr=self.sampling_rate) #sr=22050となっていたのを変えた
         wav = wav[
             int(self.sampling_rate * start) : int(self.sampling_rate * end)
         ].astype(np.float32) 
@@ -358,7 +349,9 @@ class Preprocessor:
 
         #save kana image
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-        text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize)
+        ##ここを書き換える
+        flgs=get_flg(basename,speaker,[t for t in kanas.replace("{", "").replace("}", "").split()])
+        text_image=get_bold_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs)
         cv2.imwrite(os.path.join(self.out_dir,"image_kana",iamge_filename),text_image)
         
         return (

@@ -1,5 +1,7 @@
 import cv2
 import pygame
+from utils.transform import Phoneme2Kana_emp
+import numpy as np
 
 
 def get_image(width=20,height=20,font_size=10,text=""):
@@ -80,3 +82,60 @@ def get_voced_images(texts,index,width=30,height=30,font_size=15):
         sequence.append(image)
     concated_image=cv2.hconcat(sequence)
     return concated_image
+
+#一つの文字を太文字に変換する
+def get_bold_image(width=20,height=20,font_size=10,text="",flg=False):
+    pygame.init()
+    font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size)     
+    if flg:
+        font.bold=True
+    surf = pygame.Surface((width, height))
+    surf.fill((255,255,255))
+    
+    text_rect = font.render(
+        text, True, (0,0,0))
+    
+    if len(text)==1:
+        surf.blit(text_rect, [width//2-font_size//2, height//2-font_size//2])  
+    else:
+        assert False
+        surf.blit(text_rect, [width//2-font_size, height//2-font_size//2])  
+    
+    image = pygame.surfarray.pixels3d(surf)
+    image = image.swapaxes(0, 1)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    
+    return image
+
+#textの太文字を得る関数
+def get_bold_text_images(texts,flgs,width=20,height=20,font_size=10):
+    sequence=[]
+    for i in range(len(texts)):
+        text=texts[i]
+        flg=flgs[i]
+        image=get_bold_image(width=width,height=height,font_size=font_size,text=text,flg=flg)
+        sequence.append(image)
+    concated_image=cv2.hconcat(sequence)
+    return concated_image
+
+
+#どの文字を太字にするのかのフラグを作る関数
+def get_flg(basename,speaker,kanas):
+    flgs=[False]*len(kanas)
+    with open("phoneme/"+speaker+"/Emp/"+basename+".lab","r") as f:
+        f=f.read()
+        phoneme=f.split(" ")
+        emp_kanas=Phoneme2Kana_emp(phoneme)
+    assert kanas == [t for t in emp_kanas if t!="＊"]
+    for i in range(len(emp_kanas)):
+        if emp_kanas[i]=="＊":
+            left=i
+            break
+    for i in range(len(emp_kanas)-1,-1,-1):
+        if emp_kanas[i]=="＊":
+            right=i
+            break
+    assert left!=-1 and right!=-1 and left!=right and left<right
+    for i in range(left,right-1):
+        flgs[i]=True
+    return flgs

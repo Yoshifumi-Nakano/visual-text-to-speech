@@ -17,5 +17,6 @@ for transcript in transcript_files:
         if line!='\n':
             filename, text = line.split(':')
             if "JE_EMPH" in filename and "JA" in filename:
+                text=text.strip(" ")
                 with open('raw_data/JECS/JECS/' + filename + '.lab', mode='w') as f:
                     f.write(text.strip('\n'))

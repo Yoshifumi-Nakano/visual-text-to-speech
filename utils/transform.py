@@ -1,3 +1,5 @@
+import os
+
 #音素一文字で一つのひらがなのリスト
 oneWordByVowel=["a","i","u","e","o","q","N","sp"]
 
@@ -310,7 +312,50 @@ def Phoneme2Kana_inference(phoneme):
             i+=2
     return kana
 
+
+#強調文字が入っている時に音素からカナ文字を生成する
+def Phoneme2Kana_emp(phoneme):
+    phoneme=[openjtalk2julius(p) for p in phoneme]
+    kana=[]
+    N=len(phoneme)
+    i=0
+    while i<N:
+        if phoneme[i]=='＊':
+            kana+=['＊']
+            i+=1
+        elif phoneme[i] in oneWordByVowel:
+            kana.append(dic[phoneme[i]])
+            i+=1
+        else:
+            ph = phoneme[i]+phoneme[i+1]
+            if ph in twoWordByTwoConsonant:
+                kn = dic[ph]
+                assert len(kn)==2
+                kana+=[kn[0],kn[1]]
+            else:
+                kn=dic[ph]
+                assert len(kn)==1
+                kana+=[kn]
+            i+=2
+    return kana
+
+def openjtalk2julius(p3):
+    if p3 in ['A','I','U',"E", "O"]:
+        return p3.lower()
+    if p3 == 'cl':
+        return 'q'
+    if p3 == 'pau':
+        return 'sp'
+    return p3
+
 # phoneme=['ny', 'i', 'u', 'n', 'i', 'y', 'o', 'N', 'k', 'a', 'i', 'sp', 'f', 'u', 'r', 'a', 'N', 's', 'u', 'n', 'o', 'j', 'u', 'gy', 'o', 'o', 'g', 'a', 'a', 'r', 'i', 'm', 'a', 's', 'u'] 
 # duration=[17, 5, 3, 6, 4, 6, 7, 5, 7, 11, 5, 3, 8, 3, 5, 5, 3, 12, 3, 3, 4, 10, 2, 8, 5, 6, 6, 2, 8, 4, 4, 7, 6, 17, 2]
 # print(Phoneme2Kana_ver2(phoneme,duration))
-        
+# paths=os.listdir("phoneme/JECS/Emp")
+# for path in paths:
+#     with open("phoneme/JECS/Emp/"+path,"r") as f:
+#         f=f.read()
+#         phoneme=f.split(" ")
+#         kana=Phoneme2Kana_emp(phoneme)
+#         print(kana)
+

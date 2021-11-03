@@ -1,20 +1,20 @@
-dataset: "JSUT"
+dataset: "JECS"
 
 path:
   corpus_path: "/home/nakata/jsut_ver1.1_original"
   lexicon_path: ""
-  raw_path: "./raw_data/JSUT"
-  preprocessed_path: "./preprocessed_data/JSUT"
+  raw_path: "./raw_data/JECS"
+  preprocessed_path: "./preprocessed_data/JECS"
 
 preprocessing:
-  val_size: 512
-  test_size: 100
+  val_size: 50
+  test_size: 50
   text:
     text_cleaners: ["english_cleaners"]
     language: "ja"
   audio:
-    sampling_rate: 22050
-    max_wav_value: 32768.0
+    sampling_rate: 48000
+    max_wav_value: 8388608.0
   stft:
     filter_length: 1024
     hop_length: 256
@@ -38,6 +38,6 @@ preprocessing:
     width: 30
     height: 30
     font_size: 15
-    slice_width: 150
+    slice_width: 30
     slice_height: 30
     stride: 30
