@@ -139,3 +139,12 @@ def get_flg(basename,speaker,kanas):
     for i in range(left,right-1):
         flgs[i]=True
     return flgs
+
+def openjtalk2julius(p3):
+    if p3 in ['A','I','U',"E", "O"]:
+        return p3.lower()
+    if p3 == 'cl':
+        return 'q'
+    if p3 == 'pau':
+        return 'sp'
+    return p3

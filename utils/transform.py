@@ -348,14 +348,48 @@ def openjtalk2julius(p3):
         return 'sp'
     return p3
 
+
+#音素列から強調している区間を見つける
+def get_emp_index(basename,speaker):
+    #音素列を取得
+    with open("phoneme/"+speaker+"/Emp/"+basename+".lab","r") as f:
+        f=f.read()
+        phoneme=f.split(" ")
+    for i in range(len(phoneme)):
+        phoneme[i]=openjtalk2julius(phoneme[i])
+    phoneme=["sil"]+phoneme+["sil"]
+
+    for i in range(len(phoneme)):
+        if phoneme[i]=="＊":
+            left=i
+            break
+    for i in range(len(phoneme)-1,-1,-1):
+        if phoneme[i]=="＊":
+            right=i-2
+            break
+    assert left!=-1 and right!=-1 and left<right
+    return left,right
+
+
+def openjtalk2julius(p3):
+    if p3 in ['A','I','U',"E", "O"]:
+        return p3.lower()
+    if p3 == 'cl':
+        return 'q'
+    if p3 == 'pau':
+        return 'sp'
+    return p3
+
+
 # phoneme=['ny', 'i', 'u', 'n', 'i', 'y', 'o', 'N', 'k', 'a', 'i', 'sp', 'f', 'u', 'r', 'a', 'N', 's', 'u', 'n', 'o', 'j', 'u', 'gy', 'o', 'o', 'g', 'a', 'a', 'r', 'i', 'm', 'a', 's', 'u'] 
 # duration=[17, 5, 3, 6, 4, 6, 7, 5, 7, 11, 5, 3, 8, 3, 5, 5, 3, 12, 3, 3, 4, 10, 2, 8, 5, 6, 6, 2, 8, 4, 4, 7, 6, 17, 2]
 # print(Phoneme2Kana_ver2(phoneme,duration))
 # paths=os.listdir("phoneme/JECS/Emp")
 # for path in paths:
-#     with open("phoneme/JECS/Emp/"+path,"r") as f:
-#         f=f.read()
-#         phoneme=f.split(" ")
-#         kana=Phoneme2Kana_emp(phoneme)
-#         print(kana)
+#     get_emp_index(path[:-4],"JECS")
+    # with open("phoneme/JECS/Emp/"+path,"r") as f:
+    #     f=f.read()
+    #     phoneme=f.split(" ")
+    #     kana=Phoneme2Kana_emp(phoneme)
+    #     print(kana)
 

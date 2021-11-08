@@ -367,7 +367,7 @@ class TestDataset(Dataset):
             #image
             image_path= os.path.join(
                 self.preprocessed_path,
-                "image_kana",
+                "image_kana_normal",
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
             )
             image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]

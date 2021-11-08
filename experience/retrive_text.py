@@ -1,18 +1,12 @@
-import glob
-import pandas as pd
-import os
-# %%
-transcript_files = glob.glob("/home/sarulab/yoshifumi_nakano/FastSpeech2/FastSpeech2-JSUT/jsut_ver1.1/*/transcript_utf8.txt")
-print(transcript_files)
+import numpy as np
+a=np.array([1,2,3,4,5,6,7])
 
-if not os.path.exists("raw_data/JSUT/JSUT"):
-    os.makedirs("raw_data/JSUT/JSUT")
-for transcript in transcript_files:
-    print(transcript)
-    # with open(transcript, mode='r') as f:
-    #     lines = f.readlines()
-    # for line in lines:
-        
-    #     filename, text = line.split(':')
-    #     with open('' + filename + '.lab', mode='w') as f:
-    #         f.write(text.strip('\n'))
+
+s=2
+e=4
+a=a.tolist()
+for i in range(len(a)):
+    if a[i]<s or a[i]>e:
+        a[i]=a[i]/2
+a=np.array(a)
+print(a)

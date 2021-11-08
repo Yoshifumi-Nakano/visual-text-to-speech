@@ -9,8 +9,9 @@ import pyworld as pw
 import cv2
 from scipy.interpolate import interp1d
 from sklearn.preprocessing import StandardScaler
+from scipy.io.wavfile import write
 from tqdm import tqdm
-from utils.transform import Phoneme2Kana_ver2
+from utils.transform import Phoneme2Kana_ver2,get_emp_index
 from utils.getimage import get_text_images,get_flg,get_bold_text_images
 
 
@@ -203,17 +204,17 @@ class Preprocessor:
         out = [r for r in out if r is not None]
 
         # write metadata
-        with open(os.path.join(self.out_dir, "val.txt"), "w", encoding="utf-8") as f:
-            for m in out[: self.val_size]:
-                f.write(m + "\n")
+        # with open(os.path.join(self.out_dir, "val.txt"), "w", encoding="utf-8") as f:
+        #     for m in out[: self.val_size]:
+        #         f.write(m + "\n")
 
-        with open(os.path.join(self.out_dir, "test.txt"), "w", encoding="utf-8") as f:
-            for m in out[self.val_size:self.val_size+self.test_size]:
-                f.write(m + "\n")
+        # with open(os.path.join(self.out_dir, "test.txt"), "w", encoding="utf-8") as f:
+        #     for m in out[self.val_size:self.val_size+self.test_size]:
+        #         f.write(m + "\n")
 
-        with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
-            for m in out[self.val_size+self.test_size]:
-                f.write(m + "\n")
+        # with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
+        #     for m in out[self.val_size+self.test_size:]:
+        #         f.write(m + "\n")
 
         return out
 
@@ -227,8 +228,8 @@ class Preprocessor:
 
         # get alignments
         textgrid = tgt.io.read_textgrid(tg_path)
-        phone, duration, start, end,kanas,duration_kana = self.get_alignment(
-            textgrid.get_tier_by_name("phones")
+        phone, duration, start, end,kanas,duration_kana,start_emp,end_emp = self.get_alignment(
+            textgrid.get_tier_by_name("phones"),speaker,basename
         )
         text = "{" + " ".join(phone) + "}"        #text {m i z u o m a r e e sh i a k a r a k a w a n a k u t e w a n a r a n a i n o d e s u}
         kanas = "{" + " ".join(kanas) + "}"
@@ -239,9 +240,24 @@ class Preprocessor:
 
         # Read and trim wav files
         wav, _ = librosa.load(wav_path,sr=self.sampling_rate) #sr=22050となっていたのを変えた
+        # 強調してない場所は1/2倍する
+        start_emp=int(self.sampling_rate * start_emp)
+        end_emp=int(self.sampling_rate * end_emp)
+
+        wav=wav.tolist()
+        for i in range(len(wav)):
+            if i<start_emp or i>end_emp:
+                wav[i]=wav[i]/2
+        wav=np.array(wav)
+
+        #音声がある部分のみ切り取る
         wav = wav[
             int(self.sampling_rate * start) : int(self.sampling_rate * end)
         ].astype(np.float32) 
+
+        #音声を保存
+        write("test/"+basename+".wav", self.sampling_rate, wav)
+
 
         # Read raw text
         with open(text_path, "r") as f:
@@ -349,10 +365,15 @@ class Preprocessor:
 
         #save kana image
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-        ##ここを書き換える
         flgs=get_flg(basename,speaker,[t for t in kanas.replace("{", "").replace("}", "").split()])
         text_image=get_bold_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs)
         cv2.imwrite(os.path.join(self.out_dir,"image_kana",iamge_filename),text_image)
+
+        #save normal kana images
+        iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
+        text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize)
+        cv2.imwrite(os.path.join(self.out_dir,"image_kana_normal",iamge_filename),text_image)
+
         
         return (
             "|".join([basename, speaker, text, raw_text]),
@@ -363,7 +384,7 @@ class Preprocessor:
             self.remove_outlier(energy_kana),
         )
 
-    def get_alignment(self, tier):
+    def get_alignment(self, tier,speaker,basename):
         sil_phones = ["sil", "sp", "spn", 'silB', 'silE', '']
 
         phones = []
@@ -371,8 +392,22 @@ class Preprocessor:
         start_time = 0
         end_time = 0
         end_idx = 0
+        
+        #音素の中で強調するのが何番目から何番目かをcheck
+        left,right=get_emp_index(basename,speaker)
+
+        
+        cnt=0
         for t in tier._objects:
             s, e, p = t.start_time, t.end_time, t.text
+
+            #強調が始まる時間と終わる時間を調べる
+            if cnt==left:
+                start_emp=s
+            if cnt==right:
+                end_emp=e
+            cnt+=1
+
 
             # find phone and start_time that are not silent
             if phones == []:
@@ -397,6 +432,7 @@ class Preprocessor:
                 )
             )
 
+
         # delete last sp
         phones = phones[:end_idx]
         durations = durations[:end_idx]
@@ -409,7 +445,7 @@ class Preprocessor:
         assert len(kanas) == len(durations_kana)
         assert sum(durations) == sum(durations_kana)
 
-        return phones, durations, start_time, end_time,kanas,durations_kana
+        return phones, durations, start_time, end_time,kanas,durations_kana,start_emp,end_emp
 
     def remove_outlier(self, values):
         values = np.array(values)
@@ -433,3 +469,5 @@ class Preprocessor:
             min_value = min(min_value, min(values))
 
         return min_value, max_value
+
+
