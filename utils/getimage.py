@@ -4,19 +4,16 @@ import pygame
 
 def get_image(width=20,height=20,font_size=10,text=""):
     pygame.init()
-    font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size)     
+    font = pygame.font.Font("./utils/gowun-batang/GowunBatang-Bold.ttf", font_size)     
     surf = pygame.Surface((width, height))
     surf.fill((255,255,255))
 
-
-    text_rect = font.render(
-        text, True, (0,0,0))
-    
     if len(text)==1:
-        surf.blit(text_rect, [width//2-font_size//2, height//2-font_size//2])  
+        text_rect = font.render(text, True, (0,0,0))
+        surf.blit(text_rect, [width//2-font_size//2, height//2-font_size//1.3])  
     else:
-        assert False
-        surf.blit(text_rect, [width//2-font_size, height//2-font_size//2])  
+        assert text=="sp"
+        #surf.blit(text_rect, [width//2-font_size, height//2-font_size//2])  
     
     image = pygame.surfarray.pixels3d(surf)
     image = image.swapaxes(0, 1)

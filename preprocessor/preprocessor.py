@@ -12,11 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 from utils.transform import Phoneme2Kana_ver2
 from utils.getimage import get_text_images
-
-
 import audio as Audio
-
-
 
 
 class Preprocessor:
@@ -41,14 +37,12 @@ class Preprocessor:
         self.pitch_phoneme_averaging = (
             config["preprocessing"]["pitch"]["feature"] == "phoneme_level"
         )
-        self.pitch_kana_averaging=config["preprocessing"]["pitch"]["image"]
         self.pitch_normalization = config["preprocessing"]["pitch"]["normalization"]
 
         #energy info
         self.energy_phoneme_averaging = (
             config["preprocessing"]["energy"]["feature"] == "phoneme_level"
         )
-        self.energy_kana_averaging=config["preprocessing"]["energy"]["image"]
         self.energy_normalization = config["preprocessing"]["energy"]["normalization"]
 
         #STFT info
@@ -74,21 +68,15 @@ class Preprocessor:
         os.makedirs((os.path.join(self.out_dir, "pitch")), exist_ok=True)
         os.makedirs((os.path.join(self.out_dir, "energy")), exist_ok=True)
         os.makedirs((os.path.join(self.out_dir, "duration")), exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir, "pitch_kana")), exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir, "energy_kana")), exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir, "duration_kana")), exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir,"text_kana")),exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir,"image_kana")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image")),exist_ok=True)
 
         #normalization module
         pitch_scaler = StandardScaler()
         energy_scaler = StandardScaler()
-        pitch_kana_scaler=StandardScaler()
-        energy_kana_scaler=StandardScaler()
 
         # Compute pitch, energy, duration, and mel-spectrogram
         speakers = {}
-        out={"BASIC5000":[],"other":[]}
+        out=[]
         n_frames = 0
         for i, speaker in enumerate(tqdm(os.listdir(self.in_dir))):            #in_dir : ./raw_data/JSUT
             speakers[speaker] = i
@@ -106,65 +94,41 @@ class Preprocessor:
                     if ret is None:
                         continue
                     else:
-                        info, pitch, energy, n,pitch_kana,energy_kana = ret
+                        info, pitch, energy, n = ret
 
                     #for test dataset
-                    if basename[:9]=="BASIC5000":
-                        out["BASIC5000"].append(info)
-                    else:
-                        out["other"].append(info)
-
+                    out.append(info)
                 else:
-                    raise ValueError(tg_path)
+                    print(tg_path)
+                    continue
 
                 if len(pitch) > 0:
                     pitch_scaler.partial_fit(pitch.reshape((-1, 1)))
                 if len(energy) > 0:
                     energy_scaler.partial_fit(energy.reshape((-1, 1)))
-                if len(pitch_kana)>0:
-                    pitch_kana_scaler.partial_fit(pitch_kana.reshape((-1, 1)))
-                if len(energy_kana)>0:
-                    energy_kana_scaler.partial_fit(energy_kana.reshape((-1, 1)))
 
                 n_frames += n
 
         # Perform normalization if necessary
         if self.pitch_normalization:
             pitch_mean = pitch_scaler.mean_[0]
-            pitch_kana_mean = pitch_kana_scaler.mean_[0]
-
             pitch_std = pitch_scaler.scale_[0]
-            pitch_kana_std = pitch_kana_scaler.scale_[0]
         else:
             pitch_mean = 0
             pitch_std = 1
-            pitch_kana_mean=0
-            pitch_kana_std=1
             
         if self.energy_normalization:
             energy_mean = energy_scaler.mean_[0]
-            energy_kana_mean = energy_kana_scaler.mean_[0]
-
             energy_std = energy_scaler.scale_[0]
-            energy_kana_std = energy_kana_scaler.scale_[0]
         else:
             energy_mean = 0
-            energy_kana_mean = 0
             energy_std = 1
-            energy_kana_std=1
 
         pitch_min, pitch_max = self.normalize(
             os.path.join(self.out_dir, "pitch"), pitch_mean, pitch_std
         )
         energy_min, energy_max = self.normalize(
             os.path.join(self.out_dir, "energy"), energy_mean, energy_std
-        )
-
-        pitch_kana_min,pitch_kana_max=self.normalize(
-            os.path.join(self.out_dir, "pitch_kana"), pitch_kana_mean, pitch_kana_std
-        )
-        energy_kana_min, energy_kana_max = self.normalize(
-            os.path.join(self.out_dir, "energy_kana"), energy_kana_mean, energy_kana_std
         )
 
         # Save files
@@ -178,20 +142,12 @@ class Preprocessor:
                     float(pitch_max),
                     float(pitch_mean),
                     float(pitch_std),
-                    float(pitch_kana_min),
-                    float(pitch_kana_max),
-                    float(pitch_kana_mean),
-                    float(pitch_kana_std),
                 ],
                 "energy": [
                     float(energy_min),
                     float(energy_max),
                     float(energy_mean),
                     float(energy_std),
-                    float(energy_kana_min),
-                    float(energy_kana_max),
-                    float(energy_kana_mean),
-                    float(energy_kana_std),
                 ],
             }
             f.write(json.dumps(stats))
@@ -203,26 +159,21 @@ class Preprocessor:
         )
 
         #shufflr test data and other data
-        random.shuffle(out["BASIC5000"])
-        out_test=out["BASIC5000"][:self.test_size]
-        out=out["BASIC5000"][self.test_size:]+out["other"]
         random.shuffle(out)
-
         out = [r for r in out if r is not None]
-        out_test = [r for r in out_test if r is not None]
 
         # write metadata
-        with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
-            for m in out[self.val_size :]:
-                f.write(m + "\n")
         with open(os.path.join(self.out_dir, "val.txt"), "w", encoding="utf-8") as f:
             for m in out[: self.val_size]:
                 f.write(m + "\n")
+
         with open(os.path.join(self.out_dir, "test.txt"), "w", encoding="utf-8") as f:
-            for m in out_test:
+            for m in out[self.val_size:self.val_size+self.test_size]:
                 f.write(m + "\n")
 
-        out=out_test+out
+        with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
+            for m in out[self.val_size+self.test_size:]:
+                f.write(m + "\n")
 
         return out
 
@@ -236,13 +187,12 @@ class Preprocessor:
 
         # get alignments
         textgrid = tgt.io.read_textgrid(tg_path)
-        phone, duration, start, end,kanas,duration_kana = self.get_alignment(
+        phone, duration, start, end = self.get_alignment(
             textgrid.get_tier_by_name("phones")
         )
         text = "{" + " ".join(phone) + "}"        #text {m i z u o m a r e e sh i a k a r a k a w a n a k u t e w a n a r a n a i n o d e s u}
-        kanas = "{" + " ".join(kanas) + "}"
 
-
+        # validation
         if start >= end:
             return None
 
@@ -283,17 +233,6 @@ class Preprocessor:
         pitch = interp_fn(np.arange(0, len(pitch)))
 
         # average pitch by input 
-        if self.pitch_kana_averaging:
-            pos = 0
-            pitch_kana=[0]*len(duration_kana)
-
-            for i, d in enumerate(duration_kana):
-                if d > 0:
-                    pitch_kana[i] = np.mean(pitch[pos : pos + d])
-                else:
-                    pitch_kana[i] = 0
-                pos += d
-            pitch_kana = pitch_kana[: len(duration_kana)]
         if self.pitch_phoneme_averaging:
             pos = 0
             for i, d in enumerate(duration):
@@ -305,16 +244,6 @@ class Preprocessor:
             pitch = pitch[: len(duration)]
 
          # average energy by input 
-        if self.energy_kana_averaging:
-            pos = 0
-            energy_kana=[0]*len(duration_kana)
-            for i, d in enumerate(duration_kana):
-                if d > 0:
-                    energy_kana[i] = np.mean(energy[pos : pos + d])
-                else:
-                    energy_kana[i] = 0
-                pos += d
-            energy_kana = energy_kana[: len(duration_kana)]
         if self.energy_phoneme_averaging:
             pos = 0
             for i, d in enumerate(duration):
@@ -329,20 +258,13 @@ class Preprocessor:
         dur_filename = "{}-duration-{}.npy".format(speaker, basename)
         np.save(os.path.join(self.out_dir, "duration", dur_filename), duration)
 
-        dur_kana_filename = "{}-duration-kana-{}.npy".format(speaker, basename)
-        np.save(os.path.join(self.out_dir, "duration_kana", dur_kana_filename), duration_kana)
-
         # save pitch
         pitch_filename = "{}-pitch-{}.npy".format(speaker, basename)
         np.save(os.path.join(self.out_dir, "pitch", pitch_filename), pitch)
-        pitch_kana_filename="{}-pitch-kana-{}.npy".format(speaker, basename)
-        np.save(os.path.join(self.out_dir, "pitch_kana", pitch_kana_filename), pitch_kana)
 
         # save duration
         energy_filename = "{}-energy-{}.npy".format(speaker, basename)
         np.save(os.path.join(self.out_dir, "energy", energy_filename), energy)
-        energy_kana_filename = "{}-energy-kana-{}.npy".format(speaker, basename)
-        np.save(os.path.join(self.out_dir, "energy_kana", energy_kana_filename), energy_kana)
 
         # save mel
         mel_filename = "{}-mel-{}.npy".format(speaker, basename)
@@ -351,27 +273,20 @@ class Preprocessor:
             mel_spectrogram.T,
         )
 
-        #save kana transcript
-        kana_filename="{}_{}.lab".format(speaker, basename)
-        with open(os.path.join(self.out_dir,"text_kana",kana_filename), mode='w') as f:
-            f.write(kanas)
-
         #save kana image
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-        text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize)
-        cv2.imwrite(os.path.join(self.out_dir,"image_kana",iamge_filename),text_image)
+        text_image=get_text_images(texts=[t for t in text.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize)
+        cv2.imwrite(os.path.join(self.out_dir,"image",iamge_filename),text_image)
         
         return (
             "|".join([basename, speaker, text, raw_text]),
             self.remove_outlier(pitch),
             self.remove_outlier(energy),
-            mel_spectrogram.shape[1],
-            self.remove_outlier(pitch_kana),
-            self.remove_outlier(energy_kana),
+            mel_spectrogram.shape[1]
         )
 
     def get_alignment(self, tier):
-        sil_phones = ["sil", "sp", "spn", 'silB', 'silE', '']
+        sil_phones = ["sil", "sp", "spn", 'silB', 'silE',"",'.','?',' ','!']
 
         phones = []
         durations = []
@@ -380,7 +295,6 @@ class Preprocessor:
         end_idx = 0
         for t in tier._objects:
             s, e, p = t.start_time, t.end_time, t.text
-
             # find phone and start_time that are not silent
             if phones == []:
                 if p in sil_phones:
@@ -408,15 +322,10 @@ class Preprocessor:
         phones = phones[:end_idx]
         durations = durations[:end_idx]
         
-        # transform from phone duration to image duration 
-        kanas,durations_kana=Phoneme2Kana_ver2(phones,durations) 
-
         # test code
         assert len(phones) == len(durations)
-        assert len(kanas) == len(durations_kana)
-        assert sum(durations) == sum(durations_kana)
 
-        return phones, durations, start_time, end_time,kanas,durations_kana
+        return phones, durations, start_time, end_time
 
     def remove_outlier(self, values):
         values = np.array(values)

@@ -17,8 +17,6 @@ from utils.getimage import get_text_images
 from dataset import TestDataset
 from text import text_to_sequence, symbols
 import pyopenjtalk
-from prepare_tg_accent import pp_symbols
-from convert_label import openjtalk2julius
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

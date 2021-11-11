@@ -5,7 +5,7 @@ import numpy as np
 
 import transformer.Constants as Constants
 from .Layers import FFTBlock
-from text.symbols import symbols
+from text.symbols_hunguel import get_symbols
 
 class NLayerImageCNN(nn.Module):
     def __init__(self,
@@ -78,7 +78,6 @@ class NLayerImageCNN(nn.Module):
             image_slice.append(torch.stack(tensors))
         image_slice=torch.stack(image_slice)
         batch_size, src_len, channels, height, width = image_slice.shape
-        
 
         pixels = image_slice.view(batch_size * src_len, channels, height, width)
 
@@ -121,7 +120,7 @@ class Encoder(nn.Module):
         super(Encoder, self).__init__()
 
         n_position = config["max_seq_len"] + 1
-        n_src_vocab = len(symbols) + 1
+        n_src_vocab = len(get_symbols())+1
         d_word_vec = config["transformer"]["encoder_hidden"]
         n_layers = config["transformer"]["encoder_layer"]
         n_head = config["transformer"]["encoder_head"]
@@ -172,6 +171,7 @@ class Encoder(nn.Module):
         self.NLayerImgageCNN=NLayerImageCNN(slice_width=slice_width,slice_height=slice_height,embed_dim=d_model,embed_normalize=True,bridge_relu=True,kernel_size=(3,3),num_convolutions=1,stride=stride,width=width,height=height)
 
     def forward(self, src_seq, mask,accents=None, return_attns=False,images=None):
+
         enc_slf_attn_list = []
         batch_size, max_len = src_seq.shape[0], src_seq.shape[1]
 
@@ -197,16 +197,17 @@ class Encoder(nn.Module):
 
         else:
             if accents is not None:
+                assert False
                 enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) +self.position_enc[
                     :, :max_len, :
                 ].expand(batch_size, -1, -1)
             else:
                 if images is None:
-                    assert False
                     enc_output = self.src_word_emb(src_seq) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)
                 else:
+                    assert False
                     enc_output = self.NLayerImgageCNN(images) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)

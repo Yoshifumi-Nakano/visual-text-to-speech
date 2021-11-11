@@ -9,6 +9,7 @@ from torch.utils.data import Dataset
 from utils.getimage import get_voced_images
 
 from text import symbols, text_to_sequence
+from text.symbols_hunguel import get_symbols
 from utils.tools import pad_1D, pad_2D,pad_2D_gray_image
 from utils.preimage import pre_seq
 
@@ -22,7 +23,7 @@ class Dataset(Dataset):
         self.cleaners = preprocess_config["preprocessing"]["text"]["text_cleaners"]
         self.batch_size = train_config["optimizer"]["batch_size"]
         self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
-        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
+        self.symbol_to_id = get_symbols()
         self.use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
         self.accent_to_id = {'0':0, '[':1, ']':2, '#':3}
         self.sort = sort
@@ -92,45 +93,13 @@ class Dataset(Dataset):
         )
         duration = np.load(duration_path)
 
-        #load image info
-        if self.use_image:
-            #load kana transcript
-            text_kana_filename="{}_{}.lab".format(speaker, basename)
-            with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
-                f=f.read()
-                text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
-            
-            #load pitch kana
-            pitch_path = os.path.join(
-                self.preprocessed_path,
-                "pitch_kana",
-                "{}-pitch-kana-{}.npy".format(speaker, basename),
-            )
-            pitch = np.load(pitch_path)
-
-            #load energy kana
-            energy_path = os.path.join(
-                self.preprocessed_path,
-                "energy_kana",
-                "{}-energy-kana-{}.npy".format(speaker, basename),
-            )
-            energy = np.load(energy_path)
-
-            #load duration kana
-            duration_path = os.path.join(
-                self.preprocessed_path,
-                "duration_kana",
-                "{}-duration-kana-{}.npy".format(speaker, basename),
-            )
-            duration = np.load(duration_path)
-
-            #load image
-            image_path= os.path.join(
-                self.preprocessed_path,
-                "image_kana",
-                "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-            )
-            image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
+        #load image
+        image_path= os.path.join(
+            self.preprocessed_path,
+            "image",
+            "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
+        )
+        image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
 
             
 
@@ -149,7 +118,6 @@ class Dataset(Dataset):
             sample["accent"] = accent
 
         if self.use_image:
-            sample["text"]=text_kana
             sample["image"]=image
 
 
@@ -354,12 +322,7 @@ class TestDataset(Dataset):
             raw_texts = [self.raw_text[idx]]
             
             #texts
-            text_kana_filename="{}_{}.lab".format(speaker, self.basename[idx])
-            with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
-                f=f.read()
-                text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
-            texts = np.array([text_kana])
-
+            texts = np.array([[t for t in self.text[idx].replace("{", "").replace("}", "").split()]])
 
             #text lens
             text_lens = np.array([len(texts[0])])
@@ -367,7 +330,7 @@ class TestDataset(Dataset):
             #image
             image_path= os.path.join(
                 self.preprocessed_path,
-                "image_kana",
+                "image",
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
             )
             image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]
