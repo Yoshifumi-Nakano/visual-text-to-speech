@@ -303,9 +303,10 @@ class TestDataset(Dataset):
 
         #test batch
         self.data_num=len(self.basename)
+        self.symbol_to_id = get_symbols()
         self.batchs=self.get_batch()
 
-        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
+        
 
 
     def get_batch(self):
@@ -322,7 +323,7 @@ class TestDataset(Dataset):
             raw_texts = [self.raw_text[idx]]
             
             #texts
-            texts = np.array([[t for t in self.text[idx].replace("{", "").replace("}", "").split()]])
+            texts = np.array([[self.symbol_to_id[t] for t in self.text[idx].replace("{", "").replace("}", "").split()]])
 
             #text lens
             text_lens = np.array([len(texts[0])])
