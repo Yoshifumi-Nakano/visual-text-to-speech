@@ -99,7 +99,12 @@ class Dataset(Dataset):
             with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
                 f=f.read()
                 text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
-            
+            # selected_voced=["ざ","ぜ","ぞ","ぢ","ぐ"]
+            # for text in text_kana:
+            #     if text in selected_voced:
+            #         print("text")
+            #         assert False
+                
             #load pitch kana
             pitch_path = os.path.join(
                 self.preprocessed_path,

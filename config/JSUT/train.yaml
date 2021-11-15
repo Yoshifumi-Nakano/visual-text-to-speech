@@ -1,7 +1,7 @@
 path:
-  ckpt_path: "./output_ver6/ckpt/JSUT"
-  log_path: "./output_ver6/log/JSUT"
-  result_path: "./output_ver6/result/vocedTest"
+  ckpt_path: "./output_ver15/ckpt/JSUT"
+  log_path: "./output_ver15/log/JSUT"
+  result_path: "./output_ver15/result/voced/"
 optimizer:
   batch_size: 6
   betas: [0.9, 0.98]
