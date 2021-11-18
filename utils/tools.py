@@ -54,10 +54,6 @@ def to_device(data, device,use_image,use_accent):
     #画像を使う場合はimageをtensorにするがtext(ひらがなの配列)は使わない
     if use_image:
         image=torch.stack([transform(im) for im in image]).to(device)
-
-        ##画像入力の際はここを取り除く
-        texts=torch.from_numpy(texts).long().to(device)
-        image= None
     else:
         texts=torch.from_numpy(texts).long().to(device)
         image= None

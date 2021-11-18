@@ -43,6 +43,7 @@ class Dataset(Dataset):
         with open(os.path.join(self.preprocessed_path, "speakers.json")) as f:
             self.speaker_map = json.load(f)
 
+
     def __len__(self):
         return len(self.text)
 
@@ -53,7 +54,7 @@ class Dataset(Dataset):
         speaker_id = self.speaker_map[speaker]  #0
         raw_text = self.raw_text[idx]           #狼が犬に似ているように、おべっか使いは友達のように見える。
         phone = np.array([self.symbol_to_id[t] for t in self.text[idx].replace("{", "").replace("}", "").split()])  #self.text {o o k a m i g a i n u n i n i t e i r u y o o n i sp o b e q k a z u k a i w a t o m o d a ch i n o y o o n i m i e r u}
-        
+
         #accent
         if self.use_accent:
             with open(os.path.join(self.preprocessed_path, "accent",basename+ '.accent')) as f:
@@ -101,9 +102,7 @@ class Dataset(Dataset):
         )
         image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
 
-            
-
-            
+        
         sample = {
             "id": basename,
             "speaker": speaker_id,
