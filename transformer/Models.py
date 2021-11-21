@@ -208,6 +208,7 @@ class Encoder(nn.Module):
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)
                 else:
+                    
                     enc_output = self.NLayerImgageCNN(images) +self.position_enc[
                         :, :max_len, :
                     ].expand(batch_size, -1, -1)
