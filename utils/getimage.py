@@ -2,12 +2,23 @@ import cv2
 import pygame
 
 
+<<<<<<< HEAD
+def get_image(width=30,height=30,font_size=20,text=""):
+=======
 def get_image(width=20,height=20,font_size=10,text=""):
+>>>>>>> parent of cffca65c... git rm -r cached .
     pygame.init()
     font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size)     
     surf = pygame.Surface((width, height))
     surf.fill((255,255,255))
 
+<<<<<<< HEAD
+    text_rect = font.render(
+        text, True, (0,0,0))
+    
+    if text!="sp":
+        surf.blit(text_rect, [width//2-font_size//3.5, height//2-font_size//2])  
+=======
 
     text_rect = font.render(
         text, True, (0,0,0))
@@ -17,6 +28,7 @@ def get_image(width=20,height=20,font_size=10,text=""):
     else:
         assert False
         surf.blit(text_rect, [width//2-font_size, height//2-font_size//2])  
+>>>>>>> parent of cffca65c... git rm -r cached .
     
     image = pygame.surfarray.pixels3d(surf)
     image = image.swapaxes(0, 1)

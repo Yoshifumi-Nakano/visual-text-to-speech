@@ -3,7 +3,11 @@ inflect
 librosa
 matplotlib
 numba
+<<<<<<< HEAD
+numpy==1.20
+=======
 numpy
+>>>>>>> parent of cffca65c... git rm -r cached .
 pypinyin
 pyworld
 scikit-learn
@@ -19,4 +23,10 @@ torch-tb-profiler
 pillow
 opencv-python
 pygame
+<<<<<<< HEAD
 pyopenjtalk
+torch
+torchvision
+=======
+pyopenjtalk
+>>>>>>> parent of cffca65c... git rm -r cached .

@@ -17,8 +17,11 @@ from utils.getimage import get_text_images
 from dataset import TestDataset
 from text import text_to_sequence, symbols
 import pyopenjtalk
+<<<<<<< HEAD
+=======
 from prepare_tg_accent import pp_symbols
 from convert_label import openjtalk2julius
+>>>>>>> parent of cffca65c... git rm -r cached .
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

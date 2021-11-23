@@ -5,7 +5,11 @@ import numpy as np
 
 import transformer.Constants as Constants
 from .Layers import FFTBlock
+<<<<<<< HEAD
+from text.symbols_alphabet import  get_symbols
+=======
 from text.symbols import symbols
+>>>>>>> parent of cffca65c... git rm -r cached .
 
 class NLayerImageCNN(nn.Module):
     def __init__(self,
@@ -78,7 +82,10 @@ class NLayerImageCNN(nn.Module):
             image_slice.append(torch.stack(tensors))
         image_slice=torch.stack(image_slice)
         batch_size, src_len, channels, height, width = image_slice.shape
+<<<<<<< HEAD
+=======
         
+>>>>>>> parent of cffca65c... git rm -r cached .
 
         pixels = image_slice.view(batch_size * src_len, channels, height, width)
 
@@ -121,7 +128,11 @@ class Encoder(nn.Module):
         super(Encoder, self).__init__()
 
         n_position = config["max_seq_len"] + 1
+<<<<<<< HEAD
+        n_src_vocab = len(get_symbols()) + 1
+=======
         n_src_vocab = len(symbols) + 1
+>>>>>>> parent of cffca65c... git rm -r cached .
         d_word_vec = config["transformer"]["encoder_hidden"]
         n_layers = config["transformer"]["encoder_layer"]
         n_head = config["transformer"]["encoder_head"]

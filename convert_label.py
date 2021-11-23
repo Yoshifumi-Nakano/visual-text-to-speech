@@ -45,6 +45,19 @@ class Segment:
         return [f'        intervals [{segmentIndex}]:',
                 f'            xmin = {self.tStart} ',
                 f'            xmax = {self.tEnd} ',
+<<<<<<< HEAD
+                f'            text = "{label}"']
+
+
+
+
+
+def comma2space(p3):
+    if p3 in [" ",""]:
+        return "sp"
+    return p3
+
+=======
                 f'            text = "{label}" ']
 
 
@@ -57,6 +70,7 @@ def openjtalk2julius(p3):
     if p3 == 'pau':
         return 'sp'
     return p3
+>>>>>>> parent of cffca65c... git rm -r cached .
     
 def read_lab(filename): #filename：jsut-lab/basic5000/lab/BASIC5000_0819.lab
     """
@@ -71,10 +85,16 @@ def read_lab(filename): #filename：jsut-lab/basic5000/lab/BASIC5000_0819.lab
         return None
         
     with open(filename, 'r') as f:
+<<<<<<< HEAD
+        labeldata = [line.lower().split(" ") for line in f if line != '']
+        segments = [Segment(tStart=float(line[0]), tEnd=float(line[1]), 
+                            label=comma2space(line[2].replace("\n",""))) for line in labeldata]
+=======
         labeldata = [line.split() for line in f if line != '']
         segments = [Segment(tStart=float(line[0])/10e6, tEnd=float(line[1])/10e6, 
                             label=openjtalk2julius(re.search(r"\-(.*?)\+", line[2]).group(1))) for line in labeldata]
         print("segments",segments)
+>>>>>>> parent of cffca65c... git rm -r cached .
         return SegmentationLabel(segments)
 
 
@@ -164,4 +184,8 @@ if __name__ == '__main__':
             if choosesMora:
                 label = label.by_moras()
             textgridFileName = re.sub(r"\.lab$", ".TextGrid", labFileName)
+<<<<<<< HEAD
             label.to_textgrid(os.path.join(dirPath, textgridFileName))
+=======
+            label.to_textgrid(os.path.join(dirPath, textgridFileName))
+>>>>>>> parent of cffca65c... git rm -r cached .

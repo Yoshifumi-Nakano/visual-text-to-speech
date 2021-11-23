@@ -9,6 +9,11 @@ from torch.utils.data import Dataset
 from utils.getimage import get_voced_images
 
 from text import symbols, text_to_sequence
+<<<<<<< HEAD
+from text.symbols_alphabet import get_symbols
+
+=======
+>>>>>>> parent of cffca65c... git rm -r cached .
 from utils.tools import pad_1D, pad_2D,pad_2D_gray_image
 from utils.preimage import pre_seq
 
@@ -22,7 +27,11 @@ class Dataset(Dataset):
         self.cleaners = preprocess_config["preprocessing"]["text"]["text_cleaners"]
         self.batch_size = train_config["optimizer"]["batch_size"]
         self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
+<<<<<<< HEAD
+        self.symbol_to_id = get_symbols()
+=======
         self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
+>>>>>>> parent of cffca65c... git rm -r cached .
         self.use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
         self.accent_to_id = {'0':0, '[':1, ']':2, '#':3}
         self.sort = sort
@@ -92,6 +101,16 @@ class Dataset(Dataset):
         )
         duration = np.load(duration_path)
 
+<<<<<<< HEAD
+        #load image
+        image_path= os.path.join(
+            self.preprocessed_path,
+            "image",
+            "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
+        )
+        image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
+
+=======
         #load image info
         if self.use_image:
             #load kana transcript
@@ -140,6 +159,7 @@ class Dataset(Dataset):
             
 
             
+>>>>>>> parent of cffca65c... git rm -r cached .
         sample = {
             "id": basename,
             "speaker": speaker_id,
@@ -154,7 +174,10 @@ class Dataset(Dataset):
             sample["accent"] = accent
 
         if self.use_image:
+<<<<<<< HEAD
+=======
             sample["text"]=text_kana
+>>>>>>> parent of cffca65c... git rm -r cached .
             sample["image"]=image
 
 
@@ -340,10 +363,16 @@ class TestDataset(Dataset):
 
         #test batch
         self.data_num=len(self.basename)
+<<<<<<< HEAD
+        self.symbol_to_id = get_symbols()
+        self.batchs=self.get_batch()
+
+=======
         self.batchs=self.get_batch()
 
         self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
 
+>>>>>>> parent of cffca65c... git rm -r cached .
 
     def get_batch(self):
         batchs=[]
@@ -359,12 +388,16 @@ class TestDataset(Dataset):
             raw_texts = [self.raw_text[idx]]
             
             #texts
+<<<<<<< HEAD
+            texts = np.array([[self.symbol_to_id[t] for t in self.text[idx].replace("{", "").replace("}", "").split()]])
+=======
             text_kana_filename="{}_{}.lab".format(speaker, self.basename[idx])
             with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
                 f=f.read()
                 text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
             texts = np.array([text_kana])
 
+>>>>>>> parent of cffca65c... git rm -r cached .
 
             #text lens
             text_lens = np.array([len(texts[0])])
@@ -372,7 +405,11 @@ class TestDataset(Dataset):
             #image
             image_path= os.path.join(
                 self.preprocessed_path,
+<<<<<<< HEAD
+                "image",
+=======
                 "image_kana",
+>>>>>>> parent of cffca65c... git rm -r cached .
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
             )
             image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]

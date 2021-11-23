@@ -27,7 +27,11 @@ def evaluate(model, step, configs, logger=None, vocoder=None):
 
     # Get dataset
     dataset = Dataset(
+<<<<<<< HEAD
+        "val.txt", preprocess_config, train_config, sort=False, drop_last=False
+=======
         "val_openv.txt", preprocess_config, train_config, sort=False, drop_last=False
+>>>>>>> parent of cffca65c... git rm -r cached .
     )
     batch_size = train_config["optimizer"]["batch_size"]
     loader = DataLoader(

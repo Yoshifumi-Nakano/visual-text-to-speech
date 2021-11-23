@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+import csv
+
+with open(, mode='r') as f:
+    lines = f.readlines()
+for line in lines:
+    filename, text = line.split(':')
+    with open('raw_data/JSUT/JSUT/' + filename + '.lab', mode='w') as f:
+        f.write(text.strip('\n'))
+=======
 import glob
 import pandas as pd
 import os
@@ -15,3 +25,4 @@ for transcript in transcript_files:
         filename, text = line.split(':')
         with open('raw_data/JSUT/JSUT/' + filename + '.lab', mode='w') as f:
             f.write(text.strip('\n'))
+>>>>>>> parent of cffca65c... git rm -r cached .
