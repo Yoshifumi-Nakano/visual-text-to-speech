@@ -118,11 +118,8 @@ output*/
 *.npy
 TextGrid/
 hifigan/*.pth.tar
-preprocessed_data/
-<<<<<<< HEAD
 preprocessed_data/*
-=======
->>>>>>> parent of cffca65c... git rm -r cached .
+
 output_kana/
 output_kana_conv1_NoimageNorm/
 jsut_ver1.1.zip
@@ -130,22 +127,16 @@ jsut_ver1.1/
 jsut-lab/
 nohub.out
 experience/
-<<<<<<< HEAD
 utils/ipag00303
 utils/gowun-batang
-=======
-utils/ipag00303/
->>>>>>> parent of cffca65c... git rm -r cached .
+
 nohup.out
 phoneme/
 voced_test/
 submit/
-<<<<<<< HEAD
 utils/gowun-batang
 KSS/
 jecs*
 submit/
 LJSpeech/
-=======
 
->>>>>>> parent of cffca65c... git rm -r cached .
