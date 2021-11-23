@@ -2,7 +2,7 @@ import csv
 import os
 
 check=[]
-with open("LJSpeech/metadata.csv", mode='r') as f:
+with open("LJSpeech/ljspeech/ljspeech/LJSpeech-1.1/metadata.csv", mode='r') as f:
     reader = csv.reader(f,delimiter='\t')
     reader=[r for r in reader]
     for r in reader:
@@ -12,8 +12,7 @@ with open("LJSpeech/metadata.csv", mode='r') as f:
         flg=any(t.isdigit() for t in text)
 
         if flg:
-            check.append(text)
-            os.remove("/home/acd13977bl/GraduationThensis/raw_data/LJSpeech/LJSpeech/"+filename+".wav")
+            os.remove("raw_data/LJSpeech/LJSpeech/"+filename+".wav")
             check.append(filename)
         else:
             with open('raw_data/LJSpeech/LJSpeech/' + filename + '.lab', mode='w') as f:

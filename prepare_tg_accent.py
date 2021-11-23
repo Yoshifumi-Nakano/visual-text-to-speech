@@ -8,8 +8,6 @@ from tqdm import tqdm
 
 from convert_label import read_lab
 
-<<<<<<< HEAD
-=======
 
 # full context label to accent label from ttslearn
 def numeric_feature_by_regex(regex, s):
@@ -68,7 +66,6 @@ def pp_symbols(labels, drop_unvoiced_vowels=True):
     return PP, accent
 
 
->>>>>>> parent of cffca65c... git rm -r cached .
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('lab',type=str,help='path to lab files. this program searchs for .lab files in specified directory and subdirectories')
@@ -92,17 +89,6 @@ if __name__ == '__main__':
     # iter through lab files
     for lab_file in tqdm(lab_files):
         print("lab_file",lab_file)
-<<<<<<< HEAD
-=======
-        if args.with_accent:
-            accent = []
-            with open(lab_file) as f:
-                lines = f.readlines()
-            lab, accent = pp_symbols(lines)
-            with open(ac_dir/ lab_file.with_suffix('.accent').name,mode='w') as f:
-                f.writelines([''.join(accent)])
->>>>>>> parent of cffca65c... git rm -r cached .
-        
         label = read_lab(str(lab_file))
         print(label)
         textgridFilePath = tg_dir/lab_file.with_suffix('.TextGrid').name

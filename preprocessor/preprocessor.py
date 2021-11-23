@@ -289,13 +289,6 @@ class Preprocessor:
         )
 
     def get_alignment(self, tier):
-        sil_phones = ["sil", "sp", "spn", 'silB', 'silE','.',"?"," ","","!"]
-            mel_spectrogram.shape[1],
-            self.remove_outlier(pitch_kana),
-            self.remove_outlier(energy_kana),
-        )
-
-    def get_alignment(self, tier):
         sil_phones = ["sil", "sp", "spn", 'silB', 'silE', '']
 
         phones = []

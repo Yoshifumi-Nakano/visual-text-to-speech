@@ -29,11 +29,7 @@ def main(args, configs):
 
     # define dataset function
     dataset = Dataset(
-<<<<<<< HEAD
         "train.txt", preprocess_config, train_config, sort=True, drop_last=True
-=======
-        "train_openv.txt", preprocess_config, train_config, sort=True, drop_last=True
->>>>>>> parent of cffca65c... git rm -r cached .
     )
 
     # fetch batch data
