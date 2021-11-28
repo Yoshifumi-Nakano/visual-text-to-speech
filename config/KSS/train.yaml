@@ -1,7 +1,7 @@
 path:
-  ckpt_path: "./output_ver14/ckpt/KSS"
-  log_path: "./output_ver14/log/KSS"
-  result_path: "./output_ver14/result/KSS"
+  ckpt_path: "./output_ver27/ckpt/KSS"
+  log_path: "./output_ver27/log/KSS"
+  result_path: "./output_ver27/result/KSS"
 optimizer:
   batch_size: 6
   betas: [0.9, 0.98]

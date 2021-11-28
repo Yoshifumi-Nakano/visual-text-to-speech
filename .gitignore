@@ -131,4 +131,11 @@ nohup.out
 phoneme/
 voced_test/
 submit/
+LJSpeech/
+submit/
+submit/*.lab
+KSS.zip
+preprocessed_data_phoneme/
+preprocessed_data/
+
 

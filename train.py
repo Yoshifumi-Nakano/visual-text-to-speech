@@ -21,15 +21,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 def main(args, configs):
     print("Prepare training ...")
     preprocess_config, model_config, train_config = configs
-
-    # use accent? use image?
-    use_accent = preprocess_config['preprocessing']["accent"]["use_accent"]
-    use_image=preprocess_config['preprocessing']["image"]["use_image"]
     
-
     # define dataset function
     dataset = Dataset(
-        "train_openv.txt", preprocess_config, train_config, sort=True, drop_last=True
+        "train.txt", preprocess_config, train_config, sort=True, drop_last=True
     )
 
     # fetch batch data
@@ -86,15 +81,10 @@ def main(args, configs):
         inner_bar = tqdm(total=len(loader), desc="Epoch {}".format(epoch), position=1)
         for batchs in loader:
             for batch in batchs:
-                batch = to_device(batch, device,use_image,use_accent)
+                batch = to_device(batch, device)
 
                 # Forward
-                if use_accent:
-                    accents = batch[-1]
-                    output = model(*(batch[2:]),accents=accents)
-                else:
-                    output = model(*(batch[2:]))
-
+                output = model(*(batch[2:]))
 
                 # Cal Losson
                 if use_jdit:

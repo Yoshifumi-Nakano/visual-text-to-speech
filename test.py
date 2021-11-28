@@ -17,7 +17,6 @@ from utils.getimage import get_text_images
 from dataset import TestDataset
 from text import text_to_sequence, symbols
 import pyopenjtalk
-from prepare_tg_accent import pp_symbols
 from convert_label import openjtalk2julius
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -27,12 +26,8 @@ def synthesize(model, step, configs, vocoder, batchs, control_values):
     preprocess_config, model_config, train_config = configs
     pitch_control, energy_control, duration_control = control_values
 
-    use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
-    use_image =  preprocess_config["preprocessing"]["image"]["use_image"]
-
-
     for batch in batchs:
-        batch = to_device(batch, device,use_image,use_accent)
+        batch = to_device(batch, device)
         accents = None
 
         with torch.no_grad():

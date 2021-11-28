@@ -20,7 +20,7 @@ transform = transforms.Compose(
 )
 
 #ids,raw_texts,speakers,texts,text_lens,max(text_lens),mels,mel_lens,max(mel_lens),pitches,energies,durations,accents,images
-def to_device(data, device,use_image,use_accent):
+def to_device(data, device):
     (
         ids,
         raw_texts,
@@ -51,17 +51,9 @@ def to_device(data, device,use_image,use_accent):
     if durations is not None:
         durations = torch.from_numpy(durations).long().to(device)
 
-    #画像を使う場合はimageをtensorにするがtext(ひらがなの配列)は使わない
-    if use_image:
-        image=torch.stack([transform(im) for im in image]).to(device)
-    else:
-        torch.from_numpy(texts).long().to(device)
-        image= None
-
-    if use_accent==True:
-        accents = torch.from_numpy(accents).long().to(device)
-    else:
-        accents=None
+    texts=torch.from_numpy(texts).long().to(device)
+    image = None
+    accents = None
     
     return (
             ids,
@@ -144,7 +136,7 @@ def synth_one_sample(targets, predictions, vocoder, model_config, preprocess_con
         os.path.join(preprocess_config["path"]["preprocessed_path"], "stats.json")
     ) as f:
         stats = json.load(f)
-        stats = stats["pitch"][4:8] + stats["energy"][4:6]
+        stats = stats["pitch"] + stats["energy"][:2]
 
     fig = plot_mel(
         [
@@ -199,7 +191,7 @@ def synth_samples(targets, predictions, vocoder, model_config, preprocess_config
             os.path.join(preprocess_config["path"]["preprocessed_path"], "stats.json")
         ) as f:
             stats = json.load(f)
-            stats = stats["pitch"][4:8] + stats["energy"][4:6]
+            stats = stats["pitch"] + stats["energy"][:2]
 
         fig = plot_mel(
             [

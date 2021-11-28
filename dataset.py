@@ -6,11 +6,10 @@ import random
 
 import numpy as np
 from torch.utils.data import Dataset
-from utils.getimage import get_voced_images
 
-from text import symbols, text_to_sequence
-from utils.tools import pad_1D, pad_2D,pad_2D_gray_image
-from utils.preimage import pre_seq
+from text import text_to_sequence
+from utils.tools import pad_1D, pad_2D
+from text.symbols_hu_phoneme import get_symbols
 
 class Dataset(Dataset):
     def __init__(
@@ -21,17 +20,11 @@ class Dataset(Dataset):
         self.preprocessed_path = preprocess_config["path"]["preprocessed_path"]
         self.cleaners = preprocess_config["preprocessing"]["text"]["text_cleaners"]
         self.batch_size = train_config["optimizer"]["batch_size"]
-        self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
-        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
-        self.use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
-        self.accent_to_id = {'0':0, '[':1, ']':2, '#':3}
+
+        self.symbol_to_id = get_symbols()
+
         self.sort = sort
         self.drop_last = drop_last
-
-        #image information
-        self.image_preprocess_width=preprocess_config["preprocessing"]["image"]["width"]
-        self.image_preprocess_height=preprocess_config["preprocessing"]["image"]["height"]
-        self.image_preprocess_fontsize=preprocess_config["preprocessing"]["image"]["font_size"]
 
         #filename equals to "train.txt" in train phase
         self.basename, self.speaker, self.text, self.raw_text = self.process_meta(
@@ -50,16 +43,12 @@ class Dataset(Dataset):
         basename = self.basename[idx]           #BASIC5000_0147
         speaker = self.speaker[idx]             #JSUT 
         speaker_id = self.speaker_map[speaker]  #0
-        raw_text = self.raw_text[idx]           #狼が犬に似ているように、おべっか使いは友達のように見える。
+        raw_text = self.raw_text[idx]   
+        
+        #狼が犬に似ているように、おべっか使いは友達のように見える。
+        phone = np.array([t for t in self.text[idx].replace("{", "").replace("}", "").split()])  #self.text {o o k a m i g a i n u n i n i t e i r u y o o n i sp o b e q k a z u k a i w a t o m o d a ch i n o y o o n i m i e r u}
         phone = np.array([self.symbol_to_id[t] for t in self.text[idx].replace("{", "").replace("}", "").split()])  #self.text {o o k a m i g a i n u n i n i t e i r u y o o n i sp o b e q k a z u k a i w a t o m o d a ch i n o y o o n i m i e r u}
         
-        #accent
-        if self.use_accent:
-            with open(os.path.join(self.preprocessed_path, "accent",basename+ '.accent')) as f:
-                accent = f.read()
-            accent = [self.accent_to_id[t] for t in accent]
-            accent = np.array(accent[:len(phone)])
-
         #load mel
         mel_path = os.path.join(
             self.preprocessed_path,
@@ -92,54 +81,6 @@ class Dataset(Dataset):
         )
         duration = np.load(duration_path)
 
-        #load image info
-        if self.use_image:
-            #load kana transcript
-            text_kana_filename="{}_{}.lab".format(speaker, basename)
-            with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
-                f=f.read()
-                text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
-            # selected_voced=["ざ","ぜ","ぞ","ぢ","ぐ"]
-            # for text in text_kana:
-            #     if text in selected_voced:
-            #         print("text")
-            #         assert False
-                
-            #load pitch kana
-            pitch_path = os.path.join(
-                self.preprocessed_path,
-                "pitch_kana",
-                "{}-pitch-kana-{}.npy".format(speaker, basename),
-            )
-            pitch = np.load(pitch_path)
-
-            #load energy kana
-            energy_path = os.path.join(
-                self.preprocessed_path,
-                "energy_kana",
-                "{}-energy-kana-{}.npy".format(speaker, basename),
-            )
-            energy = np.load(energy_path)
-
-            #load duration kana
-            duration_path = os.path.join(
-                self.preprocessed_path,
-                "duration_kana",
-                "{}-duration-kana-{}.npy".format(speaker, basename),
-            )
-            duration = np.load(duration_path)
-
-            #load image
-            image_path= os.path.join(
-                self.preprocessed_path,
-                "image_kana",
-                "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-            )
-            image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
-
-            
-
-            
         sample = {
             "id": basename,
             "speaker": speaker_id,
@@ -150,13 +91,6 @@ class Dataset(Dataset):
             "energy": energy,
             "duration": duration,
         }
-        if self.use_accent:
-            sample["accent"] = accent
-
-        if self.use_image:
-            sample["text"]=text_kana
-            sample["image"]=image
-
 
         return sample
 
@@ -183,39 +117,22 @@ class Dataset(Dataset):
         speakers = [data[idx]["speaker"] for idx in idxs]       #[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         texts = [data[idx]["text"] for idx in idxs]             #[音素のsymbolのindexの配列]×BatchSize
         raw_texts = [data[idx]["raw_text"] for idx in idxs]     #['最近は、辞令もこわごわ出さざるを得ない。']×BatchSize
-
         mels = [data[idx]["mel"] for idx in idxs]
         pitches = [data[idx]["pitch"] for idx in idxs]
         energies = [data[idx]["energy"] for idx in idxs]
         durations = [data[idx]["duration"] for idx in idxs]
 
-        if self.use_accent:
-            accents = [data[idx]["accent"] for idx in idxs]
-            accents = pad_1D(accents)
-        if self.use_image:
-            images=[data[idx]["image"] for idx in idxs]
-            images=pad_2D_gray_image(images)
-
-
         text_lens = np.array([text.shape[0] for text in texts])
         mel_lens = np.array([mel.shape[0] for mel in mels])
+
         speakers = np.array(speakers)
         texts = pad_1D(texts)
         mels = pad_2D(mels)
         pitches = pad_1D(pitches)
         energies = pad_1D(energies)
         durations = pad_1D(durations)
-        
-        response=[ids,raw_texts,speakers,texts,text_lens,max(text_lens),mels,mel_lens,max(mel_lens),pitches,energies,durations]
-        
-        if self.use_accent:
-            response.append(accents)
-        else:
-            response.append(None)
-        if self.use_image:
-            response.append(images)
-        else:
-            response.append(None)
+
+        response=[ids,raw_texts,speakers,texts,text_lens,max(text_lens),mels,mel_lens,max(mel_lens),pitches,energies,durations,None,None]
 
         return tuple(response)
 
@@ -322,11 +239,6 @@ class TestDataset(Dataset):
             filepath
         )
 
-        #image info
-        self.image_preprocess_width=preprocess_config["preprocessing"]["image"]["width"]
-        self.image_preprocess_height=preprocess_config["preprocessing"]["image"]["height"]
-        self.image_preprocess_fontsize=preprocess_config["preprocessing"]["image"]["font_size"]
-
         #speakers info
         with open(
             os.path.join(
@@ -335,15 +247,10 @@ class TestDataset(Dataset):
         ) as f:
             self.speaker_map = json.load(f)
 
-        #image
-        self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
-
         #test batch
         self.data_num=len(self.basename)
+        self.symbol_to_id = get_symbols()
         self.batchs=self.get_batch()
-
-        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
-
 
     def get_batch(self):
         batchs=[]
@@ -359,25 +266,12 @@ class TestDataset(Dataset):
             raw_texts = [self.raw_text[idx]]
             
             #texts
-            text_kana_filename="{}_{}.lab".format(speaker, self.basename[idx])
-            with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
-                f=f.read()
-                text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
-            texts = np.array([text_kana])
-
+            texts = np.array([[self.symbol_to_id[t] for t in self.text[idx].replace("{", "").replace("}", "").split()]])
 
             #text lens
             text_lens = np.array([len(texts[0])])
 
-            #image
-            image_path= os.path.join(
-                self.preprocessed_path,
-                "image_kana",
-                "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
-            )
-            image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]
-
-            batchs.append((ids, raw_texts, speaker_id, texts, text_lens, max(text_lens),None,None,None,None,None,None,None,image))
+            batchs.append((ids, raw_texts, speaker_id, texts, text_lens, max(text_lens),None,None,None,None,None,None,None,None))
 
         return batchs
 
@@ -438,6 +332,7 @@ class TestVocedDataset(Dataset):
             
             #raw_text
             raw_texts = [self.raw_text[idx]]
+
             
             #texts
             text_kana_filename="{}_{}.lab".format(speaker, self.basename[idx])

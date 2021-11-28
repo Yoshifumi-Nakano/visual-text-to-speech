@@ -39,11 +39,3 @@ vocoder:
   model: "HiFi-GAN" # support 'HiFi-GAN', 'MelGAN'
   speaker: "universal" # support  'LJSpeech', 'universal'
 
-image:
-    use_image: True
-    width: 30
-    height: 30
-    font_size: 15
-    slice_width: 150
-    slice_height: 30
-    stride: 30

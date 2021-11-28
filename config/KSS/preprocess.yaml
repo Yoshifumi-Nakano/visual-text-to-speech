@@ -4,7 +4,7 @@ path:
   corpus_path: "/home/nakata/jsut_ver1.1_original"
   lexicon_path: ""
   raw_path: "./raw_data/KSS"
-  preprocessed_path: "./preprocessed_data/KSS"
+  preprocessed_path: "./preprocessed_data_phoneme/KSS"
 
 preprocessing:
   val_size: 512

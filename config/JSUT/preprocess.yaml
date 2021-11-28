@@ -4,7 +4,7 @@ path:
   corpus_path: "/home/nakata/jsut_ver1.1_original"
   lexicon_path: ""
   raw_path: "./raw_data/JSUT"
-  preprocessed_path: "./preprocessed_data/JSUT"
+  preprocessed_path: "./preprocessed_data_phoneme/JSUT"
 
 preprocessing:
   val_size: 512
@@ -26,18 +26,8 @@ preprocessing:
   pitch:
     feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
     normalization: True
-    image: True
   energy:
     feature: "phoneme_level" # support 'phoneme_level' or 'frame_level'
     normalization: True
-    image: True
   accent:
     use_accent: False
-  image:
-    use_image: True
-    width: 30
-    height: 30
-    font_size: 15
-    slice_width: 150
-    slice_height: 30
-    stride: 30

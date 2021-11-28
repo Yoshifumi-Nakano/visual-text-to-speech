@@ -50,10 +50,6 @@ class Segment:
 
 
 def openjtalk2julius(p3):
-    if p3 in ['A','I','U',"E", "O"]:
-        return p3.lower()
-    if p3 == 'cl':
-        return 'q'
     if p3 == 'pau':
         return 'sp'
     return p3
@@ -72,8 +68,8 @@ def read_lab(filename): #filename：jsut-lab/basic5000/lab/BASIC5000_0819.lab
         
     with open(filename, 'r') as f:
         labeldata = [line.split() for line in f if line != '']
-        segments = [Segment(tStart=float(line[0])/10e6, tEnd=float(line[1])/10e6, 
-                            label=openjtalk2julius(re.search(r"\-(.*?)\+", line[2]).group(1))) for line in labeldata]
+        segments = [Segment(tStart=float(line[0]), tEnd=float(line[1]), 
+                            label=line[2].replace("\n","")) for line in labeldata]
         print("segments",segments)
         return SegmentationLabel(segments)
 
