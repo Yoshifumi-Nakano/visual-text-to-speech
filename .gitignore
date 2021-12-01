@@ -139,4 +139,5 @@ KSS/
 jecs*
 submit/
 LJSpeech/
-
+preprocessed_data_phoneme/
+preprocessed_data/

@@ -78,7 +78,6 @@ class NLayerImageCNN(nn.Module):
             image_slice.append(torch.stack(tensors))
         image_slice=torch.stack(image_slice)
         batch_size, src_len, channels, height, width = image_slice.shape
-
         pixels = image_slice.view(batch_size * src_len, channels, height, width)
 
         # Embed and recast to 3d tensor
