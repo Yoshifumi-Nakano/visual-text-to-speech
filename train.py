@@ -29,7 +29,7 @@ def main(args, configs):
 
     # define dataset function
     dataset = Dataset(
-        "train_openv.txt", preprocess_config, train_config, sort=True, drop_last=True
+        "train_openv_oov_ver2.txt", preprocess_config, train_config, sort=True, drop_last=True
     )
 
     # fetch batch data
