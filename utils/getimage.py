@@ -84,11 +84,11 @@ def get_voced_images(texts,index,width=30,height=30,font_size=15):
     return concated_image
 
 #一つの文字を太文字に変換する
-def get_bold_image(width=20,height=20,font_size=10,text="",flg=False):
+def get_bold_image(width=20,height=20,font_size=10,text="",flg=False,status=0):
     pygame.init()
     font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size)     
-    if flg:
-        font.bold=True
+    
+    
     surf = pygame.Surface((width, height))
     surf.fill((255,255,255))
     
@@ -104,16 +104,25 @@ def get_bold_image(width=20,height=20,font_size=10,text="",flg=False):
     image = pygame.surfarray.pixels3d(surf)
     image = image.swapaxes(0, 1)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    if status==2 and flg:
+        #font.bold=True
+        image[24,:]=0
+    if status==1 and flg:
+        #trans = cv2.getRotationMatrix2D((15,15), -8 , 1)
+        mat = np.array([[1, -0.25, 0], [0, 1, 0]], dtype=np.float32)
+        #アフィン変換
+        image = cv2.warpAffine(image, mat, (30,30),borderValue=(255, 255, 255))
     
     return image
 
 #textの太文字を得る関数
-def get_bold_text_images(texts,flgs,width=20,height=20,font_size=10):
+def get_bold_text_images(texts,flgs,width=20,height=20,font_size=10,status=0):
     sequence=[]
     for i in range(len(texts)):
         text=texts[i]
         flg=flgs[i]
-        image=get_bold_image(width=width,height=height,font_size=font_size,text=text,flg=flg)
+        image=get_bold_image(width=width,height=height,font_size=font_size,text=text,flg=flg,status=status)
         sequence.append(image)
     concated_image=cv2.hconcat(sequence)
     return concated_image

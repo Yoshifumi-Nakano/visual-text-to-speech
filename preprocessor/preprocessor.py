@@ -80,6 +80,11 @@ class Preprocessor:
         os.makedirs((os.path.join(self.out_dir, "duration_kana")), exist_ok=True)
         os.makedirs((os.path.join(self.out_dir,"text_kana")),exist_ok=True)
         os.makedirs((os.path.join(self.out_dir,"image_kana")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_kana_italic")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_kana_underline")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_kana_normal")),exist_ok=True)
+
+
 
         #normalization module
         pitch_scaler = StandardScaler()
@@ -366,8 +371,11 @@ class Preprocessor:
         #save kana image
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
         flgs=get_flg(basename,speaker,[t for t in kanas.replace("{", "").replace("}", "").split()])
-        text_image=get_bold_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs)
-        cv2.imwrite(os.path.join(self.out_dir,"image_kana",iamge_filename),text_image)
+        text_image=get_bold_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=1)
+        cv2.imwrite(os.path.join(self.out_dir,"image_kana_italic",iamge_filename),text_image)
+        text_image=get_bold_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=2)
+        cv2.imwrite(os.path.join(self.out_dir,"image_kana_underline",iamge_filename),text_image)
+
 
         #save normal kana images
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
