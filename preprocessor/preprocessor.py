@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from scipy.io.wavfile import write
 from tqdm import tqdm
 from utils.transform import Phoneme2Kana_ver2,get_emp_index
-from utils.getimage import get_text_images,get_flg,get_bold_text_images
+from utils.getimage import get_text_images,get_flg,get_emp_text_images
 
 
 import audio as Audio
@@ -371,9 +371,13 @@ class Preprocessor:
         #save kana image
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
         flgs=get_flg(basename,speaker,[t for t in kanas.replace("{", "").replace("}", "").split()])
-        text_image=get_bold_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=1)
+
+        #太字、斜体、下線のついたデータセットを作成する
+        text_image=get_emp_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=0)
+        cv2.imwrite(os.path.join(self.out_dir,"image_kana_bold",iamge_filename),text_image)
+        text_image=get_emp_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=1)
         cv2.imwrite(os.path.join(self.out_dir,"image_kana_italic",iamge_filename),text_image)
-        text_image=get_bold_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=2)
+        text_image=get_emp_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=2)
         cv2.imwrite(os.path.join(self.out_dir,"image_kana_underline",iamge_filename),text_image)
 
 

@@ -3,27 +3,21 @@ import pygame
 from utils.transform import Phoneme2Kana_emp
 import numpy as np
 
-
 def get_image(width=20,height=20,font_size=10,text=""):
     pygame.init()
     font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size)     
     surf = pygame.Surface((width, height))
     surf.fill((255,255,255))
-
-
     text_rect = font.render(
         text, True, (0,0,0))
-    
     if len(text)==1:
         surf.blit(text_rect, [width//2-font_size//2, height//2-font_size//2])  
     else:
         assert False
         surf.blit(text_rect, [width//2-font_size, height//2-font_size//2])  
-    
     image = pygame.surfarray.pixels3d(surf)
     image = image.swapaxes(0, 1)
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
     return image
 
 def get_text_images(texts,width=20,height=20,font_size=10):
@@ -31,11 +25,8 @@ def get_text_images(texts,width=20,height=20,font_size=10):
     for text in texts:
         image=get_image(width=width,height=height,font_size=font_size,text=text)
         sequence.append(image)
-    #横に画像をconcatしている
     concated_image=cv2.hconcat(sequence)
     return concated_image
-
-
 
 #存在しない文字に濁点をつけるコード
 def get_VoicedImage(text=""):
@@ -83,11 +74,12 @@ def get_voced_images(texts,index,width=30,height=30,font_size=15):
     concated_image=cv2.hconcat(sequence)
     return concated_image
 
-#一つの文字を太文字に変換する
-def get_bold_image(width=20,height=20,font_size=10,text="",flg=False,status=0):
+#一つの文字を強調文字に変換する
+def get_emp_image(width=20,height=20,font_size=10,text="",flg=False,status=-1):
     pygame.init()
-    font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size)     
-    
+    font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size) 
+    if status==0 and flg:
+        flg.bold=True
     
     surf = pygame.Surface((width, height))
     surf.fill((255,255,255))
@@ -106,23 +98,20 @@ def get_bold_image(width=20,height=20,font_size=10,text="",flg=False,status=0):
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     if status==2 and flg:
-        #font.bold=True
         image[24,:]=0
     if status==1 and flg:
-        #trans = cv2.getRotationMatrix2D((15,15), -8 , 1)
         mat = np.array([[1, -0.25, 0], [0, 1, 0]], dtype=np.float32)
-        #アフィン変換
         image = cv2.warpAffine(image, mat, (30,30),borderValue=(255, 255, 255))
     
     return image
 
-#textの太文字を得る関数
-def get_bold_text_images(texts,flgs,width=20,height=20,font_size=10,status=0):
+#textの強調画像を得る関数
+def get_emp_text_images(texts,flgs,width=20,height=20,font_size=10,status=-1):
     sequence=[]
     for i in range(len(texts)):
         text=texts[i]
         flg=flgs[i]
-        image=get_bold_image(width=width,height=height,font_size=font_size,text=text,flg=flg,status=status)
+        image=get_emp_image(width=width,height=height,font_size=font_size,text=text,flg=flg,status=status)
         sequence.append(image)
     concated_image=cv2.hconcat(sequence)
     return concated_image
