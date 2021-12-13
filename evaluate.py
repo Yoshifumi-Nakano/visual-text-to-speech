@@ -27,7 +27,7 @@ def evaluate(model, step, configs, logger=None, vocoder=None):
 
     # Get dataset
     dataset = Dataset(
-        "val_openv.txt", preprocess_config, train_config, sort=False, drop_last=False
+        "val.txt", preprocess_config, train_config, sort=False, drop_last=False
     )
     batch_size = train_config["optimizer"]["batch_size"]
     loader = DataLoader(
