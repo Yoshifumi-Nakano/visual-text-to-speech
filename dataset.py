@@ -131,14 +131,9 @@ class Dataset(Dataset):
 
             #load image
             rand = np.random.rand()
-            if rand < 0.5:
-                image_folder="image_kana_koruri"
-            else:
-                image_folder="image_kana_aihara"
-
             image_path= os.path.join(
                 self.preprocessed_path,
-                image_folder,
+                "image_kana",
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
             )
             image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
@@ -162,7 +157,6 @@ class Dataset(Dataset):
         if self.use_image:
             sample["text"]=text_kana
             sample["image"]=image
-
 
         return sample
 

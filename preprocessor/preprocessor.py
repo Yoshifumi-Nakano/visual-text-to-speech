@@ -11,7 +11,7 @@ from scipy.interpolate import interp1d
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 from utils.transform import Phoneme2Kana_ver2
-from utils.getimage import get_text_images
+from preprocessor.font_image import get_text_images
 
 
 import audio as Audio
@@ -76,7 +76,8 @@ class Preprocessor:
         os.makedirs((os.path.join(self.out_dir, "energy_kana")), exist_ok=True)
         os.makedirs((os.path.join(self.out_dir, "duration_kana")), exist_ok=True)
         os.makedirs((os.path.join(self.out_dir,"text_kana")),exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir,"image_kana")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_kana_aihara")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_kana_koruri")),exist_ok=True)
 
         #normalization module
         pitch_scaler = StandardScaler()
@@ -86,7 +87,7 @@ class Preprocessor:
 
         # Compute pitch, energy, duration, and mel-spectrogram
         speakers = {}
-        out={"BASIC5000":[],"other":[]}
+        out={"test":[],"other":[]}
         n_frames = 0
         for i, speaker in enumerate(tqdm(os.listdir(self.in_dir))):            #in_dir : ./raw_data/JSUT
             speakers[speaker] = i
@@ -107,8 +108,8 @@ class Preprocessor:
                         info, pitch, energy, n,pitch_kana,energy_kana = ret
 
                     #for test dataset
-                    if basename[:9]=="BASIC5000":
-                        out["BASIC5000"].append(info)
+                    if basename.split("_")[1]=="heijou":
+                        out["test"].append(info)
                     else:
                         out["other"].append(info)
 
@@ -201,9 +202,9 @@ class Preprocessor:
         )
 
         #shufflr test data and other data
-        random.shuffle(out["BASIC5000"])
-        out_test=out["BASIC5000"][:self.test_size]
-        out=out["BASIC5000"][self.test_size:]+out["other"]
+
+        out_test=out["test"]
+        out=out["other"]
         random.shuffle(out)
 
         out = [r for r in out if r is not None]
@@ -227,7 +228,7 @@ class Preprocessor:
     def process_utterance(self, speaker, basename):
         #path info
         wav_path = os.path.join(self.in_dir, speaker, "{}.wav".format(basename))
-        text_path = os.path.join(self.in_dir, speaker, "{}.lab".format(basename))
+
         tg_path = os.path.join(
             self.out_dir, "TextGrid", speaker, "{}.TextGrid".format(basename)
         ) 
@@ -251,8 +252,7 @@ class Preprocessor:
         ].astype(np.float32) 
 
         # Read raw text
-        with open(text_path, "r") as f:
-            raw_text = f.readline().strip("\n")
+        raw_text = kanas.replace("{", "").replace("}", "")
 
         # compute pitch
         pitch, t = pw.dio(
@@ -355,10 +355,24 @@ class Preprocessor:
             f.write(kanas)
 
         #save kana image
-        iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-        text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize)
-        cv2.imwrite(os.path.join(self.out_dir,"image_kana",iamge_filename),text_image)
-        
+        if basename.split("_")[1]=="heijou":
+            iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
+            text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,font_path="./utils/Koruri-20210720/Koruri-Regular.ttf")
+            cv2.imwrite(os.path.join(self.out_dir,"image_kana_koruri",iamge_filename),text_image)
+
+            text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,font_path="./utils/aiharalaisyo/Aiharahudemojikaisho_free304.ttf")
+            cv2.imwrite(os.path.join(self.out_dir,"image_kana_aihara",iamge_filename),text_image)
+        elif basename.split("_")[1]=="yorokobi":
+            iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
+            text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,font_path="./utils/Koruri-20210720/Koruri-Regular.ttf")
+            cv2.imwrite(os.path.join(self.out_dir,"image_kana",iamge_filename),text_image)
+        elif basename.split("_")[1]=="kanashimi":
+            iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
+            text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,font_path="./utils/aiharalaisyo/Aiharahudemojikaisho_free304.ttf")
+            cv2.imwrite(os.path.join(self.out_dir,"image_kana",iamge_filename),text_image)
+        else:
+            print("おかしい",basename)
+            
         return (
             "|".join([basename, speaker, text, raw_text]),
             self.remove_outlier(pitch),

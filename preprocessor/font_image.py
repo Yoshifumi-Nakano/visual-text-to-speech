@@ -38,30 +38,30 @@ def get_text_images(texts,width=20,height=20,font_size=10,font_path=""):
     return concated_image
 
 
-paths = os.listdir("./preprocessed_data/JSUT/text_kana")
-for path in paths:
-    basename=path.split(".")[0][5:]
+# paths = os.listdir("./preprocessed_data/JSUT/text_kana")
+# for path in paths:
+#     basename=path.split(".")[0][5:]
 
-    with open("./preprocessed_data/JSUT/text_kana/"+path) as f:
-        kanas=f.read()
+#     with open("./preprocessed_data/JSUT/text_kana/"+path) as f:
+#         kanas=f.read()
 
-    iamge_filename="JSUT-image-30-30-15-{}.jpg".format(basename)
-    text_image=get_text_images(
-        texts=[t for t in kanas.replace("{", "").replace("}", "").split()],
-        width=30,
-        height=30,
-        font_size=15,
-        font_path="./utils/Koruri-20210720/Koruri-Regular.ttf"
-    )
-    iamge_filename="JSUT-image-30-30-15-{}.jpg".format(basename)
-    cv2.imwrite(os.path.join("./preprocessed_data/JSUT","image_kana_koruri",iamge_filename),text_image)
+#     iamge_filename="JSUT-image-30-30-15-{}.jpg".format(basename)
+#     text_image=get_text_images(
+#         texts=[t for t in kanas.replace("{", "").replace("}", "").split()],
+#         width=30,
+#         height=30,
+#         font_size=15,
+#         font_path="./utils/Koruri-20210720/Koruri-Regular.ttf"
+#     )
+#     iamge_filename="JSUT-image-30-30-15-{}.jpg".format(basename)
+#     cv2.imwrite(os.path.join("./preprocessed_data/JSUT","image_kana_koruri",iamge_filename),text_image)
 
-    text_image=get_text_images(
-        texts=[t for t in kanas.replace("{", "").replace("}", "").split()],
-        width=30,
-        height=30,
-        font_size=15,
-        font_path="./utils/aiharalaisyo/Aiharahudemojikaisho_free304.ttf"
-    )
-    iamge_filename="JSUT-image-30-30-15-{}.jpg".format(basename)
-    cv2.imwrite(os.path.join("./preprocessed_data/JSUT","image_kana_aihara",iamge_filename),text_image)
+#     text_image=get_text_images(
+#         texts=[t for t in kanas.replace("{", "").replace("}", "").split()],
+#         width=30,
+#         height=30,
+#         font_size=15,
+#         font_path="./utils/aiharalaisyo/Aiharahudemojikaisho_free304.ttf"
+#     )
+#     iamge_filename="JSUT-image-30-30-15-{}.jpg".format(basename)
+#     cv2.imwrite(os.path.join("./preprocessed_data/JSUT","image_kana_aihara",iamge_filename),text_image)
