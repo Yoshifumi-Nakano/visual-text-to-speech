@@ -17,8 +17,6 @@ from utils.getimage import get_text_images
 import audio as Audio
 
 
-
-
 class Preprocessor:
     def __init__(self, config):
         self.config = config

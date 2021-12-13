@@ -130,9 +130,15 @@ class Dataset(Dataset):
             duration = np.load(duration_path)
 
             #load image
+            rand = np.random.rand()
+            if rand < 0.5:
+                image_folder="image_kana_koruri"
+            else:
+                image_folder="image_kana_aihara"
+
             image_path= os.path.join(
                 self.preprocessed_path,
-                "image_kana",
+                image_folder,
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
             )
             image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
@@ -372,7 +378,7 @@ class TestDataset(Dataset):
             #image
             image_path= os.path.join(
                 self.preprocessed_path,
-                "image_kana",
+                "image_kana_koruri",
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
             )
             image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]
