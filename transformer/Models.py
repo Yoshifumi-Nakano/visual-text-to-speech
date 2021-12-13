@@ -121,7 +121,7 @@ class Encoder(nn.Module):
         super(Encoder, self).__init__()
 
         n_position = config["max_seq_len"] + 1
-        n_src_vocab = len(symbols) + 1
+        # n_src_vocab = len(symbols) + 1
         d_word_vec = config["transformer"]["encoder_hidden"]
         n_layers = config["transformer"]["encoder_layer"]
         n_head = config["transformer"]["encoder_head"]
@@ -145,7 +145,7 @@ class Encoder(nn.Module):
         self.d_model = d_model
 
         self.src_word_emb = nn.Embedding(
-            n_src_vocab, d_word_vec, padding_idx=Constants.PAD
+            45, d_word_vec, padding_idx=Constants.PAD
         )
 
         self.src_accent_emb = nn.Embedding(
@@ -182,30 +182,31 @@ class Encoder(nn.Module):
         # -- Forward
         if not self.training and src_seq.shape[1] > self.max_seq_len:
             assert False
-            if accents is not None:
-                enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) + get_sinusoid_encoding_table(
-                src_seq.shape[1], self.d_model
-                )[: src_seq.shape[1], :].unsqueeze(0).expand(batch_size, -1, -1).to(
-                    src_seq.device
-                )
-            else:
-                enc_output = self.src_word_emb(src_seq) + get_sinusoid_encoding_table(
-                src_seq.shape[1], self.d_model
-                )[: src_seq.shape[1], :].unsqueeze(0).expand(batch_size, -1, -1).to(
-                    src_seq.device
-                )
+            # if accents is not None:
+            #     enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) + get_sinusoid_encoding_table(
+            #     src_seq.shape[1], self.d_model
+            #     )[: src_seq.shape[1], :].unsqueeze(0).expand(batch_size, -1, -1).to(
+            #         src_seq.device
+            #     )
+            # else:
+            #     enc_output = self.src_word_emb(src_seq) + get_sinusoid_encoding_table(
+            #     src_seq.shape[1], self.d_model
+            #     )[: src_seq.shape[1], :].unsqueeze(0).expand(batch_size, -1, -1).to(
+            #         src_seq.device
+            #     )
 
         else:
             if accents is not None:
-                enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) +self.position_enc[
-                    :, :max_len, :
-                ].expand(batch_size, -1, -1)
+                assert False
+                # enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) +self.position_enc[
+                #     :, :max_len, :
+                # ].expand(batch_size, -1, -1)
             else:
                 if images is None:
                     assert False
-                    enc_output = self.src_word_emb(src_seq) +self.position_enc[
-                        :, :max_len, :
-                    ].expand(batch_size, -1, -1)
+                    # enc_output = self.src_word_emb(src_seq) +self.position_enc[
+                    #     :, :max_len, :
+                    # ].expand(batch_size, -1, -1)
                 else:
                     enc_output = self.NLayerImgageCNN(images) +self.position_enc[
                         :, :max_len, :

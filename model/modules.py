@@ -42,9 +42,9 @@ class VarianceAdaptor(nn.Module):
             os.path.join(preprocess_config["path"]["preprocessed_path"], "stats.json")
         ) as f:
             stats = json.load(f)
-            pitch_min, pitch_max = stats["pitch"][4:6]
+            pitch_min, pitch_max = stats["pitch"][:2]
             print("pitch_min, pitch_max",pitch_min, pitch_max)
-            energy_min, energy_max = stats["energy"][4:6]
+            energy_min, energy_max = stats["energy"][:2]
             print("energy_min, energy_max",energy_min, energy_max)
 
         if pitch_quantization == "log":

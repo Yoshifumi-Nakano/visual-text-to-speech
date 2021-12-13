@@ -11,8 +11,8 @@ from scipy.interpolate import interp1d
 from sklearn.preprocessing import StandardScaler
 from scipy.io.wavfile import write
 from tqdm import tqdm
-from utils.transform import Phoneme2Kana_ver2,get_emp_index
-from utils.getimage import get_text_images,get_flg,get_emp_text_images
+from utils.transform import get_emp_index_en
+from utils.getimage import get_text_images,get_emp_text_images
 
 
 import audio as Audio
@@ -42,14 +42,12 @@ class Preprocessor:
         self.pitch_phoneme_averaging = (
             config["preprocessing"]["pitch"]["feature"] == "phoneme_level"
         )
-        self.pitch_kana_averaging=config["preprocessing"]["pitch"]["image"]
         self.pitch_normalization = config["preprocessing"]["pitch"]["normalization"]
 
         #energy info
         self.energy_phoneme_averaging = (
             config["preprocessing"]["energy"]["feature"] == "phoneme_level"
         )
-        self.energy_kana_averaging=config["preprocessing"]["energy"]["image"]
         self.energy_normalization = config["preprocessing"]["energy"]["normalization"]
 
         #STFT info
@@ -75,22 +73,16 @@ class Preprocessor:
         os.makedirs((os.path.join(self.out_dir, "pitch")), exist_ok=True)
         os.makedirs((os.path.join(self.out_dir, "energy")), exist_ok=True)
         os.makedirs((os.path.join(self.out_dir, "duration")), exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir, "pitch_kana")), exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir, "energy_kana")), exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir, "duration_kana")), exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir,"text_kana")),exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir,"image_kana")),exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir,"image_kana_italic")),exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir,"image_kana_underline")),exist_ok=True)
-        os.makedirs((os.path.join(self.out_dir,"image_kana_normal")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_italic")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_underline")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_normal")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_bold")),exist_ok=True)
 
 
 
         #normalization module
         pitch_scaler = StandardScaler()
         energy_scaler = StandardScaler()
-        pitch_kana_scaler=StandardScaler()
-        energy_kana_scaler=StandardScaler()
 
         # Compute pitch, energy, duration, and mel-spectrogram
         speakers = {}
@@ -112,7 +104,7 @@ class Preprocessor:
                     if ret is None:
                         continue
                     else:
-                        info, pitch, energy, n,pitch_kana,energy_kana = ret
+                        info, pitch, energy, n = ret
 
                     out.append(info)
 
@@ -123,50 +115,29 @@ class Preprocessor:
                     pitch_scaler.partial_fit(pitch.reshape((-1, 1)))
                 if len(energy) > 0:
                     energy_scaler.partial_fit(energy.reshape((-1, 1)))
-                if len(pitch_kana)>0:
-                    pitch_kana_scaler.partial_fit(pitch_kana.reshape((-1, 1)))
-                if len(energy_kana)>0:
-                    energy_kana_scaler.partial_fit(energy_kana.reshape((-1, 1)))
-
+                
                 n_frames += n
 
         # Perform normalization if necessary
         if self.pitch_normalization:
             pitch_mean = pitch_scaler.mean_[0]
-            pitch_kana_mean = pitch_kana_scaler.mean_[0]
-
             pitch_std = pitch_scaler.scale_[0]
-            pitch_kana_std = pitch_kana_scaler.scale_[0]
         else:
             pitch_mean = 0
             pitch_std = 1
-            pitch_kana_mean=0
-            pitch_kana_std=1
             
         if self.energy_normalization:
             energy_mean = energy_scaler.mean_[0]
-            energy_kana_mean = energy_kana_scaler.mean_[0]
-
             energy_std = energy_scaler.scale_[0]
-            energy_kana_std = energy_kana_scaler.scale_[0]
         else:
             energy_mean = 0
-            energy_kana_mean = 0
             energy_std = 1
-            energy_kana_std=1
 
         pitch_min, pitch_max = self.normalize(
             os.path.join(self.out_dir, "pitch"), pitch_mean, pitch_std
         )
         energy_min, energy_max = self.normalize(
             os.path.join(self.out_dir, "energy"), energy_mean, energy_std
-        )
-
-        pitch_kana_min,pitch_kana_max=self.normalize(
-            os.path.join(self.out_dir, "pitch_kana"), pitch_kana_mean, pitch_kana_std
-        )
-        energy_kana_min, energy_kana_max = self.normalize(
-            os.path.join(self.out_dir, "energy_kana"), energy_kana_mean, energy_kana_std
         )
 
         # Save files
@@ -180,20 +151,12 @@ class Preprocessor:
                     float(pitch_max),
                     float(pitch_mean),
                     float(pitch_std),
-                    float(pitch_kana_min),
-                    float(pitch_kana_max),
-                    float(pitch_kana_mean),
-                    float(pitch_kana_std),
                 ],
                 "energy": [
                     float(energy_min),
                     float(energy_max),
                     float(energy_mean),
                     float(energy_std),
-                    float(energy_kana_min),
-                    float(energy_kana_max),
-                    float(energy_kana_mean),
-                    float(energy_kana_std),
                 ],
             }
             f.write(json.dumps(stats))
@@ -208,18 +171,18 @@ class Preprocessor:
         random.shuffle(out)
         out = [r for r in out if r is not None]
 
-        # write metadata
-        # with open(os.path.join(self.out_dir, "val.txt"), "w", encoding="utf-8") as f:
-        #     for m in out[: self.val_size]:
-        #         f.write(m + "\n")
+        #write metadata
+        with open(os.path.join(self.out_dir, "val.txt"), "w", encoding="utf-8") as f:
+            for m in out[: self.val_size]:
+                f.write(m + "\n")
 
-        # with open(os.path.join(self.out_dir, "test.txt"), "w", encoding="utf-8") as f:
-        #     for m in out[self.val_size:self.val_size+self.test_size]:
-        #         f.write(m + "\n")
+        with open(os.path.join(self.out_dir, "test.txt"), "w", encoding="utf-8") as f:
+            for m in out[self.val_size:self.val_size+self.test_size]:
+                f.write(m + "\n")
 
-        # with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
-        #     for m in out[self.val_size+self.test_size:]:
-        #         f.write(m + "\n")
+        with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
+            for m in out[self.val_size+self.test_size:]:
+                f.write(m + "\n")
 
         return out
 
@@ -233,11 +196,11 @@ class Preprocessor:
 
         # get alignments
         textgrid = tgt.io.read_textgrid(tg_path)
-        phone, duration, start, end,kanas,duration_kana,start_emp,end_emp = self.get_alignment(
+
+        phone, duration, start, end,start_emp,end_emp,flgs = self.get_alignment(
             textgrid.get_tier_by_name("phones"),speaker,basename
         )
         text = "{" + " ".join(phone) + "}"        #text {m i z u o m a r e e sh i a k a r a k a w a n a k u t e w a n a r a n a i n o d e s u}
-        kanas = "{" + " ".join(kanas) + "}"
 
 
         if start >= end:
@@ -252,7 +215,7 @@ class Preprocessor:
         wav=wav.tolist()
         for i in range(len(wav)):
             if i<start_emp or i>end_emp:
-                wav[i]=wav[i]/2
+                wav[i]=wav[i]*0.75
         wav=np.array(wav)
 
         #音声がある部分のみ切り取る
@@ -261,7 +224,7 @@ class Preprocessor:
         ].astype(np.float32) 
 
         #音声を保存
-        write("test/"+basename+".wav", self.sampling_rate, wav)
+        write("test_emp/"+basename+".wav", self.sampling_rate, wav)
 
 
         # Read raw text
@@ -295,17 +258,6 @@ class Preprocessor:
         pitch = interp_fn(np.arange(0, len(pitch)))
 
         # average pitch by input 
-        if self.pitch_kana_averaging:
-            pos = 0
-            pitch_kana=[0]*len(duration_kana)
-
-            for i, d in enumerate(duration_kana):
-                if d > 0:
-                    pitch_kana[i] = np.mean(pitch[pos : pos + d])
-                else:
-                    pitch_kana[i] = 0
-                pos += d
-            pitch_kana = pitch_kana[: len(duration_kana)]
         if self.pitch_phoneme_averaging:
             pos = 0
             for i, d in enumerate(duration):
@@ -316,17 +268,7 @@ class Preprocessor:
                 pos += d
             pitch = pitch[: len(duration)]
 
-         # average energy by input 
-        if self.energy_kana_averaging:
-            pos = 0
-            energy_kana=[0]*len(duration_kana)
-            for i, d in enumerate(duration_kana):
-                if d > 0:
-                    energy_kana[i] = np.mean(energy[pos : pos + d])
-                else:
-                    energy_kana[i] = 0
-                pos += d
-            energy_kana = energy_kana[: len(duration_kana)]
+        # average energy by input 
         if self.energy_phoneme_averaging:
             pos = 0
             for i, d in enumerate(duration):
@@ -341,20 +283,13 @@ class Preprocessor:
         dur_filename = "{}-duration-{}.npy".format(speaker, basename)
         np.save(os.path.join(self.out_dir, "duration", dur_filename), duration)
 
-        dur_kana_filename = "{}-duration-kana-{}.npy".format(speaker, basename)
-        np.save(os.path.join(self.out_dir, "duration_kana", dur_kana_filename), duration_kana)
-
         # save pitch
         pitch_filename = "{}-pitch-{}.npy".format(speaker, basename)
         np.save(os.path.join(self.out_dir, "pitch", pitch_filename), pitch)
-        pitch_kana_filename="{}-pitch-kana-{}.npy".format(speaker, basename)
-        np.save(os.path.join(self.out_dir, "pitch_kana", pitch_kana_filename), pitch_kana)
 
         # save duration
         energy_filename = "{}-energy-{}.npy".format(speaker, basename)
         np.save(os.path.join(self.out_dir, "energy", energy_filename), energy)
-        energy_kana_filename = "{}-energy-kana-{}.npy".format(speaker, basename)
-        np.save(os.path.join(self.out_dir, "energy_kana", energy_kana_filename), energy_kana)
 
         # save mel
         mel_filename = "{}-mel-{}.npy".format(speaker, basename)
@@ -363,37 +298,29 @@ class Preprocessor:
             mel_spectrogram.T,
         )
 
-        #save kana transcript
-        kana_filename="{}_{}.lab".format(speaker, basename)
-        with open(os.path.join(self.out_dir,"text_kana",kana_filename), mode='w') as f:
-            f.write(kanas)
-
-        #save kana image
+        #save image
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-        flgs=get_flg(basename,speaker,[t for t in kanas.replace("{", "").replace("}", "").split()])
+
 
         #太字、斜体、下線のついたデータセットを作成する
-        text_image=get_emp_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=0)
-        cv2.imwrite(os.path.join(self.out_dir,"image_kana_bold",iamge_filename),text_image)
-        text_image=get_emp_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=1)
-        cv2.imwrite(os.path.join(self.out_dir,"image_kana_italic",iamge_filename),text_image)
-        text_image=get_emp_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=2)
-        cv2.imwrite(os.path.join(self.out_dir,"image_kana_underline",iamge_filename),text_image)
+        text_image=get_emp_text_images(texts=[t for t in text.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=0)
+        cv2.imwrite(os.path.join(self.out_dir,"image_bold",iamge_filename),text_image)
+        text_image=get_emp_text_images(texts=[t for t in text.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=1)
+        cv2.imwrite(os.path.join(self.out_dir,"image_italic",iamge_filename),text_image)
+        text_image=get_emp_text_images(texts=[t for t in text.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,flgs=flgs,status=2)
+        cv2.imwrite(os.path.join(self.out_dir,"image_underline",iamge_filename),text_image)
 
 
-        #save normal kana images
+        #save normal images
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-        text_image=get_text_images(texts=[t for t in kanas.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize)
-        cv2.imwrite(os.path.join(self.out_dir,"image_kana_normal",iamge_filename),text_image)
-
+        text_image=get_text_images(texts=[t for t in text.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize)
+        cv2.imwrite(os.path.join(self.out_dir,"image_normal",iamge_filename),text_image)
         
         return (
             "|".join([basename, speaker, text, raw_text]),
             self.remove_outlier(pitch),
             self.remove_outlier(energy),
             mel_spectrogram.shape[1],
-            self.remove_outlier(pitch_kana),
-            self.remove_outlier(energy_kana),
         )
 
     def get_alignment(self, tier,speaker,basename):
@@ -406,19 +333,21 @@ class Preprocessor:
         end_idx = 0
         
         #音素の中で強調するのが何番目から何番目かをcheck
-        left,right=get_emp_index(basename,speaker)
-
+        left,right,phoneme_validation=get_emp_index_en(basename)
+        flgs=[]
         
         cnt=0
+        check=[]
         for t in tier._objects:
             s, e, p = t.start_time, t.end_time, t.text
+            check.append(p)
 
-            #強調が始まる時間と終わる時間を調べる
             if cnt==left:
                 start_emp=s
             if cnt==right:
                 end_emp=e
             cnt+=1
+            
 
 
             # find phone and start_time that are not silent
@@ -443,21 +372,26 @@ class Preprocessor:
                     - np.round(s * self.sampling_rate / self.hop_length)
                 )
             )
+            
+            #強調が始まる時間と終わる時間を調べる
+            if left<=cnt-1 and cnt-1<=right:
+                flgs.append(True)
+            else:
+                flgs.append(False)
 
+            
+        assert len(phones)==len(flgs)
 
         # delete last sp
         phones = phones[:end_idx]
         durations = durations[:end_idx]
-        
-        # transform from phone duration to image duration 
-        kanas,durations_kana=Phoneme2Kana_ver2(phones,durations) 
+        flgs=flgs[:end_idx]
 
         # test code
         assert len(phones) == len(durations)
-        assert len(kanas) == len(durations_kana)
-        assert sum(durations) == sum(durations_kana)
+        assert check == phoneme_validation
 
-        return phones, durations, start_time, end_time,kanas,durations_kana,start_emp,end_emp
+        return phones, durations, start_time, end_time,start_emp,end_emp,flgs
 
     def remove_outlier(self, values):
         values = np.array(values)

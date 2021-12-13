@@ -370,6 +370,54 @@ def get_emp_index(basename,speaker):
     assert left!=-1 and right!=-1 and left<right
     return left,right
 
+#音素列から強調している区間を見つける
+def get_emp_index_en(basename):
+    #音素列を取得 /home/sarulab/yoshifumi_nakano/GraduationThensis/raw_data/JECS_EN/JECS_EN
+    with open("raw_data/JECS_EN/JECS_EN/"+basename+".lab","r") as f:
+        f=f.read()
+        phoneme=list(f)[1:]
+    for i in range(len(phoneme)):
+        phoneme[i]=comma2space(phoneme[i].lower())
+    phoneme=["sil"]+phoneme+["sil"]
+
+    phoneme_=[]
+    for i in range(1,len(phoneme)):
+        now=phoneme[i]
+        past=phoneme[i-1]
+        if now=="sp" and past==",":
+            continue
+        if now=="sp" and past==".":
+            continue
+        if now=="～" and past=="sp":
+            continue
+
+        phoneme_.append(now)
+        
+        
+
+    phoneme=phoneme_
+    phoneme=["sil"]+phoneme
+
+    left=-1
+    right=-1
+    for i in range(len(phoneme)):
+        if phoneme[i]=="*":
+            left=i
+            break
+    for i in range(len(phoneme)-1,-1,-1):
+        if phoneme[i]=="*":
+            right=i-2
+            break
+    assert left!=-1 and right!=-1 and left<right
+    
+    p=[]
+    for ph in phoneme:
+        if ph!="*":
+            p.append(ph)
+    return left,right,p
+
+
+
 
 def openjtalk2julius(p3):
     if p3 in ['A','I','U',"E", "O"]:
@@ -380,6 +428,16 @@ def openjtalk2julius(p3):
         return 'sp'
     return p3
 
+def comma2space(p3):
+    if p3 in [" ","","　"]:
+        return "sp"
+    return p3
+
+paths=["000","001","002","003","004","005","006","007","008","009"]
+for path in paths:
+    path_="JE_EMPH"+path+"_EN"
+    print(get_emp_index_en(path_))
+
 
 # phoneme=['ny', 'i', 'u', 'n', 'i', 'y', 'o', 'N', 'k', 'a', 'i', 'sp', 'f', 'u', 'r', 'a', 'N', 's', 'u', 'n', 'o', 'j', 'u', 'gy', 'o', 'o', 'g', 'a', 'a', 'r', 'i', 'm', 'a', 's', 'u'] 
 # duration=[17, 5, 3, 6, 4, 6, 7, 5, 7, 11, 5, 3, 8, 3, 5, 5, 3, 12, 3, 3, 4, 10, 2, 8, 5, 6, 6, 2, 8, 4, 4, 7, 6, 17, 2]
@@ -387,9 +445,9 @@ def openjtalk2julius(p3):
 # paths=os.listdir("phoneme/JECS/Emp")
 # for path in paths:
 #     get_emp_index(path[:-4],"JECS")
-    # with open("phoneme/JECS/Emp/"+path,"r") as f:
-    #     f=f.read()
-    #     phoneme=f.split(" ")
-    #     kana=Phoneme2Kana_emp(phoneme)
-    #     print(kana)
+#     with open("phoneme/JECS/Emp/"+path,"r") as f:
+#         f=f.read()
+#         phoneme=f.split(" ")
+#         kana=Phoneme2Kana_emp(phoneme)
+#         print(kana)
 

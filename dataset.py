@@ -9,6 +9,8 @@ from torch.utils.data import Dataset
 from utils.getimage import get_voced_images
 
 from text import symbols, text_to_sequence
+from text.symbols_alphabet import get_symbols
+
 from utils.tools import pad_1D, pad_2D,pad_2D_gray_image
 from utils.preimage import pre_seq
 
@@ -22,7 +24,6 @@ class Dataset(Dataset):
         self.cleaners = preprocess_config["preprocessing"]["text"]["text_cleaners"]
         self.batch_size = train_config["optimizer"]["batch_size"]
         self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
-        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
         self.use_accent = preprocess_config["preprocessing"]["accent"]["use_accent"]
         self.accent_to_id = {'0':0, '[':1, ']':2, '#':3}
         self.sort = sort
@@ -51,7 +52,7 @@ class Dataset(Dataset):
         speaker = self.speaker[idx]             #JSUT 
         speaker_id = self.speaker_map[speaker]  #0
         raw_text = self.raw_text[idx]           #狼が犬に似ているように、おべっか使いは友達のように見える。
-        phone = np.array([self.symbol_to_id[t] for t in self.text[idx].replace("{", "").replace("}", "").split()])  #self.text {o o k a m i g a i n u n i n i t e i r u y o o n i sp o b e q k a z u k a i w a t o m o d a ch i n o y o o n i m i e r u}
+        phone = np.array([t for t in self.text[idx].replace("{", "").replace("}", "").split()])  #self.text {o o k a m i g a i n u n i n i t e i r u y o o n i sp o b e q k a z u k a i w a t o m o d a ch i n o y o o n i m i e r u}
         
         #accent
         if self.use_accent:
@@ -92,49 +93,13 @@ class Dataset(Dataset):
         )
         duration = np.load(duration_path)
 
-        #load image info
-        if self.use_image:
-            #load kana transcript
-            text_kana_filename="{}_{}.lab".format(speaker, basename)
-            with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
-                f=f.read()
-                text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
-            
-            #load pitch kana
-            pitch_path = os.path.join(
-                self.preprocessed_path,
-                "pitch_kana",
-                "{}-pitch-kana-{}.npy".format(speaker, basename),
-            )
-            pitch = np.load(pitch_path)
-
-            #load energy kana
-            energy_path = os.path.join(
-                self.preprocessed_path,
-                "energy_kana",
-                "{}-energy-kana-{}.npy".format(speaker, basename),
-            )
-            energy = np.load(energy_path)
-
-            #load duration kana
-            duration_path = os.path.join(
-                self.preprocessed_path,
-                "duration_kana",
-                "{}-duration-kana-{}.npy".format(speaker, basename),
-            )
-            duration = np.load(duration_path)
-
-            #load image
-            image_path= os.path.join(
-                self.preprocessed_path,
-                "image_kana_italic",
-                "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-            )
-            image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
-
-            
-
-            
+        #load image
+        image_path= os.path.join(
+            self.preprocessed_path,
+            "image_underline",
+            "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
+        )
+        image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
         sample = {
             "id": basename,
             "speaker": speaker_id,
@@ -149,7 +114,6 @@ class Dataset(Dataset):
             sample["accent"] = accent
 
         if self.use_image:
-            sample["text"]=text_kana
             sample["image"]=image
 
 
@@ -337,9 +301,6 @@ class TestDataset(Dataset):
         self.data_num=len(self.basename)
         self.batchs=self.get_batch()
 
-        self.symbol_to_id = {s: i for i, s in enumerate(symbols)}
-
-
     def get_batch(self):
         batchs=[]
         for idx in range(self.data_num):
@@ -354,11 +315,7 @@ class TestDataset(Dataset):
             raw_texts = [self.raw_text[idx]]
             
             #texts
-            text_kana_filename="{}_{}.lab".format(speaker, self.basename[idx])
-            with open(os.path.join(self.preprocessed_path, "text_kana",text_kana_filename), "r", encoding="utf-8") as f:
-                f=f.read()
-                text_kana=np.array([t for t in f.replace("{", "").replace("}", "").split()])
-            texts = np.array([text_kana])
+            texts = np.array([[t for t in self.text[idx].replace("{", "").replace("}", "").split()]])
 
 
             #text lens
@@ -367,7 +324,7 @@ class TestDataset(Dataset):
             #image
             image_path= os.path.join(
                 self.preprocessed_path,
-                "image_kana_italic",
+                "image_normal",
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
             )
             image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]
@@ -504,58 +461,58 @@ class TestVocedDataset(Dataset):
 
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # Test
-    import torch
-    import yaml
-    from torch.utils.data import DataLoader
-    from utils.utils import to_device
+    # import torch
+    # import yaml
+    # from torch.utils.data import DataLoader
+    # from utils.utils import to_device
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    preprocess_config = yaml.load(
-        open("./config/LJSpeech/preprocess.yaml", "r"), Loader=yaml.FullLoader
-    )
-    train_config = yaml.load(
-        open("./config/LJSpeech/train.yaml", "r"), Loader=yaml.FullLoader
-    )
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # preprocess_config = yaml.load(
+    #     open("./config/LJSpeech/preprocess.yaml", "r"), Loader=yaml.FullLoader
+    # )
+    # train_config = yaml.load(
+    #     open("./config/LJSpeech/train.yaml", "r"), Loader=yaml.FullLoader
+    # )
 
-    train_dataset = Dataset(
-        "train.txt", preprocess_config, train_config, sort=True, drop_last=True
-    )
-    val_dataset = Dataset(
-        "val.txt", preprocess_config, train_config, sort=False, drop_last=False
-    )
-    train_loader = DataLoader(
-        train_dataset,
-        batch_size=train_config["optimizer"]["batch_size"] * 4,
-        shuffle=True,
-        collate_fn=train_dataset.collate_fn,
-    )
-    val_loader = DataLoader(
-        val_dataset,
-        batch_size=train_config["optimizer"]["batch_size"],
-        shuffle=False,
-        collate_fn=val_dataset.collate_fn,
-    )
+    # train_dataset = Dataset(
+    #     "train.txt", preprocess_config, train_config, sort=True, drop_last=True
+    # )
+    # val_dataset = Dataset(
+    #     "val.txt", preprocess_config, train_config, sort=False, drop_last=False
+    # )
+    # train_loader = DataLoader(
+    #     train_dataset,
+    #     batch_size=train_config["optimizer"]["batch_size"] * 4,
+    #     shuffle=True,
+    #     collate_fn=train_dataset.collate_fn,
+    # )
+    # val_loader = DataLoader(
+    #     val_dataset,
+    #     batch_size=train_config["optimizer"]["batch_size"],
+    #     shuffle=False,
+    #     collate_fn=val_dataset.collate_fn,
+    # )
 
-    n_batch = 0
-    for batchs in train_loader:
-        for batch in batchs:
-            to_device(batch, device)
-            n_batch += 1
-    print(
-        "Training set  with size {} is composed of {} batches.".format(
-            len(train_dataset), n_batch
-        )
-    )
+    # n_batch = 0
+    # for batchs in train_loader:
+    #     for batch in batchs:
+    #         to_device(batch, device)
+    #         n_batch += 1
+    # print(
+    #     "Training set  with size {} is composed of {} batches.".format(
+    #         len(train_dataset), n_batch
+    #     )
+    # )
 
-    n_batch = 0
-    for batchs in val_loader:
-        for batch in batchs:
-            to_device(batch, device)
-            n_batch += 1
-    print(
-        "Validation set  with size {} is composed of {} batches.".format(
-            len(val_dataset), n_batch
-        )
-    )
+    # n_batch = 0
+    # for batchs in val_loader:
+    #     for batch in batchs:
+    #         to_device(batch, device)
+    #         n_batch += 1
+    # print(
+    #     "Validation set  with size {} is composed of {} batches.".format(
+    #         len(val_dataset), n_batch
+    #     )
+    # )

@@ -3,21 +3,22 @@ import pygame
 from utils.transform import Phoneme2Kana_emp
 import numpy as np
 
-def get_image(width=20,height=20,font_size=10,text=""):
+def get_image(width=30,height=30,font_size=20,text=""):
     pygame.init()
     font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size)     
     surf = pygame.Surface((width, height))
     surf.fill((255,255,255))
+
     text_rect = font.render(
         text, True, (0,0,0))
-    if len(text)==1:
-        surf.blit(text_rect, [width//2-font_size//2, height//2-font_size//2])  
-    else:
-        assert False
-        surf.blit(text_rect, [width//2-font_size, height//2-font_size//2])  
+    
+    if text!="sp":
+        surf.blit(text_rect, [width//2-font_size//3.5, height//2-font_size//2])  
+
+    
     image = pygame.surfarray.pixels3d(surf)
     image = image.swapaxes(0, 1)
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     return image
 
 def get_text_images(texts,width=20,height=20,font_size=10):
@@ -79,7 +80,7 @@ def get_emp_image(width=20,height=20,font_size=10,text="",flg=False,status=-1):
     pygame.init()
     font = pygame.font.Font("./utils/ipag00303/ipag.ttf", font_size) 
     if status==0 and flg:
-        flg.bold=True
+        font.bold=True
     
     surf = pygame.Surface((width, height))
     surf.fill((255,255,255))
@@ -87,18 +88,14 @@ def get_emp_image(width=20,height=20,font_size=10,text="",flg=False,status=-1):
     text_rect = font.render(
         text, True, (0,0,0))
     
-    if len(text)==1:
-        surf.blit(text_rect, [width//2-font_size//2, height//2-font_size//2])  
-    else:
-        assert False
-        surf.blit(text_rect, [width//2-font_size, height//2-font_size//2])  
-    
+    if text!="sp":
+        surf.blit(text_rect, [width//2-font_size//3.5, height//2-font_size//2])
     image = pygame.surfarray.pixels3d(surf)
     image = image.swapaxes(0, 1)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     if status==2 and flg:
-        image[24,:]=0
+        image[25,:]=0
     if status==1 and flg:
         mat = np.array([[1, -0.25, 0], [0, 1, 0]], dtype=np.float32)
         image = cv2.warpAffine(image, mat, (30,30),borderValue=(255, 255, 255))
