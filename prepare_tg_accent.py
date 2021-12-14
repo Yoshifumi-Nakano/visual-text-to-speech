@@ -74,7 +74,7 @@ if __name__ == '__main__':
     parser.add_argument('--with_accent', type=bool,help='whether you want accent labels or not')
 
     args = parser.parse_args()
-    for path_ in ['**/Naru_heijou_*.lab','**/Naru_kanashimi_*.lab','**/Naru_yorokobi_*.lab']:
+    for path_ in ['**/Shinobu_heijou_*.lab','**/Shinobu_kanashimi_*.lab','**/Shinobu_yorokobi_*.lab']:
         lab_files = pathlib.Path(args.lab).glob(path_)
         print("lab_files",lab_files)
 
