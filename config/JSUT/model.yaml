@@ -31,7 +31,7 @@ jdit:
 #   n_style_token: 10
 #   attn_head: 4
 
-multi_speaker: False
+multi_speaker: True
 
 max_seq_len: 1000
 

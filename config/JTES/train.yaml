@@ -1,8 +1,8 @@
 path:
-  ckpt_path: "./output_ver40/ckpt/JTES"
-  log_path: "./output_ver40/log/JTES"
-  result_path: "./output_ver40/result/JTES/500000/koruri"
-  pre_model_path: "./output_ver40/ckpt/JTES"
+  ckpt_path: "./output_ver42/ckpt/JTES"
+  log_path: "./output_ver42/log/JTES"
+  result_path: "./output_ver42/result/JTES/600000shinobu/koruri"
+  pre_model_path: "./output_ver42/ckpt/JTES"
 optimizer:
   batch_size: 6
   betas: [0.9, 0.98]

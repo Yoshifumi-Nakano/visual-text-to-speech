@@ -197,6 +197,7 @@ class Encoder(nn.Module):
 
         else:
             if accents is not None:
+                assert False
                 enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) +self.position_enc[
                     :, :max_len, :
                 ].expand(batch_size, -1, -1)

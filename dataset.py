@@ -389,6 +389,8 @@ class TestDataset(Dataset):
             raw_text = []
             for line in f.readlines():
                 n, s, t, r = line.strip("\n").split("|")
+                if s != "Shinobu":
+                    continue
                 name.append(n)
                 speaker.append(s)
                 text.append(t)

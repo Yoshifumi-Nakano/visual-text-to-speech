@@ -35,6 +35,7 @@ class FastSpeech2(nn.Module):
 
         self.speaker_emb = None
         if model_config["multi_speaker"]:
+            print("use multi speaker tts")
             with open(
                 os.path.join(
                     preprocess_config["path"]["preprocessed_path"], "speakers.json"
@@ -42,6 +43,7 @@ class FastSpeech2(nn.Module):
                 "r",
             ) as f:
                 n_speaker = len(json.load(f))
+            print("use multi speaker tts",n_speaker)
             self.speaker_emb = nn.Embedding(
                 n_speaker,
                 model_config["transformer"]["encoder_hidden"],
@@ -88,6 +90,8 @@ class FastSpeech2(nn.Module):
             output = output + self.speaker_emb(speakers).unsqueeze(1).expand(
                 -1, max_src_len, -1
             )
+        else:
+            assert False
 
         (
             output,

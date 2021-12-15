@@ -1,7 +1,7 @@
 path:
-  ckpt_path: "./output_ver39/ckpt/JSUT"
-  log_path: "./output_ver39/log/JSUT"
-  result_path: "./output_ver39/result/JSUT/aihara/koruri"
+  ckpt_path: "./output_ver41/ckpt/JSUT"
+  log_path: "./output_ver41/log/JSUT"
+  result_path: "./output_ver41/result/JSUT/aihara"
 optimizer:
   batch_size: 6
   betas: [0.9, 0.98]
