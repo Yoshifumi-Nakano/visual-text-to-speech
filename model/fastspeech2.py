@@ -87,11 +87,10 @@ class FastSpeech2(nn.Module):
             mel_jdit, gate_outputs, alignments = self.jdit(output, mels, src_lens)
 
         if self.speaker_emb is not None:
+            assert False
             output = output + self.speaker_emb(speakers).unsqueeze(1).expand(
                 -1, max_src_len, -1
             )
-        else:
-            assert False
 
         (
             output,

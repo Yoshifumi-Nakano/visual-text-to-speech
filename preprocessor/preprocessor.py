@@ -78,6 +78,7 @@ class Preprocessor:
         os.makedirs((os.path.join(self.out_dir,"text_kana")),exist_ok=True)
         os.makedirs((os.path.join(self.out_dir,"image_kana_aihara")),exist_ok=True)
         os.makedirs((os.path.join(self.out_dir,"image_kana_koruri")),exist_ok=True)
+        os.makedirs((os.path.join(self.out_dir,"image_kana")),exist_ok=True)
 
         #normalization module
         pitch_scaler = StandardScaler()
@@ -89,43 +90,44 @@ class Preprocessor:
         speakers = {}
         out={"test":[],"other":[]}
         n_frames = 0
-        for i, speaker in enumerate(tqdm(os.listdir(self.in_dir))):            #in_dir : ./raw_data/JSUT
-            speakers[speaker] = i
-            for wav_name in os.listdir(os.path.join(self.in_dir, speaker)):
-                if ".wav" not in wav_name:
-                    continue
-                basename = wav_name.split(".")[0]
-                tg_path = os.path.join(
-                    self.out_dir, "TextGrid", speaker, "{}.TextGrid".format(basename)    #tg_path: ./preprocessed_data/JSUT/TextGrid/JSUT/BASIC5000_0001.TextGrid
-                )
-                if os.path.exists(tg_path):
-                    ret = self.process_utterance(speaker, basename)
-
-                    #return build from path
-                    if ret is None:
+        for i, speaker in enumerate(tqdm(os.listdir(self.in_dir))):           #in_dir : ./raw_data/JSUT
+            if speaker == "Kitsune":
+                speakers[speaker] = i
+                for wav_name in os.listdir(os.path.join(self.in_dir, speaker)):
+                    if ".wav" not in wav_name:
                         continue
+                    basename = wav_name.split(".")[0]
+                    tg_path = os.path.join(
+                        self.out_dir, "TextGrid", speaker, "{}.TextGrid".format(basename)    #tg_path: ./preprocessed_data/JSUT/TextGrid/JSUT/BASIC5000_0001.TextGrid
+                    )
+                    if os.path.exists(tg_path):
+                        ret = self.process_utterance(speaker, basename)
+
+                        #return build from path
+                        if ret is None:
+                            continue
+                        else:
+                            info, pitch, energy, n,pitch_kana,energy_kana = ret
+
+                        #for test dataset
+                        if basename.split("_")[1]=="heijou":
+                            out["test"].append(info)
+                        else:
+                            out["other"].append(info)
+
                     else:
-                        info, pitch, energy, n,pitch_kana,energy_kana = ret
+                        raise ValueError(tg_path)
 
-                    #for test dataset
-                    if basename.split("_")[1]=="heijou":
-                        out["test"].append(info)
-                    else:
-                        out["other"].append(info)
+                    if len(pitch) > 0:
+                        pitch_scaler.partial_fit(pitch.reshape((-1, 1)))
+                    if len(energy) > 0:
+                        energy_scaler.partial_fit(energy.reshape((-1, 1)))
+                    if len(pitch_kana)>0:
+                        pitch_kana_scaler.partial_fit(pitch_kana.reshape((-1, 1)))
+                    if len(energy_kana)>0:
+                        energy_kana_scaler.partial_fit(energy_kana.reshape((-1, 1)))
 
-                else:
-                    raise ValueError(tg_path)
-
-                if len(pitch) > 0:
-                    pitch_scaler.partial_fit(pitch.reshape((-1, 1)))
-                if len(energy) > 0:
-                    energy_scaler.partial_fit(energy.reshape((-1, 1)))
-                if len(pitch_kana)>0:
-                    pitch_kana_scaler.partial_fit(pitch_kana.reshape((-1, 1)))
-                if len(energy_kana)>0:
-                    energy_kana_scaler.partial_fit(energy_kana.reshape((-1, 1)))
-
-                n_frames += n
+                    n_frames += n
 
         # Perform normalization if necessary
         if self.pitch_normalization:

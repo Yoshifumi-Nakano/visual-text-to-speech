@@ -111,6 +111,9 @@ __pycache__
 montreal-forced-aligner/
 
 # data, checkpoint, and models
+jsut-lab/
+submit/
+submit2/
 raw_data/
 JECS/
 output/
