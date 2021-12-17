@@ -74,34 +74,28 @@ if __name__ == '__main__':
     parser.add_argument('--with_accent', type=bool,help='whether you want accent labels or not')
 
     args = parser.parse_args()
-    lab_files = pathlib.Path(args.lab).glob('**/*.lab')
-    print("lab_files",lab_files)
+    for path_ in ['**/Shinobu_heijou_*.lab','**/Shinobu_kanashimi_*.lab','**/Shinobu_yorokobi_*.lab']:
+        lab_files = pathlib.Path(args.lab).glob(path_)
+        print("lab_files",lab_files)
 
-    # create output directory
-    
-    tg_dir = (Path(args.output) / 'TextGrid'/args.speaker)
-    ac_dir = (Path(args.output)/ 'accent')
-    if not tg_dir.exists():
-        tg_dir.mkdir(parents=True)
-    if not ac_dir.exists():
-        ac_dir.mkdir()
-
-    # iter through lab files
-    for lab_file in tqdm(lab_files):
-        print("lab_file",lab_file)
-        if args.with_accent:
-            accent = []
-            with open(lab_file) as f:
-                lines = f.readlines()
-            lab, accent = pp_symbols(lines)
-            with open(ac_dir/ lab_file.with_suffix('.accent').name,mode='w') as f:
-                f.writelines([''.join(accent)])
+        # create output directory
         
-        label = read_lab(str(lab_file))
-        print(label)
-        textgridFilePath = tg_dir/lab_file.with_suffix('.TextGrid').name
-        label.to_textgrid(textgridFilePath)
+        tg_dir = (Path(args.output) / 'TextGrid'/args.speaker)
+        ac_dir = (Path(args.output)/ 'accent')
+        if not tg_dir.exists():
+            tg_dir.mkdir(parents=True)
+        if not ac_dir.exists():
+            ac_dir.mkdir()
+
+        # iter through lab files
+        for lab_file in tqdm(lab_files):
+            print("lab_file",lab_file)
+            
+            label = read_lab(str(lab_file))
+            print(label)
+            textgridFilePath = tg_dir/lab_file.with_suffix('.TextGrid').name
+            label.to_textgrid(textgridFilePath)
+
+            
 
         
-
-    

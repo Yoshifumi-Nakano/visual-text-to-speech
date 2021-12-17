@@ -111,6 +111,9 @@ __pycache__
 montreal-forced-aligner/
 
 # data, checkpoint, and models
+jsut-lab/
+submit/
+submit2/
 raw_data/
 JECS/
 output/
@@ -130,5 +133,19 @@ utils/ipag00303/
 nohup.out
 phoneme/
 voced_test/
+jecs-lab/
+test/
 submit/
-
+submit2/
+jecs-en_rev/
+preprocessed_data_emp/
+test_emp/
+カオラ・スゥ/
+はるかおばさん/
+ブレス位置/
+浦島景太郎/
+紺野みつね/
+成瀬川なる/
+青山素子/
+前原しのぶ/
+manga*/

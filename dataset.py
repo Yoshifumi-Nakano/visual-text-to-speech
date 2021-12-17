@@ -130,6 +130,7 @@ class Dataset(Dataset):
             duration = np.load(duration_path)
 
             #load image
+            rand = np.random.rand()
             image_path= os.path.join(
                 self.preprocessed_path,
                 "image_kana",
@@ -156,7 +157,6 @@ class Dataset(Dataset):
         if self.use_image:
             sample["text"]=text_kana
             sample["image"]=image
-
 
         return sample
 
@@ -372,7 +372,7 @@ class TestDataset(Dataset):
             #image
             image_path= os.path.join(
                 self.preprocessed_path,
-                "image_kana",
+                "image_kana_koruri",
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
             )
             image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]
