@@ -1,9 +1,10 @@
 path:
-  ckpt_path: "./output/ckpt/LJSpeech"
-  log_path: "./output/log/LJSpeech"
-  result_path: "./output/result/LJSpeech"
+  ckpt_path: "./output_ver53/ckpt/LJSpeech"
+  log_path: "./output_ver53/log/LJSpeech"
+  result_path: "./output_ver53/result/LJSpeech/italic"
+  pre_path: "./output_ver53/ckpt/LJSpeech"
 optimizer:
-  batch_size: 8
+  batch_size: 6
   betas: [0.9, 0.98]
   eps: 0.000000001
   weight_decay: 0.0
@@ -17,4 +18,5 @@ step:
   log_step: 100
   synth_step: 1000
   val_step: 1000
-  save_step: 100000
+  save_step: 10000
+dataparallel: False

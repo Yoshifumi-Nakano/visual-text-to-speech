@@ -215,7 +215,7 @@ class Preprocessor:
         wav=wav.tolist()
         for i in range(len(wav)):
             if i<start_emp or i>end_emp:
-                wav[i]=wav[i]*0.75
+                wav[i]=wav[i]*0.25
         wav=np.array(wav)
 
         #音声がある部分のみ切り取る

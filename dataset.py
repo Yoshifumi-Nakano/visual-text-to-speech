@@ -93,12 +93,19 @@ class Dataset(Dataset):
         )
         duration = np.load(duration_path)
 
+        # rand=np.random.rand()
+        # if rand < 0.5:
+        #     path_="image"
+        # else:
+        #     path_="image_bold"
+
         #load image
         image_path= os.path.join(
             self.preprocessed_path,
             "image_underline",
             "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
         )
+
         image=cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)
         sample = {
             "id": basename,
@@ -321,10 +328,12 @@ class TestDataset(Dataset):
             #text lens
             text_lens = np.array([len(texts[0])])
 
+            
+
             #image
             image_path= os.path.join(
                 self.preprocessed_path,
-                "image_normal",
+                "image_italic",
                 "{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),self.basename[idx])
             )
             image=[cv2.imread(image_path,cv2.IMREAD_GRAYSCALE)]

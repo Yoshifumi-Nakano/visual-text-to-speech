@@ -20,6 +20,9 @@ variance_embedding:
   energy_quantization: "linear" # support 'linear' or 'log', 'log' is allowed only if the energy values are not normalized during preprocessing
   n_bins: 256
 
+jdit:
+  use_jdit: False
+  prenet_hidden: 256
 # gst:
 #   use_gst: False
 #   conv_filters: [32, 32, 64, 64, 128, 128]
@@ -34,4 +37,13 @@ max_seq_len: 1000
 
 vocoder:
   model: "HiFi-GAN" # support 'HiFi-GAN', 'MelGAN'
-  speaker: "LJSpeech" # support  'LJSpeech', 'universal'
+  speaker: "universal" # support  'LJSpeech', 'universal'
+
+image:
+    use_image: True
+    width: 30
+    height: 30
+    font_size: 20
+    slice_width: 150
+    slice_height: 30
+    stride: 30
