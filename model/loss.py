@@ -51,14 +51,14 @@ class FastSpeech2Loss(nn.Module):
         energy_targets.requires_grad = False
         mel_targets.requires_grad = False
 
-        if self.pitch_feature_level == "phoneme_level":
+        if self.pitch_feature_level == "character_level":
             pitch_predictions = pitch_predictions.masked_select(src_masks)
             pitch_targets = pitch_targets.masked_select(src_masks)
         elif self.pitch_feature_level == "frame_level":
             pitch_predictions = pitch_predictions.masked_select(mel_masks)
             pitch_targets = pitch_targets.masked_select(mel_masks)
 
-        if self.energy_feature_level == "phoneme_level":
+        if self.energy_feature_level == "character_level":
             energy_predictions = energy_predictions.masked_select(src_masks)
             energy_targets = energy_targets.masked_select(src_masks)
         if self.energy_feature_level == "frame_level":

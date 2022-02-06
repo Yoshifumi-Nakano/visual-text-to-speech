@@ -10,8 +10,7 @@ import cv2
 from scipy.interpolate import interp1d
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
-from utils.transform import Phoneme2Kana 
-from utils.getimage import get_text_images
+from utils.visual_text import get_visual_texts
 import audio as Audio
 
 class Preprocessor:
@@ -24,23 +23,23 @@ class Preprocessor:
         self.sampling_rate = config["preprocessing"]["audio"]["sampling_rate"]
         self.hop_length = config["preprocessing"]["stft"]["hop_length"]
         assert config["preprocessing"]["pitch"]["feature"] in [
-            "phoneme_level",
+            "character_level",
             "frame_level",
         ]
         assert config["preprocessing"]["energy"]["feature"] in [
-            "phoneme_level",
+            "character_level",
             "frame_level",
         ]
 
         #pitch info
-        self.pitch_phoneme_averaging = (
-            config["preprocessing"]["pitch"]["feature"] == "phoneme_level"
+        self.pitch_character_averaging = (
+            config["preprocessing"]["pitch"]["feature"] == "character_level"
         )
         self.pitch_normalization = config["preprocessing"]["pitch"]["normalization"]
 
         #energy info
-        self.energy_phoneme_averaging = (
-            config["preprocessing"]["energy"]["feature"] == "phoneme_level"
+        self.energy_character_averaging = (
+            config["preprocessing"]["energy"]["feature"] == "character_level"
         )
         self.energy_normalization = config["preprocessing"]["energy"]["normalization"]
 
@@ -59,6 +58,7 @@ class Preprocessor:
         self.image_preprocess_width=config["preprocessing"]["image"]["width"]
         self.image_preprocess_height=config["preprocessing"]["image"]["height"]
         self.image_preprocess_fontsize=config["preprocessing"]["image"]["font_size"]
+        self.image_preprocess_font_path=config["preprocessing"]["image"]["font_path"]
 
 
     def build_from_path(self):
@@ -69,7 +69,6 @@ class Preprocessor:
         os.makedirs((os.path.join(self.out_dir, "duration")), exist_ok=True)
         os.makedirs((os.path.join(self.out_dir,"image")),exist_ok=True)
 
-
         #normalization module
         pitch_scaler = StandardScaler()
         energy_scaler = StandardScaler()
@@ -79,14 +78,14 @@ class Preprocessor:
         out=[]
 
         n_frames = 0
-        for i, speaker in enumerate(tqdm(os.listdir(self.in_dir))):            #in_dir : ./raw_data/JSUT
+        for i, speaker in enumerate(tqdm(os.listdir(self.in_dir))):            
             speakers[speaker] = i
             for wav_name in os.listdir(os.path.join(self.in_dir, speaker)):
                 if ".wav" not in wav_name:
                     continue
                 basename = wav_name.split(".")[0]
                 tg_path = os.path.join(
-                    self.out_dir, "TextGrid", speaker, "{}.TextGrid".format(basename)    #tg_path: ./preprocessed_data/JSUT/TextGrid/JSUT/BASIC5000_0001.TextGrid
+                    self.out_dir, "TextGrid", speaker, "{}.TextGrid".format(basename)    
                 )
                 if os.path.exists(tg_path):
                     ret = self.process_utterance(speaker, basename)
@@ -99,10 +98,6 @@ class Preprocessor:
 
                     #for test dataset
                     out.append(info)
-                else:
-                    print(tg_path)
-                    continue
-
 
                 if len(pitch) > 0:
                     pitch_scaler.partial_fit(pitch.reshape((-1, 1)))
@@ -189,12 +184,11 @@ class Preprocessor:
 
         # get alignments
         textgrid = tgt.io.read_textgrid(tg_path)
-        phone, duration, start, end = self.get_alignment(
+        character, duration, start, end = self.get_alignment(
             textgrid.get_tier_by_name("phones")
         )
-        text = "{" + " ".join(phone) + "}"        #text {m i z u o m a r e e sh i a k a r a k a w a n a k u t e w a n a r a n a i n o d e s u}
+        text = "{" + " ".join(character) + "}"        
 
-        # validation
         if start >= end:
             return None
 
@@ -212,7 +206,7 @@ class Preprocessor:
         pitch, t = pw.dio(
             wav.astype(np.float64),
             self.sampling_rate,
-            frame_period=self.hop_length / self.sampling_rate * 1000,     #ホップサイズが「160」とすると（ズラす量のことで、サンプリング周波数が「16000」の場合、時間換算で「10ms」）frame_periodはSTFTが何秒間か表す
+            frame_period=self.hop_length / self.sampling_rate * 1000, 
         )                                                                       
         pitch = pw.stonemask(wav.astype(np.float64), pitch, t, self.sampling_rate)
         pitch = pitch[: sum(duration)]
@@ -235,7 +229,7 @@ class Preprocessor:
         pitch = interp_fn(np.arange(0, len(pitch)))
 
         # average pitch by input 
-        if self.pitch_phoneme_averaging:
+        if self.pitch_character_averaging:
             pos = 0
             for i, d in enumerate(duration):
                 if d > 0:
@@ -246,7 +240,7 @@ class Preprocessor:
             pitch = pitch[: len(duration)]
 
          # average energy by input 
-        if self.energy_phoneme_averaging:
+        if self.energy_character_averaging:
             pos = 0
             for i, d in enumerate(duration):
                 if d > 0:
@@ -278,7 +272,7 @@ class Preprocessor:
 
         #save kana image
         iamge_filename="{}-image-{}-{}-{}-{}.jpg".format(speaker, str(self.image_preprocess_width),str(self.image_preprocess_height),str(self.image_preprocess_fontsize),basename)
-        text_image=get_text_images(texts=[t for t in text.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize)
+        text_image=get_visual_texts(texts=[t for t in text.replace("{", "").replace("}", "").split()],width=self.image_preprocess_width,height=self.image_preprocess_height,font_size=self.image_preprocess_fontsize,font_path=self.image_preprocess_font_path)
         cv2.imwrite(os.path.join(self.out_dir,"image",iamge_filename),text_image)
         
         return (
@@ -291,27 +285,27 @@ class Preprocessor:
     def get_alignment(self, tier):
         sil_phones = ["sil", "sp", "spn", 'silB', 'silE', '']
 
-        phones = []
+        characters = []
         durations = []
         start_time = 0
         end_time = 0
         end_idx = 0
         for t in tier._objects:
             s, e, p = t.start_time, t.end_time, t.text
-            # find phone and start_time that are not silent
-            if phones == []:
+            # find character and start_time that are not silent
+            if characters == []:
                 if p in sil_phones:
                     continue
                 else:
                     start_time = s
 
-            # ordinary phones → phones , silent phones → sp
+            # ordinary character → character , silent characters → sp
             if p not in sil_phones:
-                phones.append(p)
+                characters.append(p)
                 end_time = e
-                end_idx = len(phones)
+                end_idx = len(characters)
             else:
-                phones.append('sp')
+                characters.append('sp')
             
             # add duration
             durations.append(
@@ -322,13 +316,10 @@ class Preprocessor:
             )
 
         # delete last sp
-        phones = phones[:end_idx]
+        characters = characters[:end_idx]
         durations = durations[:end_idx]
-        
-        # test code
-        assert len(phones) == len(durations)
 
-        return phones, durations, start_time, end_time
+        return characters, durations, start_time, end_time
 
 
     def remove_outlier(self, values):

@@ -9,11 +9,9 @@ from scipy.io import wavfile
 from matplotlib import pyplot as plt
 import torchvision.transforms as transforms
 
-
 matplotlib.use("Agg")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 
 transform = transforms.Compose(
     [transforms.ToTensor()]
@@ -133,12 +131,12 @@ def synth_one_sample(targets, predictions, vocoder, model_config, preprocess_con
     mel_target = targets[6][0, :mel_len].detach().transpose(0, 1)
     mel_prediction = predictions[1][0, :mel_len].detach().transpose(0, 1)
     duration = targets[11][0, :src_len].detach().cpu().numpy()
-    if preprocess_config["preprocessing"]["pitch"]["feature"] == "phoneme_level":
+    if preprocess_config["preprocessing"]["pitch"]["feature"] == "character_level":
         pitch = targets[9][0, :src_len].detach().cpu().numpy()
         pitch = expand(pitch, duration)
     else:
         pitch = targets[9][0, :mel_len].detach().cpu().numpy()
-    if preprocess_config["preprocessing"]["energy"]["feature"] == "phoneme_level":
+    if preprocess_config["preprocessing"]["energy"]["feature"] == "character_level":
         energy = targets[10][0, :src_len].detach().cpu().numpy()
         energy = expand(energy, duration)
     else:
@@ -149,11 +147,6 @@ def synth_one_sample(targets, predictions, vocoder, model_config, preprocess_con
     ) as f:
         stats = json.load(f)
         stats = stats["pitch"] + stats["energy"][:2]
-<<<<<<< HEAD
-=======
-
->>>>>>> development-LJS
-
     fig = plot_mel(
         [
             (mel_prediction.cpu().numpy(), pitch, energy),
@@ -192,12 +185,12 @@ def synth_samples(targets, predictions, vocoder, model_config, preprocess_config
         mel_len = predictions[9][i].item()
         mel_prediction = predictions[1][i, :mel_len].detach().transpose(0, 1)
         duration = predictions[5][i, :src_len].detach().cpu().numpy()
-        if preprocess_config["preprocessing"]["pitch"]["feature"] == "phoneme_level":
+        if preprocess_config["preprocessing"]["pitch"]["feature"] == "character_level":
             pitch = predictions[2][i, :src_len].detach().cpu().numpy()
             pitch = expand(pitch, duration)
         else:
             pitch = predictions[2][i, :mel_len].detach().cpu().numpy()
-        if preprocess_config["preprocessing"]["energy"]["feature"] == "phoneme_level":
+        if preprocess_config["preprocessing"]["energy"]["feature"] == "character_level":
             energy = predictions[3][i, :src_len].detach().cpu().numpy()
             energy = expand(energy, duration)
         else:

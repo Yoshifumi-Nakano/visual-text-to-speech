@@ -30,8 +30,8 @@ class VarianceAdaptor(nn.Module):
         self.energy_feature_level = preprocess_config["preprocessing"]["energy"][
             "feature"
         ]
-        assert self.pitch_feature_level in ["phoneme_level", "frame_level"]
-        assert self.energy_feature_level in ["phoneme_level", "frame_level"]
+        assert self.pitch_feature_level in ["character_level", "frame_level"]
+        assert self.energy_feature_level in ["character_level", "frame_level"]
 
         pitch_quantization = model_config["variance_embedding"]["pitch_quantization"]
         energy_quantization = model_config["variance_embedding"]["energy_quantization"]
@@ -43,13 +43,7 @@ class VarianceAdaptor(nn.Module):
         ) as f:
             stats = json.load(f)
             pitch_min, pitch_max = stats["pitch"][:2]
-<<<<<<< HEAD
             energy_min, energy_max = stats["energy"][:2]
-=======
-            print("pitch_min, pitch_max",pitch_min, pitch_max)
-            energy_min, energy_max = stats["energy"][:2]
-            print("energy_min, energy_max",energy_min, energy_max)
->>>>>>> development-LJS
 
         if pitch_quantization == "log":
             self.pitch_bins = nn.Parameter(
@@ -120,12 +114,12 @@ class VarianceAdaptor(nn.Module):
     ):
 
         log_duration_prediction = self.duration_predictor(x, src_mask)
-        if self.pitch_feature_level == "phoneme_level":
+        if self.pitch_feature_level == "character_level":
             pitch_prediction, pitch_embedding = self.get_pitch_embedding(
                 x, pitch_target, src_mask, p_control
             )
             x = x + pitch_embedding
-        if self.energy_feature_level == "phoneme_level":
+        if self.energy_feature_level == "character_level":
             energy_prediction, energy_embedding = self.get_energy_embedding(
                 x, energy_target, src_mask, p_control
             )
