@@ -111,13 +111,7 @@ __pycache__
 montreal-forced-aligner/
 
 # data, checkpoint, and models
-raw_data/JECS
-raw_data/JECS_EN
-raw_data/JTES
-raw_data/KSS
-raw_data/session3W
-raw_data/JSUT
-raw_data/LJSpeech2
+raw_data/*
 JECS/
 output/
 *.npy
