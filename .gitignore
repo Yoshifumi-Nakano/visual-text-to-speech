@@ -111,18 +111,20 @@ __pycache__
 montreal-forced-aligner/
 
 # data, checkpoint, and models
-raw_data/
+raw_data/JECS
+raw_data/JECS_EN
+raw_data/JTES
+raw_data/KSS
+raw_data/session3W
+raw_data/JSUT
+raw_data/LJSpeech2
 JECS/
 output/
 *.npy
 TextGrid/
 hifigan/*.pth.tar
-<<<<<<< HEAD
-preprocessed_data/
-=======
-preprocessed_data/*
 
->>>>>>> development-LJS
+preprocessed_data/*
 output_kana/
 output_kana_conv1_NoimageNorm/
 jsut_ver1.1.zip
@@ -134,7 +136,6 @@ utils/ipag00303
 utils/gowun-batang
 
 nohup.out
-<<<<<<< HEAD
 iemocap/
 JECS/
 jecs-en_rev/
@@ -146,15 +147,4 @@ preprocessed_data_emp/
 slide/
 submit/
 test_emp/
-=======
-phoneme/
-voced_test/
-submit/
-utils/gowun-batang
-KSS/
-jecs*
-submit/
-LJSpeech/
-preprocessed_data_phoneme/
-preprocessed_data/
->>>>>>> development-LJS
+
