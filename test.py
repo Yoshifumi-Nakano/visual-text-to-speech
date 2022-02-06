@@ -20,7 +20,6 @@ import pyopenjtalk
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
 def synthesize(model, step, configs, vocoder, batchs, control_values):
     preprocess_config, model_config, train_config = configs
     pitch_control, energy_control, duration_control = control_values

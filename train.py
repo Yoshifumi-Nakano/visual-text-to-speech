@@ -18,10 +18,6 @@ from evaluate import evaluate
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-<<<<<<< HEAD
-
-=======
->>>>>>> development-LJS
 def main(args, configs):
     print("Prepare training ...")
     preprocess_config, model_config, train_config = configs
