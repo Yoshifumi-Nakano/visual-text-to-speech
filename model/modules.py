@@ -43,7 +43,13 @@ class VarianceAdaptor(nn.Module):
         ) as f:
             stats = json.load(f)
             pitch_min, pitch_max = stats["pitch"][:2]
+<<<<<<< HEAD
             energy_min, energy_max = stats["energy"][:2]
+=======
+            print("pitch_min, pitch_max",pitch_min, pitch_max)
+            energy_min, energy_max = stats["energy"][:2]
+            print("energy_min, energy_max",energy_min, energy_max)
+>>>>>>> development-LJS
 
         if pitch_quantization == "log":
             self.pitch_bins = nn.Parameter(

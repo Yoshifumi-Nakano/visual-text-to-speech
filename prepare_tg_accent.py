@@ -89,14 +89,6 @@ if __name__ == '__main__':
     # iter through lab files
     for lab_file in tqdm(lab_files):
         print("lab_file",lab_file)
-        if args.with_accent:
-            accent = []
-            with open(lab_file) as f:
-                lines = f.readlines()
-            lab, accent = pp_symbols(lines)
-            with open(ac_dir/ lab_file.with_suffix('.accent').name,mode='w') as f:
-                f.writelines([''.join(accent)])
-        
         label = read_lab(str(lab_file))
         print(label)
         textgridFilePath = tg_dir/lab_file.with_suffix('.TextGrid').name

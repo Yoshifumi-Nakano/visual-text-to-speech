@@ -12,13 +12,14 @@ import torchvision.transforms as transforms
 
 matplotlib.use("Agg")
 
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
 transform = transforms.Compose(
     [transforms.ToTensor()]
 )
 
-
+#ids,raw_texts,speakers,texts,text_lens,max(text_lens),mels,mel_lens,max(mel_lens),pitches,energies,durations,accents,images
 def to_device(data, device,use_image,use_accent):
     (
         ids,
@@ -37,8 +38,6 @@ def to_device(data, device,use_image,use_accent):
         image,
     ) = data
 
-
-
     speakers = torch.from_numpy(speakers).long().to(device)
     src_lens = torch.from_numpy(src_lens).to(device)
     if mels is not None:
@@ -55,9 +54,13 @@ def to_device(data, device,use_image,use_accent):
     #画像を使う場合はimageをtensorにするがtext(ひらがなの配列)は使わない
     if use_image:
         image=torch.stack([transform(im) for im in image]).to(device)
+        # ##todo テキスト入力の場合はここを使う
+        # texts=torch.from_numpy(texts).long().to(device)
+        # image= None
     else:
         torch.from_numpy(texts).long().to(device)
         image= None
+
 
     if use_accent==True:
         accents = torch.from_numpy(accents).long().to(device)
@@ -81,106 +84,6 @@ def to_device(data, device,use_image,use_accent):
             accents
         )
 
-
-    # if len(data) == 12:
-    #     (
-    #         ids,
-    #         raw_texts,
-    #         speakers,
-    #         texts,
-    #         src_lens,
-    #         max_src_len,
-    #         mels,
-    #         mel_lens,
-    #         max_mel_len,
-    #         pitches,
-    #         energies,
-    #         durations,
-    #     ) = data
-
-    #     speakers = torch.from_numpy(speakers).long().to(device)
-    #     texts = torch.from_numpy(texts).long().to(device)
-    #     src_lens = torch.from_numpy(src_lens).to(device)
-    #     mels = torch.from_numpy(mels).float().to(device)
-    #     mel_lens = torch.from_numpy(mel_lens).to(device)
-    #     pitches = torch.from_numpy(pitches).float().to(device)
-    #     energies = torch.from_numpy(energies).to(device)
-    #     durations = torch.from_numpy(durations).long().to(device)
-
-    #     return (
-    #         ids,
-    #         raw_texts,
-    #         speakers,
-    #         texts,
-    #         src_lens,
-    #         max_src_len,
-    #         mels,
-    #         mel_lens,
-    #         max_mel_len,
-    #         pitches,
-    #         energies,
-    #         durations,
-    #     )
-    # if len(data) == 13:
-        # (
-        #     ids,
-        #     raw_texts,
-        #     speakers,
-        #     texts,
-        #     src_lens,
-        #     max_src_len,
-        #     mels,
-        #     mel_lens,
-        #     max_mel_len,
-        #     pitches,
-        #     energies,
-        #     durations,
-        #     accents,
-        # ) = data
-
-    #     speakers = torch.from_numpy(speakers).long().to(device)
-    #     texts = torch.from_numpy(texts).long().to(device)
-    #     src_lens = torch.from_numpy(src_lens).to(device)
-    #     mels = torch.from_numpy(mels).float().to(device)
-    #     mel_lens = torch.from_numpy(mel_lens).to(device)
-    #     pitches = torch.from_numpy(pitches).float().to(device)
-    #     energies = torch.from_numpy(energies).to(device)
-    #     durations = torch.from_numpy(durations).long().to(device)
-    #     accents = torch.from_numpy(accents).long().to(device)
-
-    #     return (
-    #         ids,
-    #         raw_texts,
-    #         speakers,
-    #         texts,
-    #         src_lens,
-    #         max_src_len,
-    #         mels,
-    #         mel_lens,
-    #         max_mel_len,
-    #         pitches,
-    #         energies,
-    #         durations,
-    #         accents
-    #     )
-
-    # if len(data) == 6:
-    #     (ids, raw_texts, speakers, texts, src_lens, max_src_len) = data
-
-    #     speakers = torch.from_numpy(speakers).long().to(device)
-    #     texts = torch.from_numpy(texts).long().to(device)
-    #     src_lens = torch.from_numpy(src_lens).to(device)
-
-    #     return (ids, raw_texts, speakers, texts, src_lens, max_src_len)
-    # if len(data) == 7:
-    #     (ids, raw_texts, speakers, texts, src_lens, max_src_len, accents) = data
-
-    #     speakers = torch.from_numpy(speakers).long().to(device)
-    #     texts = torch.from_numpy(texts).long().to(device)
-    #     src_lens = torch.from_numpy(src_lens).to(device)
-    #     accents = torch.from_numpy(accents).long().to(device)
-
-    #     return (ids, raw_texts, speakers, texts, src_lens, max_src_len, accents)
 
 
 def log(
@@ -224,7 +127,6 @@ def expand(values, durations):
 
 
 def synth_one_sample(targets, predictions, vocoder, model_config, preprocess_config):
-
     basename = targets[0][0]
     src_len = predictions[8][0].item()
     mel_len = predictions[9][0].item()
@@ -247,6 +149,10 @@ def synth_one_sample(targets, predictions, vocoder, model_config, preprocess_con
     ) as f:
         stats = json.load(f)
         stats = stats["pitch"] + stats["energy"][:2]
+<<<<<<< HEAD
+=======
+
+>>>>>>> development-LJS
 
     fig = plot_mel(
         [
@@ -279,7 +185,6 @@ def synth_one_sample(targets, predictions, vocoder, model_config, preprocess_con
 
 
 def synth_samples(targets, predictions, vocoder, model_config, preprocess_config, path):
-
     basenames = targets[0]
     for i in range(len(predictions[0])):
         basename = basenames[i]
@@ -392,7 +297,6 @@ def pad_1D(inputs, PAD=0):
     padded = np.stack([pad_data(x, max_len, PAD) for x in inputs])
 
     return padded
-
 
 def pad_2D(inputs, maxlen=None):
     def pad(x, max_len):

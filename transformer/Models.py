@@ -4,7 +4,7 @@ import numpy as np
 
 import transformer.Constants as Constants
 from .Layers import FFTBlock
-from text.symbols import symbols
+from text.symbols_alphabet import  get_symbols
 
 class NLayerImageCNN(nn.Module):
     def __init__(self,
@@ -69,8 +69,6 @@ class NLayerImageCNN(nn.Module):
             image_slice.append(torch.stack(tensors))
         image_slice=torch.stack(image_slice)
         batch_size, src_len, channels, height, width = image_slice.shape
-        
-
         pixels = image_slice.view(batch_size * src_len, channels, height, width)
 
         # Embed and recast to 3d tensor
@@ -113,7 +111,7 @@ class Encoder(nn.Module):
         super(Encoder, self).__init__()
 
         n_position = config["max_seq_len"] + 1
-        n_src_vocab = len(symbols) + 1
+        n_src_vocab = len(get_symbols()) + 1
         d_word_vec = config["transformer"]["encoder_hidden"]
         n_layers = config["transformer"]["encoder_layer"]
         n_head = config["transformer"]["encoder_head"]

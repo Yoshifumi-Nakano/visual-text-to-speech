@@ -18,21 +18,25 @@ from evaluate import evaluate
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> development-LJS
 def main(args, configs):
     print("Prepare training ...")
-
     preprocess_config, model_config, train_config = configs
 
+    # use accent? use image?
     use_accent = preprocess_config['preprocessing']["accent"]["use_accent"]
     use_image=preprocess_config['preprocessing']["image"]["use_image"]
     
 
-    # Get dataset
+    # define dataset function
     dataset = Dataset(
         "train.txt", preprocess_config, train_config, sort=True, drop_last=True
     )
-    
+
+    # fetch batch data
     batch_size = train_config["optimizer"]["batch_size"]
     group_size = 4  # Set this larger than 1 to enable sorting in Dataset
     assert batch_size * group_size < len(dataset)
@@ -76,12 +80,11 @@ def main(args, configs):
     save_step = train_config["step"]["save_step"]
     synth_step = train_config["step"]["synth_step"]
     val_step = train_config["step"]["val_step"]
-
     use_jdit = model_config['jdit']['use_jdit']
-
     outer_bar = tqdm(total=total_step, desc="Training", position=0)
     outer_bar.n = args.restore_step
     outer_bar.update()
+
 
     while True:
         inner_bar = tqdm(total=len(loader), desc="Epoch {}".format(epoch), position=1)
@@ -111,6 +114,7 @@ def main(args, configs):
                 total_loss = total_loss / grad_acc_step
                 total_loss.backward()
                 if step % grad_acc_step == 0:
+
                     # Clipping gradients to avoid gradient explosion
                     nn.utils.clip_grad_norm_(model.parameters(), grad_clip_thresh)
 
@@ -203,10 +207,9 @@ def main(args, configs):
 
 
 if __name__ == "__main__":
+    #define args 
     parser = argparse.ArgumentParser()
     parser.add_argument("--restore_step", type=int, default=0)
-
-    #正式名称と略称を付けられる(-pは--preprocess_configの略称)
     parser.add_argument(
         "-p",
         "--preprocess_config",
@@ -220,7 +223,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "-t", "--train_config", type=str, required=True, help="path to train.yaml"
     )
-    #引数の解析
     args = parser.parse_args()
 
     # Read Config
@@ -231,4 +233,5 @@ if __name__ == "__main__":
     train_config = yaml.load(open(args.train_config, "r"), Loader=yaml.FullLoader)
     configs = (preprocess_config, model_config, train_config)
 
+    #main function
     main(args, configs)

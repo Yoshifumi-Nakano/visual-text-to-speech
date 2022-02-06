@@ -1,8 +1,18 @@
+<<<<<<< HEAD
+import csv
+
+with open(, mode='r') as f:
+    lines = f.readlines()
+for line in lines:
+    filename, text = line.split(':')
+    with open('raw_data/JSUT/JSUT/' + filename + '.lab', mode='w') as f:
+        f.write(text.strip('\n'))
+=======
 import glob
 import pandas as pd
 import os
 # %%
-transcript_files = glob.glob("/home/sarulab/yoshifumi_nakano/FastSpeech2/FastSpeech2-JSUT/jsut_ver1.1/*/transcript_utf8.txt")
+transcript_files = glob.glob("/app/jsut_ver1.1/*/transcript_utf8.txt")
 print(transcript_files)
 # %%
 if not os.path.exists("raw_data/JSUT/JSUT"):
@@ -15,3 +25,4 @@ for transcript in transcript_files:
         filename, text = line.split(':')
         with open('raw_data/JSUT/JSUT/' + filename + '.lab', mode='w') as f:
             f.write(text.strip('\n'))
+>>>>>>> parent of cffca65c... git rm -r cached .

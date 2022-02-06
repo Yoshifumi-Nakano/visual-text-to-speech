@@ -45,7 +45,17 @@ class Segment:
         return [f'        intervals [{segmentIndex}]:',
                 f'            xmin = {self.tStart} ',
                 f'            xmax = {self.tEnd} ',
-                f'            text = "{label}" ']
+                f'            text = "{label}"']
+
+
+
+
+
+def comma2space(p3):
+    if p3 in [" ",""]:
+        return "sp"
+    return p3
+
 
 
 
@@ -71,10 +81,9 @@ def read_lab(filename): #filename：jsut-lab/basic5000/lab/BASIC5000_0819.lab
         return None
         
     with open(filename, 'r') as f:
-        labeldata = [line.split() for line in f if line != '']
-        segments = [Segment(tStart=float(line[0])/10e6, tEnd=float(line[1])/10e6, 
-                            label=openjtalk2julius(re.search(r"\-(.*?)\+", line[2]).group(1))) for line in labeldata]
-        print("segments",segments)
+        labeldata = [line.lower().split(" ") for line in f if line != '']
+        segments = [Segment(tStart=float(line[0]), tEnd=float(line[1]), 
+                            label=comma2space(line[2].replace("\n",""))) for line in labeldata]
         return SegmentationLabel(segments)
 
 

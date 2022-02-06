@@ -187,7 +187,19 @@ def Phoneme2Kana_inference(phoneme):
             kana.append(dic[phoneme[i]])
             i+=1
         else:
+<<<<<<< HEAD
             kana.append(dic[phoneme[i]+phoneme[i+1]])
+=======
+            ph = phoneme[i]+phoneme[i+1]
+            if ph in twoWordByTwoConsonant:
+                kn = dic[ph]
+                assert len(kn)==2
+                kana+=[kn[0],kn[1]]
+            else:
+                kn=dic[ph]
+                assert len(kn)==1
+                kana+=[kn]
+>>>>>>> development-LJS
             i+=2
     return kana
 
