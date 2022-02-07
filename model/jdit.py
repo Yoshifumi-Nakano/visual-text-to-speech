@@ -1,5 +1,4 @@
 from math import sqrt
-import text
 import torch
 from torch.autograd import Variable
 from torch import nn

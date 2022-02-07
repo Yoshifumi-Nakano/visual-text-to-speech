@@ -19,3 +19,4 @@ step:
   val_step: 1000
   save_step: 10000
 dataparallel: False
+use_image: False

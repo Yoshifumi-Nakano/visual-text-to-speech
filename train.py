@@ -22,11 +22,9 @@ def main(args, configs):
     print("Prepare training ...")
     preprocess_config, model_config, train_config = configs
 
-    # use accent? use image?
-    use_accent = preprocess_config['preprocessing']["accent"]["use_accent"]
-    use_image=preprocess_config['preprocessing']["image"]["use_image"]
+    # use image?
+    use_image=train_config["use_image"]
     
-
     # define dataset function
     dataset = Dataset(
         "train.txt", preprocess_config, train_config, sort=True, drop_last=True
@@ -86,21 +84,15 @@ def main(args, configs):
         inner_bar = tqdm(total=len(loader), desc="Epoch {}".format(epoch), position=1)
         for batchs in loader:
             for batch in batchs:
-                batch = to_device(batch, device,use_image,use_accent)
-
+                batch = to_device(batch,device)
                 # Forward
-                if use_accent:
-                    accents = batch[-1]
-                    output = model(*(batch[2:]),accents=accents)
-                else:
-                    output = model(*(batch[2:]))
-
+                output = model(*(batch[2:]),use_image)
 
                 # Cal Losson
                 if use_jdit:
                     losses = Loss(batch, output[:-2])
                     alignment = batch[-1]
-                    total_loss = losses[0]
+                    totauul_loss = losses[0]
                     total_loss += nn.MSELoss()(output[-2],batch[6])
                 else:
                     losses = Loss(batch, output)

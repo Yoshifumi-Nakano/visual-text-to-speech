@@ -11,14 +11,13 @@ from utils.tools import get_mask_from_lengths
 from .jdit import JDIT
 
 
-class FastSpeech2(nn.Module):
+class vTTS(nn.Module):
     """ FastSpeech2 """
 
     def __init__(self, preprocess_config, model_config):
-        super(FastSpeech2, self).__init__()
+        super(vTTS, self).__init__()
         self.model_config = model_config
-
-        self.encoder = Encoder(model_config)
+        self.encoder = Encoder(preprocess_config,model_config)
         self.variance_adaptor = VarianceAdaptor(preprocess_config, model_config)
         self.decoder = Decoder(model_config)
         self.mel_linear = nn.Linear(
@@ -26,11 +25,8 @@ class FastSpeech2(nn.Module):
             preprocess_config["preprocessing"]["mel"]["n_mel_channels"],
         )
         self.use_jdit = model_config["jdit"]["use_jdit"]
-        self.use_accent= preprocess_config["preprocessing"]["accent"]["use_accent"]
         if self.use_jdit:
             self.jdit = JDIT(model_config=model_config,preprocess_config=preprocess_config)
-            
-
         self.postnet = PostNet()
 
         self.speaker_emb = None
@@ -60,17 +56,11 @@ class FastSpeech2(nn.Module):
         e_targets=None,
         d_targets=None,
         images=None,
+        use_image=True,
         p_control=1.0,
         e_control=1.0,
-        d_control=1.0,
-        accents=None,
+        d_control=1.0
     ):
-        #src_lens [80, 78, 77, 69, 64, 58, 57, 55, 51, 50, 48, 46, 45, 43, 39, 38]
-        #max_lens [80]
-        #images ([16, 20, 1600])
-        #mel_lens tensor([907, 950, 820, 791, 722, 730, 705, 577, 524, 532, 475, 467, 503, 507,
-        #max_mel_lens 950
-        
 
         src_masks = get_mask_from_lengths(src_lens, max_src_len)
         mel_masks = (
@@ -78,8 +68,7 @@ class FastSpeech2(nn.Module):
             if mel_lens is not None
             else None
         )
-        print(images)
-        output = self.encoder(texts, src_masks,accents=accents,images=images)
+        output = self.encoder(texts, src_masks,images=images,use_image=use_image)
 
         if self.use_jdit:
             assert False

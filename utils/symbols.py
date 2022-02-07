@@ -13,7 +13,3 @@ def get_symbols():
 
     symbol_to_id = {s: i+1 for i, s in enumerate(text_seq)}
     return symbol_to_id
-
-
-if __name__ == "__main__":
-    get_symbols()

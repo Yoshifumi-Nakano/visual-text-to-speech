@@ -1,3 +1,3 @@
-from .fastspeech2 import FastSpeech2
+from .vtts import vTTS
 from .loss import FastSpeech2Loss
 from .optimizer import ScheduledOptim

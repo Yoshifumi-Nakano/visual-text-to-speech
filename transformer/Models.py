@@ -4,83 +4,9 @@ import numpy as np
 
 import transformer.Constants as Constants
 from .Layers import FFTBlock
-from text.symbols_alphabet import  get_symbols
+from utils.symbols import get_symbols
+from model.visual_feature_extractor import VisualFeatureExtractor
 
-class NLayerImageCNN(nn.Module):
-    def __init__(self,
-                 slice_width,
-                 slice_height,
-                 embed_dim,
-                 stride,
-                 embed_normalize=False,
-                 bridge_relu=False,
-                 kernel_size=(3,3),
-                 num_convolutions=1):
-
-        super().__init__()
-        self.slice_width = slice_width
-        self.slice_height = slice_height
-        self.embed_dim = embed_dim
-        self.embed_normalize = embed_normalize
-        self.bridge_relu = bridge_relu
-        self.kernel_size = (slice_height,kernel_size[1]) if kernel_size[0]==-1 else kernel_size
-        self.num_convolutions = num_convolutions
-        self.stride=stride
-
-        # we require odd kernel size values:
-        assert self.kernel_size[0] % 2 != 0, f"conv2d kernel height {self.kernel_size} is even. we require odd. did you use {self.slice_height}?"
-        assert self.kernel_size[1] % 2 != 0, f"conv2d kernel width {self.kernel_size} is even. we require odd."
-
-        # padding for dynamic kernel size. assumes we do not change the conv dilation or conv stride (we currently use the defaults)
-        padding_h = int((kernel_size[0] - 1) / 2)
-        padding_w = int((kernel_size[1] - 1) / 2)
-       
-        ops = []
-        for i in range(num_convolutions):
-            ops.append(nn.Conv2d(1, 1, stride=1, kernel_size=self.kernel_size, padding=(padding_h,padding_w)))
-            if embed_normalize:
-                ops.append(nn.BatchNorm2d(1)),
-            ops.append(nn.ReLU(inplace=True))
-
-        self.embedder = nn.Sequential(*ops)
-
-        if self.bridge_relu:
-            self.bridge = nn.Sequential(
-                nn.Linear(slice_width * slice_height, embed_dim),
-                nn.ReLU(inplace=True)
-            )
-        else:
-            self.bridge = nn.Linear(slice_width * slice_height, embed_dim)
-
-        for param in self.parameters():
-            torch.nn.init.uniform_(param, -0.08, 0.08)
-
-    def forward(self, images):
-        #imaga=[batch,channnel,height,width×maxsrc]
-        batch_size, channels, height, width = images.shape
-
-        #tensor画像をsliceする
-        image_slice=[]
-        for image in images:
-            tensors = []
-            for i in range(0,width-1,self.stride):
-                slice_tensor = image[:,:,i:i+self.stride]
-                tensors.append(slice_tensor)
-            image_slice.append(torch.stack(tensors))
-        image_slice=torch.stack(image_slice)
-        batch_size, src_len, channels, height, width = image_slice.shape
-        pixels = image_slice.view(batch_size * src_len, channels, height, width)
-
-        # Embed and recast to 3d tensor
-        embeddings = self.embedder(pixels)
-        embeddings = embeddings.view(batch_size * src_len, height * width)
-        embeddings = self.bridge(embeddings)
-        embeddings = embeddings.view(batch_size, src_len, self.embed_dim)
-
-
-        return embeddings
-
-        
 def get_sinusoid_encoding_table(n_position, d_hid, padding_idx=None):
     """ Sinusoid position encoding table """
 
@@ -107,36 +33,34 @@ def get_sinusoid_encoding_table(n_position, d_hid, padding_idx=None):
 class Encoder(nn.Module):
     """ Encoder """
 
-    def __init__(self, config):
+    def __init__(self, preprocess_config,model_config):
         super(Encoder, self).__init__()
 
-        n_position = config["max_seq_len"] + 1
+        n_position = model_config["max_seq_len"] + 1
         n_src_vocab = len(get_symbols()) + 1
-        d_word_vec = config["transformer"]["encoder_hidden"]
-        n_layers = config["transformer"]["encoder_layer"]
-        n_head = config["transformer"]["encoder_head"]
+        d_word_vec = model_config["transformer"]["encoder_hidden"]
+        n_layers = model_config["transformer"]["encoder_layer"]
+        n_head = model_config["transformer"]["encoder_head"]
         d_k = d_v = (
-            config["transformer"]["encoder_hidden"]
-            // config["transformer"]["encoder_head"]
+            model_config["transformer"]["encoder_hidden"]
+            // model_config["transformer"]["encoder_head"]
         )
-        d_model = config["transformer"]["encoder_hidden"]
-        d_inner = config["transformer"]["conv_filter_size"]
-        kernel_size = config["transformer"]["conv_kernel_size"]
-        dropout = config["transformer"]["encoder_dropout"]
-        width=config["image"]["width"]
-        height=config["image"]["height"]
-        stride=config["image"]["stride"]
+        d_model = model_config["transformer"]["encoder_hidden"]
+        d_inner = model_config["transformer"]["conv_filter_size"]
+        kernel_size = model_config["transformer"]["conv_kernel_size"]
+        dropout = model_config["transformer"]["encoder_dropout"]
 
-        self.max_seq_len = config["max_seq_len"]
+        width = preprocess_config["preprocessing"]["image"]["width"]
+        height = preprocess_config["preprocessing"]["image"]["height"]
+        stride = preprocess_config["preprocessing"]["image"]["stride"]
+
+        self.max_seq_len = model_config["max_seq_len"]
         self.d_model = d_model
 
         self.src_word_emb = nn.Embedding(
             n_src_vocab, d_word_vec, padding_idx=Constants.PAD
         )
 
-        self.src_accent_emb = nn.Embedding(
-            4, d_word_vec, padding_idx=Constants.PAD
-        )
         self.position_enc = nn.Parameter(
             get_sinusoid_encoding_table(n_position, d_word_vec).unsqueeze(0),
             requires_grad=False,
@@ -151,49 +75,25 @@ class Encoder(nn.Module):
             ]
         )
 
-        self.NLayerImgageCNN=NLayerImageCNN(slice_width=width,slice_height=height,embed_dim=d_model,embed_normalize=True,bridge_relu=True,kernel_size=(3,3),num_convolutions=1,stride=stride)
+        self.VisualFeatureExtractor=VisualFeatureExtractor(slice_width=width,slice_height=height,embed_dim=d_model,embed_normalize=True,bridge_relu=True,kernel_size=(3,3),num_convolutions=1,stride=stride)
 
-    def forward(self, src_seq, mask,accents=None, return_attns=False,images=None):
+    def forward(self, src_seq, mask,return_attns=False,images=None,use_image=True):
         enc_slf_attn_list = []
         batch_size, max_len = src_seq.shape[0], src_seq.shape[1]
-
 
         # -- Prepare masks
         slf_attn_mask = mask.unsqueeze(1).expand(-1, max_len, -1)
 
-        # -- Forward
-        if not self.training and src_seq.shape[1] > self.max_seq_len:
-            print("warn：よくわからないif分に入っています")
-            if accents is not None:
-                enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) + get_sinusoid_encoding_table(
-                src_seq.shape[1], self.d_model
-                )[: src_seq.shape[1], :].unsqueeze(0).expand(batch_size, -1, -1).to(
-                    src_seq.device
-                )
-            else:
-                enc_output = self.src_word_emb(src_seq) + get_sinusoid_encoding_table(
-                src_seq.shape[1], self.d_model
-                )[: src_seq.shape[1], :].unsqueeze(0).expand(batch_size, -1, -1).to(
-                    src_seq.device
-                )
-
+        # -- character embedding
+        if use_image:
+            enc_output = self.VisualFeatureExtractor(images) +self.position_enc[
+                :, :max_len, :
+            ].expand(batch_size, -1, -1)
         else:
-            if accents is not None:
-                enc_output = self.src_word_emb(src_seq) + self.src_accent_emb(accents) +self.position_enc[
-                    :, :max_len, :
-                ].expand(batch_size, -1, -1)
-            else:
-                if images is None:
-                    print("warn：画像じゃなくてテキストが入力になっています")
-                    enc_output = self.src_word_emb(src_seq) +self.position_enc[
-                        :, :max_len, :
-                    ].expand(batch_size, -1, -1)
-                else:
-                    print("success:画像入力")
-                    enc_output = self.NLayerImgageCNN(images) +self.position_enc[
-                        :, :max_len, :
-                    ].expand(batch_size, -1, -1)
-
+            enc_output = self.src_word_emb(src_seq) +self.position_enc[
+                :, :max_len, :
+            ].expand(batch_size, -1, -1)
+            
 
         for enc_layer in self.layer_stack:
             enc_output, enc_slf_attn = enc_layer(

@@ -6,7 +6,7 @@ import random
 import numpy as np
 from torch.utils.data import Dataset
 
-from utils.symbols_alphabet import get_symbols
+from utils.symbols import get_symbols
 from utils.tools import pad_1D, pad_2D,pad_2D_gray_image
 
 class Dataset(Dataset):

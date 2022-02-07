@@ -17,8 +17,7 @@ transform = transforms.Compose(
     [transforms.ToTensor()]
 )
 
-#ids,raw_texts,speakers,texts,text_lens,max(text_lens),mels,mel_lens,max(mel_lens),pitches,energies,durations,accents,images
-def to_device(data, device,use_image,use_accent):
+def to_device(data, device):
     (
         ids,
         raw_texts,
@@ -32,7 +31,6 @@ def to_device(data, device,use_image,use_accent):
         pitches,
         energies,
         durations,
-        accents,
         image,
     ) = data
 
@@ -49,22 +47,9 @@ def to_device(data, device,use_image,use_accent):
     if durations is not None:
         durations = torch.from_numpy(durations).long().to(device)
 
-    #画像を使う場合はimageをtensorにするがtext(ひらがなの配列)は使わない
-    if use_image:
-        image=torch.stack([transform(im) for im in image]).to(device)
-        # ##todo テキスト入力の場合はここを使う
-        # texts=torch.from_numpy(texts).long().to(device)
-        # image= None
-    else:
-        torch.from_numpy(texts).long().to(device)
-        image= None
+    image=torch.stack([transform(im) for im in image]).to(device)
+    texts=torch.from_numpy(texts).long().to(device)
 
-
-    if use_accent==True:
-        accents = torch.from_numpy(accents).long().to(device)
-    else:
-        accents=None
-    
     return (
             ids,
             raw_texts,
@@ -78,8 +63,7 @@ def to_device(data, device,use_image,use_accent):
             pitches,
             energies,
             durations,
-            image,
-            accents
+            image
         )
 
 

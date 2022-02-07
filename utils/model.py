@@ -1,16 +1,13 @@
 import os
 import json
-
 import torch
 import numpy as np
-
 import hifigan
-from model import FastSpeech2, ScheduledOptim
-
+from model import vTTS, ScheduledOptim
 
 def get_model(args, configs, device, train=False):
     (preprocess_config, model_config, train_config) = configs
-    model = FastSpeech2(preprocess_config, model_config).to(device)
+    model = vTTS(preprocess_config, model_config).to(device)
     if args.restore_step:
         print("restore_step",args.restore_step)
         ckpt_path = os.path.join(
