@@ -11,9 +11,7 @@ from utils.tools import to_device, log, synth_one_sample
 from model import FastSpeech2Loss
 from dataset import Dataset
 
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 
 def evaluate(model, step, configs, logger=None, vocoder=None):
     preprocess_config, model_config, train_config = configs
