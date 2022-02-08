@@ -90,6 +90,7 @@ class Encoder(nn.Module):
                 :, :max_len, :
             ].expand(batch_size, -1, -1)
         else:
+            assert False
             enc_output = self.src_word_emb(src_seq) +self.position_enc[
                 :, :max_len, :
             ].expand(batch_size, -1, -1)

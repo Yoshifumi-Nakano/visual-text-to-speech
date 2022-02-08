@@ -191,9 +191,6 @@ class TestDataset(Dataset):
         ) as f:
             self.speaker_map = json.load(f)
 
-        #image
-        self.use_image = preprocess_config["preprocessing"]["image"]["use_image"]
-
         #test batch
         self.data_num=len(self.basename)
         self.symbol_to_id = get_symbols()

@@ -12,10 +12,8 @@ from pypinyin import pinyin, Style
 
 from utils.model import get_model, get_vocoder
 from utils.tools import to_device, synth_samples
-from utils.transform import Phoneme2Kana_inference
-from utils.getimage import get_text_images
+from utils.visual_text import get_visual_texts
 from dataset import TestDataset
-from text import text_to_sequence, symbols
 import pyopenjtalk
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -27,6 +25,7 @@ def synthesize(model, step, configs, vocoder, batchs, control_values):
 
     for batch in batchs:
         batch = to_device(batch,device)
+        
 
         with torch.no_grad():
             output = model(
@@ -122,6 +121,7 @@ if __name__ == "__main__":
     # Get dataset
     dataset = TestDataset(args.source, preprocess_config)
     batchs=dataset.batchs
+    
 
     control_values = args.pitch_control, args.energy_control, args.duration_control
 
