@@ -86,7 +86,6 @@ class Encoder(nn.Module):
 
         # -- character embedding
         if use_image:
-            assert False
             enc_output = self.VisualFeatureExtractor(images) +self.position_enc[
                 :, :max_len, :
             ].expand(batch_size, -1, -1)
