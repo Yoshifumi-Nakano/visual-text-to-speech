@@ -26,10 +26,10 @@ def synthesize(model, step, configs, vocoder, batchs, control_values):
     for batch in batchs:
         batch = to_device(batch,device)
         
-
         with torch.no_grad():
             output = model(
                 *(batch[2:]),
+                use_image,
                 p_control=pitch_control,
                 e_control=energy_control,
                 d_control=duration_control,
