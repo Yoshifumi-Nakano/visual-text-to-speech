@@ -41,7 +41,7 @@ def evaluate(model, step, configs, logger=None, vocoder=None):
             batch = to_device(batch, device)
             with torch.no_grad():
                 # Forward
-                output = model(*(batch[2:]))
+                output = model(*(batch[2:]),use_image)
                 losses = Loss(batch, output)
 
                 # Cal Loss

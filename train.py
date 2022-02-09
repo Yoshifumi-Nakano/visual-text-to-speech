@@ -23,7 +23,7 @@ def main(args, configs):
     preprocess_config, model_config, train_config = configs
 
     # use image?
-    use_image=train_config["use_image"]
+    use_image = train_config["use_image"]
     
     # define dataset function
     dataset = Dataset(
