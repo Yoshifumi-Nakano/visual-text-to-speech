@@ -16,7 +16,7 @@ make folder for dataset and copy LJspeech (sound and trascript) to that folder.
 ```
 mkdir -p raw_data/LJSpeech/LJSpeech
 cp your_ljspeech_path/*.wav  raw_data/LJSpeech/LJSpeech/
-python retrieve_transcript_LJSpeech.py
+python retrieve_transcript_wav.py
 ```
 
 ## Preprocessing
