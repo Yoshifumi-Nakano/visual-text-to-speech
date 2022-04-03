@@ -1,5 +1,5 @@
 ## visual-text-to-speech
-This is a PyTorch implementation of English version of [**visual-text to speech (vTTS)**](http://arxiv.org/abs/2203.14725).
+This is a PyTorch implementation of [**visual-text to speech (vTTS)**](http://arxiv.org/abs/2203.14725).
 
 ## Set up envirnment
 Set up environment
