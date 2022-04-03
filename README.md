@@ -1,5 +1,6 @@
 ## visual-text-to-speech
 This is a PyTorch implementation of [**visual-text to speech (vTTS)**](http://arxiv.org/abs/2203.14725).
+![](./img/vTTS.jpg)
 
 ## Set up envirnment
 Set up environment
